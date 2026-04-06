@@ -1,0 +1,363 @@
+\documentclass[b5paper,10pt]{ltjsreport}
+%\documentclass[b5paper,10pt]{ltjsarticle}
+%\documentclass[landscape,a4paper,10pt]{ltjsarticle}
+
+\usepackage[top=20truemm,bottom=10truemm,left=10truemm,right=10truemm]{geometry}
+%\usepackage[margin=10truemm]{geometry}
+
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+% --- 通し番号用のカウンタ ---
+\newcounter{drillnum}
+\setcounter{drillnum}{0}
+\newcommand{\resetdrill}{\setcounter{drillnum}{0}} % カウンタリセット用コマンド
+
+% --- 問題項目名の変数 ---
+\newcommand{\drilltitle}{問題項目}
+% --- 問題数の変数 ---
+\newcounter{quesnum}
+\setcounter{quesnum}{100}
+\newcommand{\resetques}{\setcounter{enumi}{0}} % カウンタリセット用コマンド
+
+% 節の番号を消してタイトルだけにする
+%\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+% --- ヘッダフッタの設定 ---
+\usepackage{fancyhdr}
+
+% --- ヘッダ無しスタイル ---
+\fancypagestyle{explanationstyle}{
+    \fancyhf{} % 全てクリア
+    \fancyhead[R]{}
+    \renewcommand{\headrulewidth}{0pt} % 線も消す
+    \fancyfoot[C]{\thepage} % ページ番号だけ中央に
+}
+
+% --- 問題ページ用スタイル ---
+\fancypagestyle{drillstyle}{
+    \fancyhf{}
+    % ヘッダが表示されるたびに drillnum を +1 する
+    \fancyhead[L]{%\fbox{練習問題} \:
+      \stepcounter{drillnum} \drilltitle \quad \#\thedrillnum}
+    %\stepcounter{drillnum} \drilltitle \rightmark \qquad No. \thedrillnum}
+    %\fancyhead[R]{\stepcounter{drillnum}\drilltitle No. \thedrillnum}
+    \fancyhead[R]{
+      \underline{\scriptsize クラス\hspace{20pt}}
+      \underline{\scriptsize No.\hspace{20pt}}
+      \underline{\scriptsize 名前\hspace{100pt}}
+      \hspace{30pt}/\thequesnum}
+    \fancyfoot{}
+    %\fancyfoot[C]{\thepage}
+    \renewcommand{\headrulewidth}{0.4pt}
+}
+
+\renewcommand{\labelenumi}{(\theenumi)} % 問題番号表示方法変更
+%\renewcommand{\baselinestretch}{8}
+
+
+\newcommand{\includedrill}[2]{ % 引数 問題項目名 読込ファイル
+  \renewcommand{\drilltitle}{#1} % 問題項目名
+  \pagestyle{drillstyle}
+  %\resetdrill
+  \include{#2}
+  %\newpage
+  \resetdrill
+  \pagestyle{explanationstyle}
+  \thispagestyle{explanationstyle}
+  %\newpage
+}
+
+
+\title{計算問題小テスト集}
+\author{}
+\date{}
+
+% --- 目次の表示範囲 ---
+\setcounter{tocdepth}{5}
+
+% ------------
+% --- 本文 ---
+% ------------
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\part{A}
+%\chapter{B}
+%\section{C}
+%\subsection{D}
+%\subsubsection{E}
+%\paragraph{F}
+%\subparagraph{G}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{はじめに}
+
+本書は小テスト用のプリント集です。
+
+学校では知識を与えることが主になりがちですが、計算能力等の能力が年々落ちてきているように感じています。
+数学では計算の遅さや不正確さが原因で話の理解が遅れていくこともあり、計算能力の不足は学習面に悪影響があります。
+そこで、脳を鍛え計算能力を身に着けさせるために行っていた小テストをまとめたものが本書です。
+
+本書の目的は次のようになります。
+\begin{center}
+ \textbf{目的 脳を鍛えること}
+\end{center}
+
+元々は学校での授業で行う目的で作成していますが、
+塾での勉強や自習学習での利用、
+企業での研修、
+高齢者施設などでのボケ防止
+等でも利用出来るかもしれません。
+
+
+
+\section{使い方}
+
+次のような使い方を想定していますが、
+学習者の状況に応じて自由に利用してもらえればと思います。
+
+\begin{enumerate}
+ \item 問題のページを印刷する
+ \item 黒板に1問目の解き方を解説し答えを書いておく
+ \item 解き方や解答等について質問を受け付ける
+ \item 質問がなくなれば、プリントを配布し解かせる
+ \item わからなければ、黒板を見て1問目を丸写しし、2問目以降は数字を変えて同じように解く
+ \item 時間(5分から10分程度)経過したら終了
+ \item 隣の人とプリントを交換し採点をさせる
+ \item 採点が終われば回収し、点数の集計をする
+\end{enumerate}
+
+
+\textbf{注意事項}
+\begin{itemize}
+ \item 生徒の能力を教師側が決めつけない。
+ \item 小テストとして行うため、解いている時間は一人で静かに解かせる。
+       一人で考えることこそが脳を鍛える。
+ \item 問題を解くことを強要しない。
+ \item 解けていなくてもあれこれ言わない。
+\end{itemize}
+
+
+プリントを配布前に第1問目の解説をし解答を書いておきます。
+これは、解き方がわからない人や勘違いしている人が
+小テストの時間を無駄に過ごさないためです。
+全員が一定数解けるようになったのであれば、
+省略してもいいです。
+
+質問を受け付けるのも
+小テスト中に静かに取り組ませるためです。
+わからないなりにも自力で考えることは脳の発達を促します。
+
+小テストはわからない人が黒板を見ながら考えることに意味が有るので、
+邪魔になるような行為をするのであれば注意をします。
+
+小テストの時間は解き終わらないぐらいの時間設定をします。
+具体的には教員が必死に解いてギリギリ解き終わるぐらいから
+その2倍ぐらいの時間を設定します。
+脳を鍛えることが目的の為、限界まで脳を使わせるように
+簡単に解き終わらないようにします。
+
+採点は別の人のプリントを行います。
+これは、
+他人がどのように解いているかを知り自分の解き方を見直すきっかけにする為と、
+読めない文字を書いている事を指摘し他人に読めるように書くことを促す為です。
+学力の低い生徒が定期テストで読めない文字を書くことが多く、
+早めに指摘しておく意味を持ちます。
+
+また、解答を提示する方法はいくつかあります。
+\begin{itemize}
+ \item 口頭で読み上げる
+ \item 黒板に書く
+ \item 印刷して配布する
+\end{itemize}
+上にある方法がより教員生徒に負担が大きく、
+下にある方法が負担は軽いです。
+特に口頭で解答を読み上げると生徒は
+「\textbf{聞く$\rightarrow$確認$\rightarrow$丸付け}」
+という事を繰り返します。
+聞く能力も鍛えられますし、
+採点時間が全員同じぐらいですから
+時間配分もしやすくなります。
+解答を読み上げる側も大変ではありますが。
+
+
+答案を集めて集計をし、
+どの程度計算ができるかを確認します。
+
+
+これを何度も繰り返すと
+多くの生徒が解き終わるようになります。
+
+
+
+
+
+\subsection{仕組み}
+
+人は猿が進化した動物なので、
+群れを作る性質を持ちます。
+具体的には、
+みんなと同じであろうとすることと、
+人よりも優れた存在になろうとすることです。
+
+そこで、全員に同じ問題を何度も解かせると
+サボっている生徒が出来なくて
+それ以外の生徒が点数が伸びてきます。
+出来ていない生徒が少数になれば、
+その事を伝えてあげると
+周りにおいていかれることを恐れて取り組むようになります。
+
+採点を隣の人と交換して行うもの同様の意味を持ちます。
+自分が出来ていないことを自分以外の人が知ることになるので、
+何とかしようと取り組むようになります。
+
+こういった生徒のフォローの為にも、
+テスト配布前に問題解説と質問受付を行います。
+
+
+知識や技術の習得には
+本人の努力が不可欠です。
+他人から勉強をするように言われても
+本人の意思がなければ身につきません。
+そこで、
+勉強を促すのは
+自分自身やクラスメイト等からの
+緩やかなプレッシャーに任せます。
+教師側からの強要することは無いようにすることで、
+過度のプレッシャーが掛からないようになります。
+
+
+
+目的は脳を鍛えることなので、
+静かに考える事が出来れば目的は達成です。
+考えた答えが正答でも誤答でも構いません。
+問題解説と小テストを繰り返す内に少しづつ正答に近づいていきます。
+この効果は
+どんなに勉強が出来ない生徒でもあらわれます。
+根気強く繰り返す必要があるかもしれませんが、
+全員同じように脳に負荷をかけて下さい。
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{数}
+
+\section{自然数}
+
+\subsection{加法}
+
+自然数の和を求める問題。
+
+\includedrill{加法}{code/add_N}
+
+
+\subsection{減法}
+
+自然数の差を求める問題。
+
+\includedrill{加法減法}{code/sub_N}
+
+
+\subsection{乗法}
+
+自然数の積を求める問題。
+
+\includedrill{乗法}{code/mul_N}
+
+
+\subsection{除法}
+
+自然数の商と剰余を求める問題。
+
+\includedrill{除法(商と剰余)}{code/div_N}
+
+
+
+\section{整数}
+
+\subsection{加減法}
+
+整数の和や差を求める問題。
+
+\includedrill{加法減法}{code/add_Z}
+
+
+\subsection{乗法}
+
+整数の積を求める問題。
+
+\includedrill{加法減法}{code/mul_Z}
+
+
+
+\subsection{除法}
+
+整数の商と剰余を求める問題。
+
+\includedrill{除法(商と剰余)}{code/div_Z}
+
+
+\section{有理数}
+
+\subsection{加減法}
+
+有理数の和や差を求める問題。
+
+\includedrill{加法減法}{code/add_Q}
+
+
+\subsection{乗除法}
+
+有理数の積や商を求める問題。
+
+\includedrill{加法減法}{code/mul_Q}
+
+
+\section{複素数}
+
+\subsection{加減法}
+
+複素数の和や差を求める問題。
+
+\includedrill{加法減法}{code/add_C}
+
+
+\subsection{乗法}
+
+複素数の積を求める問題。
+
+\includedrill{乗法}{code/mul_C}
+
+
+\subsection{除法}
+
+複素数の商を求める問題。
+
+\includedrill{除法}{code/div_C}
+
+
+
+\section{最大公約数}
+
+ユークリッドの互除法を利用した最大公約数を求める問題。
+
+\includedrill{最大公約数}{code/gcd_N}
+
+
+
+\end{document}
