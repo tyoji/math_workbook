@@ -6,7 +6,7 @@
 
 ## 使い方
 
-~math_workbook.pdf~
+`math_workbook.pdf`
 PDFファイルを開き、必要なページを印刷。
 
 目次をクリックすると該当ページにジャンプする。
@@ -17,7 +17,7 @@ PDFファイルを開き、必要なページを印刷。
 
 ## ファイル構成
 
-~math_workbook.tex~ ファイル から code ディレクトリ内の各計算問題を参照している。
+`math_workbook.tex` ファイル から code ディレクトリ内の各計算問題を参照している。
 
 このtexファイルを LuaLaTeX でタイプセットし、PDFを生成している。
 
