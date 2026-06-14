@@ -34,7 +34,7 @@ for (1..$num_eq) {
     while (gcd($num1, $num2)<=10) {
         ($num1, $num2) = map{abs} gen_num(2,$num_rng,0);
     }
-    $eq = $num1 . ",\\; " . $num2;
+    $eq = $num1 . ",\\; " . $num2 . "\n";
 
 
     # 解答

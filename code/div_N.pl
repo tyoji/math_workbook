@@ -11,13 +11,13 @@ require "./latex_code.pl";
 # 除法 整数
 
 # 問題生成 変数
-my $num_eq = 1200; # 問題数
+my $num_eq = 1440; # 問題数
 my $num_rng = 100; # 数値幅
 
 # レイアウト 変数
 my $layout_colmuns = 4; # 段組み数
-my $layout_breaks = 15; # 改行問題数
-my $hight_items = 10; # 改行間隔幅(pt)
+my $layout_breaks = 18; # 改行問題数
+my $hight_items = 3; # 改行間隔幅(pt)
 
 
 
@@ -60,7 +60,7 @@ for (1..$num_eq) {
 #    $ans = "=" . $ans;
 
     # 数式モード付与
-    $eq = '$' . $eq . '$';
+    $eq = '$' . $eq . '$' . "\n";
     $ans = '$' . $ans . '$';
 
     push @ques, $eq;

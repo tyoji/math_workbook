@@ -18,7 +18,7 @@ my $num_rng = 10; # 数値幅
 # レイアウト 変数
 my $layout_colmuns = 4; # 段組み数
 my $layout_breaks = 10; # 改行問題数
-my $hight_items = 20; # 改行間隔幅(pt)
+my $hight_items = 18; # 改行間隔幅(pt)
 
 
 
@@ -70,7 +70,7 @@ for (1..$num_eq) {
     $ans = "=" . $ans;
 
     # 数式モード付与
-    $eq = '$\displaystyle ' . $eq . '$';
+    $eq = '$\displaystyle ' . $eq . '$' . "\n";
     $ans = '$\displaystyle ' . $ans . '$';
 
     push @ques, $eq;

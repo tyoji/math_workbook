@@ -11,13 +11,13 @@ require "./latex_code.pl";
 # 乗法 自然数
 
 # 問題生成 変数
-my $num_eq = 1200; # 問題数
+my $num_eq = 2400; # 問題数
 my $num_rng = 10; # 数値幅
 
 # レイアウト 変数
 my $layout_colmuns = 4; # 段組み数
-my $layout_breaks = 15; # 改行問題数
-my $hight_items = 10; # 改行間隔幅(pt)
+my $layout_breaks = 30; # 改行問題数
+my $hight_items = 5; # 改行間隔幅(pt)
 
 
 

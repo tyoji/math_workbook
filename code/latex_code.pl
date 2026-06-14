@@ -192,7 +192,7 @@ sub generate_latex_code {
 
         for my $i (0 .. $ques_num-1) {
             # 各要素を \item として追加
-            $latex_code .= "  \\item " . $ques_arr->[$i] . "\n\n";
+            $latex_code .= "  \\item " . $ques_arr->[$i] . "\n";
 
             $latex_code .= " " x 8;
             if ($count == 0) {$latex_code .= "\\phantom{"}

@@ -1,0 +1,5132 @@
+
+
+%%% perl code : polynomial_factorization_2.pl
+
+\setcounter{quesnum}{30}
+
+\begin{multicols}{3}
+\begin{enumerate}
+  \itemsep=30pt
+  \item $14x^{2}-x-4$
+
+        \phantom{$=(7x-4)(2x+1)$}
+
+  \item $3x^{2}+11x-4$
+
+        \phantom{$=(3x-1)(x+4)$}
+
+  \item $24x^{2}+35x+4$
+
+        \phantom{$=(3x+4)(8x+1)$}
+
+  \item $2x^{2}-9x-81$
+
+        \phantom{$=(x-9)(2x+9)$}
+
+  \item $2x^{2}-17x-9$
+
+        \phantom{$=(2x+1)(x-9)$}
+
+  \item $24x^{2}+5x-1$
+
+        \phantom{$=(3x+1)(8x-1)$}
+
+  \item $5x^{2}+12x+4$
+
+        \phantom{$=(5x+2)(x+2)$}
+
+  \item $48x^{2}+22x-5$
+
+        \phantom{$=(8x+5)(6x-1)$}
+
+  \item $18x^{2}+45x-8$
+
+        \phantom{$=(6x-1)(3x+8)$}
+
+  \item $3x^{2}-2x-8$
+
+        \phantom{$=(3x+4)(x-2)$}
+
+\columnbreak % 10
+
+  \item $4x^{2}+27x+18$
+
+        \phantom{$=(4x+3)(x+6)$}
+
+  \item $x^{2}-1$
+
+        \phantom{$=(x-1)(x+1)$}
+
+  \item $7x^{2}-10x-8$
+
+        \phantom{$=(x-2)(7x+4)$}
+
+  \item $14x^{2}-23x+8$
+
+        \phantom{$=(2x-1)(7x-8)$}
+
+  \item $3x^{2}-31x+36$
+
+        \phantom{$=(x-9)(3x-4)$}
+
+  \item $3x^{2}+8x+4$
+
+        \phantom{$=(x+2)(3x+2)$}
+
+  \item $15x^{2}+16x-15$
+
+        \phantom{$=(3x+5)(5x-3)$}
+
+  \item $9x^{2}+21x+10$
+
+        \phantom{$=(3x+2)(3x+5)$}
+
+  \item $x^{2}-9x+20$
+
+        \phantom{$=(x-4)(x-5)$}
+
+  \item $18x^{2}+43x+24$
+
+        \phantom{$=(2x+3)(9x+8)$}
+
+\columnbreak % 20
+
+  \item $4x^{2}-16x-9$
+
+        \phantom{$=(2x-9)(2x+1)$}
+
+  \item $36x^{2}-7x-4$
+
+        \phantom{$=(9x-4)(4x+1)$}
+
+  \item $2x^{2}-x-1$
+
+        \phantom{$=(2x+1)(x-1)$}
+
+  \item $10x^{2}-11x+3$
+
+        \phantom{$=(5x-3)(2x-1)$}
+
+  \item $3x^{2}-16x+21$
+
+        \phantom{$=(x-3)(3x-7)$}
+
+  \item $9x^{2}+11x+2$
+
+        \phantom{$=(9x+2)(x+1)$}
+
+  \item $7x^{2}+11x+4$
+
+        \phantom{$=(7x+4)(x+1)$}
+
+  \item $12x^{2}-17x-7$
+
+        \phantom{$=(3x+1)(4x-7)$}
+
+  \item $10x^{2}+43x-9$
+
+        \phantom{$=(5x-1)(2x+9)$}
+
+  \item $x^{2}-x-2$
+
+        \phantom{$=(x-2)(x+1)$}
+
+\columnbreak % 30
+
+\resetques
+
+  \item $24x^{2}-83x+63$
+
+        \phantom{$=(3x-7)(8x-9)$}
+
+  \item $10x^{2}+x-3$
+
+        \phantom{$=(2x-1)(5x+3)$}
+
+  \item $24x^{2}-50x-9$
+
+        \phantom{$=(6x+1)(4x-9)$}
+
+  \item $5x^{2}-11x+6$
+
+        \phantom{$=(5x-6)(x-1)$}
+
+  \item $25x^{2}-90x+81$
+
+        \phantom{$=(5x-9)^{2}$}
+
+  \item $14x^{2}-15x-9$
+
+        \phantom{$=(2x-3)(7x+3)$}
+
+  \item $6x^{2}-35x+25$
+
+        \phantom{$=(x-5)(6x-5)$}
+
+  \item $8x^{2}+10x+3$
+
+        \phantom{$=(2x+1)(4x+3)$}
+
+  \item $7x^{2}+4x-3$
+
+        \phantom{$=(x+1)(7x-3)$}
+
+  \item $56x^{2}+59x+15$
+
+        \phantom{$=(8x+5)(7x+3)$}
+
+\columnbreak % 40
+
+  \item $2x^{2}-5x-7$
+
+        \phantom{$=(x+1)(2x-7)$}
+
+  \item $24x^{2}-11x+1$
+
+        \phantom{$=(8x-1)(3x-1)$}
+
+  \item $21x^{2}+11x-6$
+
+        \phantom{$=(3x-1)(7x+6)$}
+
+  \item $2x^{2}-21x+27$
+
+        \phantom{$=(2x-3)(x-9)$}
+
+  \item $9x^{2}-10x+1$
+
+        \phantom{$=(x-1)(9x-1)$}
+
+  \item $x^{2}-9x+8$
+
+        \phantom{$=(x-8)(x-1)$}
+
+  \item $18x^{2}+31x-35$
+
+        \phantom{$=(2x+5)(9x-7)$}
+
+  \item $63x^{2}+37x-40$
+
+        \phantom{$=(7x+8)(9x-5)$}
+
+  \item $6x^{2}+17x-14$
+
+        \phantom{$=(2x+7)(3x-2)$}
+
+  \item $2x^{2}+17x+35$
+
+        \phantom{$=(x+5)(2x+7)$}
+
+\columnbreak % 50
+
+  \item $15x^{2}+26x+7$
+
+        \phantom{$=(5x+7)(3x+1)$}
+
+  \item $35x^{2}-4x-4$
+
+        \phantom{$=(7x+2)(5x-2)$}
+
+  \item $3x^{2}+x-2$
+
+        \phantom{$=(3x-2)(x+1)$}
+
+  \item $4x^{2}+12x+9$
+
+        \phantom{$=(2x+3)^{2}$}
+
+  \item $14x^{2}+51x+7$
+
+        \phantom{$=(7x+1)(2x+7)$}
+
+  \item $x^{2}+4x+3$
+
+        \phantom{$=(x+1)(x+3)$}
+
+  \item $56x^{2}+3x-9$
+
+        \phantom{$=(8x-3)(7x+3)$}
+
+  \item $5x^{2}+11x+6$
+
+        \phantom{$=(x+1)(5x+6)$}
+
+  \item $40x^{2}+23x+3$
+
+        \phantom{$=(8x+3)(5x+1)$}
+
+  \item $9x^{2}-15x+4$
+
+        \phantom{$=(3x-1)(3x-4)$}
+
+\columnbreak % 60
+
+\resetques
+
+  \item $x^{2}+5x+6$
+
+        \phantom{$=(x+2)(x+3)$}
+
+  \item $8x^{2}+13x+5$
+
+        \phantom{$=(x+1)(8x+5)$}
+
+  \item $x^{2}-7x+6$
+
+        \phantom{$=(x-6)(x-1)$}
+
+  \item $x^{2}-1$
+
+        \phantom{$=(x-1)(x+1)$}
+
+  \item $9x^{2}+46x-48$
+
+        \phantom{$=(9x-8)(x+6)$}
+
+  \item $5x^{2}-8x+3$
+
+        \phantom{$=(x-1)(5x-3)$}
+
+  \item $40x^{2}-23x+3$
+
+        \phantom{$=(8x-3)(5x-1)$}
+
+  \item $4x^{2}-35x+24$
+
+        \phantom{$=(4x-3)(x-8)$}
+
+  \item $21x^{2}+32x+12$
+
+        \phantom{$=(3x+2)(7x+6)$}
+
+  \item $72x^{2}+73x-9$
+
+        \phantom{$=(9x-1)(8x+9)$}
+
+\columnbreak % 70
+
+  \item $2x^{2}+7x+3$
+
+        \phantom{$=(x+3)(2x+1)$}
+
+  \item $8x^{2}-9x-14$
+
+        \phantom{$=(x-2)(8x+7)$}
+
+  \item $2x^{2}+19x+24$
+
+        \phantom{$=(x+8)(2x+3)$}
+
+  \item $5x^{2}-12x-9$
+
+        \phantom{$=(x-3)(5x+3)$}
+
+  \item $27x^{2}+69x+14$
+
+        \phantom{$=(3x+7)(9x+2)$}
+
+  \item $45x^{2}-76x-9$
+
+        \phantom{$=(5x-9)(9x+1)$}
+
+  \item $7x^{2}+16x+9$
+
+        \phantom{$=(x+1)(7x+9)$}
+
+  \item $54x^{2}+57x+8$
+
+        \phantom{$=(6x+1)(9x+8)$}
+
+  \item $6x^{2}+5x-4$
+
+        \phantom{$=(2x-1)(3x+4)$}
+
+  \item $2x^{2}+3x-9$
+
+        \phantom{$=(x+3)(2x-3)$}
+
+\columnbreak % 80
+
+  \item $6x^{2}+x-2$
+
+        \phantom{$=(2x-1)(3x+2)$}
+
+  \item $32x^{2}+20x-7$
+
+        \phantom{$=(8x+7)(4x-1)$}
+
+  \item $7x^{2}+13x+6$
+
+        \phantom{$=(x+1)(7x+6)$}
+
+  \item $3x^{2}-10x-8$
+
+        \phantom{$=(3x+2)(x-4)$}
+
+  \item $18x^{2}-45x+28$
+
+        \phantom{$=(3x-4)(6x-7)$}
+
+  \item $81x^{2}-18x-8$
+
+        \phantom{$=(9x+2)(9x-4)$}
+
+  \item $14x^{2}-x-3$
+
+        \phantom{$=(2x-1)(7x+3)$}
+
+  \item $9x^{2}-16x+7$
+
+        \phantom{$=(9x-7)(x-1)$}
+
+  \item $x^{2}-9$
+
+        \phantom{$=(x+3)(x-3)$}
+
+  \item $5x^{2}+22x-48$
+
+        \phantom{$=(5x-8)(x+6)$}
+
+\columnbreak % 90
+
+\resetques
+
+  \item $9x^{2}-x-8$
+
+        \phantom{$=(9x+8)(x-1)$}
+
+  \item $24x^{2}-x-10$
+
+        \phantom{$=(8x+5)(3x-2)$}
+
+  \item $8x^{2}+18x-5$
+
+        \phantom{$=(2x+5)(4x-1)$}
+
+  \item $4x^{2}-13x+9$
+
+        \phantom{$=(x-1)(4x-9)$}
+
+  \item $32x^{2}+20x-7$
+
+        \phantom{$=(8x+7)(4x-1)$}
+
+  \item $20x^{2}-3x-2$
+
+        \phantom{$=(4x+1)(5x-2)$}
+
+  \item $3x^{2}-5x-12$
+
+        \phantom{$=(3x+4)(x-3)$}
+
+  \item $4x^{2}-29x-24$
+
+        \phantom{$=(4x+3)(x-8)$}
+
+  \item $x^{2}+10x+9$
+
+        \phantom{$=(x+9)(x+1)$}
+
+  \item $7x^{2}-x-8$
+
+        \phantom{$=(7x-8)(x+1)$}
+
+\columnbreak % 100
+
+  \item $2x^{2}+13x-7$
+
+        \phantom{$=(2x-1)(x+7)$}
+
+  \item $4x^{2}-3x-27$
+
+        \phantom{$=(4x+9)(x-3)$}
+
+  \item $5x^{2}-22x+21$
+
+        \phantom{$=(5x-7)(x-3)$}
+
+  \item $8x^{2}+10x-7$
+
+        \phantom{$=(4x+7)(2x-1)$}
+
+  \item $x^{2}-2x-24$
+
+        \phantom{$=(x-6)(x+4)$}
+
+  \item $8x^{2}+43x+15$
+
+        \phantom{$=(8x+3)(x+5)$}
+
+  \item $32x^{2}-12x-9$
+
+        \phantom{$=(4x-3)(8x+3)$}
+
+  \item $9x^{2}-28x+3$
+
+        \phantom{$=(9x-1)(x-3)$}
+
+  \item $30x^{2}+19x-4$
+
+        \phantom{$=(5x+4)(6x-1)$}
+
+  \item $45x^{2}+11x-4$
+
+        \phantom{$=(9x+4)(5x-1)$}
+
+\columnbreak % 110
+
+  \item $28x^{2}-43x+9$
+
+        \phantom{$=(4x-1)(7x-9)$}
+
+  \item $3x^{2}+x-10$
+
+        \phantom{$=(x+2)(3x-5)$}
+
+  \item $3x^{2}-19x+6$
+
+        \phantom{$=(3x-1)(x-6)$}
+
+  \item $2x^{2}-5x+3$
+
+        \phantom{$=(x-1)(2x-3)$}
+
+  \item $7x^{2}-11x+4$
+
+        \phantom{$=(x-1)(7x-4)$}
+
+  \item $7x^{2}-54x+35$
+
+        \phantom{$=(x-7)(7x-5)$}
+
+  \item $4x^{2}+9x+5$
+
+        \phantom{$=(4x+5)(x+1)$}
+
+  \item $7x^{2}-x-8$
+
+        \phantom{$=(x+1)(7x-8)$}
+
+  \item $7x^{2}-x-8$
+
+        \phantom{$=(x+1)(7x-8)$}
+
+  \item $16x^{2}-10x-9$
+
+        \phantom{$=(8x-9)(2x+1)$}
+
+\columnbreak % 120
+
+\resetques
+
+  \item $35x^{2}-33x+4$
+
+        \phantom{$=(5x-4)(7x-1)$}
+
+  \item $35x^{2}-37x-6$
+
+        \phantom{$=(5x-6)(7x+1)$}
+
+  \item $9x^{2}+9x-4$
+
+        \phantom{$=(3x+4)(3x-1)$}
+
+  \item $4x^{2}+37x+9$
+
+        \phantom{$=(x+9)(4x+1)$}
+
+  \item $7x^{2}+13x-24$
+
+        \phantom{$=(7x-8)(x+3)$}
+
+  \item $3x^{2}+2x-8$
+
+        \phantom{$=(x+2)(3x-4)$}
+
+  \item $9x^{2}-11x+2$
+
+        \phantom{$=(9x-2)(x-1)$}
+
+  \item $5x^{2}-24x+16$
+
+        \phantom{$=(x-4)(5x-4)$}
+
+  \item $9x^{2}+25x+14$
+
+        \phantom{$=(9x+7)(x+2)$}
+
+  \item $8x^{2}-7x-1$
+
+        \phantom{$=(8x+1)(x-1)$}
+
+\columnbreak % 130
+
+  \item $12x^{2}+7x+1$
+
+        \phantom{$=(3x+1)(4x+1)$}
+
+  \item $24x^{2}+35x+9$
+
+        \phantom{$=(3x+1)(8x+9)$}
+
+  \item $8x^{2}-34x-9$
+
+        \phantom{$=(4x+1)(2x-9)$}
+
+  \item $5x^{2}-31x-28$
+
+        \phantom{$=(5x+4)(x-7)$}
+
+  \item $15x^{2}+4x-32$
+
+        \phantom{$=(5x+8)(3x-4)$}
+
+  \item $2x^{2}+5x+2$
+
+        \phantom{$=(x+2)(2x+1)$}
+
+  \item $15x^{2}+16x-7$
+
+        \phantom{$=(5x+7)(3x-1)$}
+
+  \item $4x^{2}+5x-9$
+
+        \phantom{$=(4x+9)(x-1)$}
+
+  \item $40x^{2}+79x+24$
+
+        \phantom{$=(5x+8)(8x+3)$}
+
+  \item $6x^{2}+x-1$
+
+        \phantom{$=(2x+1)(3x-1)$}
+
+\columnbreak % 140
+
+  \item $x^{2}+2x-3$
+
+        \phantom{$=(x+3)(x-1)$}
+
+  \item $20x^{2}-x-12$
+
+        \phantom{$=(5x-4)(4x+3)$}
+
+  \item $7x^{2}-16x+9$
+
+        \phantom{$=(x-1)(7x-9)$}
+
+  \item $21x^{2}-41x+18$
+
+        \phantom{$=(7x-9)(3x-2)$}
+
+  \item $18x^{2}-31x+6$
+
+        \phantom{$=(9x-2)(2x-3)$}
+
+  \item $3x^{2}+11x+8$
+
+        \phantom{$=(3x+8)(x+1)$}
+
+  \item $7x^{2}-57x+8$
+
+        \phantom{$=(7x-1)(x-8)$}
+
+  \item $27x^{2}-15x+2$
+
+        \phantom{$=(9x-2)(3x-1)$}
+
+  \item $21x^{2}-8x-4$
+
+        \phantom{$=(3x-2)(7x+2)$}
+
+  \item $25x^{2}-50x+9$
+
+        \phantom{$=(5x-1)(5x-9)$}
+
+\columnbreak % 150
+
+\resetques
+
+  \item $3x^{2}-4x-32$
+
+        \phantom{$=(3x+8)(x-4)$}
+
+  \item $7x^{2}-13x-24$
+
+        \phantom{$=(x-3)(7x+8)$}
+
+  \item $5x^{2}+24x+16$
+
+        \phantom{$=(5x+4)(x+4)$}
+
+  \item $x^{2}+4x-5$
+
+        \phantom{$=(x-1)(x+5)$}
+
+  \item $8x^{2}-x-7$
+
+        \phantom{$=(x-1)(8x+7)$}
+
+  \item $49x^{2}+14x-15$
+
+        \phantom{$=(7x+5)(7x-3)$}
+
+  \item $27x^{2}-66x+35$
+
+        \phantom{$=(9x-7)(3x-5)$}
+
+  \item $6x^{2}-13x-5$
+
+        \phantom{$=(2x-5)(3x+1)$}
+
+  \item $3x^{2}+16x+16$
+
+        \phantom{$=(x+4)(3x+4)$}
+
+  \item $45x^{2}-43x+10$
+
+        \phantom{$=(9x-5)(5x-2)$}
+
+\columnbreak % 160
+
+  \item $48x^{2}-70x+25$
+
+        \phantom{$=(6x-5)(8x-5)$}
+
+  \item $8x^{2}+27x-20$
+
+        \phantom{$=(8x-5)(x+4)$}
+
+  \item $21x^{2}-10x-16$
+
+        \phantom{$=(7x-8)(3x+2)$}
+
+  \item $4x^{2}-12x-27$
+
+        \phantom{$=(2x+3)(2x-9)$}
+
+  \item $12x^{2}-4x-5$
+
+        \phantom{$=(2x+1)(6x-5)$}
+
+  \item $15x^{2}-49x+24$
+
+        \phantom{$=(5x-3)(3x-8)$}
+
+  \item $27x^{2}-57x+28$
+
+        \phantom{$=(9x-7)(3x-4)$}
+
+  \item $8x^{2}-33x+27$
+
+        \phantom{$=(x-3)(8x-9)$}
+
+  \item $21x^{2}-13x-20$
+
+        \phantom{$=(7x+5)(3x-4)$}
+
+  \item $2x^{2}+21x+27$
+
+        \phantom{$=(2x+3)(x+9)$}
+
+\columnbreak % 170
+
+  \item $14x^{2}-17x+5$
+
+        \phantom{$=(2x-1)(7x-5)$}
+
+  \item $2x^{2}+15x+27$
+
+        \phantom{$=(2x+9)(x+3)$}
+
+  \item $28x^{2}-71x+45$
+
+        \phantom{$=(7x-9)(4x-5)$}
+
+  \item $x^{2}-12x+32$
+
+        \phantom{$=(x-4)(x-8)$}
+
+  \item $6x^{2}+25x+4$
+
+        \phantom{$=(x+4)(6x+1)$}
+
+  \item $4x^{2}+x-3$
+
+        \phantom{$=(4x-3)(x+1)$}
+
+  \item $27x^{2}-12x-7$
+
+        \phantom{$=(9x-7)(3x+1)$}
+
+  \item $8x^{2}+18x-5$
+
+        \phantom{$=(2x+5)(4x-1)$}
+
+  \item $32x^{2}-4x-21$
+
+        \phantom{$=(8x-7)(4x+3)$}
+
+  \item $5x^{2}+8x-4$
+
+        \phantom{$=(x+2)(5x-2)$}
+
+\columnbreak % 180
+
+\resetques
+
+  \item $27x^{2}-57x+28$
+
+        \phantom{$=(3x-4)(9x-7)$}
+
+  \item $7x^{2}+16x+4$
+
+        \phantom{$=(x+2)(7x+2)$}
+
+  \item $49x^{2}-1$
+
+        \phantom{$=(7x-1)(7x+1)$}
+
+  \item $6x^{2}-53x+40$
+
+        \phantom{$=(6x-5)(x-8)$}
+
+  \item $56x^{2}+9x-35$
+
+        \phantom{$=(8x+7)(7x-5)$}
+
+  \item $81x^{2}+63x-8$
+
+        \phantom{$=(9x-1)(9x+8)$}
+
+  \item $10x^{2}-23x+12$
+
+        \phantom{$=(2x-3)(5x-4)$}
+
+  \item $14x^{2}+23x+3$
+
+        \phantom{$=(7x+1)(2x+3)$}
+
+  \item $8x^{2}+11x+3$
+
+        \phantom{$=(x+1)(8x+3)$}
+
+  \item $27x^{2}+24x-16$
+
+        \phantom{$=(3x+4)(9x-4)$}
+
+\columnbreak % 190
+
+  \item $12x^{2}-32x+21$
+
+        \phantom{$=(2x-3)(6x-7)$}
+
+  \item $3x^{2}+4x+1$
+
+        \phantom{$=(3x+1)(x+1)$}
+
+  \item $x^{2}+2x-35$
+
+        \phantom{$=(x-5)(x+7)$}
+
+  \item $8x^{2}-13x+5$
+
+        \phantom{$=(8x-5)(x-1)$}
+
+  \item $2x^{2}+x-3$
+
+        \phantom{$=(2x+3)(x-1)$}
+
+  \item $5x^{2}+32x+12$
+
+        \phantom{$=(5x+2)(x+6)$}
+
+  \item $8x^{2}+21x+10$
+
+        \phantom{$=(x+2)(8x+5)$}
+
+  \item $9x^{2}-41x+20$
+
+        \phantom{$=(9x-5)(x-4)$}
+
+  \item $8x^{2}-2x-1$
+
+        \phantom{$=(4x+1)(2x-1)$}
+
+  \item $12x^{2}+25x+12$
+
+        \phantom{$=(4x+3)(3x+4)$}
+
+\columnbreak % 200
+
+  \item $15x^{2}-52x+32$
+
+        \phantom{$=(5x-4)(3x-8)$}
+
+  \item $18x^{2}+33x+14$
+
+        \phantom{$=(6x+7)(3x+2)$}
+
+  \item $45x^{2}-37x+6$
+
+        \phantom{$=(5x-3)(9x-2)$}
+
+  \item $24x^{2}-5x-36$
+
+        \phantom{$=(8x+9)(3x-4)$}
+
+  \item $14x^{2}-47x+30$
+
+        \phantom{$=(2x-5)(7x-6)$}
+
+  \item $5x^{2}-16x+3$
+
+        \phantom{$=(5x-1)(x-3)$}
+
+  \item $24x^{2}+53x-7$
+
+        \phantom{$=(8x-1)(3x+7)$}
+
+  \item $x^{2}-4$
+
+        \phantom{$=(x-2)(x+2)$}
+
+  \item $x^{2}-11x+24$
+
+        \phantom{$=(x-8)(x-3)$}
+
+  \item $9x^{2}+8x-1$
+
+        \phantom{$=(x+1)(9x-1)$}
+
+\columnbreak % 210
+
+\resetques
+
+  \item $40x^{2}+21x-49$
+
+        \phantom{$=(5x+7)(8x-7)$}
+
+  \item $27x^{2}+15x-8$
+
+        \phantom{$=(3x-1)(9x+8)$}
+
+  \item $6x^{2}+7x-3$
+
+        \phantom{$=(3x-1)(2x+3)$}
+
+  \item $5x^{2}+x-6$
+
+        \phantom{$=(x-1)(5x+6)$}
+
+  \item $4x^{2}-3x-1$
+
+        \phantom{$=(4x+1)(x-1)$}
+
+  \item $5x^{2}+12x+7$
+
+        \phantom{$=(5x+7)(x+1)$}
+
+  \item $5x^{2}+13x+8$
+
+        \phantom{$=(5x+8)(x+1)$}
+
+  \item $21x^{2}-25x-4$
+
+        \phantom{$=(3x-4)(7x+1)$}
+
+  \item $27x^{2}-48x-64$
+
+        \phantom{$=(9x+8)(3x-8)$}
+
+  \item $4x^{2}+9x-28$
+
+        \phantom{$=(x+4)(4x-7)$}
+
+\columnbreak % 220
+
+  \item $5x^{2}+14x-24$
+
+        \phantom{$=(5x-6)(x+4)$}
+
+  \item $18x^{2}+15x-7$
+
+        \phantom{$=(3x-1)(6x+7)$}
+
+  \item $7x^{2}-6x-16$
+
+        \phantom{$=(7x+8)(x-2)$}
+
+  \item $5x^{2}-33x+18$
+
+        \phantom{$=(5x-3)(x-6)$}
+
+  \item $8x^{2}-7x-1$
+
+        \phantom{$=(8x+1)(x-1)$}
+
+  \item $63x^{2}+x-20$
+
+        \phantom{$=(9x-5)(7x+4)$}
+
+  \item $x^{2}+15x+56$
+
+        \phantom{$=(x+7)(x+8)$}
+
+  \item $18x^{2}+33x+14$
+
+        \phantom{$=(6x+7)(3x+2)$}
+
+  \item $20x^{2}-23x-7$
+
+        \phantom{$=(5x-7)(4x+1)$}
+
+  \item $6x^{2}-7x-10$
+
+        \phantom{$=(x-2)(6x+5)$}
+
+\columnbreak % 230
+
+  \item $24x^{2}-55x-24$
+
+        \phantom{$=(8x+3)(3x-8)$}
+
+  \item $27x^{2}-87x+56$
+
+        \phantom{$=(3x-7)(9x-8)$}
+
+  \item $56x^{2}-93x+27$
+
+        \phantom{$=(7x-9)(8x-3)$}
+
+  \item $9x^{2}+7x-2$
+
+        \phantom{$=(9x-2)(x+1)$}
+
+  \item $40x^{2}-11x-2$
+
+        \phantom{$=(5x-2)(8x+1)$}
+
+  \item $6x^{2}+19x+14$
+
+        \phantom{$=(x+2)(6x+7)$}
+
+  \item $2x^{2}+x-6$
+
+        \phantom{$=(2x-3)(x+2)$}
+
+  \item $7x^{2}+8x-12$
+
+        \phantom{$=(7x-6)(x+2)$}
+
+  \item $4x^{2}+16x+7$
+
+        \phantom{$=(2x+1)(2x+7)$}
+
+  \item $10x^{2}+19x+7$
+
+        \phantom{$=(2x+1)(5x+7)$}
+
+\columnbreak % 240
+
+\resetques
+
+  \item $12x^{2}-56x+9$
+
+        \phantom{$=(2x-9)(6x-1)$}
+
+  \item $35x^{2}-52x+12$
+
+        \phantom{$=(7x-2)(5x-6)$}
+
+  \item $18x^{2}-35x+12$
+
+        \phantom{$=(2x-3)(9x-4)$}
+
+  \item $x^{2}+9x+18$
+
+        \phantom{$=(x+3)(x+6)$}
+
+  \item $25x^{2}-55x+28$
+
+        \phantom{$=(5x-4)(5x-7)$}
+
+  \item $x^{2}+3x+2$
+
+        \phantom{$=(x+1)(x+2)$}
+
+  \item $4x^{2}-8x+3$
+
+        \phantom{$=(2x-1)(2x-3)$}
+
+  \item $x^{2}-3x+2$
+
+        \phantom{$=(x-1)(x-2)$}
+
+  \item $81x^{2}+90x+16$
+
+        \phantom{$=(9x+2)(9x+8)$}
+
+  \item $28x^{2}+69x+35$
+
+        \phantom{$=(7x+5)(4x+7)$}
+
+\columnbreak % 250
+
+  \item $6x^{2}+23x-18$
+
+        \phantom{$=(3x-2)(2x+9)$}
+
+  \item $9x^{2}-18x+5$
+
+        \phantom{$=(3x-1)(3x-5)$}
+
+  \item $4x^{2}-7x-2$
+
+        \phantom{$=(4x+1)(x-2)$}
+
+  \item $18x^{2}+17x+4$
+
+        \phantom{$=(2x+1)(9x+4)$}
+
+  \item $15x^{2}-37x+18$
+
+        \phantom{$=(3x-2)(5x-9)$}
+
+  \item $10x^{2}+17x+6$
+
+        \phantom{$=(2x+1)(5x+6)$}
+
+  \item $x^{2}-x-12$
+
+        \phantom{$=(x-4)(x+3)$}
+
+  \item $56x^{2}+103x+45$
+
+        \phantom{$=(7x+5)(8x+9)$}
+
+  \item $9x^{2}-27x+8$
+
+        \phantom{$=(3x-1)(3x-8)$}
+
+  \item $8x^{2}+10x+3$
+
+        \phantom{$=(4x+3)(2x+1)$}
+
+\columnbreak % 260
+
+  \item $56x^{2}+95x+36$
+
+        \phantom{$=(7x+4)(8x+9)$}
+
+  \item $x^{2}+4x+3$
+
+        \phantom{$=(x+3)(x+1)$}
+
+  \item $x^{2}-4x+3$
+
+        \phantom{$=(x-1)(x-3)$}
+
+  \item $35x^{2}-12x+1$
+
+        \phantom{$=(7x-1)(5x-1)$}
+
+  \item $28x^{2}+11x-24$
+
+        \phantom{$=(7x+8)(4x-3)$}
+
+  \item $12x^{2}+16x-35$
+
+        \phantom{$=(2x+5)(6x-7)$}
+
+  \item $2x^{2}-x-1$
+
+        \phantom{$=(2x+1)(x-1)$}
+
+  \item $6x^{2}-19x-7$
+
+        \phantom{$=(2x-7)(3x+1)$}
+
+  \item $4x^{2}+3x-1$
+
+        \phantom{$=(4x-1)(x+1)$}
+
+  \item $35x^{2}-61x+24$
+
+        \phantom{$=(7x-8)(5x-3)$}
+
+\columnbreak % 270
+
+\resetques
+
+  \item $x^{2}-1$
+
+        \phantom{$=(x+1)(x-1)$}
+
+  \item $15x^{2}-x-2$
+
+        \phantom{$=(3x+1)(5x-2)$}
+
+  \item $32x^{2}-12x+1$
+
+        \phantom{$=(8x-1)(4x-1)$}
+
+  \item $7x^{2}-x-6$
+
+        \phantom{$=(7x+6)(x-1)$}
+
+  \item $2x^{2}+19x+9$
+
+        \phantom{$=(2x+1)(x+9)$}
+
+  \item $4x^{2}+x-5$
+
+        \phantom{$=(x-1)(4x+5)$}
+
+  \item $7x^{2}+13x-2$
+
+        \phantom{$=(x+2)(7x-1)$}
+
+  \item $10x^{2}+3x-1$
+
+        \phantom{$=(5x-1)(2x+1)$}
+
+  \item $5x^{2}-2x-7$
+
+        \phantom{$=(x+1)(5x-7)$}
+
+  \item $3x^{2}-x-2$
+
+        \phantom{$=(3x+2)(x-1)$}
+
+\columnbreak % 280
+
+  \item $32x^{2}-68x+35$
+
+        \phantom{$=(8x-7)(4x-5)$}
+
+  \item $72x^{2}+29x-21$
+
+        \phantom{$=(9x+7)(8x-3)$}
+
+  \item $9x^{2}-15x+4$
+
+        \phantom{$=(3x-1)(3x-4)$}
+
+  \item $8x^{2}-18x+9$
+
+        \phantom{$=(4x-3)(2x-3)$}
+
+  \item $15x^{2}-58x+48$
+
+        \phantom{$=(5x-6)(3x-8)$}
+
+  \item $9x^{2}+3x-2$
+
+        \phantom{$=(3x+2)(3x-1)$}
+
+  \item $4x^{2}-17x-15$
+
+        \phantom{$=(4x+3)(x-5)$}
+
+  \item $45x^{2}+77x+8$
+
+        \phantom{$=(9x+1)(5x+8)$}
+
+  \item $16x^{2}+10x-9$
+
+        \phantom{$=(8x+9)(2x-1)$}
+
+  \item $49x^{2}+49x+12$
+
+        \phantom{$=(7x+3)(7x+4)$}
+
+\columnbreak % 290
+
+  \item $48x^{2}+50x+7$
+
+        \phantom{$=(6x+1)(8x+7)$}
+
+  \item $2x^{2}-15x+28$
+
+        \phantom{$=(2x-7)(x-4)$}
+
+  \item $3x^{2}-16x+5$
+
+        \phantom{$=(3x-1)(x-5)$}
+
+  \item $3x^{2}-26x+48$
+
+        \phantom{$=(3x-8)(x-6)$}
+
+  \item $15x^{2}-16x-15$
+
+        \phantom{$=(5x+3)(3x-5)$}
+
+  \item $16x^{2}+54x-81$
+
+        \phantom{$=(8x-9)(2x+9)$}
+
+  \item $7x^{2}+4x-3$
+
+        \phantom{$=(7x-3)(x+1)$}
+
+  \item $15x^{2}-17x+4$
+
+        \phantom{$=(3x-1)(5x-4)$}
+
+  \item $x^{2}+14x+49$
+
+        \phantom{$=(x+7)^{2}$}
+
+  \item $2x^{2}+11x+15$
+
+        \phantom{$=(2x+5)(x+3)$}
+
+\columnbreak % 300
+
+\resetques
+
+  \item $x^{2}+9x+8$
+
+        \phantom{$=(x+1)(x+8)$}
+
+  \item $16x^{2}+38x+21$
+
+        \phantom{$=(2x+3)(8x+7)$}
+
+  \item $7x^{2}-20x-32$
+
+        \phantom{$=(7x+8)(x-4)$}
+
+  \item $27x^{2}+3x-14$
+
+        \phantom{$=(9x+7)(3x-2)$}
+
+  \item $35x^{2}+36x-32$
+
+        \phantom{$=(5x+8)(7x-4)$}
+
+  \item $12x^{2}+20x+7$
+
+        \phantom{$=(6x+7)(2x+1)$}
+
+  \item $8x^{2}-7x-1$
+
+        \phantom{$=(8x+1)(x-1)$}
+
+  \item $27x^{2}+42x+16$
+
+        \phantom{$=(9x+8)(3x+2)$}
+
+  \item $x^{2}-8x+12$
+
+        \phantom{$=(x-2)(x-6)$}
+
+  \item $5x^{2}-2x-3$
+
+        \phantom{$=(x-1)(5x+3)$}
+
+\columnbreak % 310
+
+  \item $5x^{2}+43x-18$
+
+        \phantom{$=(5x-2)(x+9)$}
+
+  \item $7x^{2}+8x+1$
+
+        \phantom{$=(7x+1)(x+1)$}
+
+  \item $36x^{2}-101x+45$
+
+        \phantom{$=(4x-9)(9x-5)$}
+
+  \item $21x^{2}-52x+32$
+
+        \phantom{$=(3x-4)(7x-8)$}
+
+  \item $24x^{2}+29x-4$
+
+        \phantom{$=(8x-1)(3x+4)$}
+
+  \item $18x^{2}-23x-6$
+
+        \phantom{$=(2x-3)(9x+2)$}
+
+  \item $9x^{2}+3x-56$
+
+        \phantom{$=(3x+8)(3x-7)$}
+
+  \item $14x^{2}+9x-8$
+
+        \phantom{$=(2x-1)(7x+8)$}
+
+  \item $4x^{2}-7x-15$
+
+        \phantom{$=(x-3)(4x+5)$}
+
+  \item $3x^{2}+x-4$
+
+        \phantom{$=(3x+4)(x-1)$}
+
+\columnbreak % 320
+
+  \item $6x^{2}-5x+1$
+
+        \phantom{$=(3x-1)(2x-1)$}
+
+  \item $4x^{2}+15x+14$
+
+        \phantom{$=(x+2)(4x+7)$}
+
+  \item $x^{2}-1$
+
+        \phantom{$=(x-1)(x+1)$}
+
+  \item $40x^{2}-39x-40$
+
+        \phantom{$=(8x+5)(5x-8)$}
+
+  \item $8x^{2}+2x-3$
+
+        \phantom{$=(4x+3)(2x-1)$}
+
+  \item $20x^{2}+9x-18$
+
+        \phantom{$=(5x+6)(4x-3)$}
+
+  \item $5x^{2}+7x-24$
+
+        \phantom{$=(5x-8)(x+3)$}
+
+  \item $5x^{2}-2x-3$
+
+        \phantom{$=(5x+3)(x-1)$}
+
+  \item $x^{2}-3x-18$
+
+        \phantom{$=(x+3)(x-6)$}
+
+  \item $5x^{2}+3x-2$
+
+        \phantom{$=(5x-2)(x+1)$}
+
+\columnbreak % 330
+
+\resetques
+
+  \item $7x^{2}+8x-12$
+
+        \phantom{$=(7x-6)(x+2)$}
+
+  \item $32x^{2}+4x-15$
+
+        \phantom{$=(4x+3)(8x-5)$}
+
+  \item $3x^{2}-25x-18$
+
+        \phantom{$=(3x+2)(x-9)$}
+
+  \item $3x^{2}+11x+6$
+
+        \phantom{$=(x+3)(3x+2)$}
+
+  \item $4x^{2}-23x+28$
+
+        \phantom{$=(x-4)(4x-7)$}
+
+  \item $9x^{2}-7x-2$
+
+        \phantom{$=(9x+2)(x-1)$}
+
+  \item $3x^{2}+2x-1$
+
+        \phantom{$=(3x-1)(x+1)$}
+
+  \item $x^{2}-1$
+
+        \phantom{$=(x+1)(x-1)$}
+
+  \item $4x^{2}+8x+3$
+
+        \phantom{$=(2x+1)(2x+3)$}
+
+  \item $18x^{2}-5x-7$
+
+        \phantom{$=(2x+1)(9x-7)$}
+
+\columnbreak % 340
+
+  \item $2x^{2}+5x+3$
+
+        \phantom{$=(x+1)(2x+3)$}
+
+  \item $6x^{2}-11x-10$
+
+        \phantom{$=(2x-5)(3x+2)$}
+
+  \item $35x^{2}+87x+54$
+
+        \phantom{$=(7x+9)(5x+6)$}
+
+  \item $2x^{2}+3x+1$
+
+        \phantom{$=(2x+1)(x+1)$}
+
+  \item $4x^{2}+20x+21$
+
+        \phantom{$=(2x+7)(2x+3)$}
+
+  \item $72x^{2}+19x-3$
+
+        \phantom{$=(9x-1)(8x+3)$}
+
+  \item $3x^{2}+10x+8$
+
+        \phantom{$=(3x+4)(x+2)$}
+
+  \item $5x^{2}+22x+21$
+
+        \phantom{$=(5x+7)(x+3)$}
+
+  \item $6x^{2}+13x+7$
+
+        \phantom{$=(6x+7)(x+1)$}
+
+  \item $4x^{2}-7x+3$
+
+        \phantom{$=(x-1)(4x-3)$}
+
+\columnbreak % 350
+
+  \item $21x^{2}+52x+7$
+
+        \phantom{$=(3x+7)(7x+1)$}
+
+  \item $x^{2}-4x+3$
+
+        \phantom{$=(x-1)(x-3)$}
+
+  \item $x^{2}+2x-3$
+
+        \phantom{$=(x-1)(x+3)$}
+
+  \item $6x^{2}-x-1$
+
+        \phantom{$=(3x+1)(2x-1)$}
+
+  \item $7x^{2}+54x-81$
+
+        \phantom{$=(x+9)(7x-9)$}
+
+  \item $8x^{2}-11x+3$
+
+        \phantom{$=(8x-3)(x-1)$}
+
+  \item $15x^{2}+8x+1$
+
+        \phantom{$=(3x+1)(5x+1)$}
+
+  \item $27x^{2}-21x-40$
+
+        \phantom{$=(3x-5)(9x+8)$}
+
+  \item $9x^{2}-55x-56$
+
+        \phantom{$=(x-7)(9x+8)$}
+
+  \item $4x^{2}-27x+35$
+
+        \phantom{$=(4x-7)(x-5)$}
+
+\columnbreak % 360
+
+\resetques
+
+  \item $63x^{2}+17x-20$
+
+        \phantom{$=(7x+5)(9x-4)$}
+
+  \item $5x^{2}+27x-56$
+
+        \phantom{$=(x+7)(5x-8)$}
+
+  \item $24x^{2}+41x+12$
+
+        \phantom{$=(3x+4)(8x+3)$}
+
+  \item $7x^{2}-15x+8$
+
+        \phantom{$=(7x-8)(x-1)$}
+
+  \item $9x^{2}+28x-32$
+
+        \phantom{$=(9x-8)(x+4)$}
+
+  \item $6x^{2}+53x-9$
+
+        \phantom{$=(6x-1)(x+9)$}
+
+  \item $4x^{2}-19x+12$
+
+        \phantom{$=(4x-3)(x-4)$}
+
+  \item $8x^{2}+2x-21$
+
+        \phantom{$=(2x-3)(4x+7)$}
+
+  \item $14x^{2}+9x-18$
+
+        \phantom{$=(2x+3)(7x-6)$}
+
+  \item $4x^{2}+x-3$
+
+        \phantom{$=(x+1)(4x-3)$}
+
+\columnbreak % 370
+
+  \item $x^{2}-7x+12$
+
+        \phantom{$=(x-3)(x-4)$}
+
+  \item $8x^{2}-7x-1$
+
+        \phantom{$=(x-1)(8x+1)$}
+
+  \item $5x^{2}+x-6$
+
+        \phantom{$=(5x+6)(x-1)$}
+
+  \item $x^{2}-1$
+
+        \phantom{$=(x+1)(x-1)$}
+
+  \item $27x^{2}+12x-7$
+
+        \phantom{$=(9x+7)(3x-1)$}
+
+  \item $4x^{2}-1$
+
+        \phantom{$=(2x+1)(2x-1)$}
+
+  \item $3x^{2}-5x+2$
+
+        \phantom{$=(3x-2)(x-1)$}
+
+  \item $x^{2}-1$
+
+        \phantom{$=(x-1)(x+1)$}
+
+  \item $8x^{2}-31x-4$
+
+        \phantom{$=(8x+1)(x-4)$}
+
+  \item $9x^{2}+18x+5$
+
+        \phantom{$=(3x+5)(3x+1)$}
+
+\columnbreak % 380
+
+  \item $45x^{2}-97x+40$
+
+        \phantom{$=(9x-5)(5x-8)$}
+
+  \item $8x^{2}-19x-15$
+
+        \phantom{$=(8x+5)(x-3)$}
+
+  \item $7x^{2}+10x+3$
+
+        \phantom{$=(7x+3)(x+1)$}
+
+  \item $32x^{2}-52x-7$
+
+        \phantom{$=(8x+1)(4x-7)$}
+
+  \item $5x^{2}-12x+4$
+
+        \phantom{$=(5x-2)(x-2)$}
+
+  \item $3x^{2}+10x+3$
+
+        \phantom{$=(x+3)(3x+1)$}
+
+  \item $14x^{2}-39x+27$
+
+        \phantom{$=(7x-9)(2x-3)$}
+
+  \item $x^{2}-10x+16$
+
+        \phantom{$=(x-2)(x-8)$}
+
+  \item $4x^{2}-4x-3$
+
+        \phantom{$=(2x-3)(2x+1)$}
+
+  \item $4x^{2}+11x-45$
+
+        \phantom{$=(4x-9)(x+5)$}
+
+\columnbreak % 390
+
+\resetques
+
+  \item $27x^{2}+33x+8$
+
+        \phantom{$=(3x+1)(9x+8)$}
+
+  \item $10x^{2}-13x+4$
+
+        \phantom{$=(2x-1)(5x-4)$}
+
+  \item $63x^{2}+110x+48$
+
+        \phantom{$=(7x+6)(9x+8)$}
+
+  \item $9x^{2}-11x+2$
+
+        \phantom{$=(x-1)(9x-2)$}
+
+  \item $6x^{2}+7x+2$
+
+        \phantom{$=(2x+1)(3x+2)$}
+
+  \item $12x^{2}+16x+5$
+
+        \phantom{$=(6x+5)(2x+1)$}
+
+  \item $x^{2}+x-2$
+
+        \phantom{$=(x-1)(x+2)$}
+
+  \item $6x^{2}-x-1$
+
+        \phantom{$=(3x+1)(2x-1)$}
+
+  \item $5x^{2}-x-6$
+
+        \phantom{$=(5x-6)(x+1)$}
+
+  \item $4x^{2}+5x+1$
+
+        \phantom{$=(4x+1)(x+1)$}
+
+\columnbreak % 400
+
+  \item $6x^{2}-25x+21$
+
+        \phantom{$=(6x-7)(x-3)$}
+
+  \item $12x^{2}+17x+6$
+
+        \phantom{$=(4x+3)(3x+2)$}
+
+  \item $16x^{2}-30x+9$
+
+        \phantom{$=(8x-3)(2x-3)$}
+
+  \item $2x^{2}+13x+18$
+
+        \phantom{$=(2x+9)(x+2)$}
+
+  \item $9x^{2}+3x-20$
+
+        \phantom{$=(3x+5)(3x-4)$}
+
+  \item $28x^{2}-29x+6$
+
+        \phantom{$=(7x-2)(4x-3)$}
+
+  \item $5x^{2}-8x-21$
+
+        \phantom{$=(x-3)(5x+7)$}
+
+  \item $49x^{2}+126x+81$
+
+        \phantom{$=(7x+9)^{2}$}
+
+  \item $3x^{2}-4x+1$
+
+        \phantom{$=(x-1)(3x-1)$}
+
+  \item $7x^{2}-8x+1$
+
+        \phantom{$=(x-1)(7x-1)$}
+
+\columnbreak % 410
+
+  \item $15x^{2}+19x-8$
+
+        \phantom{$=(3x-1)(5x+8)$}
+
+  \item $8x^{2}-17x-21$
+
+        \phantom{$=(8x+7)(x-3)$}
+
+  \item $x^{2}-1$
+
+        \phantom{$=(x-1)(x+1)$}
+
+  \item $9x^{2}+64x-64$
+
+        \phantom{$=(x+8)(9x-8)$}
+
+  \item $2x^{2}-11x-6$
+
+        \phantom{$=(2x+1)(x-6)$}
+
+  \item $10x^{2}-19x+7$
+
+        \phantom{$=(5x-7)(2x-1)$}
+
+  \item $40x^{2}+61x+7$
+
+        \phantom{$=(8x+1)(5x+7)$}
+
+  \item $2x^{2}+7x-9$
+
+        \phantom{$=(2x+9)(x-1)$}
+
+  \item $14x^{2}-23x+3$
+
+        \phantom{$=(7x-1)(2x-3)$}
+
+  \item $6x^{2}-11x+3$
+
+        \phantom{$=(2x-3)(3x-1)$}
+
+\columnbreak % 420
+
+\resetques
+
+  \item $8x^{2}-13x+5$
+
+        \phantom{$=(8x-5)(x-1)$}
+
+  \item $x^{2}+5x+6$
+
+        \phantom{$=(x+2)(x+3)$}
+
+  \item $6x^{2}+11x+3$
+
+        \phantom{$=(2x+3)(3x+1)$}
+
+  \item $3x^{2}-11x+8$
+
+        \phantom{$=(3x-8)(x-1)$}
+
+  \item $7x^{2}+61x-18$
+
+        \phantom{$=(x+9)(7x-2)$}
+
+  \item $2x^{2}-7x-9$
+
+        \phantom{$=(2x-9)(x+1)$}
+
+  \item $15x^{2}+52x+32$
+
+        \phantom{$=(5x+4)(3x+8)$}
+
+  \item $12x^{2}-19x-18$
+
+        \phantom{$=(3x+2)(4x-9)$}
+
+  \item $3x^{2}+26x+35$
+
+        \phantom{$=(3x+5)(x+7)$}
+
+  \item $5x^{2}-29x-42$
+
+        \phantom{$=(x-7)(5x+6)$}
+
+\columnbreak % 430
+
+  \item $72x^{2}-41x+4$
+
+        \phantom{$=(9x-4)(8x-1)$}
+
+  \item $8x^{2}+73x+72$
+
+        \phantom{$=(x+8)(8x+9)$}
+
+  \item $x^{2}-5x+4$
+
+        \phantom{$=(x-4)(x-1)$}
+
+  \item $6x^{2}-23x+21$
+
+        \phantom{$=(2x-3)(3x-7)$}
+
+  \item $7x^{2}+5x-2$
+
+        \phantom{$=(7x-2)(x+1)$}
+
+  \item $3x^{2}+2x-1$
+
+        \phantom{$=(x+1)(3x-1)$}
+
+  \item $3x^{2}-23x+14$
+
+        \phantom{$=(x-7)(3x-2)$}
+
+  \item $3x^{2}+8x+4$
+
+        \phantom{$=(x+2)(3x+2)$}
+
+  \item $5x^{2}-3x-2$
+
+        \phantom{$=(x-1)(5x+2)$}
+
+  \item $56x^{2}-3x-20$
+
+        \phantom{$=(8x-5)(7x+4)$}
+
+\columnbreak % 440
+
+  \item $7x^{2}-22x+16$
+
+        \phantom{$=(7x-8)(x-2)$}
+
+  \item $49x^{2}-35x-36$
+
+        \phantom{$=(7x+4)(7x-9)$}
+
+  \item $9x^{2}+59x-28$
+
+        \phantom{$=(x+7)(9x-4)$}
+
+  \item $36x^{2}-13x-40$
+
+        \phantom{$=(9x+8)(4x-5)$}
+
+  \item $27x^{2}+21x+4$
+
+        \phantom{$=(3x+1)(9x+4)$}
+
+  \item $6x^{2}-11x-21$
+
+        \phantom{$=(6x+7)(x-3)$}
+
+  \item $4x^{2}-39x+27$
+
+        \phantom{$=(x-9)(4x-3)$}
+
+  \item $4x^{2}+3x-1$
+
+        \phantom{$=(4x-1)(x+1)$}
+
+  \item $4x^{2}-23x-72$
+
+        \phantom{$=(x-8)(4x+9)$}
+
+  \item $7x^{2}+18x+8$
+
+        \phantom{$=(x+2)(7x+4)$}
+
+\columnbreak % 450
+
+\resetques
+
+  \item $5x^{2}-7x-6$
+
+        \phantom{$=(5x+3)(x-2)$}
+
+  \item $6x^{2}+11x-21$
+
+        \phantom{$=(6x-7)(x+3)$}
+
+  \item $2x^{2}-7x+6$
+
+        \phantom{$=(2x-3)(x-2)$}
+
+  \item $x^{2}+8x+15$
+
+        \phantom{$=(x+5)(x+3)$}
+
+  \item $27x^{2}-15x+2$
+
+        \phantom{$=(3x-1)(9x-2)$}
+
+  \item $14x^{2}-5x-6$
+
+        \phantom{$=(7x-6)(2x+1)$}
+
+  \item $x^{2}-4$
+
+        \phantom{$=(x+2)(x-2)$}
+
+  \item $8x^{2}+15x-27$
+
+        \phantom{$=(8x-9)(x+3)$}
+
+  \item $15x^{2}-44x+32$
+
+        \phantom{$=(5x-8)(3x-4)$}
+
+  \item $2x^{2}-13x+21$
+
+        \phantom{$=(x-3)(2x-7)$}
+
+\columnbreak % 460
+
+  \item $25x^{2}-64$
+
+        \phantom{$=(5x+8)(5x-8)$}
+
+  \item $7x^{2}+33x+20$
+
+        \phantom{$=(7x+5)(x+4)$}
+
+  \item $10x^{2}+19x+6$
+
+        \phantom{$=(2x+3)(5x+2)$}
+
+  \item $2x^{2}+5x+3$
+
+        \phantom{$=(2x+3)(x+1)$}
+
+  \item $40x^{2}+7x-3$
+
+        \phantom{$=(8x+3)(5x-1)$}
+
+  \item $4x^{2}+4x-15$
+
+        \phantom{$=(2x-3)(2x+5)$}
+
+  \item $4x^{2}-8x+3$
+
+        \phantom{$=(2x-1)(2x-3)$}
+
+  \item $20x^{2}+11x-3$
+
+        \phantom{$=(4x+3)(5x-1)$}
+
+  \item $16x^{2}-10x-21$
+
+        \phantom{$=(8x+7)(2x-3)$}
+
+  \item $8x^{2}-6x+1$
+
+        \phantom{$=(4x-1)(2x-1)$}
+
+\columnbreak % 470
+
+  \item $12x^{2}+29x-8$
+
+        \phantom{$=(3x+8)(4x-1)$}
+
+  \item $16x^{2}-24x+9$
+
+        \phantom{$=(4x-3)^{2}$}
+
+  \item $72x^{2}-65x-18$
+
+        \phantom{$=(8x-9)(9x+2)$}
+
+  \item $5x^{2}+x-4$
+
+        \phantom{$=(5x-4)(x+1)$}
+
+  \item $18x^{2}+35x+12$
+
+        \phantom{$=(2x+3)(9x+4)$}
+
+  \item $32x^{2}-28x+3$
+
+        \phantom{$=(4x-3)(8x-1)$}
+
+  \item $45x^{2}+56x-45$
+
+        \phantom{$=(5x+9)(9x-5)$}
+
+  \item $7x^{2}-20x+12$
+
+        \phantom{$=(x-2)(7x-6)$}
+
+  \item $14x^{2}-5x-24$
+
+        \phantom{$=(7x+8)(2x-3)$}
+
+  \item $4x^{2}-7x+3$
+
+        \phantom{$=(x-1)(4x-3)$}
+
+\columnbreak % 480
+
+\resetques
+
+  \item $25x^{2}-30x-7$
+
+        \phantom{$=(5x-7)(5x+1)$}
+
+  \item $3x^{2}-7x+4$
+
+        \phantom{$=(x-1)(3x-4)$}
+
+  \item $4x^{2}-12x-27$
+
+        \phantom{$=(2x+3)(2x-9)$}
+
+  \item $12x^{2}+31x+7$
+
+        \phantom{$=(4x+1)(3x+7)$}
+
+  \item $21x^{2}-37x-28$
+
+        \phantom{$=(3x-7)(7x+4)$}
+
+  \item $x^{2}+2x+1$
+
+        \phantom{$=(x+1)^{2}$}
+
+  \item $3x^{2}-10x+8$
+
+        \phantom{$=(3x-4)(x-2)$}
+
+  \item $15x^{2}+7x-2$
+
+        \phantom{$=(5x-1)(3x+2)$}
+
+  \item $9x^{2}+24x+7$
+
+        \phantom{$=(3x+7)(3x+1)$}
+
+  \item $5x^{2}+8x+3$
+
+        \phantom{$=(x+1)(5x+3)$}
+
+\columnbreak % 490
+
+  \item $x^{2}-9x+8$
+
+        \phantom{$=(x-1)(x-8)$}
+
+  \item $36x^{2}-73x-18$
+
+        \phantom{$=(4x-9)(9x+2)$}
+
+  \item $6x^{2}-13x+7$
+
+        \phantom{$=(x-1)(6x-7)$}
+
+  \item $49x^{2}-14x-48$
+
+        \phantom{$=(7x-8)(7x+6)$}
+
+  \item $5x^{2}+2x-7$
+
+        \phantom{$=(5x+7)(x-1)$}
+
+  \item $x^{2}+2x-8$
+
+        \phantom{$=(x+4)(x-2)$}
+
+  \item $40x^{2}-49x-24$
+
+        \phantom{$=(5x-8)(8x+3)$}
+
+  \item $9x^{2}-5x-4$
+
+        \phantom{$=(x-1)(9x+4)$}
+
+  \item $72x^{2}-x-1$
+
+        \phantom{$=(8x-1)(9x+1)$}
+
+  \item $7x^{2}+5x-2$
+
+        \phantom{$=(7x-2)(x+1)$}
+
+\columnbreak % 500
+
+  \item $14x^{2}-19x-3$
+
+        \phantom{$=(7x+1)(2x-3)$}
+
+  \item $10x^{2}-13x+4$
+
+        \phantom{$=(5x-4)(2x-1)$}
+
+  \item $12x^{2}-20x+3$
+
+        \phantom{$=(2x-3)(6x-1)$}
+
+  \item $49x^{2}+21x-40$
+
+        \phantom{$=(7x+8)(7x-5)$}
+
+  \item $3x^{2}+8x-3$
+
+        \phantom{$=(3x-1)(x+3)$}
+
+  \item $x^{2}-8x-9$
+
+        \phantom{$=(x+1)(x-9)$}
+
+  \item $6x^{2}+11x+5$
+
+        \phantom{$=(6x+5)(x+1)$}
+
+  \item $14x^{2}-9x+1$
+
+        \phantom{$=(7x-1)(2x-1)$}
+
+  \item $20x^{2}+29x+6$
+
+        \phantom{$=(5x+6)(4x+1)$}
+
+  \item $6x^{2}+7x+1$
+
+        \phantom{$=(6x+1)(x+1)$}
+
+\columnbreak % 510
+
+\resetques
+
+  \item $36x^{2}+x-2$
+
+        \phantom{$=(9x-2)(4x+1)$}
+
+  \item $2x^{2}-x-1$
+
+        \phantom{$=(x-1)(2x+1)$}
+
+  \item $35x^{2}+27x+4$
+
+        \phantom{$=(7x+4)(5x+1)$}
+
+  \item $27x^{2}+12x+1$
+
+        \phantom{$=(3x+1)(9x+1)$}
+
+  \item $14x^{2}-9x-8$
+
+        \phantom{$=(2x+1)(7x-8)$}
+
+  \item $40x^{2}+11x-2$
+
+        \phantom{$=(5x+2)(8x-1)$}
+
+  \item $3x^{2}-17x+10$
+
+        \phantom{$=(x-5)(3x-2)$}
+
+  \item $24x^{2}-7x-5$
+
+        \phantom{$=(3x+1)(8x-5)$}
+
+  \item $10x^{2}-31x-63$
+
+        \phantom{$=(5x+7)(2x-9)$}
+
+  \item $18x^{2}-23x+7$
+
+        \phantom{$=(9x-7)(2x-1)$}
+
+\columnbreak % 520
+
+  \item $2x^{2}-19x+24$
+
+        \phantom{$=(2x-3)(x-8)$}
+
+  \item $40x^{2}-11x-2$
+
+        \phantom{$=(8x+1)(5x-2)$}
+
+  \item $8x^{2}-22x+15$
+
+        \phantom{$=(2x-3)(4x-5)$}
+
+  \item $8x^{2}+33x+4$
+
+        \phantom{$=(x+4)(8x+1)$}
+
+  \item $72x^{2}+19x-40$
+
+        \phantom{$=(9x+8)(8x-5)$}
+
+  \item $9x^{2}-18x-16$
+
+        \phantom{$=(3x+2)(3x-8)$}
+
+  \item $x^{2}+10x+9$
+
+        \phantom{$=(x+9)(x+1)$}
+
+  \item $x^{2}+12x+27$
+
+        \phantom{$=(x+3)(x+9)$}
+
+  \item $16x^{2}-9$
+
+        \phantom{$=(4x-3)(4x+3)$}
+
+  \item $40x^{2}-29x-56$
+
+        \phantom{$=(8x+7)(5x-8)$}
+
+\columnbreak % 530
+
+  \item $5x^{2}+28x-12$
+
+        \phantom{$=(5x-2)(x+6)$}
+
+  \item $x^{2}-x-2$
+
+        \phantom{$=(x-2)(x+1)$}
+
+  \item $5x^{2}-13x+8$
+
+        \phantom{$=(x-1)(5x-8)$}
+
+  \item $25x^{2}-50x+24$
+
+        \phantom{$=(5x-6)(5x-4)$}
+
+  \item $2x^{2}+7x-9$
+
+        \phantom{$=(2x+9)(x-1)$}
+
+  \item $6x^{2}-7x-3$
+
+        \phantom{$=(2x-3)(3x+1)$}
+
+  \item $x^{2}-x-2$
+
+        \phantom{$=(x+1)(x-2)$}
+
+  \item $32x^{2}+44x+5$
+
+        \phantom{$=(8x+1)(4x+5)$}
+
+  \item $6x^{2}-7x-5$
+
+        \phantom{$=(2x+1)(3x-5)$}
+
+  \item $3x^{2}+10x+7$
+
+        \phantom{$=(x+1)(3x+7)$}
+
+\columnbreak % 540
+
+\resetques
+
+  \item $8x^{2}-45x-18$
+
+        \phantom{$=(8x+3)(x-6)$}
+
+  \item $2x^{2}-21x+49$
+
+        \phantom{$=(x-7)(2x-7)$}
+
+  \item $3x^{2}-2x-1$
+
+        \phantom{$=(x-1)(3x+1)$}
+
+  \item $6x^{2}-31x+28$
+
+        \phantom{$=(6x-7)(x-4)$}
+
+  \item $35x^{2}-29x-28$
+
+        \phantom{$=(7x+4)(5x-7)$}
+
+  \item $3x^{2}-8x+4$
+
+        \phantom{$=(x-2)(3x-2)$}
+
+  \item $45x^{2}+16x-16$
+
+        \phantom{$=(5x+4)(9x-4)$}
+
+  \item $4x^{2}-13x+9$
+
+        \phantom{$=(4x-9)(x-1)$}
+
+  \item $63x^{2}-62x+15$
+
+        \phantom{$=(9x-5)(7x-3)$}
+
+  \item $10x^{2}+3x-4$
+
+        \phantom{$=(2x-1)(5x+4)$}
+
+\columnbreak % 550
+
+  \item $3x^{2}+7x+4$
+
+        \phantom{$=(x+1)(3x+4)$}
+
+  \item $x^{2}+9x+18$
+
+        \phantom{$=(x+6)(x+3)$}
+
+  \item $21x^{2}+2x-8$
+
+        \phantom{$=(3x+2)(7x-4)$}
+
+  \item $10x^{2}-11x-8$
+
+        \phantom{$=(5x-8)(2x+1)$}
+
+  \item $5x^{2}+32x+35$
+
+        \phantom{$=(5x+7)(x+5)$}
+
+  \item $9x^{2}+8x-1$
+
+        \phantom{$=(9x-1)(x+1)$}
+
+  \item $3x^{2}+29x+18$
+
+        \phantom{$=(x+9)(3x+2)$}
+
+  \item $3x^{2}+11x+6$
+
+        \phantom{$=(x+3)(3x+2)$}
+
+  \item $7x^{2}-37x+36$
+
+        \phantom{$=(7x-9)(x-4)$}
+
+  \item $7x^{2}-10x+3$
+
+        \phantom{$=(x-1)(7x-3)$}
+
+\columnbreak % 560
+
+  \item $12x^{2}-5x-2$
+
+        \phantom{$=(3x-2)(4x+1)$}
+
+  \item $20x^{2}+31x+12$
+
+        \phantom{$=(4x+3)(5x+4)$}
+
+  \item $2x^{2}+x-28$
+
+        \phantom{$=(x+4)(2x-7)$}
+
+  \item $64x^{2}+16x-63$
+
+        \phantom{$=(8x+9)(8x-7)$}
+
+  \item $9x^{2}+15x-14$
+
+        \phantom{$=(3x-2)(3x+7)$}
+
+  \item $x^{2}-8x+15$
+
+        \phantom{$=(x-3)(x-5)$}
+
+  \item $63x^{2}+x-12$
+
+        \phantom{$=(9x+4)(7x-3)$}
+
+  \item $8x^{2}+57x+54$
+
+        \phantom{$=(8x+9)(x+6)$}
+
+  \item $9x^{2}-65x-56$
+
+        \phantom{$=(9x+7)(x-8)$}
+
+  \item $63x^{2}-92x+32$
+
+        \phantom{$=(9x-8)(7x-4)$}
+
+\columnbreak % 570
+
+\resetques
+
+  \item $16x^{2}-2x-3$
+
+        \phantom{$=(2x-1)(8x+3)$}
+
+  \item $28x^{2}-19x-20$
+
+        \phantom{$=(4x-5)(7x+4)$}
+
+  \item $15x^{2}+2x-8$
+
+        \phantom{$=(5x+4)(3x-2)$}
+
+  \item $7x^{2}-16x+9$
+
+        \phantom{$=(x-1)(7x-9)$}
+
+  \item $4x^{2}-5x-6$
+
+        \phantom{$=(4x+3)(x-2)$}
+
+  \item $4x^{2}-15x+9$
+
+        \phantom{$=(x-3)(4x-3)$}
+
+  \item $12x^{2}-7x+1$
+
+        \phantom{$=(4x-1)(3x-1)$}
+
+  \item $27x^{2}+12x-7$
+
+        \phantom{$=(3x-1)(9x+7)$}
+
+  \item $7x^{2}-3x-4$
+
+        \phantom{$=(x-1)(7x+4)$}
+
+  \item $40x^{2}+3x-28$
+
+        \phantom{$=(8x+7)(5x-4)$}
+
+\columnbreak % 580
+
+  \item $7x^{2}+34x+24$
+
+        \phantom{$=(7x+6)(x+4)$}
+
+  \item $6x^{2}+5x-1$
+
+        \phantom{$=(x+1)(6x-1)$}
+
+  \item $4x^{2}+5x-9$
+
+        \phantom{$=(x-1)(4x+9)$}
+
+  \item $24x^{2}+19x-9$
+
+        \phantom{$=(8x+9)(3x-1)$}
+
+  \item $12x^{2}+37x+28$
+
+        \phantom{$=(3x+4)(4x+7)$}
+
+  \item $4x^{2}+7x+3$
+
+        \phantom{$=(4x+3)(x+1)$}
+
+  \item $49x^{2}-9$
+
+        \phantom{$=(7x+3)(7x-3)$}
+
+  \item $28x^{2}+5x-3$
+
+        \phantom{$=(4x-1)(7x+3)$}
+
+  \item $12x^{2}-23x-9$
+
+        \phantom{$=(4x-9)(3x+1)$}
+
+  \item $2x^{2}-x-3$
+
+        \phantom{$=(x+1)(2x-3)$}
+
+\columnbreak % 590
+
+  \item $15x^{2}-29x+12$
+
+        \phantom{$=(5x-3)(3x-4)$}
+
+  \item $4x^{2}-x-14$
+
+        \phantom{$=(4x+7)(x-2)$}
+
+  \item $2x^{2}+x-1$
+
+        \phantom{$=(x+1)(2x-1)$}
+
+  \item $72x^{2}+85x+25$
+
+        \phantom{$=(9x+5)(8x+5)$}
+
+  \item $40x^{2}-101x+63$
+
+        \phantom{$=(5x-7)(8x-9)$}
+
+  \item $12x^{2}+44x+35$
+
+        \phantom{$=(6x+7)(2x+5)$}
+
+  \item $x^{2}-8x+7$
+
+        \phantom{$=(x-1)(x-7)$}
+
+  \item $4x^{2}-1$
+
+        \phantom{$=(2x+1)(2x-1)$}
+
+  \item $3x^{2}-7x-6$
+
+        \phantom{$=(x-3)(3x+2)$}
+
+  \item $6x^{2}-7x-24$
+
+        \phantom{$=(2x+3)(3x-8)$}
+
+\end{enumerate}
+\end{multicols}
+
+\newpage
+\resetdrill
+
+\begin{multicols}{3}
+\begin{enumerate}
+  \itemsep=30pt
+  \item $14x^{2}-x-4$
+
+        $=(7x-4)(2x+1)$
+
+  \item $3x^{2}+11x-4$
+
+        $=(3x-1)(x+4)$
+
+  \item $24x^{2}+35x+4$
+
+        $=(3x+4)(8x+1)$
+
+  \item $2x^{2}-9x-81$
+
+        $=(x-9)(2x+9)$
+
+  \item $2x^{2}-17x-9$
+
+        $=(2x+1)(x-9)$
+
+  \item $24x^{2}+5x-1$
+
+        $=(3x+1)(8x-1)$
+
+  \item $5x^{2}+12x+4$
+
+        $=(5x+2)(x+2)$
+
+  \item $48x^{2}+22x-5$
+
+        $=(8x+5)(6x-1)$
+
+  \item $18x^{2}+45x-8$
+
+        $=(6x-1)(3x+8)$
+
+  \item $3x^{2}-2x-8$
+
+        $=(3x+4)(x-2)$
+
+\columnbreak % 10
+
+  \item $4x^{2}+27x+18$
+
+        $=(4x+3)(x+6)$
+
+  \item $x^{2}-1$
+
+        $=(x-1)(x+1)$
+
+  \item $7x^{2}-10x-8$
+
+        $=(x-2)(7x+4)$
+
+  \item $14x^{2}-23x+8$
+
+        $=(2x-1)(7x-8)$
+
+  \item $3x^{2}-31x+36$
+
+        $=(x-9)(3x-4)$
+
+  \item $3x^{2}+8x+4$
+
+        $=(x+2)(3x+2)$
+
+  \item $15x^{2}+16x-15$
+
+        $=(3x+5)(5x-3)$
+
+  \item $9x^{2}+21x+10$
+
+        $=(3x+2)(3x+5)$
+
+  \item $x^{2}-9x+20$
+
+        $=(x-4)(x-5)$
+
+  \item $18x^{2}+43x+24$
+
+        $=(2x+3)(9x+8)$
+
+\columnbreak % 20
+
+  \item $4x^{2}-16x-9$
+
+        $=(2x-9)(2x+1)$
+
+  \item $36x^{2}-7x-4$
+
+        $=(9x-4)(4x+1)$
+
+  \item $2x^{2}-x-1$
+
+        $=(2x+1)(x-1)$
+
+  \item $10x^{2}-11x+3$
+
+        $=(5x-3)(2x-1)$
+
+  \item $3x^{2}-16x+21$
+
+        $=(x-3)(3x-7)$
+
+  \item $9x^{2}+11x+2$
+
+        $=(9x+2)(x+1)$
+
+  \item $7x^{2}+11x+4$
+
+        $=(7x+4)(x+1)$
+
+  \item $12x^{2}-17x-7$
+
+        $=(3x+1)(4x-7)$
+
+  \item $10x^{2}+43x-9$
+
+        $=(5x-1)(2x+9)$
+
+  \item $x^{2}-x-2$
+
+        $=(x-2)(x+1)$
+
+\columnbreak % 30
+
+\resetques
+
+  \item $24x^{2}-83x+63$
+
+        $=(3x-7)(8x-9)$
+
+  \item $10x^{2}+x-3$
+
+        $=(2x-1)(5x+3)$
+
+  \item $24x^{2}-50x-9$
+
+        $=(6x+1)(4x-9)$
+
+  \item $5x^{2}-11x+6$
+
+        $=(5x-6)(x-1)$
+
+  \item $25x^{2}-90x+81$
+
+        $=(5x-9)^{2}$
+
+  \item $14x^{2}-15x-9$
+
+        $=(2x-3)(7x+3)$
+
+  \item $6x^{2}-35x+25$
+
+        $=(x-5)(6x-5)$
+
+  \item $8x^{2}+10x+3$
+
+        $=(2x+1)(4x+3)$
+
+  \item $7x^{2}+4x-3$
+
+        $=(x+1)(7x-3)$
+
+  \item $56x^{2}+59x+15$
+
+        $=(8x+5)(7x+3)$
+
+\columnbreak % 40
+
+  \item $2x^{2}-5x-7$
+
+        $=(x+1)(2x-7)$
+
+  \item $24x^{2}-11x+1$
+
+        $=(8x-1)(3x-1)$
+
+  \item $21x^{2}+11x-6$
+
+        $=(3x-1)(7x+6)$
+
+  \item $2x^{2}-21x+27$
+
+        $=(2x-3)(x-9)$
+
+  \item $9x^{2}-10x+1$
+
+        $=(x-1)(9x-1)$
+
+  \item $x^{2}-9x+8$
+
+        $=(x-8)(x-1)$
+
+  \item $18x^{2}+31x-35$
+
+        $=(2x+5)(9x-7)$
+
+  \item $63x^{2}+37x-40$
+
+        $=(7x+8)(9x-5)$
+
+  \item $6x^{2}+17x-14$
+
+        $=(2x+7)(3x-2)$
+
+  \item $2x^{2}+17x+35$
+
+        $=(x+5)(2x+7)$
+
+\columnbreak % 50
+
+  \item $15x^{2}+26x+7$
+
+        $=(5x+7)(3x+1)$
+
+  \item $35x^{2}-4x-4$
+
+        $=(7x+2)(5x-2)$
+
+  \item $3x^{2}+x-2$
+
+        $=(3x-2)(x+1)$
+
+  \item $4x^{2}+12x+9$
+
+        $=(2x+3)^{2}$
+
+  \item $14x^{2}+51x+7$
+
+        $=(7x+1)(2x+7)$
+
+  \item $x^{2}+4x+3$
+
+        $=(x+1)(x+3)$
+
+  \item $56x^{2}+3x-9$
+
+        $=(8x-3)(7x+3)$
+
+  \item $5x^{2}+11x+6$
+
+        $=(x+1)(5x+6)$
+
+  \item $40x^{2}+23x+3$
+
+        $=(8x+3)(5x+1)$
+
+  \item $9x^{2}-15x+4$
+
+        $=(3x-1)(3x-4)$
+
+\columnbreak % 60
+
+\resetques
+
+  \item $x^{2}+5x+6$
+
+        $=(x+2)(x+3)$
+
+  \item $8x^{2}+13x+5$
+
+        $=(x+1)(8x+5)$
+
+  \item $x^{2}-7x+6$
+
+        $=(x-6)(x-1)$
+
+  \item $x^{2}-1$
+
+        $=(x-1)(x+1)$
+
+  \item $9x^{2}+46x-48$
+
+        $=(9x-8)(x+6)$
+
+  \item $5x^{2}-8x+3$
+
+        $=(x-1)(5x-3)$
+
+  \item $40x^{2}-23x+3$
+
+        $=(8x-3)(5x-1)$
+
+  \item $4x^{2}-35x+24$
+
+        $=(4x-3)(x-8)$
+
+  \item $21x^{2}+32x+12$
+
+        $=(3x+2)(7x+6)$
+
+  \item $72x^{2}+73x-9$
+
+        $=(9x-1)(8x+9)$
+
+\columnbreak % 70
+
+  \item $2x^{2}+7x+3$
+
+        $=(x+3)(2x+1)$
+
+  \item $8x^{2}-9x-14$
+
+        $=(x-2)(8x+7)$
+
+  \item $2x^{2}+19x+24$
+
+        $=(x+8)(2x+3)$
+
+  \item $5x^{2}-12x-9$
+
+        $=(x-3)(5x+3)$
+
+  \item $27x^{2}+69x+14$
+
+        $=(3x+7)(9x+2)$
+
+  \item $45x^{2}-76x-9$
+
+        $=(5x-9)(9x+1)$
+
+  \item $7x^{2}+16x+9$
+
+        $=(x+1)(7x+9)$
+
+  \item $54x^{2}+57x+8$
+
+        $=(6x+1)(9x+8)$
+
+  \item $6x^{2}+5x-4$
+
+        $=(2x-1)(3x+4)$
+
+  \item $2x^{2}+3x-9$
+
+        $=(x+3)(2x-3)$
+
+\columnbreak % 80
+
+  \item $6x^{2}+x-2$
+
+        $=(2x-1)(3x+2)$
+
+  \item $32x^{2}+20x-7$
+
+        $=(8x+7)(4x-1)$
+
+  \item $7x^{2}+13x+6$
+
+        $=(x+1)(7x+6)$
+
+  \item $3x^{2}-10x-8$
+
+        $=(3x+2)(x-4)$
+
+  \item $18x^{2}-45x+28$
+
+        $=(3x-4)(6x-7)$
+
+  \item $81x^{2}-18x-8$
+
+        $=(9x+2)(9x-4)$
+
+  \item $14x^{2}-x-3$
+
+        $=(2x-1)(7x+3)$
+
+  \item $9x^{2}-16x+7$
+
+        $=(9x-7)(x-1)$
+
+  \item $x^{2}-9$
+
+        $=(x+3)(x-3)$
+
+  \item $5x^{2}+22x-48$
+
+        $=(5x-8)(x+6)$
+
+\columnbreak % 90
+
+\resetques
+
+  \item $9x^{2}-x-8$
+
+        $=(9x+8)(x-1)$
+
+  \item $24x^{2}-x-10$
+
+        $=(8x+5)(3x-2)$
+
+  \item $8x^{2}+18x-5$
+
+        $=(2x+5)(4x-1)$
+
+  \item $4x^{2}-13x+9$
+
+        $=(x-1)(4x-9)$
+
+  \item $32x^{2}+20x-7$
+
+        $=(8x+7)(4x-1)$
+
+  \item $20x^{2}-3x-2$
+
+        $=(4x+1)(5x-2)$
+
+  \item $3x^{2}-5x-12$
+
+        $=(3x+4)(x-3)$
+
+  \item $4x^{2}-29x-24$
+
+        $=(4x+3)(x-8)$
+
+  \item $x^{2}+10x+9$
+
+        $=(x+9)(x+1)$
+
+  \item $7x^{2}-x-8$
+
+        $=(7x-8)(x+1)$
+
+\columnbreak % 100
+
+  \item $2x^{2}+13x-7$
+
+        $=(2x-1)(x+7)$
+
+  \item $4x^{2}-3x-27$
+
+        $=(4x+9)(x-3)$
+
+  \item $5x^{2}-22x+21$
+
+        $=(5x-7)(x-3)$
+
+  \item $8x^{2}+10x-7$
+
+        $=(4x+7)(2x-1)$
+
+  \item $x^{2}-2x-24$
+
+        $=(x-6)(x+4)$
+
+  \item $8x^{2}+43x+15$
+
+        $=(8x+3)(x+5)$
+
+  \item $32x^{2}-12x-9$
+
+        $=(4x-3)(8x+3)$
+
+  \item $9x^{2}-28x+3$
+
+        $=(9x-1)(x-3)$
+
+  \item $30x^{2}+19x-4$
+
+        $=(5x+4)(6x-1)$
+
+  \item $45x^{2}+11x-4$
+
+        $=(9x+4)(5x-1)$
+
+\columnbreak % 110
+
+  \item $28x^{2}-43x+9$
+
+        $=(4x-1)(7x-9)$
+
+  \item $3x^{2}+x-10$
+
+        $=(x+2)(3x-5)$
+
+  \item $3x^{2}-19x+6$
+
+        $=(3x-1)(x-6)$
+
+  \item $2x^{2}-5x+3$
+
+        $=(x-1)(2x-3)$
+
+  \item $7x^{2}-11x+4$
+
+        $=(x-1)(7x-4)$
+
+  \item $7x^{2}-54x+35$
+
+        $=(x-7)(7x-5)$
+
+  \item $4x^{2}+9x+5$
+
+        $=(4x+5)(x+1)$
+
+  \item $7x^{2}-x-8$
+
+        $=(x+1)(7x-8)$
+
+  \item $7x^{2}-x-8$
+
+        $=(x+1)(7x-8)$
+
+  \item $16x^{2}-10x-9$
+
+        $=(8x-9)(2x+1)$
+
+\columnbreak % 120
+
+\resetques
+
+  \item $35x^{2}-33x+4$
+
+        $=(5x-4)(7x-1)$
+
+  \item $35x^{2}-37x-6$
+
+        $=(5x-6)(7x+1)$
+
+  \item $9x^{2}+9x-4$
+
+        $=(3x+4)(3x-1)$
+
+  \item $4x^{2}+37x+9$
+
+        $=(x+9)(4x+1)$
+
+  \item $7x^{2}+13x-24$
+
+        $=(7x-8)(x+3)$
+
+  \item $3x^{2}+2x-8$
+
+        $=(x+2)(3x-4)$
+
+  \item $9x^{2}-11x+2$
+
+        $=(9x-2)(x-1)$
+
+  \item $5x^{2}-24x+16$
+
+        $=(x-4)(5x-4)$
+
+  \item $9x^{2}+25x+14$
+
+        $=(9x+7)(x+2)$
+
+  \item $8x^{2}-7x-1$
+
+        $=(8x+1)(x-1)$
+
+\columnbreak % 130
+
+  \item $12x^{2}+7x+1$
+
+        $=(3x+1)(4x+1)$
+
+  \item $24x^{2}+35x+9$
+
+        $=(3x+1)(8x+9)$
+
+  \item $8x^{2}-34x-9$
+
+        $=(4x+1)(2x-9)$
+
+  \item $5x^{2}-31x-28$
+
+        $=(5x+4)(x-7)$
+
+  \item $15x^{2}+4x-32$
+
+        $=(5x+8)(3x-4)$
+
+  \item $2x^{2}+5x+2$
+
+        $=(x+2)(2x+1)$
+
+  \item $15x^{2}+16x-7$
+
+        $=(5x+7)(3x-1)$
+
+  \item $4x^{2}+5x-9$
+
+        $=(4x+9)(x-1)$
+
+  \item $40x^{2}+79x+24$
+
+        $=(5x+8)(8x+3)$
+
+  \item $6x^{2}+x-1$
+
+        $=(2x+1)(3x-1)$
+
+\columnbreak % 140
+
+  \item $x^{2}+2x-3$
+
+        $=(x+3)(x-1)$
+
+  \item $20x^{2}-x-12$
+
+        $=(5x-4)(4x+3)$
+
+  \item $7x^{2}-16x+9$
+
+        $=(x-1)(7x-9)$
+
+  \item $21x^{2}-41x+18$
+
+        $=(7x-9)(3x-2)$
+
+  \item $18x^{2}-31x+6$
+
+        $=(9x-2)(2x-3)$
+
+  \item $3x^{2}+11x+8$
+
+        $=(3x+8)(x+1)$
+
+  \item $7x^{2}-57x+8$
+
+        $=(7x-1)(x-8)$
+
+  \item $27x^{2}-15x+2$
+
+        $=(9x-2)(3x-1)$
+
+  \item $21x^{2}-8x-4$
+
+        $=(3x-2)(7x+2)$
+
+  \item $25x^{2}-50x+9$
+
+        $=(5x-1)(5x-9)$
+
+\columnbreak % 150
+
+\resetques
+
+  \item $3x^{2}-4x-32$
+
+        $=(3x+8)(x-4)$
+
+  \item $7x^{2}-13x-24$
+
+        $=(x-3)(7x+8)$
+
+  \item $5x^{2}+24x+16$
+
+        $=(5x+4)(x+4)$
+
+  \item $x^{2}+4x-5$
+
+        $=(x-1)(x+5)$
+
+  \item $8x^{2}-x-7$
+
+        $=(x-1)(8x+7)$
+
+  \item $49x^{2}+14x-15$
+
+        $=(7x+5)(7x-3)$
+
+  \item $27x^{2}-66x+35$
+
+        $=(9x-7)(3x-5)$
+
+  \item $6x^{2}-13x-5$
+
+        $=(2x-5)(3x+1)$
+
+  \item $3x^{2}+16x+16$
+
+        $=(x+4)(3x+4)$
+
+  \item $45x^{2}-43x+10$
+
+        $=(9x-5)(5x-2)$
+
+\columnbreak % 160
+
+  \item $48x^{2}-70x+25$
+
+        $=(6x-5)(8x-5)$
+
+  \item $8x^{2}+27x-20$
+
+        $=(8x-5)(x+4)$
+
+  \item $21x^{2}-10x-16$
+
+        $=(7x-8)(3x+2)$
+
+  \item $4x^{2}-12x-27$
+
+        $=(2x+3)(2x-9)$
+
+  \item $12x^{2}-4x-5$
+
+        $=(2x+1)(6x-5)$
+
+  \item $15x^{2}-49x+24$
+
+        $=(5x-3)(3x-8)$
+
+  \item $27x^{2}-57x+28$
+
+        $=(9x-7)(3x-4)$
+
+  \item $8x^{2}-33x+27$
+
+        $=(x-3)(8x-9)$
+
+  \item $21x^{2}-13x-20$
+
+        $=(7x+5)(3x-4)$
+
+  \item $2x^{2}+21x+27$
+
+        $=(2x+3)(x+9)$
+
+\columnbreak % 170
+
+  \item $14x^{2}-17x+5$
+
+        $=(2x-1)(7x-5)$
+
+  \item $2x^{2}+15x+27$
+
+        $=(2x+9)(x+3)$
+
+  \item $28x^{2}-71x+45$
+
+        $=(7x-9)(4x-5)$
+
+  \item $x^{2}-12x+32$
+
+        $=(x-4)(x-8)$
+
+  \item $6x^{2}+25x+4$
+
+        $=(x+4)(6x+1)$
+
+  \item $4x^{2}+x-3$
+
+        $=(4x-3)(x+1)$
+
+  \item $27x^{2}-12x-7$
+
+        $=(9x-7)(3x+1)$
+
+  \item $8x^{2}+18x-5$
+
+        $=(2x+5)(4x-1)$
+
+  \item $32x^{2}-4x-21$
+
+        $=(8x-7)(4x+3)$
+
+  \item $5x^{2}+8x-4$
+
+        $=(x+2)(5x-2)$
+
+\columnbreak % 180
+
+\resetques
+
+  \item $27x^{2}-57x+28$
+
+        $=(3x-4)(9x-7)$
+
+  \item $7x^{2}+16x+4$
+
+        $=(x+2)(7x+2)$
+
+  \item $49x^{2}-1$
+
+        $=(7x-1)(7x+1)$
+
+  \item $6x^{2}-53x+40$
+
+        $=(6x-5)(x-8)$
+
+  \item $56x^{2}+9x-35$
+
+        $=(8x+7)(7x-5)$
+
+  \item $81x^{2}+63x-8$
+
+        $=(9x-1)(9x+8)$
+
+  \item $10x^{2}-23x+12$
+
+        $=(2x-3)(5x-4)$
+
+  \item $14x^{2}+23x+3$
+
+        $=(7x+1)(2x+3)$
+
+  \item $8x^{2}+11x+3$
+
+        $=(x+1)(8x+3)$
+
+  \item $27x^{2}+24x-16$
+
+        $=(3x+4)(9x-4)$
+
+\columnbreak % 190
+
+  \item $12x^{2}-32x+21$
+
+        $=(2x-3)(6x-7)$
+
+  \item $3x^{2}+4x+1$
+
+        $=(3x+1)(x+1)$
+
+  \item $x^{2}+2x-35$
+
+        $=(x-5)(x+7)$
+
+  \item $8x^{2}-13x+5$
+
+        $=(8x-5)(x-1)$
+
+  \item $2x^{2}+x-3$
+
+        $=(2x+3)(x-1)$
+
+  \item $5x^{2}+32x+12$
+
+        $=(5x+2)(x+6)$
+
+  \item $8x^{2}+21x+10$
+
+        $=(x+2)(8x+5)$
+
+  \item $9x^{2}-41x+20$
+
+        $=(9x-5)(x-4)$
+
+  \item $8x^{2}-2x-1$
+
+        $=(4x+1)(2x-1)$
+
+  \item $12x^{2}+25x+12$
+
+        $=(4x+3)(3x+4)$
+
+\columnbreak % 200
+
+  \item $15x^{2}-52x+32$
+
+        $=(5x-4)(3x-8)$
+
+  \item $18x^{2}+33x+14$
+
+        $=(6x+7)(3x+2)$
+
+  \item $45x^{2}-37x+6$
+
+        $=(5x-3)(9x-2)$
+
+  \item $24x^{2}-5x-36$
+
+        $=(8x+9)(3x-4)$
+
+  \item $14x^{2}-47x+30$
+
+        $=(2x-5)(7x-6)$
+
+  \item $5x^{2}-16x+3$
+
+        $=(5x-1)(x-3)$
+
+  \item $24x^{2}+53x-7$
+
+        $=(8x-1)(3x+7)$
+
+  \item $x^{2}-4$
+
+        $=(x-2)(x+2)$
+
+  \item $x^{2}-11x+24$
+
+        $=(x-8)(x-3)$
+
+  \item $9x^{2}+8x-1$
+
+        $=(x+1)(9x-1)$
+
+\columnbreak % 210
+
+\resetques
+
+  \item $40x^{2}+21x-49$
+
+        $=(5x+7)(8x-7)$
+
+  \item $27x^{2}+15x-8$
+
+        $=(3x-1)(9x+8)$
+
+  \item $6x^{2}+7x-3$
+
+        $=(3x-1)(2x+3)$
+
+  \item $5x^{2}+x-6$
+
+        $=(x-1)(5x+6)$
+
+  \item $4x^{2}-3x-1$
+
+        $=(4x+1)(x-1)$
+
+  \item $5x^{2}+12x+7$
+
+        $=(5x+7)(x+1)$
+
+  \item $5x^{2}+13x+8$
+
+        $=(5x+8)(x+1)$
+
+  \item $21x^{2}-25x-4$
+
+        $=(3x-4)(7x+1)$
+
+  \item $27x^{2}-48x-64$
+
+        $=(9x+8)(3x-8)$
+
+  \item $4x^{2}+9x-28$
+
+        $=(x+4)(4x-7)$
+
+\columnbreak % 220
+
+  \item $5x^{2}+14x-24$
+
+        $=(5x-6)(x+4)$
+
+  \item $18x^{2}+15x-7$
+
+        $=(3x-1)(6x+7)$
+
+  \item $7x^{2}-6x-16$
+
+        $=(7x+8)(x-2)$
+
+  \item $5x^{2}-33x+18$
+
+        $=(5x-3)(x-6)$
+
+  \item $8x^{2}-7x-1$
+
+        $=(8x+1)(x-1)$
+
+  \item $63x^{2}+x-20$
+
+        $=(9x-5)(7x+4)$
+
+  \item $x^{2}+15x+56$
+
+        $=(x+7)(x+8)$
+
+  \item $18x^{2}+33x+14$
+
+        $=(6x+7)(3x+2)$
+
+  \item $20x^{2}-23x-7$
+
+        $=(5x-7)(4x+1)$
+
+  \item $6x^{2}-7x-10$
+
+        $=(x-2)(6x+5)$
+
+\columnbreak % 230
+
+  \item $24x^{2}-55x-24$
+
+        $=(8x+3)(3x-8)$
+
+  \item $27x^{2}-87x+56$
+
+        $=(3x-7)(9x-8)$
+
+  \item $56x^{2}-93x+27$
+
+        $=(7x-9)(8x-3)$
+
+  \item $9x^{2}+7x-2$
+
+        $=(9x-2)(x+1)$
+
+  \item $40x^{2}-11x-2$
+
+        $=(5x-2)(8x+1)$
+
+  \item $6x^{2}+19x+14$
+
+        $=(x+2)(6x+7)$
+
+  \item $2x^{2}+x-6$
+
+        $=(2x-3)(x+2)$
+
+  \item $7x^{2}+8x-12$
+
+        $=(7x-6)(x+2)$
+
+  \item $4x^{2}+16x+7$
+
+        $=(2x+1)(2x+7)$
+
+  \item $10x^{2}+19x+7$
+
+        $=(2x+1)(5x+7)$
+
+\columnbreak % 240
+
+\resetques
+
+  \item $12x^{2}-56x+9$
+
+        $=(2x-9)(6x-1)$
+
+  \item $35x^{2}-52x+12$
+
+        $=(7x-2)(5x-6)$
+
+  \item $18x^{2}-35x+12$
+
+        $=(2x-3)(9x-4)$
+
+  \item $x^{2}+9x+18$
+
+        $=(x+3)(x+6)$
+
+  \item $25x^{2}-55x+28$
+
+        $=(5x-4)(5x-7)$
+
+  \item $x^{2}+3x+2$
+
+        $=(x+1)(x+2)$
+
+  \item $4x^{2}-8x+3$
+
+        $=(2x-1)(2x-3)$
+
+  \item $x^{2}-3x+2$
+
+        $=(x-1)(x-2)$
+
+  \item $81x^{2}+90x+16$
+
+        $=(9x+2)(9x+8)$
+
+  \item $28x^{2}+69x+35$
+
+        $=(7x+5)(4x+7)$
+
+\columnbreak % 250
+
+  \item $6x^{2}+23x-18$
+
+        $=(3x-2)(2x+9)$
+
+  \item $9x^{2}-18x+5$
+
+        $=(3x-1)(3x-5)$
+
+  \item $4x^{2}-7x-2$
+
+        $=(4x+1)(x-2)$
+
+  \item $18x^{2}+17x+4$
+
+        $=(2x+1)(9x+4)$
+
+  \item $15x^{2}-37x+18$
+
+        $=(3x-2)(5x-9)$
+
+  \item $10x^{2}+17x+6$
+
+        $=(2x+1)(5x+6)$
+
+  \item $x^{2}-x-12$
+
+        $=(x-4)(x+3)$
+
+  \item $56x^{2}+103x+45$
+
+        $=(7x+5)(8x+9)$
+
+  \item $9x^{2}-27x+8$
+
+        $=(3x-1)(3x-8)$
+
+  \item $8x^{2}+10x+3$
+
+        $=(4x+3)(2x+1)$
+
+\columnbreak % 260
+
+  \item $56x^{2}+95x+36$
+
+        $=(7x+4)(8x+9)$
+
+  \item $x^{2}+4x+3$
+
+        $=(x+3)(x+1)$
+
+  \item $x^{2}-4x+3$
+
+        $=(x-1)(x-3)$
+
+  \item $35x^{2}-12x+1$
+
+        $=(7x-1)(5x-1)$
+
+  \item $28x^{2}+11x-24$
+
+        $=(7x+8)(4x-3)$
+
+  \item $12x^{2}+16x-35$
+
+        $=(2x+5)(6x-7)$
+
+  \item $2x^{2}-x-1$
+
+        $=(2x+1)(x-1)$
+
+  \item $6x^{2}-19x-7$
+
+        $=(2x-7)(3x+1)$
+
+  \item $4x^{2}+3x-1$
+
+        $=(4x-1)(x+1)$
+
+  \item $35x^{2}-61x+24$
+
+        $=(7x-8)(5x-3)$
+
+\columnbreak % 270
+
+\resetques
+
+  \item $x^{2}-1$
+
+        $=(x+1)(x-1)$
+
+  \item $15x^{2}-x-2$
+
+        $=(3x+1)(5x-2)$
+
+  \item $32x^{2}-12x+1$
+
+        $=(8x-1)(4x-1)$
+
+  \item $7x^{2}-x-6$
+
+        $=(7x+6)(x-1)$
+
+  \item $2x^{2}+19x+9$
+
+        $=(2x+1)(x+9)$
+
+  \item $4x^{2}+x-5$
+
+        $=(x-1)(4x+5)$
+
+  \item $7x^{2}+13x-2$
+
+        $=(x+2)(7x-1)$
+
+  \item $10x^{2}+3x-1$
+
+        $=(5x-1)(2x+1)$
+
+  \item $5x^{2}-2x-7$
+
+        $=(x+1)(5x-7)$
+
+  \item $3x^{2}-x-2$
+
+        $=(3x+2)(x-1)$
+
+\columnbreak % 280
+
+  \item $32x^{2}-68x+35$
+
+        $=(8x-7)(4x-5)$
+
+  \item $72x^{2}+29x-21$
+
+        $=(9x+7)(8x-3)$
+
+  \item $9x^{2}-15x+4$
+
+        $=(3x-1)(3x-4)$
+
+  \item $8x^{2}-18x+9$
+
+        $=(4x-3)(2x-3)$
+
+  \item $15x^{2}-58x+48$
+
+        $=(5x-6)(3x-8)$
+
+  \item $9x^{2}+3x-2$
+
+        $=(3x+2)(3x-1)$
+
+  \item $4x^{2}-17x-15$
+
+        $=(4x+3)(x-5)$
+
+  \item $45x^{2}+77x+8$
+
+        $=(9x+1)(5x+8)$
+
+  \item $16x^{2}+10x-9$
+
+        $=(8x+9)(2x-1)$
+
+  \item $49x^{2}+49x+12$
+
+        $=(7x+3)(7x+4)$
+
+\columnbreak % 290
+
+  \item $48x^{2}+50x+7$
+
+        $=(6x+1)(8x+7)$
+
+  \item $2x^{2}-15x+28$
+
+        $=(2x-7)(x-4)$
+
+  \item $3x^{2}-16x+5$
+
+        $=(3x-1)(x-5)$
+
+  \item $3x^{2}-26x+48$
+
+        $=(3x-8)(x-6)$
+
+  \item $15x^{2}-16x-15$
+
+        $=(5x+3)(3x-5)$
+
+  \item $16x^{2}+54x-81$
+
+        $=(8x-9)(2x+9)$
+
+  \item $7x^{2}+4x-3$
+
+        $=(7x-3)(x+1)$
+
+  \item $15x^{2}-17x+4$
+
+        $=(3x-1)(5x-4)$
+
+  \item $x^{2}+14x+49$
+
+        $=(x+7)^{2}$
+
+  \item $2x^{2}+11x+15$
+
+        $=(2x+5)(x+3)$
+
+\columnbreak % 300
+
+\resetques
+
+  \item $x^{2}+9x+8$
+
+        $=(x+1)(x+8)$
+
+  \item $16x^{2}+38x+21$
+
+        $=(2x+3)(8x+7)$
+
+  \item $7x^{2}-20x-32$
+
+        $=(7x+8)(x-4)$
+
+  \item $27x^{2}+3x-14$
+
+        $=(9x+7)(3x-2)$
+
+  \item $35x^{2}+36x-32$
+
+        $=(5x+8)(7x-4)$
+
+  \item $12x^{2}+20x+7$
+
+        $=(6x+7)(2x+1)$
+
+  \item $8x^{2}-7x-1$
+
+        $=(8x+1)(x-1)$
+
+  \item $27x^{2}+42x+16$
+
+        $=(9x+8)(3x+2)$
+
+  \item $x^{2}-8x+12$
+
+        $=(x-2)(x-6)$
+
+  \item $5x^{2}-2x-3$
+
+        $=(x-1)(5x+3)$
+
+\columnbreak % 310
+
+  \item $5x^{2}+43x-18$
+
+        $=(5x-2)(x+9)$
+
+  \item $7x^{2}+8x+1$
+
+        $=(7x+1)(x+1)$
+
+  \item $36x^{2}-101x+45$
+
+        $=(4x-9)(9x-5)$
+
+  \item $21x^{2}-52x+32$
+
+        $=(3x-4)(7x-8)$
+
+  \item $24x^{2}+29x-4$
+
+        $=(8x-1)(3x+4)$
+
+  \item $18x^{2}-23x-6$
+
+        $=(2x-3)(9x+2)$
+
+  \item $9x^{2}+3x-56$
+
+        $=(3x+8)(3x-7)$
+
+  \item $14x^{2}+9x-8$
+
+        $=(2x-1)(7x+8)$
+
+  \item $4x^{2}-7x-15$
+
+        $=(x-3)(4x+5)$
+
+  \item $3x^{2}+x-4$
+
+        $=(3x+4)(x-1)$
+
+\columnbreak % 320
+
+  \item $6x^{2}-5x+1$
+
+        $=(3x-1)(2x-1)$
+
+  \item $4x^{2}+15x+14$
+
+        $=(x+2)(4x+7)$
+
+  \item $x^{2}-1$
+
+        $=(x-1)(x+1)$
+
+  \item $40x^{2}-39x-40$
+
+        $=(8x+5)(5x-8)$
+
+  \item $8x^{2}+2x-3$
+
+        $=(4x+3)(2x-1)$
+
+  \item $20x^{2}+9x-18$
+
+        $=(5x+6)(4x-3)$
+
+  \item $5x^{2}+7x-24$
+
+        $=(5x-8)(x+3)$
+
+  \item $5x^{2}-2x-3$
+
+        $=(5x+3)(x-1)$
+
+  \item $x^{2}-3x-18$
+
+        $=(x+3)(x-6)$
+
+  \item $5x^{2}+3x-2$
+
+        $=(5x-2)(x+1)$
+
+\columnbreak % 330
+
+\resetques
+
+  \item $7x^{2}+8x-12$
+
+        $=(7x-6)(x+2)$
+
+  \item $32x^{2}+4x-15$
+
+        $=(4x+3)(8x-5)$
+
+  \item $3x^{2}-25x-18$
+
+        $=(3x+2)(x-9)$
+
+  \item $3x^{2}+11x+6$
+
+        $=(x+3)(3x+2)$
+
+  \item $4x^{2}-23x+28$
+
+        $=(x-4)(4x-7)$
+
+  \item $9x^{2}-7x-2$
+
+        $=(9x+2)(x-1)$
+
+  \item $3x^{2}+2x-1$
+
+        $=(3x-1)(x+1)$
+
+  \item $x^{2}-1$
+
+        $=(x+1)(x-1)$
+
+  \item $4x^{2}+8x+3$
+
+        $=(2x+1)(2x+3)$
+
+  \item $18x^{2}-5x-7$
+
+        $=(2x+1)(9x-7)$
+
+\columnbreak % 340
+
+  \item $2x^{2}+5x+3$
+
+        $=(x+1)(2x+3)$
+
+  \item $6x^{2}-11x-10$
+
+        $=(2x-5)(3x+2)$
+
+  \item $35x^{2}+87x+54$
+
+        $=(7x+9)(5x+6)$
+
+  \item $2x^{2}+3x+1$
+
+        $=(2x+1)(x+1)$
+
+  \item $4x^{2}+20x+21$
+
+        $=(2x+7)(2x+3)$
+
+  \item $72x^{2}+19x-3$
+
+        $=(9x-1)(8x+3)$
+
+  \item $3x^{2}+10x+8$
+
+        $=(3x+4)(x+2)$
+
+  \item $5x^{2}+22x+21$
+
+        $=(5x+7)(x+3)$
+
+  \item $6x^{2}+13x+7$
+
+        $=(6x+7)(x+1)$
+
+  \item $4x^{2}-7x+3$
+
+        $=(x-1)(4x-3)$
+
+\columnbreak % 350
+
+  \item $21x^{2}+52x+7$
+
+        $=(3x+7)(7x+1)$
+
+  \item $x^{2}-4x+3$
+
+        $=(x-1)(x-3)$
+
+  \item $x^{2}+2x-3$
+
+        $=(x-1)(x+3)$
+
+  \item $6x^{2}-x-1$
+
+        $=(3x+1)(2x-1)$
+
+  \item $7x^{2}+54x-81$
+
+        $=(x+9)(7x-9)$
+
+  \item $8x^{2}-11x+3$
+
+        $=(8x-3)(x-1)$
+
+  \item $15x^{2}+8x+1$
+
+        $=(3x+1)(5x+1)$
+
+  \item $27x^{2}-21x-40$
+
+        $=(3x-5)(9x+8)$
+
+  \item $9x^{2}-55x-56$
+
+        $=(x-7)(9x+8)$
+
+  \item $4x^{2}-27x+35$
+
+        $=(4x-7)(x-5)$
+
+\columnbreak % 360
+
+\resetques
+
+  \item $63x^{2}+17x-20$
+
+        $=(7x+5)(9x-4)$
+
+  \item $5x^{2}+27x-56$
+
+        $=(x+7)(5x-8)$
+
+  \item $24x^{2}+41x+12$
+
+        $=(3x+4)(8x+3)$
+
+  \item $7x^{2}-15x+8$
+
+        $=(7x-8)(x-1)$
+
+  \item $9x^{2}+28x-32$
+
+        $=(9x-8)(x+4)$
+
+  \item $6x^{2}+53x-9$
+
+        $=(6x-1)(x+9)$
+
+  \item $4x^{2}-19x+12$
+
+        $=(4x-3)(x-4)$
+
+  \item $8x^{2}+2x-21$
+
+        $=(2x-3)(4x+7)$
+
+  \item $14x^{2}+9x-18$
+
+        $=(2x+3)(7x-6)$
+
+  \item $4x^{2}+x-3$
+
+        $=(x+1)(4x-3)$
+
+\columnbreak % 370
+
+  \item $x^{2}-7x+12$
+
+        $=(x-3)(x-4)$
+
+  \item $8x^{2}-7x-1$
+
+        $=(x-1)(8x+1)$
+
+  \item $5x^{2}+x-6$
+
+        $=(5x+6)(x-1)$
+
+  \item $x^{2}-1$
+
+        $=(x+1)(x-1)$
+
+  \item $27x^{2}+12x-7$
+
+        $=(9x+7)(3x-1)$
+
+  \item $4x^{2}-1$
+
+        $=(2x+1)(2x-1)$
+
+  \item $3x^{2}-5x+2$
+
+        $=(3x-2)(x-1)$
+
+  \item $x^{2}-1$
+
+        $=(x-1)(x+1)$
+
+  \item $8x^{2}-31x-4$
+
+        $=(8x+1)(x-4)$
+
+  \item $9x^{2}+18x+5$
+
+        $=(3x+5)(3x+1)$
+
+\columnbreak % 380
+
+  \item $45x^{2}-97x+40$
+
+        $=(9x-5)(5x-8)$
+
+  \item $8x^{2}-19x-15$
+
+        $=(8x+5)(x-3)$
+
+  \item $7x^{2}+10x+3$
+
+        $=(7x+3)(x+1)$
+
+  \item $32x^{2}-52x-7$
+
+        $=(8x+1)(4x-7)$
+
+  \item $5x^{2}-12x+4$
+
+        $=(5x-2)(x-2)$
+
+  \item $3x^{2}+10x+3$
+
+        $=(x+3)(3x+1)$
+
+  \item $14x^{2}-39x+27$
+
+        $=(7x-9)(2x-3)$
+
+  \item $x^{2}-10x+16$
+
+        $=(x-2)(x-8)$
+
+  \item $4x^{2}-4x-3$
+
+        $=(2x-3)(2x+1)$
+
+  \item $4x^{2}+11x-45$
+
+        $=(4x-9)(x+5)$
+
+\columnbreak % 390
+
+\resetques
+
+  \item $27x^{2}+33x+8$
+
+        $=(3x+1)(9x+8)$
+
+  \item $10x^{2}-13x+4$
+
+        $=(2x-1)(5x-4)$
+
+  \item $63x^{2}+110x+48$
+
+        $=(7x+6)(9x+8)$
+
+  \item $9x^{2}-11x+2$
+
+        $=(x-1)(9x-2)$
+
+  \item $6x^{2}+7x+2$
+
+        $=(2x+1)(3x+2)$
+
+  \item $12x^{2}+16x+5$
+
+        $=(6x+5)(2x+1)$
+
+  \item $x^{2}+x-2$
+
+        $=(x-1)(x+2)$
+
+  \item $6x^{2}-x-1$
+
+        $=(3x+1)(2x-1)$
+
+  \item $5x^{2}-x-6$
+
+        $=(5x-6)(x+1)$
+
+  \item $4x^{2}+5x+1$
+
+        $=(4x+1)(x+1)$
+
+\columnbreak % 400
+
+  \item $6x^{2}-25x+21$
+
+        $=(6x-7)(x-3)$
+
+  \item $12x^{2}+17x+6$
+
+        $=(4x+3)(3x+2)$
+
+  \item $16x^{2}-30x+9$
+
+        $=(8x-3)(2x-3)$
+
+  \item $2x^{2}+13x+18$
+
+        $=(2x+9)(x+2)$
+
+  \item $9x^{2}+3x-20$
+
+        $=(3x+5)(3x-4)$
+
+  \item $28x^{2}-29x+6$
+
+        $=(7x-2)(4x-3)$
+
+  \item $5x^{2}-8x-21$
+
+        $=(x-3)(5x+7)$
+
+  \item $49x^{2}+126x+81$
+
+        $=(7x+9)^{2}$
+
+  \item $3x^{2}-4x+1$
+
+        $=(x-1)(3x-1)$
+
+  \item $7x^{2}-8x+1$
+
+        $=(x-1)(7x-1)$
+
+\columnbreak % 410
+
+  \item $15x^{2}+19x-8$
+
+        $=(3x-1)(5x+8)$
+
+  \item $8x^{2}-17x-21$
+
+        $=(8x+7)(x-3)$
+
+  \item $x^{2}-1$
+
+        $=(x-1)(x+1)$
+
+  \item $9x^{2}+64x-64$
+
+        $=(x+8)(9x-8)$
+
+  \item $2x^{2}-11x-6$
+
+        $=(2x+1)(x-6)$
+
+  \item $10x^{2}-19x+7$
+
+        $=(5x-7)(2x-1)$
+
+  \item $40x^{2}+61x+7$
+
+        $=(8x+1)(5x+7)$
+
+  \item $2x^{2}+7x-9$
+
+        $=(2x+9)(x-1)$
+
+  \item $14x^{2}-23x+3$
+
+        $=(7x-1)(2x-3)$
+
+  \item $6x^{2}-11x+3$
+
+        $=(2x-3)(3x-1)$
+
+\columnbreak % 420
+
+\resetques
+
+  \item $8x^{2}-13x+5$
+
+        $=(8x-5)(x-1)$
+
+  \item $x^{2}+5x+6$
+
+        $=(x+2)(x+3)$
+
+  \item $6x^{2}+11x+3$
+
+        $=(2x+3)(3x+1)$
+
+  \item $3x^{2}-11x+8$
+
+        $=(3x-8)(x-1)$
+
+  \item $7x^{2}+61x-18$
+
+        $=(x+9)(7x-2)$
+
+  \item $2x^{2}-7x-9$
+
+        $=(2x-9)(x+1)$
+
+  \item $15x^{2}+52x+32$
+
+        $=(5x+4)(3x+8)$
+
+  \item $12x^{2}-19x-18$
+
+        $=(3x+2)(4x-9)$
+
+  \item $3x^{2}+26x+35$
+
+        $=(3x+5)(x+7)$
+
+  \item $5x^{2}-29x-42$
+
+        $=(x-7)(5x+6)$
+
+\columnbreak % 430
+
+  \item $72x^{2}-41x+4$
+
+        $=(9x-4)(8x-1)$
+
+  \item $8x^{2}+73x+72$
+
+        $=(x+8)(8x+9)$
+
+  \item $x^{2}-5x+4$
+
+        $=(x-4)(x-1)$
+
+  \item $6x^{2}-23x+21$
+
+        $=(2x-3)(3x-7)$
+
+  \item $7x^{2}+5x-2$
+
+        $=(7x-2)(x+1)$
+
+  \item $3x^{2}+2x-1$
+
+        $=(x+1)(3x-1)$
+
+  \item $3x^{2}-23x+14$
+
+        $=(x-7)(3x-2)$
+
+  \item $3x^{2}+8x+4$
+
+        $=(x+2)(3x+2)$
+
+  \item $5x^{2}-3x-2$
+
+        $=(x-1)(5x+2)$
+
+  \item $56x^{2}-3x-20$
+
+        $=(8x-5)(7x+4)$
+
+\columnbreak % 440
+
+  \item $7x^{2}-22x+16$
+
+        $=(7x-8)(x-2)$
+
+  \item $49x^{2}-35x-36$
+
+        $=(7x+4)(7x-9)$
+
+  \item $9x^{2}+59x-28$
+
+        $=(x+7)(9x-4)$
+
+  \item $36x^{2}-13x-40$
+
+        $=(9x+8)(4x-5)$
+
+  \item $27x^{2}+21x+4$
+
+        $=(3x+1)(9x+4)$
+
+  \item $6x^{2}-11x-21$
+
+        $=(6x+7)(x-3)$
+
+  \item $4x^{2}-39x+27$
+
+        $=(x-9)(4x-3)$
+
+  \item $4x^{2}+3x-1$
+
+        $=(4x-1)(x+1)$
+
+  \item $4x^{2}-23x-72$
+
+        $=(x-8)(4x+9)$
+
+  \item $7x^{2}+18x+8$
+
+        $=(x+2)(7x+4)$
+
+\columnbreak % 450
+
+\resetques
+
+  \item $5x^{2}-7x-6$
+
+        $=(5x+3)(x-2)$
+
+  \item $6x^{2}+11x-21$
+
+        $=(6x-7)(x+3)$
+
+  \item $2x^{2}-7x+6$
+
+        $=(2x-3)(x-2)$
+
+  \item $x^{2}+8x+15$
+
+        $=(x+5)(x+3)$
+
+  \item $27x^{2}-15x+2$
+
+        $=(3x-1)(9x-2)$
+
+  \item $14x^{2}-5x-6$
+
+        $=(7x-6)(2x+1)$
+
+  \item $x^{2}-4$
+
+        $=(x+2)(x-2)$
+
+  \item $8x^{2}+15x-27$
+
+        $=(8x-9)(x+3)$
+
+  \item $15x^{2}-44x+32$
+
+        $=(5x-8)(3x-4)$
+
+  \item $2x^{2}-13x+21$
+
+        $=(x-3)(2x-7)$
+
+\columnbreak % 460
+
+  \item $25x^{2}-64$
+
+        $=(5x+8)(5x-8)$
+
+  \item $7x^{2}+33x+20$
+
+        $=(7x+5)(x+4)$
+
+  \item $10x^{2}+19x+6$
+
+        $=(2x+3)(5x+2)$
+
+  \item $2x^{2}+5x+3$
+
+        $=(2x+3)(x+1)$
+
+  \item $40x^{2}+7x-3$
+
+        $=(8x+3)(5x-1)$
+
+  \item $4x^{2}+4x-15$
+
+        $=(2x-3)(2x+5)$
+
+  \item $4x^{2}-8x+3$
+
+        $=(2x-1)(2x-3)$
+
+  \item $20x^{2}+11x-3$
+
+        $=(4x+3)(5x-1)$
+
+  \item $16x^{2}-10x-21$
+
+        $=(8x+7)(2x-3)$
+
+  \item $8x^{2}-6x+1$
+
+        $=(4x-1)(2x-1)$
+
+\columnbreak % 470
+
+  \item $12x^{2}+29x-8$
+
+        $=(3x+8)(4x-1)$
+
+  \item $16x^{2}-24x+9$
+
+        $=(4x-3)^{2}$
+
+  \item $72x^{2}-65x-18$
+
+        $=(8x-9)(9x+2)$
+
+  \item $5x^{2}+x-4$
+
+        $=(5x-4)(x+1)$
+
+  \item $18x^{2}+35x+12$
+
+        $=(2x+3)(9x+4)$
+
+  \item $32x^{2}-28x+3$
+
+        $=(4x-3)(8x-1)$
+
+  \item $45x^{2}+56x-45$
+
+        $=(5x+9)(9x-5)$
+
+  \item $7x^{2}-20x+12$
+
+        $=(x-2)(7x-6)$
+
+  \item $14x^{2}-5x-24$
+
+        $=(7x+8)(2x-3)$
+
+  \item $4x^{2}-7x+3$
+
+        $=(x-1)(4x-3)$
+
+\columnbreak % 480
+
+\resetques
+
+  \item $25x^{2}-30x-7$
+
+        $=(5x-7)(5x+1)$
+
+  \item $3x^{2}-7x+4$
+
+        $=(x-1)(3x-4)$
+
+  \item $4x^{2}-12x-27$
+
+        $=(2x+3)(2x-9)$
+
+  \item $12x^{2}+31x+7$
+
+        $=(4x+1)(3x+7)$
+
+  \item $21x^{2}-37x-28$
+
+        $=(3x-7)(7x+4)$
+
+  \item $x^{2}+2x+1$
+
+        $=(x+1)^{2}$
+
+  \item $3x^{2}-10x+8$
+
+        $=(3x-4)(x-2)$
+
+  \item $15x^{2}+7x-2$
+
+        $=(5x-1)(3x+2)$
+
+  \item $9x^{2}+24x+7$
+
+        $=(3x+7)(3x+1)$
+
+  \item $5x^{2}+8x+3$
+
+        $=(x+1)(5x+3)$
+
+\columnbreak % 490
+
+  \item $x^{2}-9x+8$
+
+        $=(x-1)(x-8)$
+
+  \item $36x^{2}-73x-18$
+
+        $=(4x-9)(9x+2)$
+
+  \item $6x^{2}-13x+7$
+
+        $=(x-1)(6x-7)$
+
+  \item $49x^{2}-14x-48$
+
+        $=(7x-8)(7x+6)$
+
+  \item $5x^{2}+2x-7$
+
+        $=(5x+7)(x-1)$
+
+  \item $x^{2}+2x-8$
+
+        $=(x+4)(x-2)$
+
+  \item $40x^{2}-49x-24$
+
+        $=(5x-8)(8x+3)$
+
+  \item $9x^{2}-5x-4$
+
+        $=(x-1)(9x+4)$
+
+  \item $72x^{2}-x-1$
+
+        $=(8x-1)(9x+1)$
+
+  \item $7x^{2}+5x-2$
+
+        $=(7x-2)(x+1)$
+
+\columnbreak % 500
+
+  \item $14x^{2}-19x-3$
+
+        $=(7x+1)(2x-3)$
+
+  \item $10x^{2}-13x+4$
+
+        $=(5x-4)(2x-1)$
+
+  \item $12x^{2}-20x+3$
+
+        $=(2x-3)(6x-1)$
+
+  \item $49x^{2}+21x-40$
+
+        $=(7x+8)(7x-5)$
+
+  \item $3x^{2}+8x-3$
+
+        $=(3x-1)(x+3)$
+
+  \item $x^{2}-8x-9$
+
+        $=(x+1)(x-9)$
+
+  \item $6x^{2}+11x+5$
+
+        $=(6x+5)(x+1)$
+
+  \item $14x^{2}-9x+1$
+
+        $=(7x-1)(2x-1)$
+
+  \item $20x^{2}+29x+6$
+
+        $=(5x+6)(4x+1)$
+
+  \item $6x^{2}+7x+1$
+
+        $=(6x+1)(x+1)$
+
+\columnbreak % 510
+
+\resetques
+
+  \item $36x^{2}+x-2$
+
+        $=(9x-2)(4x+1)$
+
+  \item $2x^{2}-x-1$
+
+        $=(x-1)(2x+1)$
+
+  \item $35x^{2}+27x+4$
+
+        $=(7x+4)(5x+1)$
+
+  \item $27x^{2}+12x+1$
+
+        $=(3x+1)(9x+1)$
+
+  \item $14x^{2}-9x-8$
+
+        $=(2x+1)(7x-8)$
+
+  \item $40x^{2}+11x-2$
+
+        $=(5x+2)(8x-1)$
+
+  \item $3x^{2}-17x+10$
+
+        $=(x-5)(3x-2)$
+
+  \item $24x^{2}-7x-5$
+
+        $=(3x+1)(8x-5)$
+
+  \item $10x^{2}-31x-63$
+
+        $=(5x+7)(2x-9)$
+
+  \item $18x^{2}-23x+7$
+
+        $=(9x-7)(2x-1)$
+
+\columnbreak % 520
+
+  \item $2x^{2}-19x+24$
+
+        $=(2x-3)(x-8)$
+
+  \item $40x^{2}-11x-2$
+
+        $=(8x+1)(5x-2)$
+
+  \item $8x^{2}-22x+15$
+
+        $=(2x-3)(4x-5)$
+
+  \item $8x^{2}+33x+4$
+
+        $=(x+4)(8x+1)$
+
+  \item $72x^{2}+19x-40$
+
+        $=(9x+8)(8x-5)$
+
+  \item $9x^{2}-18x-16$
+
+        $=(3x+2)(3x-8)$
+
+  \item $x^{2}+10x+9$
+
+        $=(x+9)(x+1)$
+
+  \item $x^{2}+12x+27$
+
+        $=(x+3)(x+9)$
+
+  \item $16x^{2}-9$
+
+        $=(4x-3)(4x+3)$
+
+  \item $40x^{2}-29x-56$
+
+        $=(8x+7)(5x-8)$
+
+\columnbreak % 530
+
+  \item $5x^{2}+28x-12$
+
+        $=(5x-2)(x+6)$
+
+  \item $x^{2}-x-2$
+
+        $=(x-2)(x+1)$
+
+  \item $5x^{2}-13x+8$
+
+        $=(x-1)(5x-8)$
+
+  \item $25x^{2}-50x+24$
+
+        $=(5x-6)(5x-4)$
+
+  \item $2x^{2}+7x-9$
+
+        $=(2x+9)(x-1)$
+
+  \item $6x^{2}-7x-3$
+
+        $=(2x-3)(3x+1)$
+
+  \item $x^{2}-x-2$
+
+        $=(x+1)(x-2)$
+
+  \item $32x^{2}+44x+5$
+
+        $=(8x+1)(4x+5)$
+
+  \item $6x^{2}-7x-5$
+
+        $=(2x+1)(3x-5)$
+
+  \item $3x^{2}+10x+7$
+
+        $=(x+1)(3x+7)$
+
+\columnbreak % 540
+
+\resetques
+
+  \item $8x^{2}-45x-18$
+
+        $=(8x+3)(x-6)$
+
+  \item $2x^{2}-21x+49$
+
+        $=(x-7)(2x-7)$
+
+  \item $3x^{2}-2x-1$
+
+        $=(x-1)(3x+1)$
+
+  \item $6x^{2}-31x+28$
+
+        $=(6x-7)(x-4)$
+
+  \item $35x^{2}-29x-28$
+
+        $=(7x+4)(5x-7)$
+
+  \item $3x^{2}-8x+4$
+
+        $=(x-2)(3x-2)$
+
+  \item $45x^{2}+16x-16$
+
+        $=(5x+4)(9x-4)$
+
+  \item $4x^{2}-13x+9$
+
+        $=(4x-9)(x-1)$
+
+  \item $63x^{2}-62x+15$
+
+        $=(9x-5)(7x-3)$
+
+  \item $10x^{2}+3x-4$
+
+        $=(2x-1)(5x+4)$
+
+\columnbreak % 550
+
+  \item $3x^{2}+7x+4$
+
+        $=(x+1)(3x+4)$
+
+  \item $x^{2}+9x+18$
+
+        $=(x+6)(x+3)$
+
+  \item $21x^{2}+2x-8$
+
+        $=(3x+2)(7x-4)$
+
+  \item $10x^{2}-11x-8$
+
+        $=(5x-8)(2x+1)$
+
+  \item $5x^{2}+32x+35$
+
+        $=(5x+7)(x+5)$
+
+  \item $9x^{2}+8x-1$
+
+        $=(9x-1)(x+1)$
+
+  \item $3x^{2}+29x+18$
+
+        $=(x+9)(3x+2)$
+
+  \item $3x^{2}+11x+6$
+
+        $=(x+3)(3x+2)$
+
+  \item $7x^{2}-37x+36$
+
+        $=(7x-9)(x-4)$
+
+  \item $7x^{2}-10x+3$
+
+        $=(x-1)(7x-3)$
+
+\columnbreak % 560
+
+  \item $12x^{2}-5x-2$
+
+        $=(3x-2)(4x+1)$
+
+  \item $20x^{2}+31x+12$
+
+        $=(4x+3)(5x+4)$
+
+  \item $2x^{2}+x-28$
+
+        $=(x+4)(2x-7)$
+
+  \item $64x^{2}+16x-63$
+
+        $=(8x+9)(8x-7)$
+
+  \item $9x^{2}+15x-14$
+
+        $=(3x-2)(3x+7)$
+
+  \item $x^{2}-8x+15$
+
+        $=(x-3)(x-5)$
+
+  \item $63x^{2}+x-12$
+
+        $=(9x+4)(7x-3)$
+
+  \item $8x^{2}+57x+54$
+
+        $=(8x+9)(x+6)$
+
+  \item $9x^{2}-65x-56$
+
+        $=(9x+7)(x-8)$
+
+  \item $63x^{2}-92x+32$
+
+        $=(9x-8)(7x-4)$
+
+\columnbreak % 570
+
+\resetques
+
+  \item $16x^{2}-2x-3$
+
+        $=(2x-1)(8x+3)$
+
+  \item $28x^{2}-19x-20$
+
+        $=(4x-5)(7x+4)$
+
+  \item $15x^{2}+2x-8$
+
+        $=(5x+4)(3x-2)$
+
+  \item $7x^{2}-16x+9$
+
+        $=(x-1)(7x-9)$
+
+  \item $4x^{2}-5x-6$
+
+        $=(4x+3)(x-2)$
+
+  \item $4x^{2}-15x+9$
+
+        $=(x-3)(4x-3)$
+
+  \item $12x^{2}-7x+1$
+
+        $=(4x-1)(3x-1)$
+
+  \item $27x^{2}+12x-7$
+
+        $=(3x-1)(9x+7)$
+
+  \item $7x^{2}-3x-4$
+
+        $=(x-1)(7x+4)$
+
+  \item $40x^{2}+3x-28$
+
+        $=(8x+7)(5x-4)$
+
+\columnbreak % 580
+
+  \item $7x^{2}+34x+24$
+
+        $=(7x+6)(x+4)$
+
+  \item $6x^{2}+5x-1$
+
+        $=(x+1)(6x-1)$
+
+  \item $4x^{2}+5x-9$
+
+        $=(x-1)(4x+9)$
+
+  \item $24x^{2}+19x-9$
+
+        $=(8x+9)(3x-1)$
+
+  \item $12x^{2}+37x+28$
+
+        $=(3x+4)(4x+7)$
+
+  \item $4x^{2}+7x+3$
+
+        $=(4x+3)(x+1)$
+
+  \item $49x^{2}-9$
+
+        $=(7x+3)(7x-3)$
+
+  \item $28x^{2}+5x-3$
+
+        $=(4x-1)(7x+3)$
+
+  \item $12x^{2}-23x-9$
+
+        $=(4x-9)(3x+1)$
+
+  \item $2x^{2}-x-3$
+
+        $=(x+1)(2x-3)$
+
+\columnbreak % 590
+
+  \item $15x^{2}-29x+12$
+
+        $=(5x-3)(3x-4)$
+
+  \item $4x^{2}-x-14$
+
+        $=(4x+7)(x-2)$
+
+  \item $2x^{2}+x-1$
+
+        $=(x+1)(2x-1)$
+
+  \item $72x^{2}+85x+25$
+
+        $=(9x+5)(8x+5)$
+
+  \item $40x^{2}-101x+63$
+
+        $=(5x-7)(8x-9)$
+
+  \item $12x^{2}+44x+35$
+
+        $=(6x+7)(2x+5)$
+
+  \item $x^{2}-8x+7$
+
+        $=(x-1)(x-7)$
+
+  \item $4x^{2}-1$
+
+        $=(2x+1)(2x-1)$
+
+  \item $3x^{2}-7x-6$
+
+        $=(x-3)(3x+2)$
+
+  \item $6x^{2}-7x-24$
+
+        $=(2x+3)(3x-8)$
+
+\end{enumerate}
+\end{multicols}

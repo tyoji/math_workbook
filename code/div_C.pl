@@ -76,7 +76,7 @@ for (1..$num_eq) {
     $ans = "=" . $ans;
 
     # 数式モード付与
-    $eq = '$\displaystyle ' . $eq . '$';
+    $eq = '$\displaystyle ' . $eq . '$' . "\n";
     $ans = '$\displaystyle ' . $ans . '$';
 
     push @ques, $eq;

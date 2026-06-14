@@ -1,0 +1,9332 @@
+
+
+%%% perl code : polynomial_substitute_integer.pl
+
+\setcounter{quesnum}{45}
+
+\begin{multicols}{3}
+\begin{enumerate}
+  \itemsep=10pt
+  \item $f(x)=3x^{2}-3x+2$
+
+$f(-3)$
+        \phantom{$= 38$}
+
+  \item $f(x)=-2x^{2}-2x+4$
+
+$f(5)$
+        \phantom{$= -56$}
+
+  \item $f(x)=x^{2}+x+2$
+
+$f(-4)$
+        \phantom{$= 14$}
+
+  \item $f(x)=5x^{2}+2x-1$
+
+$f(-2)$
+        \phantom{$= 15$}
+
+  \item $f(x)=-3x^{2}+4x-3$
+
+$f(-4)$
+        \phantom{$= -67$}
+
+  \item $f(x)=x^{2}+5x-4$
+
+$f(4)$
+        \phantom{$= 32$}
+
+  \item $f(x)=2x^{2}-3x-4$
+
+$f(5)$
+        \phantom{$= 31$}
+
+  \item $f(x)=2x^{2}-3x-2$
+
+$f(-4)$
+        \phantom{$= 42$}
+
+  \item $f(x)=-3x^{2}+3x+5$
+
+$f(-2)$
+        \phantom{$= -13$}
+
+  \item $f(x)=2x^{2}-3x+1$
+
+$f(3)$
+        \phantom{$= 10$}
+
+  \item $f(x)=-x^{2}-5x+5$
+
+$f(5)$
+        \phantom{$= -45$}
+
+  \item $f(x)=-2x^{2}-4x-5$
+
+$f(1)$
+        \phantom{$= -11$}
+
+  \item $f(x)=4x^{2}+x+4$
+
+$f(3)$
+        \phantom{$= 43$}
+
+  \item $f(x)=2x^{2}-2x-4$
+
+$f(5)$
+        \phantom{$= 36$}
+
+  \item $f(x)=2x^{2}+2x-5$
+
+$f(4)$
+        \phantom{$= 35$}
+
+\columnbreak % 15
+
+  \item $f(x)=x^{2}+4x+4$
+
+$f(-1)$
+        \phantom{$= 1$}
+
+  \item $f(x)=2x^{2}+2x+4$
+
+$f(-5)$
+        \phantom{$= 44$}
+
+  \item $f(x)=2x^{2}-2x-5$
+
+$f(3)$
+        \phantom{$= 7$}
+
+  \item $f(x)=-4x^{2}-3x+4$
+
+$f(5)$
+        \phantom{$= -111$}
+
+  \item $f(x)=-x^{2}+4x-2$
+
+$f(5)$
+        \phantom{$= -7$}
+
+  \item $f(x)=-5x^{2}-x+4$
+
+$f(-4)$
+        \phantom{$= -72$}
+
+  \item $f(x)=3x^{2}+3x+1$
+
+$f(-5)$
+        \phantom{$= 61$}
+
+  \item $f(x)=-x^{2}+3x+4$
+
+$f(-3)$
+        \phantom{$= -14$}
+
+  \item $f(x)=-x^{2}+2x-4$
+
+$f(-5)$
+        \phantom{$= -39$}
+
+  \item $f(x)=5x^{2}+3x+5$
+
+$f(-4)$
+        \phantom{$= 73$}
+
+  \item $f(x)=x^{2}-3x+2$
+
+$f(-5)$
+        \phantom{$= 42$}
+
+  \item $f(x)=x^{2}+2x+3$
+
+$f(-1)$
+        \phantom{$= 2$}
+
+  \item $f(x)=5x^{2}+x-2$
+
+$f(-5)$
+        \phantom{$= 118$}
+
+  \item $f(x)=5x^{2}+5x+4$
+
+$f(5)$
+        \phantom{$= 154$}
+
+  \item $f(x)=5x^{2}-4x-5$
+
+$f(-1)$
+        \phantom{$= 4$}
+
+\columnbreak % 30
+
+  \item $f(x)=2x^{2}-5x+4$
+
+$f(3)$
+        \phantom{$= 7$}
+
+  \item $f(x)=2x^{2}+5x-2$
+
+$f(-4)$
+        \phantom{$= 10$}
+
+  \item $f(x)=-3x^{2}-4x-4$
+
+$f(1)$
+        \phantom{$= -11$}
+
+  \item $f(x)=-5x^{2}+2x+5$
+
+$f(-4)$
+        \phantom{$= -83$}
+
+  \item $f(x)=3x^{2}+x+4$
+
+$f(4)$
+        \phantom{$= 56$}
+
+  \item $f(x)=-5x^{2}-x-5$
+
+$f(3)$
+        \phantom{$= -53$}
+
+  \item $f(x)=2x^{2}-4x-5$
+
+$f(-4)$
+        \phantom{$= 43$}
+
+  \item $f(x)=x^{2}+4x+4$
+
+$f(2)$
+        \phantom{$= 16$}
+
+  \item $f(x)=3x^{2}-x-4$
+
+$f(-4)$
+        \phantom{$= 48$}
+
+  \item $f(x)=-4x^{2}-3x+3$
+
+$f(3)$
+        \phantom{$= -42$}
+
+  \item $f(x)=-3x^{2}+2x+2$
+
+$f(-2)$
+        \phantom{$= -14$}
+
+  \item $f(x)=-2x^{2}+3x+5$
+
+$f(-5)$
+        \phantom{$= -60$}
+
+  \item $f(x)=-4x^{2}-x-5$
+
+$f(5)$
+        \phantom{$= -110$}
+
+  \item $f(x)=-x^{2}-5x-2$
+
+$f(-5)$
+        \phantom{$= -2$}
+
+  \item $f(x)=-2x^{2}-3x-3$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+\columnbreak % 45
+
+\resetques
+
+  \item $f(x)=4x^{2}+3x-1$
+
+$f(-5)$
+        \phantom{$= 84$}
+
+  \item $f(x)=x^{2}+x+1$
+
+$f(-4)$
+        \phantom{$= 13$}
+
+  \item $f(x)=x^{2}+4x-2$
+
+$f(4)$
+        \phantom{$= 30$}
+
+  \item $f(x)=-2x^{2}-x+1$
+
+$f(-4)$
+        \phantom{$= -27$}
+
+  \item $f(x)=-2x^{2}+4x+1$
+
+$f(-4)$
+        \phantom{$= -47$}
+
+  \item $f(x)=5x^{2}-5x+3$
+
+$f(-3)$
+        \phantom{$= 63$}
+
+  \item $f(x)=-4x^{2}-4x-4$
+
+$f(-4)$
+        \phantom{$= -52$}
+
+  \item $f(x)=5x^{2}-4x+1$
+
+$f(4)$
+        \phantom{$= 65$}
+
+  \item $f(x)=2x^{2}+2x+1$
+
+$f(5)$
+        \phantom{$= 61$}
+
+  \item $f(x)=x^{2}-x+3$
+
+$f(-4)$
+        \phantom{$= 23$}
+
+  \item $f(x)=-4x^{2}+3x-4$
+
+$f(4)$
+        \phantom{$= -56$}
+
+  \item $f(x)=-4x^{2}-x-5$
+
+$f(5)$
+        \phantom{$= -110$}
+
+  \item $f(x)=3x^{2}+2x-3$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=3x^{2}-4x+4$
+
+$f(-2)$
+        \phantom{$= 24$}
+
+  \item $f(x)=-5x^{2}-4x+3$
+
+$f(-4)$
+        \phantom{$= -61$}
+
+\columnbreak % 60
+
+  \item $f(x)=-x^{2}-4x+2$
+
+$f(3)$
+        \phantom{$= -19$}
+
+  \item $f(x)=5x^{2}+5x-3$
+
+$f(3)$
+        \phantom{$= 57$}
+
+  \item $f(x)=2x^{2}+2x-5$
+
+$f(-5)$
+        \phantom{$= 35$}
+
+  \item $f(x)=5x^{2}-2x-3$
+
+$f(-5)$
+        \phantom{$= 132$}
+
+  \item $f(x)=x^{2}-3x+4$
+
+$f(-1)$
+        \phantom{$= 8$}
+
+  \item $f(x)=5x^{2}-x-5$
+
+$f(-2)$
+        \phantom{$= 17$}
+
+  \item $f(x)=-5x^{2}+3x+5$
+
+$f(-5)$
+        \phantom{$= -135$}
+
+  \item $f(x)=-3x^{2}+4x-1$
+
+$f(-5)$
+        \phantom{$= -96$}
+
+  \item $f(x)=-3x^{2}+3x-4$
+
+$f(-1)$
+        \phantom{$= -10$}
+
+  \item $f(x)=x^{2}+2x-4$
+
+$f(4)$
+        \phantom{$= 20$}
+
+  \item $f(x)=-5x^{2}+3x+4$
+
+$f(4)$
+        \phantom{$= -64$}
+
+  \item $f(x)=-4x^{2}+5x+5$
+
+$f(-1)$
+        \phantom{$= -4$}
+
+  \item $f(x)=-x^{2}-4x-2$
+
+$f(4)$
+        \phantom{$= -34$}
+
+  \item $f(x)=-x^{2}+5x-4$
+
+$f(-1)$
+        \phantom{$= -10$}
+
+  \item $f(x)=4x^{2}+2x+1$
+
+$f(-3)$
+        \phantom{$= 31$}
+
+\columnbreak % 75
+
+  \item $f(x)=-4x^{2}-3x+4$
+
+$f(-5)$
+        \phantom{$= -81$}
+
+  \item $f(x)=-4x^{2}+x+3$
+
+$f(4)$
+        \phantom{$= -57$}
+
+  \item $f(x)=-x^{2}-4x-1$
+
+$f(3)$
+        \phantom{$= -22$}
+
+  \item $f(x)=-2x^{2}-4x-5$
+
+$f(5)$
+        \phantom{$= -75$}
+
+  \item $f(x)=4x^{2}+5x+3$
+
+$f(-1)$
+        \phantom{$= 2$}
+
+  \item $f(x)=4x^{2}+5x+1$
+
+$f(3)$
+        \phantom{$= 52$}
+
+  \item $f(x)=-4x^{2}-5x+2$
+
+$f(-3)$
+        \phantom{$= -19$}
+
+  \item $f(x)=-4x^{2}+4x-4$
+
+$f(-5)$
+        \phantom{$= -124$}
+
+  \item $f(x)=x^{2}+x-2$
+
+$f(-3)$
+        \phantom{$= 4$}
+
+  \item $f(x)=x^{2}+4x+1$
+
+$f(-2)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-3x^{2}-3x+3$
+
+$f(2)$
+        \phantom{$= -15$}
+
+  \item $f(x)=-5x^{2}-5x-5$
+
+$f(1)$
+        \phantom{$= -15$}
+
+  \item $f(x)=-5x^{2}+3x-1$
+
+$f(-4)$
+        \phantom{$= -93$}
+
+  \item $f(x)=-4x^{2}+5x+3$
+
+$f(-3)$
+        \phantom{$= -48$}
+
+  \item $f(x)=x^{2}+3x-1$
+
+$f(1)$
+        \phantom{$= 3$}
+
+\columnbreak % 90
+
+\resetques
+
+  \item $f(x)=-3x^{2}-x-2$
+
+$f(3)$
+        \phantom{$= -32$}
+
+  \item $f(x)=-x^{2}+x+3$
+
+$f(-3)$
+        \phantom{$= -9$}
+
+  \item $f(x)=5x^{2}-4x-2$
+
+$f(3)$
+        \phantom{$= 31$}
+
+  \item $f(x)=-2x^{2}+3x+4$
+
+$f(1)$
+        \phantom{$= 5$}
+
+  \item $f(x)=-2x^{2}-3x+1$
+
+$f(-3)$
+        \phantom{$= -8$}
+
+  \item $f(x)=x^{2}-2x+5$
+
+$f(3)$
+        \phantom{$= 8$}
+
+  \item $f(x)=-3x^{2}+5x-5$
+
+$f(2)$
+        \phantom{$= -7$}
+
+  \item $f(x)=x^{2}-2x+4$
+
+$f(3)$
+        \phantom{$= 7$}
+
+  \item $f(x)=x^{2}-5x-3$
+
+$f(-2)$
+        \phantom{$= 11$}
+
+  \item $f(x)=-5x^{2}+2x+3$
+
+$f(5)$
+        \phantom{$= -112$}
+
+  \item $f(x)=x^{2}+5x+2$
+
+$f(2)$
+        \phantom{$= 16$}
+
+  \item $f(x)=2x^{2}+5x+1$
+
+$f(-4)$
+        \phantom{$= 13$}
+
+  \item $f(x)=-3x^{2}+2x+4$
+
+$f(-3)$
+        \phantom{$= -29$}
+
+  \item $f(x)=-2x^{2}-2x+3$
+
+$f(-2)$
+        \phantom{$= -1$}
+
+  \item $f(x)=4x^{2}-4x-5$
+
+$f(-5)$
+        \phantom{$= 115$}
+
+\columnbreak % 105
+
+  \item $f(x)=-x^{2}+4x+3$
+
+$f(3)$
+        \phantom{$= 6$}
+
+  \item $f(x)=-x^{2}+4x-2$
+
+$f(-4)$
+        \phantom{$= -34$}
+
+  \item $f(x)=-2x^{2}+5x+2$
+
+$f(5)$
+        \phantom{$= -23$}
+
+  \item $f(x)=-x^{2}+3x-2$
+
+$f(-2)$
+        \phantom{$= -12$}
+
+  \item $f(x)=-5x^{2}+x-3$
+
+$f(4)$
+        \phantom{$= -79$}
+
+  \item $f(x)=-3x^{2}-3x-2$
+
+$f(-5)$
+        \phantom{$= -62$}
+
+  \item $f(x)=-4x^{2}+4x-2$
+
+$f(-4)$
+        \phantom{$= -82$}
+
+  \item $f(x)=-5x^{2}+x-1$
+
+$f(-3)$
+        \phantom{$= -49$}
+
+  \item $f(x)=-5x^{2}-3x+5$
+
+$f(-5)$
+        \phantom{$= -105$}
+
+  \item $f(x)=x^{2}-5x+2$
+
+$f(4)$
+        \phantom{$= -2$}
+
+  \item $f(x)=-5x^{2}+5x+1$
+
+$f(-4)$
+        \phantom{$= -99$}
+
+  \item $f(x)=-x^{2}+x+3$
+
+$f(3)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-3x^{2}+2x+3$
+
+$f(-2)$
+        \phantom{$= -13$}
+
+  \item $f(x)=-x^{2}+3x+3$
+
+$f(2)$
+        \phantom{$= 5$}
+
+  \item $f(x)=-5x^{2}-5x-2$
+
+$f(5)$
+        \phantom{$= -152$}
+
+\columnbreak % 120
+
+  \item $f(x)=3x^{2}+2x+2$
+
+$f(-1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=5x^{2}-x-1$
+
+$f(-5)$
+        \phantom{$= 129$}
+
+  \item $f(x)=4x^{2}+3x+5$
+
+$f(-3)$
+        \phantom{$= 32$}
+
+  \item $f(x)=4x^{2}+3x+1$
+
+$f(4)$
+        \phantom{$= 77$}
+
+  \item $f(x)=5x^{2}+4x+4$
+
+$f(2)$
+        \phantom{$= 32$}
+
+  \item $f(x)=-4x^{2}-x-5$
+
+$f(-4)$
+        \phantom{$= -65$}
+
+  \item $f(x)=2x^{2}-3x+3$
+
+$f(-3)$
+        \phantom{$= 30$}
+
+  \item $f(x)=-4x^{2}+2x-4$
+
+$f(-1)$
+        \phantom{$= -10$}
+
+  \item $f(x)=2x^{2}+4x+5$
+
+$f(-1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=-2x^{2}+2x-2$
+
+$f(-2)$
+        \phantom{$= -14$}
+
+  \item $f(x)=-x^{2}+x+1$
+
+$f(-1)$
+        \phantom{$= -1$}
+
+  \item $f(x)=-x^{2}-4x-4$
+
+$f(-3)$
+        \phantom{$= -1$}
+
+  \item $f(x)=x^{2}+3x+2$
+
+$f(-3)$
+        \phantom{$= 2$}
+
+  \item $f(x)=4x^{2}+4x+1$
+
+$f(-3)$
+        \phantom{$= 25$}
+
+  \item $f(x)=-4x^{2}+x+3$
+
+$f(2)$
+        \phantom{$= -11$}
+
+\columnbreak % 135
+
+\resetques
+
+  \item $f(x)=5x^{2}-2x-1$
+
+$f(5)$
+        \phantom{$= 114$}
+
+  \item $f(x)=-x^{2}-4x-3$
+
+$f(4)$
+        \phantom{$= -35$}
+
+  \item $f(x)=-4x^{2}+5x-1$
+
+$f(-1)$
+        \phantom{$= -10$}
+
+  \item $f(x)=x^{2}-2x+1$
+
+$f(-2)$
+        \phantom{$= 9$}
+
+  \item $f(x)=-5x^{2}+3x+2$
+
+$f(-4)$
+        \phantom{$= -90$}
+
+  \item $f(x)=x^{2}-3x+1$
+
+$f(-4)$
+        \phantom{$= 29$}
+
+  \item $f(x)=3x^{2}-x+1$
+
+$f(5)$
+        \phantom{$= 71$}
+
+  \item $f(x)=-x^{2}-3x+3$
+
+$f(4)$
+        \phantom{$= -25$}
+
+  \item $f(x)=x^{2}+2x-3$
+
+$f(-1)$
+        \phantom{$= -4$}
+
+  \item $f(x)=3x^{2}-2x-5$
+
+$f(3)$
+        \phantom{$= 16$}
+
+  \item $f(x)=4x^{2}-3x-3$
+
+$f(-1)$
+        \phantom{$= 4$}
+
+  \item $f(x)=3x^{2}-2x-3$
+
+$f(-1)$
+        \phantom{$= 2$}
+
+  \item $f(x)=2x^{2}-x+3$
+
+$f(-4)$
+        \phantom{$= 39$}
+
+  \item $f(x)=-2x^{2}+x+3$
+
+$f(2)$
+        \phantom{$= -3$}
+
+  \item $f(x)=x^{2}-x+3$
+
+$f(4)$
+        \phantom{$= 15$}
+
+\columnbreak % 150
+
+  \item $f(x)=-4x^{2}+x-3$
+
+$f(-4)$
+        \phantom{$= -71$}
+
+  \item $f(x)=3x^{2}-4x-3$
+
+$f(4)$
+        \phantom{$= 29$}
+
+  \item $f(x)=-3x^{2}+5x-3$
+
+$f(5)$
+        \phantom{$= -53$}
+
+  \item $f(x)=-4x^{2}-x+2$
+
+$f(-2)$
+        \phantom{$= -12$}
+
+  \item $f(x)=5x^{2}+3x+4$
+
+$f(5)$
+        \phantom{$= 144$}
+
+  \item $f(x)=-4x^{2}-4x-3$
+
+$f(-1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-x^{2}+2x-2$
+
+$f(-3)$
+        \phantom{$= -17$}
+
+  \item $f(x)=2x^{2}+4x+3$
+
+$f(-2)$
+        \phantom{$= 3$}
+
+  \item $f(x)=5x^{2}+2x-5$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=4x^{2}-2x-3$
+
+$f(5)$
+        \phantom{$= 87$}
+
+  \item $f(x)=5x^{2}-5x-5$
+
+$f(-1)$
+        \phantom{$= 5$}
+
+  \item $f(x)=-3x^{2}+4x+2$
+
+$f(-3)$
+        \phantom{$= -37$}
+
+  \item $f(x)=-x^{2}+x+5$
+
+$f(-1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=-4x^{2}+3x+5$
+
+$f(4)$
+        \phantom{$= -47$}
+
+  \item $f(x)=x^{2}+2x+4$
+
+$f(-3)$
+        \phantom{$= 7$}
+
+\columnbreak % 165
+
+  \item $f(x)=-x^{2}-2x-1$
+
+$f(-5)$
+        \phantom{$= -16$}
+
+  \item $f(x)=-x^{2}-2x+3$
+
+$f(-3)$
+        \phantom{$= 0$}
+
+  \item $f(x)=-4x^{2}+3x+3$
+
+$f(-3)$
+        \phantom{$= -42$}
+
+  \item $f(x)=-3x^{2}+2x+5$
+
+$f(-2)$
+        \phantom{$= -11$}
+
+  \item $f(x)=2x^{2}+5x-2$
+
+$f(-5)$
+        \phantom{$= 23$}
+
+  \item $f(x)=2x^{2}+3x+2$
+
+$f(-3)$
+        \phantom{$= 11$}
+
+  \item $f(x)=-x^{2}-4x+3$
+
+$f(4)$
+        \phantom{$= -29$}
+
+  \item $f(x)=-3x^{2}+2x-5$
+
+$f(-5)$
+        \phantom{$= -90$}
+
+  \item $f(x)=-4x^{2}-x+3$
+
+$f(3)$
+        \phantom{$= -36$}
+
+  \item $f(x)=4x^{2}-5x+1$
+
+$f(-2)$
+        \phantom{$= 27$}
+
+  \item $f(x)=-5x^{2}+3x+1$
+
+$f(-1)$
+        \phantom{$= -7$}
+
+  \item $f(x)=x^{2}+x+1$
+
+$f(-1)$
+        \phantom{$= 1$}
+
+  \item $f(x)=-2x^{2}+x+2$
+
+$f(3)$
+        \phantom{$= -13$}
+
+  \item $f(x)=3x^{2}-2x+1$
+
+$f(1)$
+        \phantom{$= 2$}
+
+  \item $f(x)=-2x^{2}+2x+4$
+
+$f(1)$
+        \phantom{$= 4$}
+
+\columnbreak % 180
+
+\resetques
+
+  \item $f(x)=5x^{2}+2x+2$
+
+$f(-5)$
+        \phantom{$= 117$}
+
+  \item $f(x)=-2x^{2}-5x-2$
+
+$f(-1)$
+        \phantom{$= 1$}
+
+  \item $f(x)=x^{2}-4x+4$
+
+$f(-3)$
+        \phantom{$= 25$}
+
+  \item $f(x)=4x^{2}+5x-2$
+
+$f(1)$
+        \phantom{$= 7$}
+
+  \item $f(x)=4x^{2}+x-2$
+
+$f(2)$
+        \phantom{$= 16$}
+
+  \item $f(x)=-x^{2}+2x+5$
+
+$f(-2)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-4x^{2}+5x+4$
+
+$f(3)$
+        \phantom{$= -17$}
+
+  \item $f(x)=-5x^{2}-5x+1$
+
+$f(-5)$
+        \phantom{$= -99$}
+
+  \item $f(x)=-2x^{2}-x-1$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=2x^{2}-2x+5$
+
+$f(2)$
+        \phantom{$= 9$}
+
+  \item $f(x)=-5x^{2}-x-4$
+
+$f(-1)$
+        \phantom{$= -8$}
+
+  \item $f(x)=2x^{2}+2x-3$
+
+$f(-4)$
+        \phantom{$= 21$}
+
+  \item $f(x)=x^{2}+4x-3$
+
+$f(-4)$
+        \phantom{$= -3$}
+
+  \item $f(x)=x^{2}-4x-3$
+
+$f(-3)$
+        \phantom{$= 18$}
+
+  \item $f(x)=3x^{2}-2x+2$
+
+$f(4)$
+        \phantom{$= 42$}
+
+\columnbreak % 195
+
+  \item $f(x)=-5x^{2}+5x+3$
+
+$f(4)$
+        \phantom{$= -57$}
+
+  \item $f(x)=5x^{2}+2x+1$
+
+$f(2)$
+        \phantom{$= 25$}
+
+  \item $f(x)=-3x^{2}+5x+5$
+
+$f(-1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-5x^{2}+4x+2$
+
+$f(-4)$
+        \phantom{$= -94$}
+
+  \item $f(x)=5x^{2}+4x+2$
+
+$f(1)$
+        \phantom{$= 11$}
+
+  \item $f(x)=-4x^{2}-4x+4$
+
+$f(-3)$
+        \phantom{$= -20$}
+
+  \item $f(x)=-4x^{2}-5x-4$
+
+$f(-1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=x^{2}+2x+2$
+
+$f(-5)$
+        \phantom{$= 17$}
+
+  \item $f(x)=x^{2}-4x+3$
+
+$f(4)$
+        \phantom{$= 3$}
+
+  \item $f(x)=-3x^{2}-5x+3$
+
+$f(5)$
+        \phantom{$= -97$}
+
+  \item $f(x)=-x^{2}-x+2$
+
+$f(3)$
+        \phantom{$= -10$}
+
+  \item $f(x)=2x^{2}-x-5$
+
+$f(3)$
+        \phantom{$= 10$}
+
+  \item $f(x)=-3x^{2}-2x+3$
+
+$f(3)$
+        \phantom{$= -30$}
+
+  \item $f(x)=3x^{2}-2x+3$
+
+$f(2)$
+        \phantom{$= 11$}
+
+  \item $f(x)=x^{2}+2x+4$
+
+$f(2)$
+        \phantom{$= 12$}
+
+\columnbreak % 210
+
+  \item $f(x)=4x^{2}-2x+1$
+
+$f(-4)$
+        \phantom{$= 73$}
+
+  \item $f(x)=4x^{2}-3x+3$
+
+$f(5)$
+        \phantom{$= 88$}
+
+  \item $f(x)=2x^{2}-x-4$
+
+$f(-1)$
+        \phantom{$= -1$}
+
+  \item $f(x)=3x^{2}+3x-2$
+
+$f(-4)$
+        \phantom{$= 34$}
+
+  \item $f(x)=4x^{2}-x+2$
+
+$f(5)$
+        \phantom{$= 97$}
+
+  \item $f(x)=-3x^{2}+2x-2$
+
+$f(-2)$
+        \phantom{$= -18$}
+
+  \item $f(x)=-5x^{2}-5x+1$
+
+$f(-3)$
+        \phantom{$= -29$}
+
+  \item $f(x)=-x^{2}+3x+1$
+
+$f(-2)$
+        \phantom{$= -9$}
+
+  \item $f(x)=2x^{2}+5x+3$
+
+$f(5)$
+        \phantom{$= 78$}
+
+  \item $f(x)=-4x^{2}+3x+2$
+
+$f(-4)$
+        \phantom{$= -74$}
+
+  \item $f(x)=x^{2}+2x-2$
+
+$f(-5)$
+        \phantom{$= 13$}
+
+  \item $f(x)=-2x^{2}-4x-4$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=x^{2}-2x-2$
+
+$f(-2)$
+        \phantom{$= 6$}
+
+  \item $f(x)=3x^{2}+4x+1$
+
+$f(5)$
+        \phantom{$= 96$}
+
+  \item $f(x)=-x^{2}+x+4$
+
+$f(-5)$
+        \phantom{$= -26$}
+
+\columnbreak % 225
+
+\resetques
+
+  \item $f(x)=-2x^{2}-x+4$
+
+$f(-1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=3x^{2}+3x+2$
+
+$f(1)$
+        \phantom{$= 8$}
+
+  \item $f(x)=2x^{2}+x+3$
+
+$f(2)$
+        \phantom{$= 13$}
+
+  \item $f(x)=-3x^{2}-3x+3$
+
+$f(4)$
+        \phantom{$= -57$}
+
+  \item $f(x)=-x^{2}-x-1$
+
+$f(-5)$
+        \phantom{$= -21$}
+
+  \item $f(x)=-x^{2}+3x-5$
+
+$f(5)$
+        \phantom{$= -15$}
+
+  \item $f(x)=-3x^{2}-5x-5$
+
+$f(-4)$
+        \phantom{$= -33$}
+
+  \item $f(x)=-x^{2}+4x-5$
+
+$f(-4)$
+        \phantom{$= -37$}
+
+  \item $f(x)=-4x^{2}-5x+2$
+
+$f(4)$
+        \phantom{$= -82$}
+
+  \item $f(x)=-2x^{2}+5x-5$
+
+$f(5)$
+        \phantom{$= -30$}
+
+  \item $f(x)=-3x^{2}-5x+5$
+
+$f(5)$
+        \phantom{$= -95$}
+
+  \item $f(x)=3x^{2}-x-2$
+
+$f(5)$
+        \phantom{$= 68$}
+
+  \item $f(x)=-x^{2}-4x+3$
+
+$f(2)$
+        \phantom{$= -9$}
+
+  \item $f(x)=4x^{2}-5x-4$
+
+$f(1)$
+        \phantom{$= -5$}
+
+  \item $f(x)=2x^{2}-2x+1$
+
+$f(-1)$
+        \phantom{$= 5$}
+
+\columnbreak % 240
+
+  \item $f(x)=-5x^{2}+x+4$
+
+$f(3)$
+        \phantom{$= -38$}
+
+  \item $f(x)=2x^{2}-3x-2$
+
+$f(-4)$
+        \phantom{$= 42$}
+
+  \item $f(x)=-x^{2}-4x-5$
+
+$f(2)$
+        \phantom{$= -17$}
+
+  \item $f(x)=x^{2}+x+2$
+
+$f(1)$
+        \phantom{$= 4$}
+
+  \item $f(x)=2x^{2}-x+4$
+
+$f(3)$
+        \phantom{$= 19$}
+
+  \item $f(x)=-4x^{2}+4x+4$
+
+$f(-4)$
+        \phantom{$= -76$}
+
+  \item $f(x)=-2x^{2}-3x+4$
+
+$f(-5)$
+        \phantom{$= -31$}
+
+  \item $f(x)=5x^{2}-5x-2$
+
+$f(-5)$
+        \phantom{$= 148$}
+
+  \item $f(x)=2x^{2}-4x+1$
+
+$f(-3)$
+        \phantom{$= 31$}
+
+  \item $f(x)=x^{2}-2x-5$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=3x^{2}-x-1$
+
+$f(1)$
+        \phantom{$= 1$}
+
+  \item $f(x)=4x^{2}+x-3$
+
+$f(-2)$
+        \phantom{$= 11$}
+
+  \item $f(x)=3x^{2}+3x+4$
+
+$f(3)$
+        \phantom{$= 40$}
+
+  \item $f(x)=x^{2}-3x+1$
+
+$f(5)$
+        \phantom{$= 11$}
+
+  \item $f(x)=5x^{2}-x-2$
+
+$f(-3)$
+        \phantom{$= 46$}
+
+\columnbreak % 255
+
+  \item $f(x)=x^{2}+3x-2$
+
+$f(-2)$
+        \phantom{$= -4$}
+
+  \item $f(x)=-4x^{2}-4x+2$
+
+$f(4)$
+        \phantom{$= -78$}
+
+  \item $f(x)=4x^{2}+5x-3$
+
+$f(-1)$
+        \phantom{$= -4$}
+
+  \item $f(x)=3x^{2}+2x+1$
+
+$f(-1)$
+        \phantom{$= 2$}
+
+  \item $f(x)=5x^{2}-x+1$
+
+$f(-2)$
+        \phantom{$= 23$}
+
+  \item $f(x)=5x^{2}+3x+1$
+
+$f(-4)$
+        \phantom{$= 69$}
+
+  \item $f(x)=3x^{2}-x+2$
+
+$f(-1)$
+        \phantom{$= 6$}
+
+  \item $f(x)=3x^{2}+x-5$
+
+$f(-5)$
+        \phantom{$= 65$}
+
+  \item $f(x)=x^{2}+3x-1$
+
+$f(-2)$
+        \phantom{$= -3$}
+
+  \item $f(x)=5x^{2}-2x-3$
+
+$f(-5)$
+        \phantom{$= 132$}
+
+  \item $f(x)=-2x^{2}-2x-5$
+
+$f(-3)$
+        \phantom{$= -17$}
+
+  \item $f(x)=-x^{2}+x+5$
+
+$f(1)$
+        \phantom{$= 5$}
+
+  \item $f(x)=5x^{2}+2x-4$
+
+$f(5)$
+        \phantom{$= 131$}
+
+  \item $f(x)=-x^{2}-2x-5$
+
+$f(2)$
+        \phantom{$= -13$}
+
+  \item $f(x)=3x^{2}-3x+5$
+
+$f(-2)$
+        \phantom{$= 23$}
+
+\columnbreak % 270
+
+\resetques
+
+  \item $f(x)=4x^{2}-4x+5$
+
+$f(1)$
+        \phantom{$= 5$}
+
+  \item $f(x)=-x^{2}+x+3$
+
+$f(3)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-x^{2}+x-5$
+
+$f(-4)$
+        \phantom{$= -25$}
+
+  \item $f(x)=-4x^{2}+x-4$
+
+$f(-3)$
+        \phantom{$= -43$}
+
+  \item $f(x)=2x^{2}+4x+5$
+
+$f(2)$
+        \phantom{$= 21$}
+
+  \item $f(x)=-2x^{2}-3x+5$
+
+$f(5)$
+        \phantom{$= -60$}
+
+  \item $f(x)=3x^{2}-5x-3$
+
+$f(-3)$
+        \phantom{$= 39$}
+
+  \item $f(x)=x^{2}-2x+2$
+
+$f(-4)$
+        \phantom{$= 26$}
+
+  \item $f(x)=-2x^{2}+2x+3$
+
+$f(1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=-4x^{2}+3x+2$
+
+$f(-4)$
+        \phantom{$= -74$}
+
+  \item $f(x)=-x^{2}-2x+3$
+
+$f(-1)$
+        \phantom{$= 4$}
+
+  \item $f(x)=3x^{2}+5x-2$
+
+$f(1)$
+        \phantom{$= 6$}
+
+  \item $f(x)=4x^{2}-4x-4$
+
+$f(3)$
+        \phantom{$= 20$}
+
+  \item $f(x)=-5x^{2}-5x-1$
+
+$f(5)$
+        \phantom{$= -151$}
+
+  \item $f(x)=x^{2}+2x+2$
+
+$f(-2)$
+        \phantom{$= 2$}
+
+\columnbreak % 285
+
+  \item $f(x)=x^{2}+4x-2$
+
+$f(3)$
+        \phantom{$= 19$}
+
+  \item $f(x)=-x^{2}-5x+3$
+
+$f(1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-5x^{2}+x+2$
+
+$f(-1)$
+        \phantom{$= -4$}
+
+  \item $f(x)=-4x^{2}-3x+1$
+
+$f(-3)$
+        \phantom{$= -26$}
+
+  \item $f(x)=3x^{2}-5x+2$
+
+$f(5)$
+        \phantom{$= 52$}
+
+  \item $f(x)=-2x^{2}+5x-2$
+
+$f(5)$
+        \phantom{$= -27$}
+
+  \item $f(x)=2x^{2}+x-1$
+
+$f(-4)$
+        \phantom{$= 27$}
+
+  \item $f(x)=4x^{2}-4x-5$
+
+$f(2)$
+        \phantom{$= 3$}
+
+  \item $f(x)=-5x^{2}-3x-2$
+
+$f(3)$
+        \phantom{$= -56$}
+
+  \item $f(x)=x^{2}+x+5$
+
+$f(4)$
+        \phantom{$= 25$}
+
+  \item $f(x)=3x^{2}-5x-5$
+
+$f(-5)$
+        \phantom{$= 95$}
+
+  \item $f(x)=-2x^{2}+x-4$
+
+$f(-5)$
+        \phantom{$= -59$}
+
+  \item $f(x)=-x^{2}+3x+4$
+
+$f(-1)$
+        \phantom{$= 0$}
+
+  \item $f(x)=4x^{2}+4x-2$
+
+$f(-2)$
+        \phantom{$= 6$}
+
+  \item $f(x)=2x^{2}-x-5$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+\columnbreak % 300
+
+  \item $f(x)=-3x^{2}+5x+4$
+
+$f(-4)$
+        \phantom{$= -64$}
+
+  \item $f(x)=-3x^{2}-4x+1$
+
+$f(-2)$
+        \phantom{$= -3$}
+
+  \item $f(x)=2x^{2}+2x-1$
+
+$f(2)$
+        \phantom{$= 11$}
+
+  \item $f(x)=3x^{2}-2x-1$
+
+$f(-3)$
+        \phantom{$= 32$}
+
+  \item $f(x)=5x^{2}+4x+4$
+
+$f(5)$
+        \phantom{$= 149$}
+
+  \item $f(x)=5x^{2}+x+4$
+
+$f(1)$
+        \phantom{$= 10$}
+
+  \item $f(x)=-3x^{2}-2x-3$
+
+$f(-4)$
+        \phantom{$= -43$}
+
+  \item $f(x)=x^{2}-2x-5$
+
+$f(-2)$
+        \phantom{$= 3$}
+
+  \item $f(x)=4x^{2}-5x+1$
+
+$f(5)$
+        \phantom{$= 76$}
+
+  \item $f(x)=-4x^{2}+x-2$
+
+$f(-4)$
+        \phantom{$= -70$}
+
+  \item $f(x)=-3x^{2}+3x+3$
+
+$f(3)$
+        \phantom{$= -15$}
+
+  \item $f(x)=-5x^{2}+3x+2$
+
+$f(5)$
+        \phantom{$= -108$}
+
+  \item $f(x)=x^{2}+5x-5$
+
+$f(5)$
+        \phantom{$= 45$}
+
+  \item $f(x)=4x^{2}-5x-2$
+
+$f(-5)$
+        \phantom{$= 123$}
+
+  \item $f(x)=x^{2}+x+2$
+
+$f(4)$
+        \phantom{$= 22$}
+
+\columnbreak % 315
+
+\resetques
+
+  \item $f(x)=-4x^{2}-x+3$
+
+$f(2)$
+        \phantom{$= -15$}
+
+  \item $f(x)=x^{2}+x+3$
+
+$f(2)$
+        \phantom{$= 9$}
+
+  \item $f(x)=-2x^{2}+x-2$
+
+$f(-1)$
+        \phantom{$= -5$}
+
+  \item $f(x)=-3x^{2}-x+5$
+
+$f(-2)$
+        \phantom{$= -5$}
+
+  \item $f(x)=-4x^{2}+4x+5$
+
+$f(3)$
+        \phantom{$= -19$}
+
+  \item $f(x)=5x^{2}-2x+2$
+
+$f(-4)$
+        \phantom{$= 90$}
+
+  \item $f(x)=5x^{2}+x-5$
+
+$f(4)$
+        \phantom{$= 79$}
+
+  \item $f(x)=x^{2}+3x-4$
+
+$f(-1)$
+        \phantom{$= -6$}
+
+  \item $f(x)=-4x^{2}+3x-5$
+
+$f(-5)$
+        \phantom{$= -120$}
+
+  \item $f(x)=-5x^{2}+2x-4$
+
+$f(5)$
+        \phantom{$= -119$}
+
+  \item $f(x)=-2x^{2}-2x-1$
+
+$f(4)$
+        \phantom{$= -41$}
+
+  \item $f(x)=4x^{2}-5x+3$
+
+$f(-2)$
+        \phantom{$= 29$}
+
+  \item $f(x)=-4x^{2}-3x-3$
+
+$f(2)$
+        \phantom{$= -25$}
+
+  \item $f(x)=-2x^{2}+3x-3$
+
+$f(-3)$
+        \phantom{$= -30$}
+
+  \item $f(x)=2x^{2}+4x+2$
+
+$f(2)$
+        \phantom{$= 18$}
+
+\columnbreak % 330
+
+  \item $f(x)=5x^{2}+x+4$
+
+$f(2)$
+        \phantom{$= 26$}
+
+  \item $f(x)=-x^{2}+5x-3$
+
+$f(5)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-4x^{2}+3x+5$
+
+$f(-3)$
+        \phantom{$= -40$}
+
+  \item $f(x)=-4x^{2}+x+1$
+
+$f(2)$
+        \phantom{$= -13$}
+
+  \item $f(x)=-4x^{2}+4x-4$
+
+$f(3)$
+        \phantom{$= -28$}
+
+  \item $f(x)=5x^{2}+x-1$
+
+$f(1)$
+        \phantom{$= 5$}
+
+  \item $f(x)=4x^{2}+3x+1$
+
+$f(2)$
+        \phantom{$= 23$}
+
+  \item $f(x)=3x^{2}+2x-1$
+
+$f(-4)$
+        \phantom{$= 39$}
+
+  \item $f(x)=-2x^{2}+2x-2$
+
+$f(5)$
+        \phantom{$= -42$}
+
+  \item $f(x)=4x^{2}+3x-1$
+
+$f(2)$
+        \phantom{$= 21$}
+
+  \item $f(x)=-x^{2}+3x+2$
+
+$f(-3)$
+        \phantom{$= -16$}
+
+  \item $f(x)=-2x^{2}+3x+1$
+
+$f(4)$
+        \phantom{$= -19$}
+
+  \item $f(x)=-x^{2}+x-1$
+
+$f(3)$
+        \phantom{$= -7$}
+
+  \item $f(x)=-2x^{2}-3x-2$
+
+$f(4)$
+        \phantom{$= -46$}
+
+  \item $f(x)=-2x^{2}-2x+1$
+
+$f(-1)$
+        \phantom{$= 1$}
+
+\columnbreak % 345
+
+  \item $f(x)=-3x^{2}-3x+5$
+
+$f(-3)$
+        \phantom{$= -13$}
+
+  \item $f(x)=-3x^{2}-x-2$
+
+$f(-2)$
+        \phantom{$= -12$}
+
+  \item $f(x)=-4x^{2}-3x-2$
+
+$f(4)$
+        \phantom{$= -78$}
+
+  \item $f(x)=-x^{2}-5x+5$
+
+$f(-2)$
+        \phantom{$= 11$}
+
+  \item $f(x)=-2x^{2}+2x-4$
+
+$f(-3)$
+        \phantom{$= -28$}
+
+  \item $f(x)=5x^{2}-x+3$
+
+$f(5)$
+        \phantom{$= 123$}
+
+  \item $f(x)=5x^{2}+4x+3$
+
+$f(-2)$
+        \phantom{$= 15$}
+
+  \item $f(x)=4x^{2}+4x-4$
+
+$f(3)$
+        \phantom{$= 44$}
+
+  \item $f(x)=2x^{2}+4x-1$
+
+$f(3)$
+        \phantom{$= 29$}
+
+  \item $f(x)=3x^{2}+x-4$
+
+$f(3)$
+        \phantom{$= 26$}
+
+  \item $f(x)=3x^{2}-5x+3$
+
+$f(-3)$
+        \phantom{$= 45$}
+
+  \item $f(x)=x^{2}-3x+5$
+
+$f(-3)$
+        \phantom{$= 23$}
+
+  \item $f(x)=-5x^{2}-4x-1$
+
+$f(-5)$
+        \phantom{$= -106$}
+
+  \item $f(x)=-4x^{2}+5x-5$
+
+$f(-4)$
+        \phantom{$= -89$}
+
+  \item $f(x)=-5x^{2}+3x+3$
+
+$f(1)$
+        \phantom{$= 1$}
+
+\columnbreak % 360
+
+\resetques
+
+  \item $f(x)=-2x^{2}-x+2$
+
+$f(-5)$
+        \phantom{$= -43$}
+
+  \item $f(x)=x^{2}+4x+3$
+
+$f(-4)$
+        \phantom{$= 3$}
+
+  \item $f(x)=-2x^{2}-5x-4$
+
+$f(-5)$
+        \phantom{$= -29$}
+
+  \item $f(x)=-5x^{2}-5x+4$
+
+$f(-4)$
+        \phantom{$= -56$}
+
+  \item $f(x)=2x^{2}-2x+4$
+
+$f(-2)$
+        \phantom{$= 16$}
+
+  \item $f(x)=x^{2}-x+5$
+
+$f(-3)$
+        \phantom{$= 17$}
+
+  \item $f(x)=-2x^{2}+2x+2$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=5x^{2}+x+1$
+
+$f(2)$
+        \phantom{$= 23$}
+
+  \item $f(x)=2x^{2}+3x-5$
+
+$f(-5)$
+        \phantom{$= 30$}
+
+  \item $f(x)=2x^{2}-4x+2$
+
+$f(-1)$
+        \phantom{$= 8$}
+
+  \item $f(x)=5x^{2}-4x+2$
+
+$f(-5)$
+        \phantom{$= 147$}
+
+  \item $f(x)=-4x^{2}+2x-4$
+
+$f(-4)$
+        \phantom{$= -76$}
+
+  \item $f(x)=x^{2}-2x-5$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=2x^{2}+4x+2$
+
+$f(-5)$
+        \phantom{$= 32$}
+
+  \item $f(x)=-4x^{2}+2x-3$
+
+$f(-1)$
+        \phantom{$= -9$}
+
+\columnbreak % 375
+
+  \item $f(x)=-3x^{2}-5x+1$
+
+$f(-4)$
+        \phantom{$= -27$}
+
+  \item $f(x)=-2x^{2}-5x+3$
+
+$f(3)$
+        \phantom{$= -30$}
+
+  \item $f(x)=-x^{2}-4x+5$
+
+$f(-1)$
+        \phantom{$= 8$}
+
+  \item $f(x)=4x^{2}-x-3$
+
+$f(1)$
+        \phantom{$= 0$}
+
+  \item $f(x)=-4x^{2}+5x+5$
+
+$f(2)$
+        \phantom{$= -1$}
+
+  \item $f(x)=5x^{2}-3x-2$
+
+$f(-4)$
+        \phantom{$= 90$}
+
+  \item $f(x)=-3x^{2}-2x-3$
+
+$f(4)$
+        \phantom{$= -59$}
+
+  \item $f(x)=5x^{2}+x-4$
+
+$f(-3)$
+        \phantom{$= 38$}
+
+  \item $f(x)=-2x^{2}+x+5$
+
+$f(-1)$
+        \phantom{$= 2$}
+
+  \item $f(x)=3x^{2}+2x-3$
+
+$f(2)$
+        \phantom{$= 13$}
+
+  \item $f(x)=-x^{2}-2x+4$
+
+$f(5)$
+        \phantom{$= -31$}
+
+  \item $f(x)=-2x^{2}-x-3$
+
+$f(5)$
+        \phantom{$= -58$}
+
+  \item $f(x)=2x^{2}-5x-4$
+
+$f(4)$
+        \phantom{$= 8$}
+
+  \item $f(x)=4x^{2}+3x+1$
+
+$f(1)$
+        \phantom{$= 8$}
+
+  \item $f(x)=3x^{2}+2x-5$
+
+$f(-4)$
+        \phantom{$= 35$}
+
+\columnbreak % 390
+
+  \item $f(x)=-x^{2}+3x-2$
+
+$f(-2)$
+        \phantom{$= -12$}
+
+  \item $f(x)=-2x^{2}-2x+1$
+
+$f(4)$
+        \phantom{$= -39$}
+
+  \item $f(x)=2x^{2}-x-5$
+
+$f(-3)$
+        \phantom{$= 16$}
+
+  \item $f(x)=-4x^{2}-3x-2$
+
+$f(1)$
+        \phantom{$= -9$}
+
+  \item $f(x)=-x^{2}+x+2$
+
+$f(-3)$
+        \phantom{$= -10$}
+
+  \item $f(x)=-4x^{2}-5x+3$
+
+$f(-5)$
+        \phantom{$= -72$}
+
+  \item $f(x)=5x^{2}-4x+1$
+
+$f(1)$
+        \phantom{$= 2$}
+
+  \item $f(x)=2x^{2}+x+1$
+
+$f(2)$
+        \phantom{$= 11$}
+
+  \item $f(x)=x^{2}-4x-3$
+
+$f(-2)$
+        \phantom{$= 9$}
+
+  \item $f(x)=-3x^{2}+4x+4$
+
+$f(-4)$
+        \phantom{$= -60$}
+
+  \item $f(x)=-3x^{2}-3x+5$
+
+$f(4)$
+        \phantom{$= -55$}
+
+  \item $f(x)=-2x^{2}+3x+2$
+
+$f(1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=2x^{2}-2x-1$
+
+$f(-5)$
+        \phantom{$= 59$}
+
+  \item $f(x)=3x^{2}+4x-2$
+
+$f(4)$
+        \phantom{$= 62$}
+
+  \item $f(x)=-4x^{2}+4x-3$
+
+$f(-5)$
+        \phantom{$= -123$}
+
+\columnbreak % 405
+
+\resetques
+
+  \item $f(x)=x^{2}-2x+4$
+
+$f(-1)$
+        \phantom{$= 7$}
+
+  \item $f(x)=-4x^{2}-x+4$
+
+$f(-5)$
+        \phantom{$= -91$}
+
+  \item $f(x)=-4x^{2}-5x-4$
+
+$f(3)$
+        \phantom{$= -55$}
+
+  \item $f(x)=-3x^{2}-x+5$
+
+$f(-4)$
+        \phantom{$= -39$}
+
+  \item $f(x)=-x^{2}+x+3$
+
+$f(5)$
+        \phantom{$= -17$}
+
+  \item $f(x)=2x^{2}-x-1$
+
+$f(5)$
+        \phantom{$= 44$}
+
+  \item $f(x)=2x^{2}-4x+3$
+
+$f(4)$
+        \phantom{$= 19$}
+
+  \item $f(x)=4x^{2}+5x+1$
+
+$f(-2)$
+        \phantom{$= 7$}
+
+  \item $f(x)=3x^{2}-5x+4$
+
+$f(3)$
+        \phantom{$= 16$}
+
+  \item $f(x)=-3x^{2}+x+2$
+
+$f(4)$
+        \phantom{$= -42$}
+
+  \item $f(x)=x^{2}+4x-4$
+
+$f(3)$
+        \phantom{$= 17$}
+
+  \item $f(x)=3x^{2}+x-3$
+
+$f(-4)$
+        \phantom{$= 41$}
+
+  \item $f(x)=-3x^{2}+x+1$
+
+$f(-1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=4x^{2}-x-5$
+
+$f(-3)$
+        \phantom{$= 34$}
+
+  \item $f(x)=-5x^{2}-2x-5$
+
+$f(1)$
+        \phantom{$= -12$}
+
+\columnbreak % 420
+
+  \item $f(x)=4x^{2}+5x-5$
+
+$f(5)$
+        \phantom{$= 120$}
+
+  \item $f(x)=-5x^{2}+x+2$
+
+$f(-4)$
+        \phantom{$= -82$}
+
+  \item $f(x)=3x^{2}+3x+1$
+
+$f(-5)$
+        \phantom{$= 61$}
+
+  \item $f(x)=-3x^{2}-2x+2$
+
+$f(-1)$
+        \phantom{$= 1$}
+
+  \item $f(x)=x^{2}-2x+1$
+
+$f(-1)$
+        \phantom{$= 4$}
+
+  \item $f(x)=-x^{2}-3x+5$
+
+$f(3)$
+        \phantom{$= -13$}
+
+  \item $f(x)=-4x^{2}+x-2$
+
+$f(-1)$
+        \phantom{$= -7$}
+
+  \item $f(x)=5x^{2}+x+5$
+
+$f(-2)$
+        \phantom{$= 23$}
+
+  \item $f(x)=4x^{2}+3x-4$
+
+$f(1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=-x^{2}-3x+4$
+
+$f(-4)$
+        \phantom{$= 0$}
+
+  \item $f(x)=-3x^{2}+3x-1$
+
+$f(-3)$
+        \phantom{$= -37$}
+
+  \item $f(x)=-x^{2}-4x-5$
+
+$f(2)$
+        \phantom{$= -17$}
+
+  \item $f(x)=5x^{2}-5x+5$
+
+$f(1)$
+        \phantom{$= 5$}
+
+  \item $f(x)=-3x^{2}+5x+5$
+
+$f(5)$
+        \phantom{$= -45$}
+
+  \item $f(x)=-5x^{2}-x-5$
+
+$f(-5)$
+        \phantom{$= -125$}
+
+\columnbreak % 435
+
+  \item $f(x)=5x^{2}-x-2$
+
+$f(-3)$
+        \phantom{$= 46$}
+
+  \item $f(x)=5x^{2}+x+3$
+
+$f(-3)$
+        \phantom{$= 45$}
+
+  \item $f(x)=5x^{2}+2x+1$
+
+$f(2)$
+        \phantom{$= 25$}
+
+  \item $f(x)=3x^{2}+2x-3$
+
+$f(3)$
+        \phantom{$= 30$}
+
+  \item $f(x)=-3x^{2}-4x-1$
+
+$f(3)$
+        \phantom{$= -40$}
+
+  \item $f(x)=-2x^{2}+4x+4$
+
+$f(1)$
+        \phantom{$= 6$}
+
+  \item $f(x)=-x^{2}-4x+2$
+
+$f(-2)$
+        \phantom{$= 6$}
+
+  \item $f(x)=5x^{2}-x-2$
+
+$f(-2)$
+        \phantom{$= 20$}
+
+  \item $f(x)=-4x^{2}-x-2$
+
+$f(-2)$
+        \phantom{$= -16$}
+
+  \item $f(x)=-4x^{2}-x+4$
+
+$f(-1)$
+        \phantom{$= 1$}
+
+  \item $f(x)=-3x^{2}-5x+4$
+
+$f(-5)$
+        \phantom{$= -46$}
+
+  \item $f(x)=-4x^{2}+2x+1$
+
+$f(1)$
+        \phantom{$= -1$}
+
+  \item $f(x)=-x^{2}+4x-2$
+
+$f(3)$
+        \phantom{$= 1$}
+
+  \item $f(x)=2x^{2}-2x-1$
+
+$f(1)$
+        \phantom{$= -1$}
+
+  \item $f(x)=-5x^{2}-2x+1$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+\columnbreak % 450
+
+\resetques
+
+  \item $f(x)=-4x^{2}-x-5$
+
+$f(-3)$
+        \phantom{$= -38$}
+
+  \item $f(x)=5x^{2}+4x+3$
+
+$f(-2)$
+        \phantom{$= 15$}
+
+  \item $f(x)=2x^{2}-x+3$
+
+$f(5)$
+        \phantom{$= 48$}
+
+  \item $f(x)=4x^{2}-4x-4$
+
+$f(-2)$
+        \phantom{$= 20$}
+
+  \item $f(x)=-2x^{2}-5x-5$
+
+$f(-3)$
+        \phantom{$= -8$}
+
+  \item $f(x)=-2x^{2}-x+3$
+
+$f(-5)$
+        \phantom{$= -42$}
+
+  \item $f(x)=x^{2}-5x-1$
+
+$f(1)$
+        \phantom{$= -5$}
+
+  \item $f(x)=3x^{2}+2x-2$
+
+$f(2)$
+        \phantom{$= 14$}
+
+  \item $f(x)=-3x^{2}+4x-4$
+
+$f(-2)$
+        \phantom{$= -24$}
+
+  \item $f(x)=4x^{2}+4x-4$
+
+$f(4)$
+        \phantom{$= 76$}
+
+  \item $f(x)=-2x^{2}+x-5$
+
+$f(-3)$
+        \phantom{$= -26$}
+
+  \item $f(x)=5x^{2}+x-3$
+
+$f(5)$
+        \phantom{$= 127$}
+
+  \item $f(x)=-3x^{2}+3x+3$
+
+$f(-2)$
+        \phantom{$= -15$}
+
+  \item $f(x)=-5x^{2}-4x-4$
+
+$f(-4)$
+        \phantom{$= -68$}
+
+  \item $f(x)=x^{2}+x+5$
+
+$f(-1)$
+        \phantom{$= 5$}
+
+\columnbreak % 465
+
+  \item $f(x)=-4x^{2}-5x+5$
+
+$f(3)$
+        \phantom{$= -46$}
+
+  \item $f(x)=-5x^{2}-3x+5$
+
+$f(1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=2x^{2}-3x+3$
+
+$f(4)$
+        \phantom{$= 23$}
+
+  \item $f(x)=2x^{2}-x-3$
+
+$f(5)$
+        \phantom{$= 42$}
+
+  \item $f(x)=x^{2}-2x-2$
+
+$f(-2)$
+        \phantom{$= 6$}
+
+  \item $f(x)=-3x^{2}-4x-4$
+
+$f(-4)$
+        \phantom{$= -36$}
+
+  \item $f(x)=3x^{2}+3x+5$
+
+$f(4)$
+        \phantom{$= 65$}
+
+  \item $f(x)=-x^{2}-4x+5$
+
+$f(-3)$
+        \phantom{$= 8$}
+
+  \item $f(x)=-2x^{2}+3x+5$
+
+$f(4)$
+        \phantom{$= -15$}
+
+  \item $f(x)=3x^{2}-3x-5$
+
+$f(-1)$
+        \phantom{$= 1$}
+
+  \item $f(x)=2x^{2}-2x+4$
+
+$f(-4)$
+        \phantom{$= 44$}
+
+  \item $f(x)=-4x^{2}-3x-1$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=-x^{2}-4x-4$
+
+$f(5)$
+        \phantom{$= -49$}
+
+  \item $f(x)=-4x^{2}-3x-4$
+
+$f(-2)$
+        \phantom{$= -14$}
+
+  \item $f(x)=3x^{2}+5x+1$
+
+$f(3)$
+        \phantom{$= 43$}
+
+\columnbreak % 480
+
+  \item $f(x)=-3x^{2}+3x+2$
+
+$f(1)$
+        \phantom{$= 2$}
+
+  \item $f(x)=x^{2}-x+2$
+
+$f(2)$
+        \phantom{$= 4$}
+
+  \item $f(x)=-2x^{2}-4x+4$
+
+$f(-4)$
+        \phantom{$= -12$}
+
+  \item $f(x)=5x^{2}-4x+5$
+
+$f(-1)$
+        \phantom{$= 14$}
+
+  \item $f(x)=-4x^{2}+x-1$
+
+$f(4)$
+        \phantom{$= -61$}
+
+  \item $f(x)=4x^{2}+3x+3$
+
+$f(2)$
+        \phantom{$= 25$}
+
+  \item $f(x)=-x^{2}+3x+3$
+
+$f(2)$
+        \phantom{$= 5$}
+
+  \item $f(x)=-2x^{2}+2x+4$
+
+$f(-5)$
+        \phantom{$= -56$}
+
+  \item $f(x)=-2x^{2}+x-3$
+
+$f(3)$
+        \phantom{$= -18$}
+
+  \item $f(x)=4x^{2}-5x-3$
+
+$f(2)$
+        \phantom{$= 3$}
+
+  \item $f(x)=-5x^{2}+3x-3$
+
+$f(4)$
+        \phantom{$= -71$}
+
+  \item $f(x)=-5x^{2}+3x+5$
+
+$f(-2)$
+        \phantom{$= -21$}
+
+  \item $f(x)=5x^{2}-4x-4$
+
+$f(-5)$
+        \phantom{$= 141$}
+
+  \item $f(x)=-5x^{2}+x+3$
+
+$f(-5)$
+        \phantom{$= -127$}
+
+  \item $f(x)=-3x^{2}+x+2$
+
+$f(5)$
+        \phantom{$= -68$}
+
+\columnbreak % 495
+
+\resetques
+
+  \item $f(x)=-2x^{2}+2x-3$
+
+$f(-1)$
+        \phantom{$= -7$}
+
+  \item $f(x)=3x^{2}-5x-4$
+
+$f(-3)$
+        \phantom{$= 38$}
+
+  \item $f(x)=-3x^{2}+3x+1$
+
+$f(-3)$
+        \phantom{$= -35$}
+
+  \item $f(x)=-x^{2}+5x-1$
+
+$f(5)$
+        \phantom{$= -1$}
+
+  \item $f(x)=4x^{2}+5x-5$
+
+$f(2)$
+        \phantom{$= 21$}
+
+  \item $f(x)=-x^{2}+4x-3$
+
+$f(3)$
+        \phantom{$= 0$}
+
+  \item $f(x)=-x^{2}-3x+2$
+
+$f(2)$
+        \phantom{$= -8$}
+
+  \item $f(x)=x^{2}-5x+4$
+
+$f(-3)$
+        \phantom{$= 28$}
+
+  \item $f(x)=5x^{2}-x+5$
+
+$f(3)$
+        \phantom{$= 47$}
+
+  \item $f(x)=3x^{2}+3x-3$
+
+$f(-1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-4x^{2}-4x-3$
+
+$f(4)$
+        \phantom{$= -83$}
+
+  \item $f(x)=-3x^{2}+4x+4$
+
+$f(-1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-3x^{2}-4x-4$
+
+$f(4)$
+        \phantom{$= -68$}
+
+  \item $f(x)=5x^{2}-x-3$
+
+$f(-2)$
+        \phantom{$= 19$}
+
+  \item $f(x)=x^{2}-5x-1$
+
+$f(2)$
+        \phantom{$= -7$}
+
+\columnbreak % 510
+
+  \item $f(x)=-x^{2}+x-4$
+
+$f(-5)$
+        \phantom{$= -34$}
+
+  \item $f(x)=-4x^{2}-x-5$
+
+$f(-2)$
+        \phantom{$= -19$}
+
+  \item $f(x)=-x^{2}+2x+3$
+
+$f(-1)$
+        \phantom{$= 0$}
+
+  \item $f(x)=-2x^{2}+2x+2$
+
+$f(3)$
+        \phantom{$= -10$}
+
+  \item $f(x)=4x^{2}+5x-4$
+
+$f(-4)$
+        \phantom{$= 40$}
+
+  \item $f(x)=-2x^{2}+x+1$
+
+$f(2)$
+        \phantom{$= -5$}
+
+  \item $f(x)=2x^{2}+5x+2$
+
+$f(1)$
+        \phantom{$= 9$}
+
+  \item $f(x)=4x^{2}-x+2$
+
+$f(2)$
+        \phantom{$= 16$}
+
+  \item $f(x)=4x^{2}-3x+2$
+
+$f(-1)$
+        \phantom{$= 9$}
+
+  \item $f(x)=4x^{2}+x-2$
+
+$f(4)$
+        \phantom{$= 66$}
+
+  \item $f(x)=-5x^{2}+x-5$
+
+$f(2)$
+        \phantom{$= -23$}
+
+  \item $f(x)=4x^{2}+3x-5$
+
+$f(-1)$
+        \phantom{$= -4$}
+
+  \item $f(x)=-4x^{2}-2x+5$
+
+$f(1)$
+        \phantom{$= -1$}
+
+  \item $f(x)=3x^{2}-5x+1$
+
+$f(-2)$
+        \phantom{$= 23$}
+
+  \item $f(x)=-5x^{2}-3x+1$
+
+$f(4)$
+        \phantom{$= -91$}
+
+\columnbreak % 525
+
+  \item $f(x)=3x^{2}+2x+3$
+
+$f(3)$
+        \phantom{$= 36$}
+
+  \item $f(x)=-3x^{2}+2x-1$
+
+$f(3)$
+        \phantom{$= -22$}
+
+  \item $f(x)=-x^{2}-3x-5$
+
+$f(-1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-4x^{2}+3x-1$
+
+$f(5)$
+        \phantom{$= -86$}
+
+  \item $f(x)=-2x^{2}-3x+2$
+
+$f(-5)$
+        \phantom{$= -33$}
+
+  \item $f(x)=5x^{2}-5x+2$
+
+$f(-3)$
+        \phantom{$= 62$}
+
+  \item $f(x)=-x^{2}-3x+4$
+
+$f(2)$
+        \phantom{$= -6$}
+
+  \item $f(x)=-2x^{2}+5x+1$
+
+$f(-3)$
+        \phantom{$= -32$}
+
+  \item $f(x)=2x^{2}+4x-2$
+
+$f(4)$
+        \phantom{$= 46$}
+
+  \item $f(x)=-3x^{2}-3x-5$
+
+$f(2)$
+        \phantom{$= -23$}
+
+  \item $f(x)=3x^{2}+3x-4$
+
+$f(2)$
+        \phantom{$= 14$}
+
+  \item $f(x)=4x^{2}+2x-3$
+
+$f(-4)$
+        \phantom{$= 53$}
+
+  \item $f(x)=-3x^{2}-x+2$
+
+$f(1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=x^{2}+2x+5$
+
+$f(1)$
+        \phantom{$= 8$}
+
+  \item $f(x)=-4x^{2}-3x+2$
+
+$f(2)$
+        \phantom{$= -20$}
+
+\columnbreak % 540
+
+\resetques
+
+  \item $f(x)=-4x^{2}-x-1$
+
+$f(-2)$
+        \phantom{$= -15$}
+
+  \item $f(x)=-5x^{2}-2x-3$
+
+$f(2)$
+        \phantom{$= -27$}
+
+  \item $f(x)=-4x^{2}-4x+5$
+
+$f(2)$
+        \phantom{$= -19$}
+
+  \item $f(x)=4x^{2}-5x-4$
+
+$f(-1)$
+        \phantom{$= 5$}
+
+  \item $f(x)=-3x^{2}-5x+3$
+
+$f(4)$
+        \phantom{$= -65$}
+
+  \item $f(x)=-3x^{2}-3x-5$
+
+$f(-2)$
+        \phantom{$= -11$}
+
+  \item $f(x)=-4x^{2}+3x+1$
+
+$f(4)$
+        \phantom{$= -51$}
+
+  \item $f(x)=-5x^{2}-x+4$
+
+$f(-4)$
+        \phantom{$= -72$}
+
+  \item $f(x)=x^{2}-x+1$
+
+$f(1)$
+        \phantom{$= 1$}
+
+  \item $f(x)=-5x^{2}+2x+4$
+
+$f(1)$
+        \phantom{$= 1$}
+
+  \item $f(x)=-3x^{2}+2x-1$
+
+$f(4)$
+        \phantom{$= -41$}
+
+  \item $f(x)=-5x^{2}+3x-4$
+
+$f(-3)$
+        \phantom{$= -58$}
+
+  \item $f(x)=3x^{2}-3x+3$
+
+$f(3)$
+        \phantom{$= 21$}
+
+  \item $f(x)=-4x^{2}-4x-5$
+
+$f(-5)$
+        \phantom{$= -85$}
+
+  \item $f(x)=4x^{2}-4x-4$
+
+$f(4)$
+        \phantom{$= 44$}
+
+\columnbreak % 555
+
+  \item $f(x)=3x^{2}+3x+3$
+
+$f(1)$
+        \phantom{$= 9$}
+
+  \item $f(x)=3x^{2}+3x+5$
+
+$f(-3)$
+        \phantom{$= 23$}
+
+  \item $f(x)=x^{2}-4x+4$
+
+$f(-2)$
+        \phantom{$= 16$}
+
+  \item $f(x)=-3x^{2}-x+5$
+
+$f(-2)$
+        \phantom{$= -5$}
+
+  \item $f(x)=-3x^{2}+3x+3$
+
+$f(-4)$
+        \phantom{$= -57$}
+
+  \item $f(x)=-3x^{2}+3x-2$
+
+$f(-4)$
+        \phantom{$= -62$}
+
+  \item $f(x)=-5x^{2}+4x-2$
+
+$f(4)$
+        \phantom{$= -66$}
+
+  \item $f(x)=x^{2}+2x+3$
+
+$f(-5)$
+        \phantom{$= 18$}
+
+  \item $f(x)=-3x^{2}-4x-2$
+
+$f(4)$
+        \phantom{$= -66$}
+
+  \item $f(x)=x^{2}-2x+2$
+
+$f(-4)$
+        \phantom{$= 26$}
+
+  \item $f(x)=-3x^{2}+5x-2$
+
+$f(-3)$
+        \phantom{$= -44$}
+
+  \item $f(x)=-2x^{2}+x-4$
+
+$f(-1)$
+        \phantom{$= -7$}
+
+  \item $f(x)=5x^{2}-3x-4$
+
+$f(1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=5x^{2}-5x-5$
+
+$f(5)$
+        \phantom{$= 95$}
+
+  \item $f(x)=x^{2}-x+3$
+
+$f(-2)$
+        \phantom{$= 9$}
+
+\columnbreak % 570
+
+  \item $f(x)=4x^{2}+2x-3$
+
+$f(-3)$
+        \phantom{$= 27$}
+
+  \item $f(x)=2x^{2}-2x-4$
+
+$f(-3)$
+        \phantom{$= 20$}
+
+  \item $f(x)=-2x^{2}-5x-2$
+
+$f(-2)$
+        \phantom{$= 0$}
+
+  \item $f(x)=3x^{2}-3x-1$
+
+$f(-2)$
+        \phantom{$= 17$}
+
+  \item $f(x)=5x^{2}+2x+3$
+
+$f(4)$
+        \phantom{$= 91$}
+
+  \item $f(x)=-x^{2}+4x-2$
+
+$f(2)$
+        \phantom{$= 2$}
+
+  \item $f(x)=2x^{2}+4x-4$
+
+$f(4)$
+        \phantom{$= 44$}
+
+  \item $f(x)=-3x^{2}-2x-3$
+
+$f(-5)$
+        \phantom{$= -68$}
+
+  \item $f(x)=4x^{2}-3x-2$
+
+$f(3)$
+        \phantom{$= 25$}
+
+  \item $f(x)=x^{2}-2x-3$
+
+$f(-5)$
+        \phantom{$= 32$}
+
+  \item $f(x)=x^{2}-4x-2$
+
+$f(-5)$
+        \phantom{$= 43$}
+
+  \item $f(x)=5x^{2}+x+4$
+
+$f(5)$
+        \phantom{$= 134$}
+
+  \item $f(x)=2x^{2}+2x-4$
+
+$f(5)$
+        \phantom{$= 56$}
+
+  \item $f(x)=x^{2}-x-4$
+
+$f(1)$
+        \phantom{$= -4$}
+
+  \item $f(x)=2x^{2}-2x+4$
+
+$f(4)$
+        \phantom{$= 28$}
+
+\columnbreak % 585
+
+\resetques
+
+  \item $f(x)=-4x^{2}+5x+1$
+
+$f(3)$
+        \phantom{$= -20$}
+
+  \item $f(x)=4x^{2}+2x-3$
+
+$f(4)$
+        \phantom{$= 69$}
+
+  \item $f(x)=-4x^{2}-3x-5$
+
+$f(4)$
+        \phantom{$= -81$}
+
+  \item $f(x)=x^{2}+3x-1$
+
+$f(1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=x^{2}-2x+4$
+
+$f(2)$
+        \phantom{$= 4$}
+
+  \item $f(x)=3x^{2}-5x-1$
+
+$f(5)$
+        \phantom{$= 49$}
+
+  \item $f(x)=-5x^{2}+2x-4$
+
+$f(2)$
+        \phantom{$= -20$}
+
+  \item $f(x)=4x^{2}-5x-2$
+
+$f(5)$
+        \phantom{$= 73$}
+
+  \item $f(x)=-2x^{2}-3x+4$
+
+$f(2)$
+        \phantom{$= -10$}
+
+  \item $f(x)=3x^{2}-4x+5$
+
+$f(-3)$
+        \phantom{$= 44$}
+
+  \item $f(x)=5x^{2}+2x+5$
+
+$f(4)$
+        \phantom{$= 93$}
+
+  \item $f(x)=-3x^{2}+3x-3$
+
+$f(-5)$
+        \phantom{$= -93$}
+
+  \item $f(x)=x^{2}+4x+2$
+
+$f(-1)$
+        \phantom{$= -1$}
+
+  \item $f(x)=-4x^{2}-3x-5$
+
+$f(1)$
+        \phantom{$= -12$}
+
+  \item $f(x)=3x^{2}+2x+2$
+
+$f(-1)$
+        \phantom{$= 3$}
+
+\columnbreak % 600
+
+  \item $f(x)=-x^{2}-x-5$
+
+$f(-4)$
+        \phantom{$= -17$}
+
+  \item $f(x)=-5x^{2}-2x+4$
+
+$f(-3)$
+        \phantom{$= -35$}
+
+  \item $f(x)=-2x^{2}+4x+2$
+
+$f(2)$
+        \phantom{$= 2$}
+
+  \item $f(x)=2x^{2}+2x+5$
+
+$f(1)$
+        \phantom{$= 9$}
+
+  \item $f(x)=5x^{2}-3x+3$
+
+$f(-5)$
+        \phantom{$= 143$}
+
+  \item $f(x)=-4x^{2}+4x-5$
+
+$f(-1)$
+        \phantom{$= -13$}
+
+  \item $f(x)=-3x^{2}-5x+2$
+
+$f(2)$
+        \phantom{$= -20$}
+
+  \item $f(x)=-4x^{2}+3x+1$
+
+$f(-1)$
+        \phantom{$= -6$}
+
+  \item $f(x)=-x^{2}-5x+1$
+
+$f(-4)$
+        \phantom{$= 5$}
+
+  \item $f(x)=5x^{2}-3x+1$
+
+$f(1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=4x^{2}-4x-4$
+
+$f(-2)$
+        \phantom{$= 20$}
+
+  \item $f(x)=-4x^{2}+3x+4$
+
+$f(-1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=5x^{2}-5x+2$
+
+$f(2)$
+        \phantom{$= 12$}
+
+  \item $f(x)=4x^{2}+x-5$
+
+$f(-2)$
+        \phantom{$= 9$}
+
+  \item $f(x)=2x^{2}-3x-1$
+
+$f(-2)$
+        \phantom{$= 13$}
+
+\columnbreak % 615
+
+  \item $f(x)=-4x^{2}-2x-2$
+
+$f(1)$
+        \phantom{$= -8$}
+
+  \item $f(x)=-3x^{2}+5x-1$
+
+$f(2)$
+        \phantom{$= -3$}
+
+  \item $f(x)=5x^{2}-x+1$
+
+$f(-5)$
+        \phantom{$= 131$}
+
+  \item $f(x)=3x^{2}+3x+3$
+
+$f(4)$
+        \phantom{$= 63$}
+
+  \item $f(x)=5x^{2}-3x+5$
+
+$f(3)$
+        \phantom{$= 41$}
+
+  \item $f(x)=-x^{2}+2x+5$
+
+$f(-4)$
+        \phantom{$= -19$}
+
+  \item $f(x)=-x^{2}+3x-4$
+
+$f(-2)$
+        \phantom{$= -14$}
+
+  \item $f(x)=5x^{2}-3x-1$
+
+$f(-1)$
+        \phantom{$= 7$}
+
+  \item $f(x)=x^{2}-5x-4$
+
+$f(-2)$
+        \phantom{$= 10$}
+
+  \item $f(x)=-2x^{2}-x+5$
+
+$f(-3)$
+        \phantom{$= -10$}
+
+  \item $f(x)=4x^{2}+2x-5$
+
+$f(-5)$
+        \phantom{$= 85$}
+
+  \item $f(x)=5x^{2}-3x+4$
+
+$f(-1)$
+        \phantom{$= 12$}
+
+  \item $f(x)=-5x^{2}-5x-4$
+
+$f(-2)$
+        \phantom{$= -14$}
+
+  \item $f(x)=5x^{2}-2x+3$
+
+$f(4)$
+        \phantom{$= 75$}
+
+  \item $f(x)=x^{2}-5x+5$
+
+$f(5)$
+        \phantom{$= 5$}
+
+\columnbreak % 630
+
+\resetques
+
+  \item $f(x)=2x^{2}+5x-3$
+
+$f(-2)$
+        \phantom{$= -5$}
+
+  \item $f(x)=-x^{2}-5x-4$
+
+$f(-2)$
+        \phantom{$= 2$}
+
+  \item $f(x)=-5x^{2}-4x-5$
+
+$f(3)$
+        \phantom{$= -62$}
+
+  \item $f(x)=-x^{2}-4x+5$
+
+$f(-1)$
+        \phantom{$= 8$}
+
+  \item $f(x)=-5x^{2}-5x+1$
+
+$f(-3)$
+        \phantom{$= -29$}
+
+  \item $f(x)=x^{2}-x+5$
+
+$f(-4)$
+        \phantom{$= 25$}
+
+  \item $f(x)=x^{2}+2x+1$
+
+$f(-1)$
+        \phantom{$= 0$}
+
+  \item $f(x)=-3x^{2}-2x-4$
+
+$f(4)$
+        \phantom{$= -60$}
+
+  \item $f(x)=-4x^{2}-2x-3$
+
+$f(-2)$
+        \phantom{$= -15$}
+
+  \item $f(x)=-5x^{2}+5x-4$
+
+$f(-4)$
+        \phantom{$= -104$}
+
+  \item $f(x)=3x^{2}-3x+4$
+
+$f(5)$
+        \phantom{$= 64$}
+
+  \item $f(x)=2x^{2}+2x-1$
+
+$f(-1)$
+        \phantom{$= -1$}
+
+  \item $f(x)=4x^{2}-4x-1$
+
+$f(5)$
+        \phantom{$= 79$}
+
+  \item $f(x)=-5x^{2}+2x+2$
+
+$f(2)$
+        \phantom{$= -14$}
+
+  \item $f(x)=-x^{2}+5x+3$
+
+$f(2)$
+        \phantom{$= 9$}
+
+\columnbreak % 645
+
+  \item $f(x)=-5x^{2}+x+1$
+
+$f(3)$
+        \phantom{$= -41$}
+
+  \item $f(x)=-4x^{2}-3x+4$
+
+$f(3)$
+        \phantom{$= -41$}
+
+  \item $f(x)=3x^{2}+3x-4$
+
+$f(4)$
+        \phantom{$= 56$}
+
+  \item $f(x)=2x^{2}+2x-5$
+
+$f(3)$
+        \phantom{$= 19$}
+
+  \item $f(x)=-4x^{2}+x-5$
+
+$f(1)$
+        \phantom{$= -8$}
+
+  \item $f(x)=-3x^{2}-2x+1$
+
+$f(4)$
+        \phantom{$= -55$}
+
+  \item $f(x)=-2x^{2}-5x-2$
+
+$f(1)$
+        \phantom{$= -9$}
+
+  \item $f(x)=4x^{2}-5x+5$
+
+$f(-4)$
+        \phantom{$= 89$}
+
+  \item $f(x)=x^{2}+4x-3$
+
+$f(-3)$
+        \phantom{$= -6$}
+
+  \item $f(x)=-2x^{2}-2x+2$
+
+$f(-5)$
+        \phantom{$= -38$}
+
+  \item $f(x)=x^{2}-x+3$
+
+$f(-4)$
+        \phantom{$= 23$}
+
+  \item $f(x)=-4x^{2}+2x+3$
+
+$f(-4)$
+        \phantom{$= -69$}
+
+  \item $f(x)=-3x^{2}-2x+5$
+
+$f(-5)$
+        \phantom{$= -60$}
+
+  \item $f(x)=-x^{2}-3x-2$
+
+$f(5)$
+        \phantom{$= -42$}
+
+  \item $f(x)=-2x^{2}-4x+2$
+
+$f(1)$
+        \phantom{$= -4$}
+
+\columnbreak % 660
+
+  \item $f(x)=3x^{2}+2x-2$
+
+$f(-1)$
+        \phantom{$= -1$}
+
+  \item $f(x)=4x^{2}-2x-5$
+
+$f(1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-5x^{2}-3x+4$
+
+$f(3)$
+        \phantom{$= -50$}
+
+  \item $f(x)=-3x^{2}+4x+3$
+
+$f(-5)$
+        \phantom{$= -92$}
+
+  \item $f(x)=x^{2}+3x+5$
+
+$f(-3)$
+        \phantom{$= 5$}
+
+  \item $f(x)=x^{2}-4x+4$
+
+$f(4)$
+        \phantom{$= 4$}
+
+  \item $f(x)=-5x^{2}-x-5$
+
+$f(-4)$
+        \phantom{$= -81$}
+
+  \item $f(x)=-5x^{2}-5x-4$
+
+$f(4)$
+        \phantom{$= -104$}
+
+  \item $f(x)=-5x^{2}+5x+2$
+
+$f(2)$
+        \phantom{$= -8$}
+
+  \item $f(x)=3x^{2}-4x-4$
+
+$f(4)$
+        \phantom{$= 28$}
+
+  \item $f(x)=-2x^{2}+2x+1$
+
+$f(4)$
+        \phantom{$= -23$}
+
+  \item $f(x)=-3x^{2}-2x-4$
+
+$f(5)$
+        \phantom{$= -89$}
+
+  \item $f(x)=x^{2}+2x+3$
+
+$f(-4)$
+        \phantom{$= 11$}
+
+  \item $f(x)=-2x^{2}+2x+2$
+
+$f(3)$
+        \phantom{$= -10$}
+
+  \item $f(x)=-3x^{2}+2x-2$
+
+$f(-3)$
+        \phantom{$= -35$}
+
+\columnbreak % 675
+
+\resetques
+
+  \item $f(x)=x^{2}-5x-2$
+
+$f(4)$
+        \phantom{$= -6$}
+
+  \item $f(x)=-5x^{2}-x+3$
+
+$f(1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=5x^{2}-4x+5$
+
+$f(-3)$
+        \phantom{$= 62$}
+
+  \item $f(x)=5x^{2}+4x-4$
+
+$f(-3)$
+        \phantom{$= 29$}
+
+  \item $f(x)=4x^{2}+4x+3$
+
+$f(3)$
+        \phantom{$= 51$}
+
+  \item $f(x)=-x^{2}-2x+5$
+
+$f(3)$
+        \phantom{$= -10$}
+
+  \item $f(x)=-3x^{2}+5x-1$
+
+$f(-3)$
+        \phantom{$= -43$}
+
+  \item $f(x)=-4x^{2}+3x-5$
+
+$f(-1)$
+        \phantom{$= -12$}
+
+  \item $f(x)=-x^{2}+5x+2$
+
+$f(-4)$
+        \phantom{$= -34$}
+
+  \item $f(x)=-4x^{2}-2x+5$
+
+$f(4)$
+        \phantom{$= -67$}
+
+  \item $f(x)=4x^{2}+x+3$
+
+$f(-4)$
+        \phantom{$= 63$}
+
+  \item $f(x)=-2x^{2}+3x-1$
+
+$f(-2)$
+        \phantom{$= -15$}
+
+  \item $f(x)=-x^{2}+x-1$
+
+$f(3)$
+        \phantom{$= -7$}
+
+  \item $f(x)=-x^{2}+4x-2$
+
+$f(2)$
+        \phantom{$= 2$}
+
+  \item $f(x)=-2x^{2}-4x-2$
+
+$f(-2)$
+        \phantom{$= -2$}
+
+\columnbreak % 690
+
+  \item $f(x)=-3x^{2}-5x-3$
+
+$f(2)$
+        \phantom{$= -25$}
+
+  \item $f(x)=5x^{2}+2x-2$
+
+$f(5)$
+        \phantom{$= 133$}
+
+  \item $f(x)=-x^{2}-x-1$
+
+$f(-1)$
+        \phantom{$= -1$}
+
+  \item $f(x)=-2x^{2}+4x+4$
+
+$f(-5)$
+        \phantom{$= -66$}
+
+  \item $f(x)=-2x^{2}+3x+3$
+
+$f(-5)$
+        \phantom{$= -62$}
+
+  \item $f(x)=3x^{2}+4x-5$
+
+$f(5)$
+        \phantom{$= 90$}
+
+  \item $f(x)=-2x^{2}-5x+3$
+
+$f(1)$
+        \phantom{$= -4$}
+
+  \item $f(x)=-5x^{2}-3x+1$
+
+$f(5)$
+        \phantom{$= -139$}
+
+  \item $f(x)=3x^{2}-3x-3$
+
+$f(3)$
+        \phantom{$= 15$}
+
+  \item $f(x)=-4x^{2}+4x-1$
+
+$f(-5)$
+        \phantom{$= -121$}
+
+  \item $f(x)=2x^{2}-x-1$
+
+$f(-4)$
+        \phantom{$= 35$}
+
+  \item $f(x)=2x^{2}+3x-1$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=5x^{2}+2x+5$
+
+$f(-5)$
+        \phantom{$= 120$}
+
+  \item $f(x)=-5x^{2}+2x+3$
+
+$f(3)$
+        \phantom{$= -36$}
+
+  \item $f(x)=3x^{2}-4x-1$
+
+$f(2)$
+        \phantom{$= 3$}
+
+\columnbreak % 705
+
+  \item $f(x)=-5x^{2}+3x-1$
+
+$f(-5)$
+        \phantom{$= -141$}
+
+  \item $f(x)=-x^{2}+4x+4$
+
+$f(4)$
+        \phantom{$= 4$}
+
+  \item $f(x)=-2x^{2}+5x-3$
+
+$f(-3)$
+        \phantom{$= -36$}
+
+  \item $f(x)=4x^{2}-x-4$
+
+$f(-3)$
+        \phantom{$= 35$}
+
+  \item $f(x)=x^{2}+5x-3$
+
+$f(1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=x^{2}-5x+3$
+
+$f(-4)$
+        \phantom{$= 39$}
+
+  \item $f(x)=-5x^{2}-x+5$
+
+$f(-3)$
+        \phantom{$= -37$}
+
+  \item $f(x)=x^{2}+2x-4$
+
+$f(-1)$
+        \phantom{$= -5$}
+
+  \item $f(x)=x^{2}+5x+4$
+
+$f(-5)$
+        \phantom{$= 4$}
+
+  \item $f(x)=2x^{2}-4x+4$
+
+$f(5)$
+        \phantom{$= 34$}
+
+  \item $f(x)=3x^{2}-4x-5$
+
+$f(-4)$
+        \phantom{$= 59$}
+
+  \item $f(x)=-4x^{2}+5x-4$
+
+$f(-1)$
+        \phantom{$= -13$}
+
+  \item $f(x)=-3x^{2}+x-2$
+
+$f(-4)$
+        \phantom{$= -54$}
+
+  \item $f(x)=3x^{2}+4x-4$
+
+$f(-2)$
+        \phantom{$= 0$}
+
+  \item $f(x)=-5x^{2}+5x-5$
+
+$f(-1)$
+        \phantom{$= -15$}
+
+\columnbreak % 720
+
+\resetques
+
+  \item $f(x)=2x^{2}-4x-4$
+
+$f(-5)$
+        \phantom{$= 66$}
+
+  \item $f(x)=-x^{2}-4x-5$
+
+$f(3)$
+        \phantom{$= -26$}
+
+  \item $f(x)=5x^{2}+2x+4$
+
+$f(-4)$
+        \phantom{$= 76$}
+
+  \item $f(x)=x^{2}-4x+3$
+
+$f(4)$
+        \phantom{$= 3$}
+
+  \item $f(x)=-x^{2}+4x+1$
+
+$f(-2)$
+        \phantom{$= -11$}
+
+  \item $f(x)=5x^{2}+x-4$
+
+$f(1)$
+        \phantom{$= 2$}
+
+  \item $f(x)=5x^{2}-4x-1$
+
+$f(3)$
+        \phantom{$= 32$}
+
+  \item $f(x)=5x^{2}-x+1$
+
+$f(-4)$
+        \phantom{$= 85$}
+
+  \item $f(x)=2x^{2}+2x-5$
+
+$f(-1)$
+        \phantom{$= -5$}
+
+  \item $f(x)=-5x^{2}-3x+1$
+
+$f(-2)$
+        \phantom{$= -13$}
+
+  \item $f(x)=-2x^{2}-3x+4$
+
+$f(-2)$
+        \phantom{$= 2$}
+
+  \item $f(x)=-2x^{2}+3x-5$
+
+$f(3)$
+        \phantom{$= -14$}
+
+  \item $f(x)=4x^{2}-4x+1$
+
+$f(3)$
+        \phantom{$= 25$}
+
+  \item $f(x)=x^{2}+2x+3$
+
+$f(1)$
+        \phantom{$= 6$}
+
+  \item $f(x)=-3x^{2}-5x+3$
+
+$f(1)$
+        \phantom{$= -5$}
+
+\columnbreak % 735
+
+  \item $f(x)=-5x^{2}-5x-5$
+
+$f(-1)$
+        \phantom{$= -5$}
+
+  \item $f(x)=3x^{2}-3x+4$
+
+$f(-4)$
+        \phantom{$= 64$}
+
+  \item $f(x)=-4x^{2}-3x-2$
+
+$f(3)$
+        \phantom{$= -47$}
+
+  \item $f(x)=2x^{2}+2x-3$
+
+$f(-1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-x^{2}+x-1$
+
+$f(-1)$
+        \phantom{$= -3$}
+
+  \item $f(x)=2x^{2}-5x+1$
+
+$f(4)$
+        \phantom{$= 13$}
+
+  \item $f(x)=-3x^{2}+4x-3$
+
+$f(-1)$
+        \phantom{$= -10$}
+
+  \item $f(x)=2x^{2}-3x-2$
+
+$f(4)$
+        \phantom{$= 18$}
+
+  \item $f(x)=2x^{2}-5x-4$
+
+$f(-2)$
+        \phantom{$= 14$}
+
+  \item $f(x)=-5x^{2}-5x-1$
+
+$f(1)$
+        \phantom{$= -11$}
+
+  \item $f(x)=-5x^{2}-2x-2$
+
+$f(3)$
+        \phantom{$= -53$}
+
+  \item $f(x)=-4x^{2}-x+3$
+
+$f(1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=3x^{2}-5x+1$
+
+$f(-4)$
+        \phantom{$= 69$}
+
+  \item $f(x)=-3x^{2}-2x-3$
+
+$f(-3)$
+        \phantom{$= -24$}
+
+  \item $f(x)=4x^{2}-x+2$
+
+$f(2)$
+        \phantom{$= 16$}
+
+\columnbreak % 750
+
+  \item $f(x)=-4x^{2}-x-5$
+
+$f(2)$
+        \phantom{$= -23$}
+
+  \item $f(x)=3x^{2}+4x-3$
+
+$f(5)$
+        \phantom{$= 92$}
+
+  \item $f(x)=-x^{2}+x+5$
+
+$f(-5)$
+        \phantom{$= -25$}
+
+  \item $f(x)=x^{2}-x+3$
+
+$f(-1)$
+        \phantom{$= 5$}
+
+  \item $f(x)=2x^{2}-x+4$
+
+$f(-3)$
+        \phantom{$= 25$}
+
+  \item $f(x)=-5x^{2}+3x-5$
+
+$f(5)$
+        \phantom{$= -115$}
+
+  \item $f(x)=-3x^{2}-5x-3$
+
+$f(4)$
+        \phantom{$= -71$}
+
+  \item $f(x)=4x^{2}+3x-1$
+
+$f(5)$
+        \phantom{$= 114$}
+
+  \item $f(x)=5x^{2}-2x-5$
+
+$f(5)$
+        \phantom{$= 110$}
+
+  \item $f(x)=-5x^{2}+4x-1$
+
+$f(-3)$
+        \phantom{$= -58$}
+
+  \item $f(x)=-x^{2}+3x+3$
+
+$f(-5)$
+        \phantom{$= -37$}
+
+  \item $f(x)=-4x^{2}+2x+2$
+
+$f(2)$
+        \phantom{$= -10$}
+
+  \item $f(x)=-2x^{2}+2x-3$
+
+$f(-5)$
+        \phantom{$= -63$}
+
+  \item $f(x)=x^{2}-x-3$
+
+$f(4)$
+        \phantom{$= 9$}
+
+  \item $f(x)=3x^{2}-4x+3$
+
+$f(-4)$
+        \phantom{$= 67$}
+
+\columnbreak % 765
+
+\resetques
+
+  \item $f(x)=-4x^{2}-x-2$
+
+$f(-5)$
+        \phantom{$= -97$}
+
+  \item $f(x)=5x^{2}-4x+5$
+
+$f(2)$
+        \phantom{$= 17$}
+
+  \item $f(x)=3x^{2}-2x-4$
+
+$f(-5)$
+        \phantom{$= 81$}
+
+  \item $f(x)=-4x^{2}+4x-5$
+
+$f(4)$
+        \phantom{$= -53$}
+
+  \item $f(x)=4x^{2}-3x-4$
+
+$f(-1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=-2x^{2}+x+4$
+
+$f(-5)$
+        \phantom{$= -51$}
+
+  \item $f(x)=4x^{2}+5x+1$
+
+$f(1)$
+        \phantom{$= 10$}
+
+  \item $f(x)=5x^{2}-3x+4$
+
+$f(4)$
+        \phantom{$= 72$}
+
+  \item $f(x)=-4x^{2}+3x+3$
+
+$f(1)$
+        \phantom{$= 2$}
+
+  \item $f(x)=3x^{2}+3x+4$
+
+$f(1)$
+        \phantom{$= 10$}
+
+  \item $f(x)=3x^{2}-5x+3$
+
+$f(5)$
+        \phantom{$= 53$}
+
+  \item $f(x)=-4x^{2}+4x+5$
+
+$f(-2)$
+        \phantom{$= -19$}
+
+  \item $f(x)=x^{2}+4x-5$
+
+$f(-1)$
+        \phantom{$= -8$}
+
+  \item $f(x)=-5x^{2}-5x-5$
+
+$f(5)$
+        \phantom{$= -155$}
+
+  \item $f(x)=-x^{2}+3x+5$
+
+$f(-5)$
+        \phantom{$= -35$}
+
+\columnbreak % 780
+
+  \item $f(x)=5x^{2}-5x+4$
+
+$f(-3)$
+        \phantom{$= 64$}
+
+  \item $f(x)=-2x^{2}+x+1$
+
+$f(1)$
+        \phantom{$= 0$}
+
+  \item $f(x)=-2x^{2}-3x-2$
+
+$f(5)$
+        \phantom{$= -67$}
+
+  \item $f(x)=4x^{2}-5x-1$
+
+$f(2)$
+        \phantom{$= 5$}
+
+  \item $f(x)=2x^{2}-x-2$
+
+$f(-1)$
+        \phantom{$= 1$}
+
+  \item $f(x)=-2x^{2}-3x+3$
+
+$f(1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=4x^{2}-4x-4$
+
+$f(-3)$
+        \phantom{$= 44$}
+
+  \item $f(x)=4x^{2}+4x+3$
+
+$f(1)$
+        \phantom{$= 11$}
+
+  \item $f(x)=-2x^{2}+4x-5$
+
+$f(-1)$
+        \phantom{$= -11$}
+
+  \item $f(x)=x^{2}+3x+5$
+
+$f(4)$
+        \phantom{$= 33$}
+
+  \item $f(x)=3x^{2}-4x+4$
+
+$f(-4)$
+        \phantom{$= 68$}
+
+  \item $f(x)=4x^{2}+3x-4$
+
+$f(4)$
+        \phantom{$= 72$}
+
+  \item $f(x)=-3x^{2}+x+1$
+
+$f(-3)$
+        \phantom{$= -29$}
+
+  \item $f(x)=-4x^{2}-5x-2$
+
+$f(2)$
+        \phantom{$= -28$}
+
+  \item $f(x)=2x^{2}+5x+2$
+
+$f(3)$
+        \phantom{$= 35$}
+
+\columnbreak % 795
+
+  \item $f(x)=-2x^{2}+5x-4$
+
+$f(-4)$
+        \phantom{$= -56$}
+
+  \item $f(x)=-3x^{2}+3x-3$
+
+$f(-2)$
+        \phantom{$= -21$}
+
+  \item $f(x)=-2x^{2}+5x+2$
+
+$f(-4)$
+        \phantom{$= -50$}
+
+  \item $f(x)=-3x^{2}+x-1$
+
+$f(-1)$
+        \phantom{$= -5$}
+
+  \item $f(x)=-2x^{2}+5x+5$
+
+$f(1)$
+        \phantom{$= 8$}
+
+  \item $f(x)=-x^{2}+3x-1$
+
+$f(-5)$
+        \phantom{$= -41$}
+
+  \item $f(x)=-2x^{2}+x-4$
+
+$f(-5)$
+        \phantom{$= -59$}
+
+  \item $f(x)=-x^{2}+3x+4$
+
+$f(-2)$
+        \phantom{$= -6$}
+
+  \item $f(x)=x^{2}-3x+5$
+
+$f(3)$
+        \phantom{$= 5$}
+
+  \item $f(x)=-x^{2}+5x-3$
+
+$f(-5)$
+        \phantom{$= -53$}
+
+  \item $f(x)=-x^{2}-5x+4$
+
+$f(2)$
+        \phantom{$= -10$}
+
+  \item $f(x)=-2x^{2}-5x-5$
+
+$f(-2)$
+        \phantom{$= -3$}
+
+  \item $f(x)=2x^{2}+x+3$
+
+$f(-4)$
+        \phantom{$= 31$}
+
+  \item $f(x)=-2x^{2}+5x+5$
+
+$f(-1)$
+        \phantom{$= -2$}
+
+  \item $f(x)=5x^{2}-3x-1$
+
+$f(-4)$
+        \phantom{$= 91$}
+
+\columnbreak % 810
+
+\resetques
+
+  \item $f(x)=4x^{2}-4x-5$
+
+$f(-4)$
+        \phantom{$= 75$}
+
+  \item $f(x)=-5x^{2}+4x-4$
+
+$f(1)$
+        \phantom{$= -5$}
+
+  \item $f(x)=4x^{2}-3x-1$
+
+$f(3)$
+        \phantom{$= 26$}
+
+  \item $f(x)=3x^{2}+2x+4$
+
+$f(-4)$
+        \phantom{$= 44$}
+
+  \item $f(x)=3x^{2}-3x-3$
+
+$f(-1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=5x^{2}+2x-2$
+
+$f(-3)$
+        \phantom{$= 37$}
+
+  \item $f(x)=2x^{2}+4x+1$
+
+$f(3)$
+        \phantom{$= 31$}
+
+  \item $f(x)=3x^{2}+x-4$
+
+$f(2)$
+        \phantom{$= 10$}
+
+  \item $f(x)=x^{2}-2x+2$
+
+$f(-2)$
+        \phantom{$= 10$}
+
+  \item $f(x)=-4x^{2}-5x+4$
+
+$f(-3)$
+        \phantom{$= -17$}
+
+  \item $f(x)=x^{2}+4x+1$
+
+$f(3)$
+        \phantom{$= 22$}
+
+  \item $f(x)=3x^{2}-x-5$
+
+$f(2)$
+        \phantom{$= 5$}
+
+  \item $f(x)=x^{2}+5x+1$
+
+$f(-2)$
+        \phantom{$= -5$}
+
+  \item $f(x)=-5x^{2}+x+2$
+
+$f(-1)$
+        \phantom{$= -4$}
+
+  \item $f(x)=-5x^{2}+x-1$
+
+$f(4)$
+        \phantom{$= -77$}
+
+\columnbreak % 825
+
+  \item $f(x)=-3x^{2}-2x-1$
+
+$f(-4)$
+        \phantom{$= -41$}
+
+  \item $f(x)=-x^{2}-3x+3$
+
+$f(-2)$
+        \phantom{$= 5$}
+
+  \item $f(x)=-3x^{2}-x-1$
+
+$f(5)$
+        \phantom{$= -81$}
+
+  \item $f(x)=-5x^{2}-4x-3$
+
+$f(-1)$
+        \phantom{$= -4$}
+
+  \item $f(x)=x^{2}+x+3$
+
+$f(4)$
+        \phantom{$= 23$}
+
+  \item $f(x)=-x^{2}-2x+2$
+
+$f(5)$
+        \phantom{$= -33$}
+
+  \item $f(x)=5x^{2}+5x+1$
+
+$f(-5)$
+        \phantom{$= 101$}
+
+  \item $f(x)=3x^{2}-2x+1$
+
+$f(-3)$
+        \phantom{$= 34$}
+
+  \item $f(x)=-x^{2}+3x+3$
+
+$f(-3)$
+        \phantom{$= -15$}
+
+  \item $f(x)=-x^{2}+4x+1$
+
+$f(-2)$
+        \phantom{$= -11$}
+
+  \item $f(x)=-5x^{2}+2x+2$
+
+$f(3)$
+        \phantom{$= -37$}
+
+  \item $f(x)=-5x^{2}-4x-1$
+
+$f(5)$
+        \phantom{$= -146$}
+
+  \item $f(x)=-3x^{2}-4x+1$
+
+$f(-3)$
+        \phantom{$= -14$}
+
+  \item $f(x)=-2x^{2}-3x+3$
+
+$f(-3)$
+        \phantom{$= -6$}
+
+  \item $f(x)=-5x^{2}-5x-5$
+
+$f(-5)$
+        \phantom{$= -105$}
+
+\columnbreak % 840
+
+  \item $f(x)=x^{2}-3x-5$
+
+$f(2)$
+        \phantom{$= -7$}
+
+  \item $f(x)=5x^{2}+x+5$
+
+$f(3)$
+        \phantom{$= 53$}
+
+  \item $f(x)=3x^{2}-x-2$
+
+$f(3)$
+        \phantom{$= 22$}
+
+  \item $f(x)=-2x^{2}+3x+2$
+
+$f(-4)$
+        \phantom{$= -42$}
+
+  \item $f(x)=x^{2}-3x+3$
+
+$f(-3)$
+        \phantom{$= 21$}
+
+  \item $f(x)=-4x^{2}-2x-3$
+
+$f(-1)$
+        \phantom{$= -5$}
+
+  \item $f(x)=x^{2}+4x+5$
+
+$f(5)$
+        \phantom{$= 50$}
+
+  \item $f(x)=x^{2}-2x+2$
+
+$f(-3)$
+        \phantom{$= 17$}
+
+  \item $f(x)=-2x^{2}+5x-5$
+
+$f(5)$
+        \phantom{$= -30$}
+
+  \item $f(x)=x^{2}-3x+4$
+
+$f(2)$
+        \phantom{$= 2$}
+
+  \item $f(x)=-2x^{2}+5x+3$
+
+$f(3)$
+        \phantom{$= 0$}
+
+  \item $f(x)=x^{2}-3x-1$
+
+$f(4)$
+        \phantom{$= 3$}
+
+  \item $f(x)=2x^{2}-2x-4$
+
+$f(1)$
+        \phantom{$= -4$}
+
+  \item $f(x)=-2x^{2}+4x+3$
+
+$f(1)$
+        \phantom{$= 5$}
+
+  \item $f(x)=3x^{2}-4x-3$
+
+$f(-1)$
+        \phantom{$= 4$}
+
+\columnbreak % 855
+
+\resetques
+
+  \item $f(x)=5x^{2}-4x+4$
+
+$f(1)$
+        \phantom{$= 5$}
+
+  \item $f(x)=-4x^{2}+3x+5$
+
+$f(-4)$
+        \phantom{$= -71$}
+
+  \item $f(x)=2x^{2}-4x+4$
+
+$f(3)$
+        \phantom{$= 10$}
+
+  \item $f(x)=-4x^{2}-3x-5$
+
+$f(-3)$
+        \phantom{$= -32$}
+
+  \item $f(x)=-x^{2}+3x-4$
+
+$f(-3)$
+        \phantom{$= -22$}
+
+  \item $f(x)=5x^{2}+4x-3$
+
+$f(5)$
+        \phantom{$= 142$}
+
+  \item $f(x)=5x^{2}+4x+5$
+
+$f(-2)$
+        \phantom{$= 17$}
+
+  \item $f(x)=5x^{2}-5x+2$
+
+$f(-5)$
+        \phantom{$= 152$}
+
+  \item $f(x)=4x^{2}+x+1$
+
+$f(1)$
+        \phantom{$= 6$}
+
+  \item $f(x)=-5x^{2}+4x-5$
+
+$f(-3)$
+        \phantom{$= -62$}
+
+  \item $f(x)=-5x^{2}-4x+4$
+
+$f(2)$
+        \phantom{$= -24$}
+
+  \item $f(x)=-5x^{2}+5x-3$
+
+$f(-2)$
+        \phantom{$= -33$}
+
+  \item $f(x)=-2x^{2}+3x-1$
+
+$f(-2)$
+        \phantom{$= -15$}
+
+  \item $f(x)=3x^{2}+5x+5$
+
+$f(5)$
+        \phantom{$= 105$}
+
+  \item $f(x)=2x^{2}-2x-2$
+
+$f(3)$
+        \phantom{$= 10$}
+
+\columnbreak % 870
+
+  \item $f(x)=-4x^{2}+3x-4$
+
+$f(-1)$
+        \phantom{$= -11$}
+
+  \item $f(x)=2x^{2}-4x-2$
+
+$f(-4)$
+        \phantom{$= 46$}
+
+  \item $f(x)=4x^{2}+5x-1$
+
+$f(5)$
+        \phantom{$= 124$}
+
+  \item $f(x)=-2x^{2}+3x+2$
+
+$f(4)$
+        \phantom{$= -18$}
+
+  \item $f(x)=-x^{2}+2x+5$
+
+$f(-2)$
+        \phantom{$= -3$}
+
+  \item $f(x)=-2x^{2}-4x+1$
+
+$f(-1)$
+        \phantom{$= 3$}
+
+  \item $f(x)=-5x^{2}+x-4$
+
+$f(-4)$
+        \phantom{$= -88$}
+
+  \item $f(x)=2x^{2}+3x+2$
+
+$f(1)$
+        \phantom{$= 7$}
+
+  \item $f(x)=x^{2}+2x-1$
+
+$f(-5)$
+        \phantom{$= 14$}
+
+  \item $f(x)=3x^{2}+3x-5$
+
+$f(-3)$
+        \phantom{$= 13$}
+
+  \item $f(x)=-3x^{2}-2x+2$
+
+$f(4)$
+        \phantom{$= -54$}
+
+  \item $f(x)=-x^{2}-5x+4$
+
+$f(-5)$
+        \phantom{$= 4$}
+
+  \item $f(x)=-3x^{2}-x-5$
+
+$f(4)$
+        \phantom{$= -57$}
+
+  \item $f(x)=4x^{2}-2x-5$
+
+$f(2)$
+        \phantom{$= 7$}
+
+  \item $f(x)=-x^{2}-x-1$
+
+$f(2)$
+        \phantom{$= -7$}
+
+\columnbreak % 885
+
+  \item $f(x)=x^{2}+5x-1$
+
+$f(2)$
+        \phantom{$= 13$}
+
+  \item $f(x)=2x^{2}+5x-1$
+
+$f(-1)$
+        \phantom{$= -4$}
+
+  \item $f(x)=2x^{2}+3x+1$
+
+$f(-5)$
+        \phantom{$= 36$}
+
+  \item $f(x)=3x^{2}+5x+4$
+
+$f(-2)$
+        \phantom{$= 6$}
+
+  \item $f(x)=-2x^{2}-x+1$
+
+$f(-5)$
+        \phantom{$= -44$}
+
+  \item $f(x)=-5x^{2}-2x-4$
+
+$f(1)$
+        \phantom{$= -11$}
+
+  \item $f(x)=-2x^{2}+2x-5$
+
+$f(-5)$
+        \phantom{$= -65$}
+
+  \item $f(x)=-2x^{2}-3x+2$
+
+$f(4)$
+        \phantom{$= -42$}
+
+  \item $f(x)=-4x^{2}-5x-4$
+
+$f(5)$
+        \phantom{$= -129$}
+
+  \item $f(x)=3x^{2}-2x+1$
+
+$f(3)$
+        \phantom{$= 22$}
+
+  \item $f(x)=4x^{2}-2x-1$
+
+$f(-3)$
+        \phantom{$= 41$}
+
+  \item $f(x)=-5x^{2}-5x+3$
+
+$f(3)$
+        \phantom{$= -57$}
+
+  \item $f(x)=2x^{2}+5x-4$
+
+$f(2)$
+        \phantom{$= 14$}
+
+  \item $f(x)=2x^{2}+3x-3$
+
+$f(-3)$
+        \phantom{$= 6$}
+
+  \item $f(x)=-4x^{2}+x-5$
+
+$f(-1)$
+        \phantom{$= -10$}
+
+\end{enumerate}
+\end{multicols}
+
+\newpage
+\resetdrill
+
+\begin{multicols}{3}
+\begin{enumerate}
+  \itemsep=10pt
+  \item $f(x)=3x^{2}-3x+2$
+
+$f(-3)$
+        $= 38$
+
+  \item $f(x)=-2x^{2}-2x+4$
+
+$f(5)$
+        $= -56$
+
+  \item $f(x)=x^{2}+x+2$
+
+$f(-4)$
+        $= 14$
+
+  \item $f(x)=5x^{2}+2x-1$
+
+$f(-2)$
+        $= 15$
+
+  \item $f(x)=-3x^{2}+4x-3$
+
+$f(-4)$
+        $= -67$
+
+  \item $f(x)=x^{2}+5x-4$
+
+$f(4)$
+        $= 32$
+
+  \item $f(x)=2x^{2}-3x-4$
+
+$f(5)$
+        $= 31$
+
+  \item $f(x)=2x^{2}-3x-2$
+
+$f(-4)$
+        $= 42$
+
+  \item $f(x)=-3x^{2}+3x+5$
+
+$f(-2)$
+        $= -13$
+
+  \item $f(x)=2x^{2}-3x+1$
+
+$f(3)$
+        $= 10$
+
+  \item $f(x)=-x^{2}-5x+5$
+
+$f(5)$
+        $= -45$
+
+  \item $f(x)=-2x^{2}-4x-5$
+
+$f(1)$
+        $= -11$
+
+  \item $f(x)=4x^{2}+x+4$
+
+$f(3)$
+        $= 43$
+
+  \item $f(x)=2x^{2}-2x-4$
+
+$f(5)$
+        $= 36$
+
+  \item $f(x)=2x^{2}+2x-5$
+
+$f(4)$
+        $= 35$
+
+\columnbreak % 15
+
+  \item $f(x)=x^{2}+4x+4$
+
+$f(-1)$
+        $= 1$
+
+  \item $f(x)=2x^{2}+2x+4$
+
+$f(-5)$
+        $= 44$
+
+  \item $f(x)=2x^{2}-2x-5$
+
+$f(3)$
+        $= 7$
+
+  \item $f(x)=-4x^{2}-3x+4$
+
+$f(5)$
+        $= -111$
+
+  \item $f(x)=-x^{2}+4x-2$
+
+$f(5)$
+        $= -7$
+
+  \item $f(x)=-5x^{2}-x+4$
+
+$f(-4)$
+        $= -72$
+
+  \item $f(x)=3x^{2}+3x+1$
+
+$f(-5)$
+        $= 61$
+
+  \item $f(x)=-x^{2}+3x+4$
+
+$f(-3)$
+        $= -14$
+
+  \item $f(x)=-x^{2}+2x-4$
+
+$f(-5)$
+        $= -39$
+
+  \item $f(x)=5x^{2}+3x+5$
+
+$f(-4)$
+        $= 73$
+
+  \item $f(x)=x^{2}-3x+2$
+
+$f(-5)$
+        $= 42$
+
+  \item $f(x)=x^{2}+2x+3$
+
+$f(-1)$
+        $= 2$
+
+  \item $f(x)=5x^{2}+x-2$
+
+$f(-5)$
+        $= 118$
+
+  \item $f(x)=5x^{2}+5x+4$
+
+$f(5)$
+        $= 154$
+
+  \item $f(x)=5x^{2}-4x-5$
+
+$f(-1)$
+        $= 4$
+
+\columnbreak % 30
+
+  \item $f(x)=2x^{2}-5x+4$
+
+$f(3)$
+        $= 7$
+
+  \item $f(x)=2x^{2}+5x-2$
+
+$f(-4)$
+        $= 10$
+
+  \item $f(x)=-3x^{2}-4x-4$
+
+$f(1)$
+        $= -11$
+
+  \item $f(x)=-5x^{2}+2x+5$
+
+$f(-4)$
+        $= -83$
+
+  \item $f(x)=3x^{2}+x+4$
+
+$f(4)$
+        $= 56$
+
+  \item $f(x)=-5x^{2}-x-5$
+
+$f(3)$
+        $= -53$
+
+  \item $f(x)=2x^{2}-4x-5$
+
+$f(-4)$
+        $= 43$
+
+  \item $f(x)=x^{2}+4x+4$
+
+$f(2)$
+        $= 16$
+
+  \item $f(x)=3x^{2}-x-4$
+
+$f(-4)$
+        $= 48$
+
+  \item $f(x)=-4x^{2}-3x+3$
+
+$f(3)$
+        $= -42$
+
+  \item $f(x)=-3x^{2}+2x+2$
+
+$f(-2)$
+        $= -14$
+
+  \item $f(x)=-2x^{2}+3x+5$
+
+$f(-5)$
+        $= -60$
+
+  \item $f(x)=-4x^{2}-x-5$
+
+$f(5)$
+        $= -110$
+
+  \item $f(x)=-x^{2}-5x-2$
+
+$f(-5)$
+        $= -2$
+
+  \item $f(x)=-2x^{2}-3x-3$
+
+$f(-1)$
+        $= -2$
+
+\columnbreak % 45
+
+\resetques
+
+  \item $f(x)=4x^{2}+3x-1$
+
+$f(-5)$
+        $= 84$
+
+  \item $f(x)=x^{2}+x+1$
+
+$f(-4)$
+        $= 13$
+
+  \item $f(x)=x^{2}+4x-2$
+
+$f(4)$
+        $= 30$
+
+  \item $f(x)=-2x^{2}-x+1$
+
+$f(-4)$
+        $= -27$
+
+  \item $f(x)=-2x^{2}+4x+1$
+
+$f(-4)$
+        $= -47$
+
+  \item $f(x)=5x^{2}-5x+3$
+
+$f(-3)$
+        $= 63$
+
+  \item $f(x)=-4x^{2}-4x-4$
+
+$f(-4)$
+        $= -52$
+
+  \item $f(x)=5x^{2}-4x+1$
+
+$f(4)$
+        $= 65$
+
+  \item $f(x)=2x^{2}+2x+1$
+
+$f(5)$
+        $= 61$
+
+  \item $f(x)=x^{2}-x+3$
+
+$f(-4)$
+        $= 23$
+
+  \item $f(x)=-4x^{2}+3x-4$
+
+$f(4)$
+        $= -56$
+
+  \item $f(x)=-4x^{2}-x-5$
+
+$f(5)$
+        $= -110$
+
+  \item $f(x)=3x^{2}+2x-3$
+
+$f(-1)$
+        $= -2$
+
+  \item $f(x)=3x^{2}-4x+4$
+
+$f(-2)$
+        $= 24$
+
+  \item $f(x)=-5x^{2}-4x+3$
+
+$f(-4)$
+        $= -61$
+
+\columnbreak % 60
+
+  \item $f(x)=-x^{2}-4x+2$
+
+$f(3)$
+        $= -19$
+
+  \item $f(x)=5x^{2}+5x-3$
+
+$f(3)$
+        $= 57$
+
+  \item $f(x)=2x^{2}+2x-5$
+
+$f(-5)$
+        $= 35$
+
+  \item $f(x)=5x^{2}-2x-3$
+
+$f(-5)$
+        $= 132$
+
+  \item $f(x)=x^{2}-3x+4$
+
+$f(-1)$
+        $= 8$
+
+  \item $f(x)=5x^{2}-x-5$
+
+$f(-2)$
+        $= 17$
+
+  \item $f(x)=-5x^{2}+3x+5$
+
+$f(-5)$
+        $= -135$
+
+  \item $f(x)=-3x^{2}+4x-1$
+
+$f(-5)$
+        $= -96$
+
+  \item $f(x)=-3x^{2}+3x-4$
+
+$f(-1)$
+        $= -10$
+
+  \item $f(x)=x^{2}+2x-4$
+
+$f(4)$
+        $= 20$
+
+  \item $f(x)=-5x^{2}+3x+4$
+
+$f(4)$
+        $= -64$
+
+  \item $f(x)=-4x^{2}+5x+5$
+
+$f(-1)$
+        $= -4$
+
+  \item $f(x)=-x^{2}-4x-2$
+
+$f(4)$
+        $= -34$
+
+  \item $f(x)=-x^{2}+5x-4$
+
+$f(-1)$
+        $= -10$
+
+  \item $f(x)=4x^{2}+2x+1$
+
+$f(-3)$
+        $= 31$
+
+\columnbreak % 75
+
+  \item $f(x)=-4x^{2}-3x+4$
+
+$f(-5)$
+        $= -81$
+
+  \item $f(x)=-4x^{2}+x+3$
+
+$f(4)$
+        $= -57$
+
+  \item $f(x)=-x^{2}-4x-1$
+
+$f(3)$
+        $= -22$
+
+  \item $f(x)=-2x^{2}-4x-5$
+
+$f(5)$
+        $= -75$
+
+  \item $f(x)=4x^{2}+5x+3$
+
+$f(-1)$
+        $= 2$
+
+  \item $f(x)=4x^{2}+5x+1$
+
+$f(3)$
+        $= 52$
+
+  \item $f(x)=-4x^{2}-5x+2$
+
+$f(-3)$
+        $= -19$
+
+  \item $f(x)=-4x^{2}+4x-4$
+
+$f(-5)$
+        $= -124$
+
+  \item $f(x)=x^{2}+x-2$
+
+$f(-3)$
+        $= 4$
+
+  \item $f(x)=x^{2}+4x+1$
+
+$f(-2)$
+        $= -3$
+
+  \item $f(x)=-3x^{2}-3x+3$
+
+$f(2)$
+        $= -15$
+
+  \item $f(x)=-5x^{2}-5x-5$
+
+$f(1)$
+        $= -15$
+
+  \item $f(x)=-5x^{2}+3x-1$
+
+$f(-4)$
+        $= -93$
+
+  \item $f(x)=-4x^{2}+5x+3$
+
+$f(-3)$
+        $= -48$
+
+  \item $f(x)=x^{2}+3x-1$
+
+$f(1)$
+        $= 3$
+
+\columnbreak % 90
+
+\resetques
+
+  \item $f(x)=-3x^{2}-x-2$
+
+$f(3)$
+        $= -32$
+
+  \item $f(x)=-x^{2}+x+3$
+
+$f(-3)$
+        $= -9$
+
+  \item $f(x)=5x^{2}-4x-2$
+
+$f(3)$
+        $= 31$
+
+  \item $f(x)=-2x^{2}+3x+4$
+
+$f(1)$
+        $= 5$
+
+  \item $f(x)=-2x^{2}-3x+1$
+
+$f(-3)$
+        $= -8$
+
+  \item $f(x)=x^{2}-2x+5$
+
+$f(3)$
+        $= 8$
+
+  \item $f(x)=-3x^{2}+5x-5$
+
+$f(2)$
+        $= -7$
+
+  \item $f(x)=x^{2}-2x+4$
+
+$f(3)$
+        $= 7$
+
+  \item $f(x)=x^{2}-5x-3$
+
+$f(-2)$
+        $= 11$
+
+  \item $f(x)=-5x^{2}+2x+3$
+
+$f(5)$
+        $= -112$
+
+  \item $f(x)=x^{2}+5x+2$
+
+$f(2)$
+        $= 16$
+
+  \item $f(x)=2x^{2}+5x+1$
+
+$f(-4)$
+        $= 13$
+
+  \item $f(x)=-3x^{2}+2x+4$
+
+$f(-3)$
+        $= -29$
+
+  \item $f(x)=-2x^{2}-2x+3$
+
+$f(-2)$
+        $= -1$
+
+  \item $f(x)=4x^{2}-4x-5$
+
+$f(-5)$
+        $= 115$
+
+\columnbreak % 105
+
+  \item $f(x)=-x^{2}+4x+3$
+
+$f(3)$
+        $= 6$
+
+  \item $f(x)=-x^{2}+4x-2$
+
+$f(-4)$
+        $= -34$
+
+  \item $f(x)=-2x^{2}+5x+2$
+
+$f(5)$
+        $= -23$
+
+  \item $f(x)=-x^{2}+3x-2$
+
+$f(-2)$
+        $= -12$
+
+  \item $f(x)=-5x^{2}+x-3$
+
+$f(4)$
+        $= -79$
+
+  \item $f(x)=-3x^{2}-3x-2$
+
+$f(-5)$
+        $= -62$
+
+  \item $f(x)=-4x^{2}+4x-2$
+
+$f(-4)$
+        $= -82$
+
+  \item $f(x)=-5x^{2}+x-1$
+
+$f(-3)$
+        $= -49$
+
+  \item $f(x)=-5x^{2}-3x+5$
+
+$f(-5)$
+        $= -105$
+
+  \item $f(x)=x^{2}-5x+2$
+
+$f(4)$
+        $= -2$
+
+  \item $f(x)=-5x^{2}+5x+1$
+
+$f(-4)$
+        $= -99$
+
+  \item $f(x)=-x^{2}+x+3$
+
+$f(3)$
+        $= -3$
+
+  \item $f(x)=-3x^{2}+2x+3$
+
+$f(-2)$
+        $= -13$
+
+  \item $f(x)=-x^{2}+3x+3$
+
+$f(2)$
+        $= 5$
+
+  \item $f(x)=-5x^{2}-5x-2$
+
+$f(5)$
+        $= -152$
+
+\columnbreak % 120
+
+  \item $f(x)=3x^{2}+2x+2$
+
+$f(-1)$
+        $= 3$
+
+  \item $f(x)=5x^{2}-x-1$
+
+$f(-5)$
+        $= 129$
+
+  \item $f(x)=4x^{2}+3x+5$
+
+$f(-3)$
+        $= 32$
+
+  \item $f(x)=4x^{2}+3x+1$
+
+$f(4)$
+        $= 77$
+
+  \item $f(x)=5x^{2}+4x+4$
+
+$f(2)$
+        $= 32$
+
+  \item $f(x)=-4x^{2}-x-5$
+
+$f(-4)$
+        $= -65$
+
+  \item $f(x)=2x^{2}-3x+3$
+
+$f(-3)$
+        $= 30$
+
+  \item $f(x)=-4x^{2}+2x-4$
+
+$f(-1)$
+        $= -10$
+
+  \item $f(x)=2x^{2}+4x+5$
+
+$f(-1)$
+        $= 3$
+
+  \item $f(x)=-2x^{2}+2x-2$
+
+$f(-2)$
+        $= -14$
+
+  \item $f(x)=-x^{2}+x+1$
+
+$f(-1)$
+        $= -1$
+
+  \item $f(x)=-x^{2}-4x-4$
+
+$f(-3)$
+        $= -1$
+
+  \item $f(x)=x^{2}+3x+2$
+
+$f(-3)$
+        $= 2$
+
+  \item $f(x)=4x^{2}+4x+1$
+
+$f(-3)$
+        $= 25$
+
+  \item $f(x)=-4x^{2}+x+3$
+
+$f(2)$
+        $= -11$
+
+\columnbreak % 135
+
+\resetques
+
+  \item $f(x)=5x^{2}-2x-1$
+
+$f(5)$
+        $= 114$
+
+  \item $f(x)=-x^{2}-4x-3$
+
+$f(4)$
+        $= -35$
+
+  \item $f(x)=-4x^{2}+5x-1$
+
+$f(-1)$
+        $= -10$
+
+  \item $f(x)=x^{2}-2x+1$
+
+$f(-2)$
+        $= 9$
+
+  \item $f(x)=-5x^{2}+3x+2$
+
+$f(-4)$
+        $= -90$
+
+  \item $f(x)=x^{2}-3x+1$
+
+$f(-4)$
+        $= 29$
+
+  \item $f(x)=3x^{2}-x+1$
+
+$f(5)$
+        $= 71$
+
+  \item $f(x)=-x^{2}-3x+3$
+
+$f(4)$
+        $= -25$
+
+  \item $f(x)=x^{2}+2x-3$
+
+$f(-1)$
+        $= -4$
+
+  \item $f(x)=3x^{2}-2x-5$
+
+$f(3)$
+        $= 16$
+
+  \item $f(x)=4x^{2}-3x-3$
+
+$f(-1)$
+        $= 4$
+
+  \item $f(x)=3x^{2}-2x-3$
+
+$f(-1)$
+        $= 2$
+
+  \item $f(x)=2x^{2}-x+3$
+
+$f(-4)$
+        $= 39$
+
+  \item $f(x)=-2x^{2}+x+3$
+
+$f(2)$
+        $= -3$
+
+  \item $f(x)=x^{2}-x+3$
+
+$f(4)$
+        $= 15$
+
+\columnbreak % 150
+
+  \item $f(x)=-4x^{2}+x-3$
+
+$f(-4)$
+        $= -71$
+
+  \item $f(x)=3x^{2}-4x-3$
+
+$f(4)$
+        $= 29$
+
+  \item $f(x)=-3x^{2}+5x-3$
+
+$f(5)$
+        $= -53$
+
+  \item $f(x)=-4x^{2}-x+2$
+
+$f(-2)$
+        $= -12$
+
+  \item $f(x)=5x^{2}+3x+4$
+
+$f(5)$
+        $= 144$
+
+  \item $f(x)=-4x^{2}-4x-3$
+
+$f(-1)$
+        $= -3$
+
+  \item $f(x)=-x^{2}+2x-2$
+
+$f(-3)$
+        $= -17$
+
+  \item $f(x)=2x^{2}+4x+3$
+
+$f(-2)$
+        $= 3$
+
+  \item $f(x)=5x^{2}+2x-5$
+
+$f(-1)$
+        $= -2$
+
+  \item $f(x)=4x^{2}-2x-3$
+
+$f(5)$
+        $= 87$
+
+  \item $f(x)=5x^{2}-5x-5$
+
+$f(-1)$
+        $= 5$
+
+  \item $f(x)=-3x^{2}+4x+2$
+
+$f(-3)$
+        $= -37$
+
+  \item $f(x)=-x^{2}+x+5$
+
+$f(-1)$
+        $= 3$
+
+  \item $f(x)=-4x^{2}+3x+5$
+
+$f(4)$
+        $= -47$
+
+  \item $f(x)=x^{2}+2x+4$
+
+$f(-3)$
+        $= 7$
+
+\columnbreak % 165
+
+  \item $f(x)=-x^{2}-2x-1$
+
+$f(-5)$
+        $= -16$
+
+  \item $f(x)=-x^{2}-2x+3$
+
+$f(-3)$
+        $= 0$
+
+  \item $f(x)=-4x^{2}+3x+3$
+
+$f(-3)$
+        $= -42$
+
+  \item $f(x)=-3x^{2}+2x+5$
+
+$f(-2)$
+        $= -11$
+
+  \item $f(x)=2x^{2}+5x-2$
+
+$f(-5)$
+        $= 23$
+
+  \item $f(x)=2x^{2}+3x+2$
+
+$f(-3)$
+        $= 11$
+
+  \item $f(x)=-x^{2}-4x+3$
+
+$f(4)$
+        $= -29$
+
+  \item $f(x)=-3x^{2}+2x-5$
+
+$f(-5)$
+        $= -90$
+
+  \item $f(x)=-4x^{2}-x+3$
+
+$f(3)$
+        $= -36$
+
+  \item $f(x)=4x^{2}-5x+1$
+
+$f(-2)$
+        $= 27$
+
+  \item $f(x)=-5x^{2}+3x+1$
+
+$f(-1)$
+        $= -7$
+
+  \item $f(x)=x^{2}+x+1$
+
+$f(-1)$
+        $= 1$
+
+  \item $f(x)=-2x^{2}+x+2$
+
+$f(3)$
+        $= -13$
+
+  \item $f(x)=3x^{2}-2x+1$
+
+$f(1)$
+        $= 2$
+
+  \item $f(x)=-2x^{2}+2x+4$
+
+$f(1)$
+        $= 4$
+
+\columnbreak % 180
+
+\resetques
+
+  \item $f(x)=5x^{2}+2x+2$
+
+$f(-5)$
+        $= 117$
+
+  \item $f(x)=-2x^{2}-5x-2$
+
+$f(-1)$
+        $= 1$
+
+  \item $f(x)=x^{2}-4x+4$
+
+$f(-3)$
+        $= 25$
+
+  \item $f(x)=4x^{2}+5x-2$
+
+$f(1)$
+        $= 7$
+
+  \item $f(x)=4x^{2}+x-2$
+
+$f(2)$
+        $= 16$
+
+  \item $f(x)=-x^{2}+2x+5$
+
+$f(-2)$
+        $= -3$
+
+  \item $f(x)=-4x^{2}+5x+4$
+
+$f(3)$
+        $= -17$
+
+  \item $f(x)=-5x^{2}-5x+1$
+
+$f(-5)$
+        $= -99$
+
+  \item $f(x)=-2x^{2}-x-1$
+
+$f(-1)$
+        $= -2$
+
+  \item $f(x)=2x^{2}-2x+5$
+
+$f(2)$
+        $= 9$
+
+  \item $f(x)=-5x^{2}-x-4$
+
+$f(-1)$
+        $= -8$
+
+  \item $f(x)=2x^{2}+2x-3$
+
+$f(-4)$
+        $= 21$
+
+  \item $f(x)=x^{2}+4x-3$
+
+$f(-4)$
+        $= -3$
+
+  \item $f(x)=x^{2}-4x-3$
+
+$f(-3)$
+        $= 18$
+
+  \item $f(x)=3x^{2}-2x+2$
+
+$f(4)$
+        $= 42$
+
+\columnbreak % 195
+
+  \item $f(x)=-5x^{2}+5x+3$
+
+$f(4)$
+        $= -57$
+
+  \item $f(x)=5x^{2}+2x+1$
+
+$f(2)$
+        $= 25$
+
+  \item $f(x)=-3x^{2}+5x+5$
+
+$f(-1)$
+        $= -3$
+
+  \item $f(x)=-5x^{2}+4x+2$
+
+$f(-4)$
+        $= -94$
+
+  \item $f(x)=5x^{2}+4x+2$
+
+$f(1)$
+        $= 11$
+
+  \item $f(x)=-4x^{2}-4x+4$
+
+$f(-3)$
+        $= -20$
+
+  \item $f(x)=-4x^{2}-5x-4$
+
+$f(-1)$
+        $= -3$
+
+  \item $f(x)=x^{2}+2x+2$
+
+$f(-5)$
+        $= 17$
+
+  \item $f(x)=x^{2}-4x+3$
+
+$f(4)$
+        $= 3$
+
+  \item $f(x)=-3x^{2}-5x+3$
+
+$f(5)$
+        $= -97$
+
+  \item $f(x)=-x^{2}-x+2$
+
+$f(3)$
+        $= -10$
+
+  \item $f(x)=2x^{2}-x-5$
+
+$f(3)$
+        $= 10$
+
+  \item $f(x)=-3x^{2}-2x+3$
+
+$f(3)$
+        $= -30$
+
+  \item $f(x)=3x^{2}-2x+3$
+
+$f(2)$
+        $= 11$
+
+  \item $f(x)=x^{2}+2x+4$
+
+$f(2)$
+        $= 12$
+
+\columnbreak % 210
+
+  \item $f(x)=4x^{2}-2x+1$
+
+$f(-4)$
+        $= 73$
+
+  \item $f(x)=4x^{2}-3x+3$
+
+$f(5)$
+        $= 88$
+
+  \item $f(x)=2x^{2}-x-4$
+
+$f(-1)$
+        $= -1$
+
+  \item $f(x)=3x^{2}+3x-2$
+
+$f(-4)$
+        $= 34$
+
+  \item $f(x)=4x^{2}-x+2$
+
+$f(5)$
+        $= 97$
+
+  \item $f(x)=-3x^{2}+2x-2$
+
+$f(-2)$
+        $= -18$
+
+  \item $f(x)=-5x^{2}-5x+1$
+
+$f(-3)$
+        $= -29$
+
+  \item $f(x)=-x^{2}+3x+1$
+
+$f(-2)$
+        $= -9$
+
+  \item $f(x)=2x^{2}+5x+3$
+
+$f(5)$
+        $= 78$
+
+  \item $f(x)=-4x^{2}+3x+2$
+
+$f(-4)$
+        $= -74$
+
+  \item $f(x)=x^{2}+2x-2$
+
+$f(-5)$
+        $= 13$
+
+  \item $f(x)=-2x^{2}-4x-4$
+
+$f(-1)$
+        $= -2$
+
+  \item $f(x)=x^{2}-2x-2$
+
+$f(-2)$
+        $= 6$
+
+  \item $f(x)=3x^{2}+4x+1$
+
+$f(5)$
+        $= 96$
+
+  \item $f(x)=-x^{2}+x+4$
+
+$f(-5)$
+        $= -26$
+
+\columnbreak % 225
+
+\resetques
+
+  \item $f(x)=-2x^{2}-x+4$
+
+$f(-1)$
+        $= 3$
+
+  \item $f(x)=3x^{2}+3x+2$
+
+$f(1)$
+        $= 8$
+
+  \item $f(x)=2x^{2}+x+3$
+
+$f(2)$
+        $= 13$
+
+  \item $f(x)=-3x^{2}-3x+3$
+
+$f(4)$
+        $= -57$
+
+  \item $f(x)=-x^{2}-x-1$
+
+$f(-5)$
+        $= -21$
+
+  \item $f(x)=-x^{2}+3x-5$
+
+$f(5)$
+        $= -15$
+
+  \item $f(x)=-3x^{2}-5x-5$
+
+$f(-4)$
+        $= -33$
+
+  \item $f(x)=-x^{2}+4x-5$
+
+$f(-4)$
+        $= -37$
+
+  \item $f(x)=-4x^{2}-5x+2$
+
+$f(4)$
+        $= -82$
+
+  \item $f(x)=-2x^{2}+5x-5$
+
+$f(5)$
+        $= -30$
+
+  \item $f(x)=-3x^{2}-5x+5$
+
+$f(5)$
+        $= -95$
+
+  \item $f(x)=3x^{2}-x-2$
+
+$f(5)$
+        $= 68$
+
+  \item $f(x)=-x^{2}-4x+3$
+
+$f(2)$
+        $= -9$
+
+  \item $f(x)=4x^{2}-5x-4$
+
+$f(1)$
+        $= -5$
+
+  \item $f(x)=2x^{2}-2x+1$
+
+$f(-1)$
+        $= 5$
+
+\columnbreak % 240
+
+  \item $f(x)=-5x^{2}+x+4$
+
+$f(3)$
+        $= -38$
+
+  \item $f(x)=2x^{2}-3x-2$
+
+$f(-4)$
+        $= 42$
+
+  \item $f(x)=-x^{2}-4x-5$
+
+$f(2)$
+        $= -17$
+
+  \item $f(x)=x^{2}+x+2$
+
+$f(1)$
+        $= 4$
+
+  \item $f(x)=2x^{2}-x+4$
+
+$f(3)$
+        $= 19$
+
+  \item $f(x)=-4x^{2}+4x+4$
+
+$f(-4)$
+        $= -76$
+
+  \item $f(x)=-2x^{2}-3x+4$
+
+$f(-5)$
+        $= -31$
+
+  \item $f(x)=5x^{2}-5x-2$
+
+$f(-5)$
+        $= 148$
+
+  \item $f(x)=2x^{2}-4x+1$
+
+$f(-3)$
+        $= 31$
+
+  \item $f(x)=x^{2}-2x-5$
+
+$f(-1)$
+        $= -2$
+
+  \item $f(x)=3x^{2}-x-1$
+
+$f(1)$
+        $= 1$
+
+  \item $f(x)=4x^{2}+x-3$
+
+$f(-2)$
+        $= 11$
+
+  \item $f(x)=3x^{2}+3x+4$
+
+$f(3)$
+        $= 40$
+
+  \item $f(x)=x^{2}-3x+1$
+
+$f(5)$
+        $= 11$
+
+  \item $f(x)=5x^{2}-x-2$
+
+$f(-3)$
+        $= 46$
+
+\columnbreak % 255
+
+  \item $f(x)=x^{2}+3x-2$
+
+$f(-2)$
+        $= -4$
+
+  \item $f(x)=-4x^{2}-4x+2$
+
+$f(4)$
+        $= -78$
+
+  \item $f(x)=4x^{2}+5x-3$
+
+$f(-1)$
+        $= -4$
+
+  \item $f(x)=3x^{2}+2x+1$
+
+$f(-1)$
+        $= 2$
+
+  \item $f(x)=5x^{2}-x+1$
+
+$f(-2)$
+        $= 23$
+
+  \item $f(x)=5x^{2}+3x+1$
+
+$f(-4)$
+        $= 69$
+
+  \item $f(x)=3x^{2}-x+2$
+
+$f(-1)$
+        $= 6$
+
+  \item $f(x)=3x^{2}+x-5$
+
+$f(-5)$
+        $= 65$
+
+  \item $f(x)=x^{2}+3x-1$
+
+$f(-2)$
+        $= -3$
+
+  \item $f(x)=5x^{2}-2x-3$
+
+$f(-5)$
+        $= 132$
+
+  \item $f(x)=-2x^{2}-2x-5$
+
+$f(-3)$
+        $= -17$
+
+  \item $f(x)=-x^{2}+x+5$
+
+$f(1)$
+        $= 5$
+
+  \item $f(x)=5x^{2}+2x-4$
+
+$f(5)$
+        $= 131$
+
+  \item $f(x)=-x^{2}-2x-5$
+
+$f(2)$
+        $= -13$
+
+  \item $f(x)=3x^{2}-3x+5$
+
+$f(-2)$
+        $= 23$
+
+\columnbreak % 270
+
+\resetques
+
+  \item $f(x)=4x^{2}-4x+5$
+
+$f(1)$
+        $= 5$
+
+  \item $f(x)=-x^{2}+x+3$
+
+$f(3)$
+        $= -3$
+
+  \item $f(x)=-x^{2}+x-5$
+
+$f(-4)$
+        $= -25$
+
+  \item $f(x)=-4x^{2}+x-4$
+
+$f(-3)$
+        $= -43$
+
+  \item $f(x)=2x^{2}+4x+5$
+
+$f(2)$
+        $= 21$
+
+  \item $f(x)=-2x^{2}-3x+5$
+
+$f(5)$
+        $= -60$
+
+  \item $f(x)=3x^{2}-5x-3$
+
+$f(-3)$
+        $= 39$
+
+  \item $f(x)=x^{2}-2x+2$
+
+$f(-4)$
+        $= 26$
+
+  \item $f(x)=-2x^{2}+2x+3$
+
+$f(1)$
+        $= 3$
+
+  \item $f(x)=-4x^{2}+3x+2$
+
+$f(-4)$
+        $= -74$
+
+  \item $f(x)=-x^{2}-2x+3$
+
+$f(-1)$
+        $= 4$
+
+  \item $f(x)=3x^{2}+5x-2$
+
+$f(1)$
+        $= 6$
+
+  \item $f(x)=4x^{2}-4x-4$
+
+$f(3)$
+        $= 20$
+
+  \item $f(x)=-5x^{2}-5x-1$
+
+$f(5)$
+        $= -151$
+
+  \item $f(x)=x^{2}+2x+2$
+
+$f(-2)$
+        $= 2$
+
+\columnbreak % 285
+
+  \item $f(x)=x^{2}+4x-2$
+
+$f(3)$
+        $= 19$
+
+  \item $f(x)=-x^{2}-5x+3$
+
+$f(1)$
+        $= -3$
+
+  \item $f(x)=-5x^{2}+x+2$
+
+$f(-1)$
+        $= -4$
+
+  \item $f(x)=-4x^{2}-3x+1$
+
+$f(-3)$
+        $= -26$
+
+  \item $f(x)=3x^{2}-5x+2$
+
+$f(5)$
+        $= 52$
+
+  \item $f(x)=-2x^{2}+5x-2$
+
+$f(5)$
+        $= -27$
+
+  \item $f(x)=2x^{2}+x-1$
+
+$f(-4)$
+        $= 27$
+
+  \item $f(x)=4x^{2}-4x-5$
+
+$f(2)$
+        $= 3$
+
+  \item $f(x)=-5x^{2}-3x-2$
+
+$f(3)$
+        $= -56$
+
+  \item $f(x)=x^{2}+x+5$
+
+$f(4)$
+        $= 25$
+
+  \item $f(x)=3x^{2}-5x-5$
+
+$f(-5)$
+        $= 95$
+
+  \item $f(x)=-2x^{2}+x-4$
+
+$f(-5)$
+        $= -59$
+
+  \item $f(x)=-x^{2}+3x+4$
+
+$f(-1)$
+        $= 0$
+
+  \item $f(x)=4x^{2}+4x-2$
+
+$f(-2)$
+        $= 6$
+
+  \item $f(x)=2x^{2}-x-5$
+
+$f(-1)$
+        $= -2$
+
+\columnbreak % 300
+
+  \item $f(x)=-3x^{2}+5x+4$
+
+$f(-4)$
+        $= -64$
+
+  \item $f(x)=-3x^{2}-4x+1$
+
+$f(-2)$
+        $= -3$
+
+  \item $f(x)=2x^{2}+2x-1$
+
+$f(2)$
+        $= 11$
+
+  \item $f(x)=3x^{2}-2x-1$
+
+$f(-3)$
+        $= 32$
+
+  \item $f(x)=5x^{2}+4x+4$
+
+$f(5)$
+        $= 149$
+
+  \item $f(x)=5x^{2}+x+4$
+
+$f(1)$
+        $= 10$
+
+  \item $f(x)=-3x^{2}-2x-3$
+
+$f(-4)$
+        $= -43$
+
+  \item $f(x)=x^{2}-2x-5$
+
+$f(-2)$
+        $= 3$
+
+  \item $f(x)=4x^{2}-5x+1$
+
+$f(5)$
+        $= 76$
+
+  \item $f(x)=-4x^{2}+x-2$
+
+$f(-4)$
+        $= -70$
+
+  \item $f(x)=-3x^{2}+3x+3$
+
+$f(3)$
+        $= -15$
+
+  \item $f(x)=-5x^{2}+3x+2$
+
+$f(5)$
+        $= -108$
+
+  \item $f(x)=x^{2}+5x-5$
+
+$f(5)$
+        $= 45$
+
+  \item $f(x)=4x^{2}-5x-2$
+
+$f(-5)$
+        $= 123$
+
+  \item $f(x)=x^{2}+x+2$
+
+$f(4)$
+        $= 22$
+
+\columnbreak % 315
+
+\resetques
+
+  \item $f(x)=-4x^{2}-x+3$
+
+$f(2)$
+        $= -15$
+
+  \item $f(x)=x^{2}+x+3$
+
+$f(2)$
+        $= 9$
+
+  \item $f(x)=-2x^{2}+x-2$
+
+$f(-1)$
+        $= -5$
+
+  \item $f(x)=-3x^{2}-x+5$
+
+$f(-2)$
+        $= -5$
+
+  \item $f(x)=-4x^{2}+4x+5$
+
+$f(3)$
+        $= -19$
+
+  \item $f(x)=5x^{2}-2x+2$
+
+$f(-4)$
+        $= 90$
+
+  \item $f(x)=5x^{2}+x-5$
+
+$f(4)$
+        $= 79$
+
+  \item $f(x)=x^{2}+3x-4$
+
+$f(-1)$
+        $= -6$
+
+  \item $f(x)=-4x^{2}+3x-5$
+
+$f(-5)$
+        $= -120$
+
+  \item $f(x)=-5x^{2}+2x-4$
+
+$f(5)$
+        $= -119$
+
+  \item $f(x)=-2x^{2}-2x-1$
+
+$f(4)$
+        $= -41$
+
+  \item $f(x)=4x^{2}-5x+3$
+
+$f(-2)$
+        $= 29$
+
+  \item $f(x)=-4x^{2}-3x-3$
+
+$f(2)$
+        $= -25$
+
+  \item $f(x)=-2x^{2}+3x-3$
+
+$f(-3)$
+        $= -30$
+
+  \item $f(x)=2x^{2}+4x+2$
+
+$f(2)$
+        $= 18$
+
+\columnbreak % 330
+
+  \item $f(x)=5x^{2}+x+4$
+
+$f(2)$
+        $= 26$
+
+  \item $f(x)=-x^{2}+5x-3$
+
+$f(5)$
+        $= -3$
+
+  \item $f(x)=-4x^{2}+3x+5$
+
+$f(-3)$
+        $= -40$
+
+  \item $f(x)=-4x^{2}+x+1$
+
+$f(2)$
+        $= -13$
+
+  \item $f(x)=-4x^{2}+4x-4$
+
+$f(3)$
+        $= -28$
+
+  \item $f(x)=5x^{2}+x-1$
+
+$f(1)$
+        $= 5$
+
+  \item $f(x)=4x^{2}+3x+1$
+
+$f(2)$
+        $= 23$
+
+  \item $f(x)=3x^{2}+2x-1$
+
+$f(-4)$
+        $= 39$
+
+  \item $f(x)=-2x^{2}+2x-2$
+
+$f(5)$
+        $= -42$
+
+  \item $f(x)=4x^{2}+3x-1$
+
+$f(2)$
+        $= 21$
+
+  \item $f(x)=-x^{2}+3x+2$
+
+$f(-3)$
+        $= -16$
+
+  \item $f(x)=-2x^{2}+3x+1$
+
+$f(4)$
+        $= -19$
+
+  \item $f(x)=-x^{2}+x-1$
+
+$f(3)$
+        $= -7$
+
+  \item $f(x)=-2x^{2}-3x-2$
+
+$f(4)$
+        $= -46$
+
+  \item $f(x)=-2x^{2}-2x+1$
+
+$f(-1)$
+        $= 1$
+
+\columnbreak % 345
+
+  \item $f(x)=-3x^{2}-3x+5$
+
+$f(-3)$
+        $= -13$
+
+  \item $f(x)=-3x^{2}-x-2$
+
+$f(-2)$
+        $= -12$
+
+  \item $f(x)=-4x^{2}-3x-2$
+
+$f(4)$
+        $= -78$
+
+  \item $f(x)=-x^{2}-5x+5$
+
+$f(-2)$
+        $= 11$
+
+  \item $f(x)=-2x^{2}+2x-4$
+
+$f(-3)$
+        $= -28$
+
+  \item $f(x)=5x^{2}-x+3$
+
+$f(5)$
+        $= 123$
+
+  \item $f(x)=5x^{2}+4x+3$
+
+$f(-2)$
+        $= 15$
+
+  \item $f(x)=4x^{2}+4x-4$
+
+$f(3)$
+        $= 44$
+
+  \item $f(x)=2x^{2}+4x-1$
+
+$f(3)$
+        $= 29$
+
+  \item $f(x)=3x^{2}+x-4$
+
+$f(3)$
+        $= 26$
+
+  \item $f(x)=3x^{2}-5x+3$
+
+$f(-3)$
+        $= 45$
+
+  \item $f(x)=x^{2}-3x+5$
+
+$f(-3)$
+        $= 23$
+
+  \item $f(x)=-5x^{2}-4x-1$
+
+$f(-5)$
+        $= -106$
+
+  \item $f(x)=-4x^{2}+5x-5$
+
+$f(-4)$
+        $= -89$
+
+  \item $f(x)=-5x^{2}+3x+3$
+
+$f(1)$
+        $= 1$
+
+\columnbreak % 360
+
+\resetques
+
+  \item $f(x)=-2x^{2}-x+2$
+
+$f(-5)$
+        $= -43$
+
+  \item $f(x)=x^{2}+4x+3$
+
+$f(-4)$
+        $= 3$
+
+  \item $f(x)=-2x^{2}-5x-4$
+
+$f(-5)$
+        $= -29$
+
+  \item $f(x)=-5x^{2}-5x+4$
+
+$f(-4)$
+        $= -56$
+
+  \item $f(x)=2x^{2}-2x+4$
+
+$f(-2)$
+        $= 16$
+
+  \item $f(x)=x^{2}-x+5$
+
+$f(-3)$
+        $= 17$
+
+  \item $f(x)=-2x^{2}+2x+2$
+
+$f(-1)$
+        $= -2$
+
+  \item $f(x)=5x^{2}+x+1$
+
+$f(2)$
+        $= 23$
+
+  \item $f(x)=2x^{2}+3x-5$
+
+$f(-5)$
+        $= 30$
+
+  \item $f(x)=2x^{2}-4x+2$
+
+$f(-1)$
+        $= 8$
+
+  \item $f(x)=5x^{2}-4x+2$
+
+$f(-5)$
+        $= 147$
+
+  \item $f(x)=-4x^{2}+2x-4$
+
+$f(-4)$
+        $= -76$
+
+  \item $f(x)=x^{2}-2x-5$
+
+$f(-1)$
+        $= -2$
+
+  \item $f(x)=2x^{2}+4x+2$
+
+$f(-5)$
+        $= 32$
+
+  \item $f(x)=-4x^{2}+2x-3$
+
+$f(-1)$
+        $= -9$
+
+\columnbreak % 375
+
+  \item $f(x)=-3x^{2}-5x+1$
+
+$f(-4)$
+        $= -27$
+
+  \item $f(x)=-2x^{2}-5x+3$
+
+$f(3)$
+        $= -30$
+
+  \item $f(x)=-x^{2}-4x+5$
+
+$f(-1)$
+        $= 8$
+
+  \item $f(x)=4x^{2}-x-3$
+
+$f(1)$
+        $= 0$
+
+  \item $f(x)=-4x^{2}+5x+5$
+
+$f(2)$
+        $= -1$
+
+  \item $f(x)=5x^{2}-3x-2$
+
+$f(-4)$
+        $= 90$
+
+  \item $f(x)=-3x^{2}-2x-3$
+
+$f(4)$
+        $= -59$
+
+  \item $f(x)=5x^{2}+x-4$
+
+$f(-3)$
+        $= 38$
+
+  \item $f(x)=-2x^{2}+x+5$
+
+$f(-1)$
+        $= 2$
+
+  \item $f(x)=3x^{2}+2x-3$
+
+$f(2)$
+        $= 13$
+
+  \item $f(x)=-x^{2}-2x+4$
+
+$f(5)$
+        $= -31$
+
+  \item $f(x)=-2x^{2}-x-3$
+
+$f(5)$
+        $= -58$
+
+  \item $f(x)=2x^{2}-5x-4$
+
+$f(4)$
+        $= 8$
+
+  \item $f(x)=4x^{2}+3x+1$
+
+$f(1)$
+        $= 8$
+
+  \item $f(x)=3x^{2}+2x-5$
+
+$f(-4)$
+        $= 35$
+
+\columnbreak % 390
+
+  \item $f(x)=-x^{2}+3x-2$
+
+$f(-2)$
+        $= -12$
+
+  \item $f(x)=-2x^{2}-2x+1$
+
+$f(4)$
+        $= -39$
+
+  \item $f(x)=2x^{2}-x-5$
+
+$f(-3)$
+        $= 16$
+
+  \item $f(x)=-4x^{2}-3x-2$
+
+$f(1)$
+        $= -9$
+
+  \item $f(x)=-x^{2}+x+2$
+
+$f(-3)$
+        $= -10$
+
+  \item $f(x)=-4x^{2}-5x+3$
+
+$f(-5)$
+        $= -72$
+
+  \item $f(x)=5x^{2}-4x+1$
+
+$f(1)$
+        $= 2$
+
+  \item $f(x)=2x^{2}+x+1$
+
+$f(2)$
+        $= 11$
+
+  \item $f(x)=x^{2}-4x-3$
+
+$f(-2)$
+        $= 9$
+
+  \item $f(x)=-3x^{2}+4x+4$
+
+$f(-4)$
+        $= -60$
+
+  \item $f(x)=-3x^{2}-3x+5$
+
+$f(4)$
+        $= -55$
+
+  \item $f(x)=-2x^{2}+3x+2$
+
+$f(1)$
+        $= 3$
+
+  \item $f(x)=2x^{2}-2x-1$
+
+$f(-5)$
+        $= 59$
+
+  \item $f(x)=3x^{2}+4x-2$
+
+$f(4)$
+        $= 62$
+
+  \item $f(x)=-4x^{2}+4x-3$
+
+$f(-5)$
+        $= -123$
+
+\columnbreak % 405
+
+\resetques
+
+  \item $f(x)=x^{2}-2x+4$
+
+$f(-1)$
+        $= 7$
+
+  \item $f(x)=-4x^{2}-x+4$
+
+$f(-5)$
+        $= -91$
+
+  \item $f(x)=-4x^{2}-5x-4$
+
+$f(3)$
+        $= -55$
+
+  \item $f(x)=-3x^{2}-x+5$
+
+$f(-4)$
+        $= -39$
+
+  \item $f(x)=-x^{2}+x+3$
+
+$f(5)$
+        $= -17$
+
+  \item $f(x)=2x^{2}-x-1$
+
+$f(5)$
+        $= 44$
+
+  \item $f(x)=2x^{2}-4x+3$
+
+$f(4)$
+        $= 19$
+
+  \item $f(x)=4x^{2}+5x+1$
+
+$f(-2)$
+        $= 7$
+
+  \item $f(x)=3x^{2}-5x+4$
+
+$f(3)$
+        $= 16$
+
+  \item $f(x)=-3x^{2}+x+2$
+
+$f(4)$
+        $= -42$
+
+  \item $f(x)=x^{2}+4x-4$
+
+$f(3)$
+        $= 17$
+
+  \item $f(x)=3x^{2}+x-3$
+
+$f(-4)$
+        $= 41$
+
+  \item $f(x)=-3x^{2}+x+1$
+
+$f(-1)$
+        $= -3$
+
+  \item $f(x)=4x^{2}-x-5$
+
+$f(-3)$
+        $= 34$
+
+  \item $f(x)=-5x^{2}-2x-5$
+
+$f(1)$
+        $= -12$
+
+\columnbreak % 420
+
+  \item $f(x)=4x^{2}+5x-5$
+
+$f(5)$
+        $= 120$
+
+  \item $f(x)=-5x^{2}+x+2$
+
+$f(-4)$
+        $= -82$
+
+  \item $f(x)=3x^{2}+3x+1$
+
+$f(-5)$
+        $= 61$
+
+  \item $f(x)=-3x^{2}-2x+2$
+
+$f(-1)$
+        $= 1$
+
+  \item $f(x)=x^{2}-2x+1$
+
+$f(-1)$
+        $= 4$
+
+  \item $f(x)=-x^{2}-3x+5$
+
+$f(3)$
+        $= -13$
+
+  \item $f(x)=-4x^{2}+x-2$
+
+$f(-1)$
+        $= -7$
+
+  \item $f(x)=5x^{2}+x+5$
+
+$f(-2)$
+        $= 23$
+
+  \item $f(x)=4x^{2}+3x-4$
+
+$f(1)$
+        $= 3$
+
+  \item $f(x)=-x^{2}-3x+4$
+
+$f(-4)$
+        $= 0$
+
+  \item $f(x)=-3x^{2}+3x-1$
+
+$f(-3)$
+        $= -37$
+
+  \item $f(x)=-x^{2}-4x-5$
+
+$f(2)$
+        $= -17$
+
+  \item $f(x)=5x^{2}-5x+5$
+
+$f(1)$
+        $= 5$
+
+  \item $f(x)=-3x^{2}+5x+5$
+
+$f(5)$
+        $= -45$
+
+  \item $f(x)=-5x^{2}-x-5$
+
+$f(-5)$
+        $= -125$
+
+\columnbreak % 435
+
+  \item $f(x)=5x^{2}-x-2$
+
+$f(-3)$
+        $= 46$
+
+  \item $f(x)=5x^{2}+x+3$
+
+$f(-3)$
+        $= 45$
+
+  \item $f(x)=5x^{2}+2x+1$
+
+$f(2)$
+        $= 25$
+
+  \item $f(x)=3x^{2}+2x-3$
+
+$f(3)$
+        $= 30$
+
+  \item $f(x)=-3x^{2}-4x-1$
+
+$f(3)$
+        $= -40$
+
+  \item $f(x)=-2x^{2}+4x+4$
+
+$f(1)$
+        $= 6$
+
+  \item $f(x)=-x^{2}-4x+2$
+
+$f(-2)$
+        $= 6$
+
+  \item $f(x)=5x^{2}-x-2$
+
+$f(-2)$
+        $= 20$
+
+  \item $f(x)=-4x^{2}-x-2$
+
+$f(-2)$
+        $= -16$
+
+  \item $f(x)=-4x^{2}-x+4$
+
+$f(-1)$
+        $= 1$
+
+  \item $f(x)=-3x^{2}-5x+4$
+
+$f(-5)$
+        $= -46$
+
+  \item $f(x)=-4x^{2}+2x+1$
+
+$f(1)$
+        $= -1$
+
+  \item $f(x)=-x^{2}+4x-2$
+
+$f(3)$
+        $= 1$
+
+  \item $f(x)=2x^{2}-2x-1$
+
+$f(1)$
+        $= -1$
+
+  \item $f(x)=-5x^{2}-2x+1$
+
+$f(-1)$
+        $= -2$
+
+\columnbreak % 450
+
+\resetques
+
+  \item $f(x)=-4x^{2}-x-5$
+
+$f(-3)$
+        $= -38$
+
+  \item $f(x)=5x^{2}+4x+3$
+
+$f(-2)$
+        $= 15$
+
+  \item $f(x)=2x^{2}-x+3$
+
+$f(5)$
+        $= 48$
+
+  \item $f(x)=4x^{2}-4x-4$
+
+$f(-2)$
+        $= 20$
+
+  \item $f(x)=-2x^{2}-5x-5$
+
+$f(-3)$
+        $= -8$
+
+  \item $f(x)=-2x^{2}-x+3$
+
+$f(-5)$
+        $= -42$
+
+  \item $f(x)=x^{2}-5x-1$
+
+$f(1)$
+        $= -5$
+
+  \item $f(x)=3x^{2}+2x-2$
+
+$f(2)$
+        $= 14$
+
+  \item $f(x)=-3x^{2}+4x-4$
+
+$f(-2)$
+        $= -24$
+
+  \item $f(x)=4x^{2}+4x-4$
+
+$f(4)$
+        $= 76$
+
+  \item $f(x)=-2x^{2}+x-5$
+
+$f(-3)$
+        $= -26$
+
+  \item $f(x)=5x^{2}+x-3$
+
+$f(5)$
+        $= 127$
+
+  \item $f(x)=-3x^{2}+3x+3$
+
+$f(-2)$
+        $= -15$
+
+  \item $f(x)=-5x^{2}-4x-4$
+
+$f(-4)$
+        $= -68$
+
+  \item $f(x)=x^{2}+x+5$
+
+$f(-1)$
+        $= 5$
+
+\columnbreak % 465
+
+  \item $f(x)=-4x^{2}-5x+5$
+
+$f(3)$
+        $= -46$
+
+  \item $f(x)=-5x^{2}-3x+5$
+
+$f(1)$
+        $= -3$
+
+  \item $f(x)=2x^{2}-3x+3$
+
+$f(4)$
+        $= 23$
+
+  \item $f(x)=2x^{2}-x-3$
+
+$f(5)$
+        $= 42$
+
+  \item $f(x)=x^{2}-2x-2$
+
+$f(-2)$
+        $= 6$
+
+  \item $f(x)=-3x^{2}-4x-4$
+
+$f(-4)$
+        $= -36$
+
+  \item $f(x)=3x^{2}+3x+5$
+
+$f(4)$
+        $= 65$
+
+  \item $f(x)=-x^{2}-4x+5$
+
+$f(-3)$
+        $= 8$
+
+  \item $f(x)=-2x^{2}+3x+5$
+
+$f(4)$
+        $= -15$
+
+  \item $f(x)=3x^{2}-3x-5$
+
+$f(-1)$
+        $= 1$
+
+  \item $f(x)=2x^{2}-2x+4$
+
+$f(-4)$
+        $= 44$
+
+  \item $f(x)=-4x^{2}-3x-1$
+
+$f(-1)$
+        $= -2$
+
+  \item $f(x)=-x^{2}-4x-4$
+
+$f(5)$
+        $= -49$
+
+  \item $f(x)=-4x^{2}-3x-4$
+
+$f(-2)$
+        $= -14$
+
+  \item $f(x)=3x^{2}+5x+1$
+
+$f(3)$
+        $= 43$
+
+\columnbreak % 480
+
+  \item $f(x)=-3x^{2}+3x+2$
+
+$f(1)$
+        $= 2$
+
+  \item $f(x)=x^{2}-x+2$
+
+$f(2)$
+        $= 4$
+
+  \item $f(x)=-2x^{2}-4x+4$
+
+$f(-4)$
+        $= -12$
+
+  \item $f(x)=5x^{2}-4x+5$
+
+$f(-1)$
+        $= 14$
+
+  \item $f(x)=-4x^{2}+x-1$
+
+$f(4)$
+        $= -61$
+
+  \item $f(x)=4x^{2}+3x+3$
+
+$f(2)$
+        $= 25$
+
+  \item $f(x)=-x^{2}+3x+3$
+
+$f(2)$
+        $= 5$
+
+  \item $f(x)=-2x^{2}+2x+4$
+
+$f(-5)$
+        $= -56$
+
+  \item $f(x)=-2x^{2}+x-3$
+
+$f(3)$
+        $= -18$
+
+  \item $f(x)=4x^{2}-5x-3$
+
+$f(2)$
+        $= 3$
+
+  \item $f(x)=-5x^{2}+3x-3$
+
+$f(4)$
+        $= -71$
+
+  \item $f(x)=-5x^{2}+3x+5$
+
+$f(-2)$
+        $= -21$
+
+  \item $f(x)=5x^{2}-4x-4$
+
+$f(-5)$
+        $= 141$
+
+  \item $f(x)=-5x^{2}+x+3$
+
+$f(-5)$
+        $= -127$
+
+  \item $f(x)=-3x^{2}+x+2$
+
+$f(5)$
+        $= -68$
+
+\columnbreak % 495
+
+\resetques
+
+  \item $f(x)=-2x^{2}+2x-3$
+
+$f(-1)$
+        $= -7$
+
+  \item $f(x)=3x^{2}-5x-4$
+
+$f(-3)$
+        $= 38$
+
+  \item $f(x)=-3x^{2}+3x+1$
+
+$f(-3)$
+        $= -35$
+
+  \item $f(x)=-x^{2}+5x-1$
+
+$f(5)$
+        $= -1$
+
+  \item $f(x)=4x^{2}+5x-5$
+
+$f(2)$
+        $= 21$
+
+  \item $f(x)=-x^{2}+4x-3$
+
+$f(3)$
+        $= 0$
+
+  \item $f(x)=-x^{2}-3x+2$
+
+$f(2)$
+        $= -8$
+
+  \item $f(x)=x^{2}-5x+4$
+
+$f(-3)$
+        $= 28$
+
+  \item $f(x)=5x^{2}-x+5$
+
+$f(3)$
+        $= 47$
+
+  \item $f(x)=3x^{2}+3x-3$
+
+$f(-1)$
+        $= -3$
+
+  \item $f(x)=-4x^{2}-4x-3$
+
+$f(4)$
+        $= -83$
+
+  \item $f(x)=-3x^{2}+4x+4$
+
+$f(-1)$
+        $= -3$
+
+  \item $f(x)=-3x^{2}-4x-4$
+
+$f(4)$
+        $= -68$
+
+  \item $f(x)=5x^{2}-x-3$
+
+$f(-2)$
+        $= 19$
+
+  \item $f(x)=x^{2}-5x-1$
+
+$f(2)$
+        $= -7$
+
+\columnbreak % 510
+
+  \item $f(x)=-x^{2}+x-4$
+
+$f(-5)$
+        $= -34$
+
+  \item $f(x)=-4x^{2}-x-5$
+
+$f(-2)$
+        $= -19$
+
+  \item $f(x)=-x^{2}+2x+3$
+
+$f(-1)$
+        $= 0$
+
+  \item $f(x)=-2x^{2}+2x+2$
+
+$f(3)$
+        $= -10$
+
+  \item $f(x)=4x^{2}+5x-4$
+
+$f(-4)$
+        $= 40$
+
+  \item $f(x)=-2x^{2}+x+1$
+
+$f(2)$
+        $= -5$
+
+  \item $f(x)=2x^{2}+5x+2$
+
+$f(1)$
+        $= 9$
+
+  \item $f(x)=4x^{2}-x+2$
+
+$f(2)$
+        $= 16$
+
+  \item $f(x)=4x^{2}-3x+2$
+
+$f(-1)$
+        $= 9$
+
+  \item $f(x)=4x^{2}+x-2$
+
+$f(4)$
+        $= 66$
+
+  \item $f(x)=-5x^{2}+x-5$
+
+$f(2)$
+        $= -23$
+
+  \item $f(x)=4x^{2}+3x-5$
+
+$f(-1)$
+        $= -4$
+
+  \item $f(x)=-4x^{2}-2x+5$
+
+$f(1)$
+        $= -1$
+
+  \item $f(x)=3x^{2}-5x+1$
+
+$f(-2)$
+        $= 23$
+
+  \item $f(x)=-5x^{2}-3x+1$
+
+$f(4)$
+        $= -91$
+
+\columnbreak % 525
+
+  \item $f(x)=3x^{2}+2x+3$
+
+$f(3)$
+        $= 36$
+
+  \item $f(x)=-3x^{2}+2x-1$
+
+$f(3)$
+        $= -22$
+
+  \item $f(x)=-x^{2}-3x-5$
+
+$f(-1)$
+        $= -3$
+
+  \item $f(x)=-4x^{2}+3x-1$
+
+$f(5)$
+        $= -86$
+
+  \item $f(x)=-2x^{2}-3x+2$
+
+$f(-5)$
+        $= -33$
+
+  \item $f(x)=5x^{2}-5x+2$
+
+$f(-3)$
+        $= 62$
+
+  \item $f(x)=-x^{2}-3x+4$
+
+$f(2)$
+        $= -6$
+
+  \item $f(x)=-2x^{2}+5x+1$
+
+$f(-3)$
+        $= -32$
+
+  \item $f(x)=2x^{2}+4x-2$
+
+$f(4)$
+        $= 46$
+
+  \item $f(x)=-3x^{2}-3x-5$
+
+$f(2)$
+        $= -23$
+
+  \item $f(x)=3x^{2}+3x-4$
+
+$f(2)$
+        $= 14$
+
+  \item $f(x)=4x^{2}+2x-3$
+
+$f(-4)$
+        $= 53$
+
+  \item $f(x)=-3x^{2}-x+2$
+
+$f(1)$
+        $= -2$
+
+  \item $f(x)=x^{2}+2x+5$
+
+$f(1)$
+        $= 8$
+
+  \item $f(x)=-4x^{2}-3x+2$
+
+$f(2)$
+        $= -20$
+
+\columnbreak % 540
+
+\resetques
+
+  \item $f(x)=-4x^{2}-x-1$
+
+$f(-2)$
+        $= -15$
+
+  \item $f(x)=-5x^{2}-2x-3$
+
+$f(2)$
+        $= -27$
+
+  \item $f(x)=-4x^{2}-4x+5$
+
+$f(2)$
+        $= -19$
+
+  \item $f(x)=4x^{2}-5x-4$
+
+$f(-1)$
+        $= 5$
+
+  \item $f(x)=-3x^{2}-5x+3$
+
+$f(4)$
+        $= -65$
+
+  \item $f(x)=-3x^{2}-3x-5$
+
+$f(-2)$
+        $= -11$
+
+  \item $f(x)=-4x^{2}+3x+1$
+
+$f(4)$
+        $= -51$
+
+  \item $f(x)=-5x^{2}-x+4$
+
+$f(-4)$
+        $= -72$
+
+  \item $f(x)=x^{2}-x+1$
+
+$f(1)$
+        $= 1$
+
+  \item $f(x)=-5x^{2}+2x+4$
+
+$f(1)$
+        $= 1$
+
+  \item $f(x)=-3x^{2}+2x-1$
+
+$f(4)$
+        $= -41$
+
+  \item $f(x)=-5x^{2}+3x-4$
+
+$f(-3)$
+        $= -58$
+
+  \item $f(x)=3x^{2}-3x+3$
+
+$f(3)$
+        $= 21$
+
+  \item $f(x)=-4x^{2}-4x-5$
+
+$f(-5)$
+        $= -85$
+
+  \item $f(x)=4x^{2}-4x-4$
+
+$f(4)$
+        $= 44$
+
+\columnbreak % 555
+
+  \item $f(x)=3x^{2}+3x+3$
+
+$f(1)$
+        $= 9$
+
+  \item $f(x)=3x^{2}+3x+5$
+
+$f(-3)$
+        $= 23$
+
+  \item $f(x)=x^{2}-4x+4$
+
+$f(-2)$
+        $= 16$
+
+  \item $f(x)=-3x^{2}-x+5$
+
+$f(-2)$
+        $= -5$
+
+  \item $f(x)=-3x^{2}+3x+3$
+
+$f(-4)$
+        $= -57$
+
+  \item $f(x)=-3x^{2}+3x-2$
+
+$f(-4)$
+        $= -62$
+
+  \item $f(x)=-5x^{2}+4x-2$
+
+$f(4)$
+        $= -66$
+
+  \item $f(x)=x^{2}+2x+3$
+
+$f(-5)$
+        $= 18$
+
+  \item $f(x)=-3x^{2}-4x-2$
+
+$f(4)$
+        $= -66$
+
+  \item $f(x)=x^{2}-2x+2$
+
+$f(-4)$
+        $= 26$
+
+  \item $f(x)=-3x^{2}+5x-2$
+
+$f(-3)$
+        $= -44$
+
+  \item $f(x)=-2x^{2}+x-4$
+
+$f(-1)$
+        $= -7$
+
+  \item $f(x)=5x^{2}-3x-4$
+
+$f(1)$
+        $= -2$
+
+  \item $f(x)=5x^{2}-5x-5$
+
+$f(5)$
+        $= 95$
+
+  \item $f(x)=x^{2}-x+3$
+
+$f(-2)$
+        $= 9$
+
+\columnbreak % 570
+
+  \item $f(x)=4x^{2}+2x-3$
+
+$f(-3)$
+        $= 27$
+
+  \item $f(x)=2x^{2}-2x-4$
+
+$f(-3)$
+        $= 20$
+
+  \item $f(x)=-2x^{2}-5x-2$
+
+$f(-2)$
+        $= 0$
+
+  \item $f(x)=3x^{2}-3x-1$
+
+$f(-2)$
+        $= 17$
+
+  \item $f(x)=5x^{2}+2x+3$
+
+$f(4)$
+        $= 91$
+
+  \item $f(x)=-x^{2}+4x-2$
+
+$f(2)$
+        $= 2$
+
+  \item $f(x)=2x^{2}+4x-4$
+
+$f(4)$
+        $= 44$
+
+  \item $f(x)=-3x^{2}-2x-3$
+
+$f(-5)$
+        $= -68$
+
+  \item $f(x)=4x^{2}-3x-2$
+
+$f(3)$
+        $= 25$
+
+  \item $f(x)=x^{2}-2x-3$
+
+$f(-5)$
+        $= 32$
+
+  \item $f(x)=x^{2}-4x-2$
+
+$f(-5)$
+        $= 43$
+
+  \item $f(x)=5x^{2}+x+4$
+
+$f(5)$
+        $= 134$
+
+  \item $f(x)=2x^{2}+2x-4$
+
+$f(5)$
+        $= 56$
+
+  \item $f(x)=x^{2}-x-4$
+
+$f(1)$
+        $= -4$
+
+  \item $f(x)=2x^{2}-2x+4$
+
+$f(4)$
+        $= 28$
+
+\columnbreak % 585
+
+\resetques
+
+  \item $f(x)=-4x^{2}+5x+1$
+
+$f(3)$
+        $= -20$
+
+  \item $f(x)=4x^{2}+2x-3$
+
+$f(4)$
+        $= 69$
+
+  \item $f(x)=-4x^{2}-3x-5$
+
+$f(4)$
+        $= -81$
+
+  \item $f(x)=x^{2}+3x-1$
+
+$f(1)$
+        $= 3$
+
+  \item $f(x)=x^{2}-2x+4$
+
+$f(2)$
+        $= 4$
+
+  \item $f(x)=3x^{2}-5x-1$
+
+$f(5)$
+        $= 49$
+
+  \item $f(x)=-5x^{2}+2x-4$
+
+$f(2)$
+        $= -20$
+
+  \item $f(x)=4x^{2}-5x-2$
+
+$f(5)$
+        $= 73$
+
+  \item $f(x)=-2x^{2}-3x+4$
+
+$f(2)$
+        $= -10$
+
+  \item $f(x)=3x^{2}-4x+5$
+
+$f(-3)$
+        $= 44$
+
+  \item $f(x)=5x^{2}+2x+5$
+
+$f(4)$
+        $= 93$
+
+  \item $f(x)=-3x^{2}+3x-3$
+
+$f(-5)$
+        $= -93$
+
+  \item $f(x)=x^{2}+4x+2$
+
+$f(-1)$
+        $= -1$
+
+  \item $f(x)=-4x^{2}-3x-5$
+
+$f(1)$
+        $= -12$
+
+  \item $f(x)=3x^{2}+2x+2$
+
+$f(-1)$
+        $= 3$
+
+\columnbreak % 600
+
+  \item $f(x)=-x^{2}-x-5$
+
+$f(-4)$
+        $= -17$
+
+  \item $f(x)=-5x^{2}-2x+4$
+
+$f(-3)$
+        $= -35$
+
+  \item $f(x)=-2x^{2}+4x+2$
+
+$f(2)$
+        $= 2$
+
+  \item $f(x)=2x^{2}+2x+5$
+
+$f(1)$
+        $= 9$
+
+  \item $f(x)=5x^{2}-3x+3$
+
+$f(-5)$
+        $= 143$
+
+  \item $f(x)=-4x^{2}+4x-5$
+
+$f(-1)$
+        $= -13$
+
+  \item $f(x)=-3x^{2}-5x+2$
+
+$f(2)$
+        $= -20$
+
+  \item $f(x)=-4x^{2}+3x+1$
+
+$f(-1)$
+        $= -6$
+
+  \item $f(x)=-x^{2}-5x+1$
+
+$f(-4)$
+        $= 5$
+
+  \item $f(x)=5x^{2}-3x+1$
+
+$f(1)$
+        $= 3$
+
+  \item $f(x)=4x^{2}-4x-4$
+
+$f(-2)$
+        $= 20$
+
+  \item $f(x)=-4x^{2}+3x+4$
+
+$f(-1)$
+        $= -3$
+
+  \item $f(x)=5x^{2}-5x+2$
+
+$f(2)$
+        $= 12$
+
+  \item $f(x)=4x^{2}+x-5$
+
+$f(-2)$
+        $= 9$
+
+  \item $f(x)=2x^{2}-3x-1$
+
+$f(-2)$
+        $= 13$
+
+\columnbreak % 615
+
+  \item $f(x)=-4x^{2}-2x-2$
+
+$f(1)$
+        $= -8$
+
+  \item $f(x)=-3x^{2}+5x-1$
+
+$f(2)$
+        $= -3$
+
+  \item $f(x)=5x^{2}-x+1$
+
+$f(-5)$
+        $= 131$
+
+  \item $f(x)=3x^{2}+3x+3$
+
+$f(4)$
+        $= 63$
+
+  \item $f(x)=5x^{2}-3x+5$
+
+$f(3)$
+        $= 41$
+
+  \item $f(x)=-x^{2}+2x+5$
+
+$f(-4)$
+        $= -19$
+
+  \item $f(x)=-x^{2}+3x-4$
+
+$f(-2)$
+        $= -14$
+
+  \item $f(x)=5x^{2}-3x-1$
+
+$f(-1)$
+        $= 7$
+
+  \item $f(x)=x^{2}-5x-4$
+
+$f(-2)$
+        $= 10$
+
+  \item $f(x)=-2x^{2}-x+5$
+
+$f(-3)$
+        $= -10$
+
+  \item $f(x)=4x^{2}+2x-5$
+
+$f(-5)$
+        $= 85$
+
+  \item $f(x)=5x^{2}-3x+4$
+
+$f(-1)$
+        $= 12$
+
+  \item $f(x)=-5x^{2}-5x-4$
+
+$f(-2)$
+        $= -14$
+
+  \item $f(x)=5x^{2}-2x+3$
+
+$f(4)$
+        $= 75$
+
+  \item $f(x)=x^{2}-5x+5$
+
+$f(5)$
+        $= 5$
+
+\columnbreak % 630
+
+\resetques
+
+  \item $f(x)=2x^{2}+5x-3$
+
+$f(-2)$
+        $= -5$
+
+  \item $f(x)=-x^{2}-5x-4$
+
+$f(-2)$
+        $= 2$
+
+  \item $f(x)=-5x^{2}-4x-5$
+
+$f(3)$
+        $= -62$
+
+  \item $f(x)=-x^{2}-4x+5$
+
+$f(-1)$
+        $= 8$
+
+  \item $f(x)=-5x^{2}-5x+1$
+
+$f(-3)$
+        $= -29$
+
+  \item $f(x)=x^{2}-x+5$
+
+$f(-4)$
+        $= 25$
+
+  \item $f(x)=x^{2}+2x+1$
+
+$f(-1)$
+        $= 0$
+
+  \item $f(x)=-3x^{2}-2x-4$
+
+$f(4)$
+        $= -60$
+
+  \item $f(x)=-4x^{2}-2x-3$
+
+$f(-2)$
+        $= -15$
+
+  \item $f(x)=-5x^{2}+5x-4$
+
+$f(-4)$
+        $= -104$
+
+  \item $f(x)=3x^{2}-3x+4$
+
+$f(5)$
+        $= 64$
+
+  \item $f(x)=2x^{2}+2x-1$
+
+$f(-1)$
+        $= -1$
+
+  \item $f(x)=4x^{2}-4x-1$
+
+$f(5)$
+        $= 79$
+
+  \item $f(x)=-5x^{2}+2x+2$
+
+$f(2)$
+        $= -14$
+
+  \item $f(x)=-x^{2}+5x+3$
+
+$f(2)$
+        $= 9$
+
+\columnbreak % 645
+
+  \item $f(x)=-5x^{2}+x+1$
+
+$f(3)$
+        $= -41$
+
+  \item $f(x)=-4x^{2}-3x+4$
+
+$f(3)$
+        $= -41$
+
+  \item $f(x)=3x^{2}+3x-4$
+
+$f(4)$
+        $= 56$
+
+  \item $f(x)=2x^{2}+2x-5$
+
+$f(3)$
+        $= 19$
+
+  \item $f(x)=-4x^{2}+x-5$
+
+$f(1)$
+        $= -8$
+
+  \item $f(x)=-3x^{2}-2x+1$
+
+$f(4)$
+        $= -55$
+
+  \item $f(x)=-2x^{2}-5x-2$
+
+$f(1)$
+        $= -9$
+
+  \item $f(x)=4x^{2}-5x+5$
+
+$f(-4)$
+        $= 89$
+
+  \item $f(x)=x^{2}+4x-3$
+
+$f(-3)$
+        $= -6$
+
+  \item $f(x)=-2x^{2}-2x+2$
+
+$f(-5)$
+        $= -38$
+
+  \item $f(x)=x^{2}-x+3$
+
+$f(-4)$
+        $= 23$
+
+  \item $f(x)=-4x^{2}+2x+3$
+
+$f(-4)$
+        $= -69$
+
+  \item $f(x)=-3x^{2}-2x+5$
+
+$f(-5)$
+        $= -60$
+
+  \item $f(x)=-x^{2}-3x-2$
+
+$f(5)$
+        $= -42$
+
+  \item $f(x)=-2x^{2}-4x+2$
+
+$f(1)$
+        $= -4$
+
+\columnbreak % 660
+
+  \item $f(x)=3x^{2}+2x-2$
+
+$f(-1)$
+        $= -1$
+
+  \item $f(x)=4x^{2}-2x-5$
+
+$f(1)$
+        $= -3$
+
+  \item $f(x)=-5x^{2}-3x+4$
+
+$f(3)$
+        $= -50$
+
+  \item $f(x)=-3x^{2}+4x+3$
+
+$f(-5)$
+        $= -92$
+
+  \item $f(x)=x^{2}+3x+5$
+
+$f(-3)$
+        $= 5$
+
+  \item $f(x)=x^{2}-4x+4$
+
+$f(4)$
+        $= 4$
+
+  \item $f(x)=-5x^{2}-x-5$
+
+$f(-4)$
+        $= -81$
+
+  \item $f(x)=-5x^{2}-5x-4$
+
+$f(4)$
+        $= -104$
+
+  \item $f(x)=-5x^{2}+5x+2$
+
+$f(2)$
+        $= -8$
+
+  \item $f(x)=3x^{2}-4x-4$
+
+$f(4)$
+        $= 28$
+
+  \item $f(x)=-2x^{2}+2x+1$
+
+$f(4)$
+        $= -23$
+
+  \item $f(x)=-3x^{2}-2x-4$
+
+$f(5)$
+        $= -89$
+
+  \item $f(x)=x^{2}+2x+3$
+
+$f(-4)$
+        $= 11$
+
+  \item $f(x)=-2x^{2}+2x+2$
+
+$f(3)$
+        $= -10$
+
+  \item $f(x)=-3x^{2}+2x-2$
+
+$f(-3)$
+        $= -35$
+
+\columnbreak % 675
+
+\resetques
+
+  \item $f(x)=x^{2}-5x-2$
+
+$f(4)$
+        $= -6$
+
+  \item $f(x)=-5x^{2}-x+3$
+
+$f(1)$
+        $= -3$
+
+  \item $f(x)=5x^{2}-4x+5$
+
+$f(-3)$
+        $= 62$
+
+  \item $f(x)=5x^{2}+4x-4$
+
+$f(-3)$
+        $= 29$
+
+  \item $f(x)=4x^{2}+4x+3$
+
+$f(3)$
+        $= 51$
+
+  \item $f(x)=-x^{2}-2x+5$
+
+$f(3)$
+        $= -10$
+
+  \item $f(x)=-3x^{2}+5x-1$
+
+$f(-3)$
+        $= -43$
+
+  \item $f(x)=-4x^{2}+3x-5$
+
+$f(-1)$
+        $= -12$
+
+  \item $f(x)=-x^{2}+5x+2$
+
+$f(-4)$
+        $= -34$
+
+  \item $f(x)=-4x^{2}-2x+5$
+
+$f(4)$
+        $= -67$
+
+  \item $f(x)=4x^{2}+x+3$
+
+$f(-4)$
+        $= 63$
+
+  \item $f(x)=-2x^{2}+3x-1$
+
+$f(-2)$
+        $= -15$
+
+  \item $f(x)=-x^{2}+x-1$
+
+$f(3)$
+        $= -7$
+
+  \item $f(x)=-x^{2}+4x-2$
+
+$f(2)$
+        $= 2$
+
+  \item $f(x)=-2x^{2}-4x-2$
+
+$f(-2)$
+        $= -2$
+
+\columnbreak % 690
+
+  \item $f(x)=-3x^{2}-5x-3$
+
+$f(2)$
+        $= -25$
+
+  \item $f(x)=5x^{2}+2x-2$
+
+$f(5)$
+        $= 133$
+
+  \item $f(x)=-x^{2}-x-1$
+
+$f(-1)$
+        $= -1$
+
+  \item $f(x)=-2x^{2}+4x+4$
+
+$f(-5)$
+        $= -66$
+
+  \item $f(x)=-2x^{2}+3x+3$
+
+$f(-5)$
+        $= -62$
+
+  \item $f(x)=3x^{2}+4x-5$
+
+$f(5)$
+        $= 90$
+
+  \item $f(x)=-2x^{2}-5x+3$
+
+$f(1)$
+        $= -4$
+
+  \item $f(x)=-5x^{2}-3x+1$
+
+$f(5)$
+        $= -139$
+
+  \item $f(x)=3x^{2}-3x-3$
+
+$f(3)$
+        $= 15$
+
+  \item $f(x)=-4x^{2}+4x-1$
+
+$f(-5)$
+        $= -121$
+
+  \item $f(x)=2x^{2}-x-1$
+
+$f(-4)$
+        $= 35$
+
+  \item $f(x)=2x^{2}+3x-1$
+
+$f(-1)$
+        $= -2$
+
+  \item $f(x)=5x^{2}+2x+5$
+
+$f(-5)$
+        $= 120$
+
+  \item $f(x)=-5x^{2}+2x+3$
+
+$f(3)$
+        $= -36$
+
+  \item $f(x)=3x^{2}-4x-1$
+
+$f(2)$
+        $= 3$
+
+\columnbreak % 705
+
+  \item $f(x)=-5x^{2}+3x-1$
+
+$f(-5)$
+        $= -141$
+
+  \item $f(x)=-x^{2}+4x+4$
+
+$f(4)$
+        $= 4$
+
+  \item $f(x)=-2x^{2}+5x-3$
+
+$f(-3)$
+        $= -36$
+
+  \item $f(x)=4x^{2}-x-4$
+
+$f(-3)$
+        $= 35$
+
+  \item $f(x)=x^{2}+5x-3$
+
+$f(1)$
+        $= 3$
+
+  \item $f(x)=x^{2}-5x+3$
+
+$f(-4)$
+        $= 39$
+
+  \item $f(x)=-5x^{2}-x+5$
+
+$f(-3)$
+        $= -37$
+
+  \item $f(x)=x^{2}+2x-4$
+
+$f(-1)$
+        $= -5$
+
+  \item $f(x)=x^{2}+5x+4$
+
+$f(-5)$
+        $= 4$
+
+  \item $f(x)=2x^{2}-4x+4$
+
+$f(5)$
+        $= 34$
+
+  \item $f(x)=3x^{2}-4x-5$
+
+$f(-4)$
+        $= 59$
+
+  \item $f(x)=-4x^{2}+5x-4$
+
+$f(-1)$
+        $= -13$
+
+  \item $f(x)=-3x^{2}+x-2$
+
+$f(-4)$
+        $= -54$
+
+  \item $f(x)=3x^{2}+4x-4$
+
+$f(-2)$
+        $= 0$
+
+  \item $f(x)=-5x^{2}+5x-5$
+
+$f(-1)$
+        $= -15$
+
+\columnbreak % 720
+
+\resetques
+
+  \item $f(x)=2x^{2}-4x-4$
+
+$f(-5)$
+        $= 66$
+
+  \item $f(x)=-x^{2}-4x-5$
+
+$f(3)$
+        $= -26$
+
+  \item $f(x)=5x^{2}+2x+4$
+
+$f(-4)$
+        $= 76$
+
+  \item $f(x)=x^{2}-4x+3$
+
+$f(4)$
+        $= 3$
+
+  \item $f(x)=-x^{2}+4x+1$
+
+$f(-2)$
+        $= -11$
+
+  \item $f(x)=5x^{2}+x-4$
+
+$f(1)$
+        $= 2$
+
+  \item $f(x)=5x^{2}-4x-1$
+
+$f(3)$
+        $= 32$
+
+  \item $f(x)=5x^{2}-x+1$
+
+$f(-4)$
+        $= 85$
+
+  \item $f(x)=2x^{2}+2x-5$
+
+$f(-1)$
+        $= -5$
+
+  \item $f(x)=-5x^{2}-3x+1$
+
+$f(-2)$
+        $= -13$
+
+  \item $f(x)=-2x^{2}-3x+4$
+
+$f(-2)$
+        $= 2$
+
+  \item $f(x)=-2x^{2}+3x-5$
+
+$f(3)$
+        $= -14$
+
+  \item $f(x)=4x^{2}-4x+1$
+
+$f(3)$
+        $= 25$
+
+  \item $f(x)=x^{2}+2x+3$
+
+$f(1)$
+        $= 6$
+
+  \item $f(x)=-3x^{2}-5x+3$
+
+$f(1)$
+        $= -5$
+
+\columnbreak % 735
+
+  \item $f(x)=-5x^{2}-5x-5$
+
+$f(-1)$
+        $= -5$
+
+  \item $f(x)=3x^{2}-3x+4$
+
+$f(-4)$
+        $= 64$
+
+  \item $f(x)=-4x^{2}-3x-2$
+
+$f(3)$
+        $= -47$
+
+  \item $f(x)=2x^{2}+2x-3$
+
+$f(-1)$
+        $= -3$
+
+  \item $f(x)=-x^{2}+x-1$
+
+$f(-1)$
+        $= -3$
+
+  \item $f(x)=2x^{2}-5x+1$
+
+$f(4)$
+        $= 13$
+
+  \item $f(x)=-3x^{2}+4x-3$
+
+$f(-1)$
+        $= -10$
+
+  \item $f(x)=2x^{2}-3x-2$
+
+$f(4)$
+        $= 18$
+
+  \item $f(x)=2x^{2}-5x-4$
+
+$f(-2)$
+        $= 14$
+
+  \item $f(x)=-5x^{2}-5x-1$
+
+$f(1)$
+        $= -11$
+
+  \item $f(x)=-5x^{2}-2x-2$
+
+$f(3)$
+        $= -53$
+
+  \item $f(x)=-4x^{2}-x+3$
+
+$f(1)$
+        $= -2$
+
+  \item $f(x)=3x^{2}-5x+1$
+
+$f(-4)$
+        $= 69$
+
+  \item $f(x)=-3x^{2}-2x-3$
+
+$f(-3)$
+        $= -24$
+
+  \item $f(x)=4x^{2}-x+2$
+
+$f(2)$
+        $= 16$
+
+\columnbreak % 750
+
+  \item $f(x)=-4x^{2}-x-5$
+
+$f(2)$
+        $= -23$
+
+  \item $f(x)=3x^{2}+4x-3$
+
+$f(5)$
+        $= 92$
+
+  \item $f(x)=-x^{2}+x+5$
+
+$f(-5)$
+        $= -25$
+
+  \item $f(x)=x^{2}-x+3$
+
+$f(-1)$
+        $= 5$
+
+  \item $f(x)=2x^{2}-x+4$
+
+$f(-3)$
+        $= 25$
+
+  \item $f(x)=-5x^{2}+3x-5$
+
+$f(5)$
+        $= -115$
+
+  \item $f(x)=-3x^{2}-5x-3$
+
+$f(4)$
+        $= -71$
+
+  \item $f(x)=4x^{2}+3x-1$
+
+$f(5)$
+        $= 114$
+
+  \item $f(x)=5x^{2}-2x-5$
+
+$f(5)$
+        $= 110$
+
+  \item $f(x)=-5x^{2}+4x-1$
+
+$f(-3)$
+        $= -58$
+
+  \item $f(x)=-x^{2}+3x+3$
+
+$f(-5)$
+        $= -37$
+
+  \item $f(x)=-4x^{2}+2x+2$
+
+$f(2)$
+        $= -10$
+
+  \item $f(x)=-2x^{2}+2x-3$
+
+$f(-5)$
+        $= -63$
+
+  \item $f(x)=x^{2}-x-3$
+
+$f(4)$
+        $= 9$
+
+  \item $f(x)=3x^{2}-4x+3$
+
+$f(-4)$
+        $= 67$
+
+\columnbreak % 765
+
+\resetques
+
+  \item $f(x)=-4x^{2}-x-2$
+
+$f(-5)$
+        $= -97$
+
+  \item $f(x)=5x^{2}-4x+5$
+
+$f(2)$
+        $= 17$
+
+  \item $f(x)=3x^{2}-2x-4$
+
+$f(-5)$
+        $= 81$
+
+  \item $f(x)=-4x^{2}+4x-5$
+
+$f(4)$
+        $= -53$
+
+  \item $f(x)=4x^{2}-3x-4$
+
+$f(-1)$
+        $= 3$
+
+  \item $f(x)=-2x^{2}+x+4$
+
+$f(-5)$
+        $= -51$
+
+  \item $f(x)=4x^{2}+5x+1$
+
+$f(1)$
+        $= 10$
+
+  \item $f(x)=5x^{2}-3x+4$
+
+$f(4)$
+        $= 72$
+
+  \item $f(x)=-4x^{2}+3x+3$
+
+$f(1)$
+        $= 2$
+
+  \item $f(x)=3x^{2}+3x+4$
+
+$f(1)$
+        $= 10$
+
+  \item $f(x)=3x^{2}-5x+3$
+
+$f(5)$
+        $= 53$
+
+  \item $f(x)=-4x^{2}+4x+5$
+
+$f(-2)$
+        $= -19$
+
+  \item $f(x)=x^{2}+4x-5$
+
+$f(-1)$
+        $= -8$
+
+  \item $f(x)=-5x^{2}-5x-5$
+
+$f(5)$
+        $= -155$
+
+  \item $f(x)=-x^{2}+3x+5$
+
+$f(-5)$
+        $= -35$
+
+\columnbreak % 780
+
+  \item $f(x)=5x^{2}-5x+4$
+
+$f(-3)$
+        $= 64$
+
+  \item $f(x)=-2x^{2}+x+1$
+
+$f(1)$
+        $= 0$
+
+  \item $f(x)=-2x^{2}-3x-2$
+
+$f(5)$
+        $= -67$
+
+  \item $f(x)=4x^{2}-5x-1$
+
+$f(2)$
+        $= 5$
+
+  \item $f(x)=2x^{2}-x-2$
+
+$f(-1)$
+        $= 1$
+
+  \item $f(x)=-2x^{2}-3x+3$
+
+$f(1)$
+        $= -2$
+
+  \item $f(x)=4x^{2}-4x-4$
+
+$f(-3)$
+        $= 44$
+
+  \item $f(x)=4x^{2}+4x+3$
+
+$f(1)$
+        $= 11$
+
+  \item $f(x)=-2x^{2}+4x-5$
+
+$f(-1)$
+        $= -11$
+
+  \item $f(x)=x^{2}+3x+5$
+
+$f(4)$
+        $= 33$
+
+  \item $f(x)=3x^{2}-4x+4$
+
+$f(-4)$
+        $= 68$
+
+  \item $f(x)=4x^{2}+3x-4$
+
+$f(4)$
+        $= 72$
+
+  \item $f(x)=-3x^{2}+x+1$
+
+$f(-3)$
+        $= -29$
+
+  \item $f(x)=-4x^{2}-5x-2$
+
+$f(2)$
+        $= -28$
+
+  \item $f(x)=2x^{2}+5x+2$
+
+$f(3)$
+        $= 35$
+
+\columnbreak % 795
+
+  \item $f(x)=-2x^{2}+5x-4$
+
+$f(-4)$
+        $= -56$
+
+  \item $f(x)=-3x^{2}+3x-3$
+
+$f(-2)$
+        $= -21$
+
+  \item $f(x)=-2x^{2}+5x+2$
+
+$f(-4)$
+        $= -50$
+
+  \item $f(x)=-3x^{2}+x-1$
+
+$f(-1)$
+        $= -5$
+
+  \item $f(x)=-2x^{2}+5x+5$
+
+$f(1)$
+        $= 8$
+
+  \item $f(x)=-x^{2}+3x-1$
+
+$f(-5)$
+        $= -41$
+
+  \item $f(x)=-2x^{2}+x-4$
+
+$f(-5)$
+        $= -59$
+
+  \item $f(x)=-x^{2}+3x+4$
+
+$f(-2)$
+        $= -6$
+
+  \item $f(x)=x^{2}-3x+5$
+
+$f(3)$
+        $= 5$
+
+  \item $f(x)=-x^{2}+5x-3$
+
+$f(-5)$
+        $= -53$
+
+  \item $f(x)=-x^{2}-5x+4$
+
+$f(2)$
+        $= -10$
+
+  \item $f(x)=-2x^{2}-5x-5$
+
+$f(-2)$
+        $= -3$
+
+  \item $f(x)=2x^{2}+x+3$
+
+$f(-4)$
+        $= 31$
+
+  \item $f(x)=-2x^{2}+5x+5$
+
+$f(-1)$
+        $= -2$
+
+  \item $f(x)=5x^{2}-3x-1$
+
+$f(-4)$
+        $= 91$
+
+\columnbreak % 810
+
+\resetques
+
+  \item $f(x)=4x^{2}-4x-5$
+
+$f(-4)$
+        $= 75$
+
+  \item $f(x)=-5x^{2}+4x-4$
+
+$f(1)$
+        $= -5$
+
+  \item $f(x)=4x^{2}-3x-1$
+
+$f(3)$
+        $= 26$
+
+  \item $f(x)=3x^{2}+2x+4$
+
+$f(-4)$
+        $= 44$
+
+  \item $f(x)=3x^{2}-3x-3$
+
+$f(-1)$
+        $= 3$
+
+  \item $f(x)=5x^{2}+2x-2$
+
+$f(-3)$
+        $= 37$
+
+  \item $f(x)=2x^{2}+4x+1$
+
+$f(3)$
+        $= 31$
+
+  \item $f(x)=3x^{2}+x-4$
+
+$f(2)$
+        $= 10$
+
+  \item $f(x)=x^{2}-2x+2$
+
+$f(-2)$
+        $= 10$
+
+  \item $f(x)=-4x^{2}-5x+4$
+
+$f(-3)$
+        $= -17$
+
+  \item $f(x)=x^{2}+4x+1$
+
+$f(3)$
+        $= 22$
+
+  \item $f(x)=3x^{2}-x-5$
+
+$f(2)$
+        $= 5$
+
+  \item $f(x)=x^{2}+5x+1$
+
+$f(-2)$
+        $= -5$
+
+  \item $f(x)=-5x^{2}+x+2$
+
+$f(-1)$
+        $= -4$
+
+  \item $f(x)=-5x^{2}+x-1$
+
+$f(4)$
+        $= -77$
+
+\columnbreak % 825
+
+  \item $f(x)=-3x^{2}-2x-1$
+
+$f(-4)$
+        $= -41$
+
+  \item $f(x)=-x^{2}-3x+3$
+
+$f(-2)$
+        $= 5$
+
+  \item $f(x)=-3x^{2}-x-1$
+
+$f(5)$
+        $= -81$
+
+  \item $f(x)=-5x^{2}-4x-3$
+
+$f(-1)$
+        $= -4$
+
+  \item $f(x)=x^{2}+x+3$
+
+$f(4)$
+        $= 23$
+
+  \item $f(x)=-x^{2}-2x+2$
+
+$f(5)$
+        $= -33$
+
+  \item $f(x)=5x^{2}+5x+1$
+
+$f(-5)$
+        $= 101$
+
+  \item $f(x)=3x^{2}-2x+1$
+
+$f(-3)$
+        $= 34$
+
+  \item $f(x)=-x^{2}+3x+3$
+
+$f(-3)$
+        $= -15$
+
+  \item $f(x)=-x^{2}+4x+1$
+
+$f(-2)$
+        $= -11$
+
+  \item $f(x)=-5x^{2}+2x+2$
+
+$f(3)$
+        $= -37$
+
+  \item $f(x)=-5x^{2}-4x-1$
+
+$f(5)$
+        $= -146$
+
+  \item $f(x)=-3x^{2}-4x+1$
+
+$f(-3)$
+        $= -14$
+
+  \item $f(x)=-2x^{2}-3x+3$
+
+$f(-3)$
+        $= -6$
+
+  \item $f(x)=-5x^{2}-5x-5$
+
+$f(-5)$
+        $= -105$
+
+\columnbreak % 840
+
+  \item $f(x)=x^{2}-3x-5$
+
+$f(2)$
+        $= -7$
+
+  \item $f(x)=5x^{2}+x+5$
+
+$f(3)$
+        $= 53$
+
+  \item $f(x)=3x^{2}-x-2$
+
+$f(3)$
+        $= 22$
+
+  \item $f(x)=-2x^{2}+3x+2$
+
+$f(-4)$
+        $= -42$
+
+  \item $f(x)=x^{2}-3x+3$
+
+$f(-3)$
+        $= 21$
+
+  \item $f(x)=-4x^{2}-2x-3$
+
+$f(-1)$
+        $= -5$
+
+  \item $f(x)=x^{2}+4x+5$
+
+$f(5)$
+        $= 50$
+
+  \item $f(x)=x^{2}-2x+2$
+
+$f(-3)$
+        $= 17$
+
+  \item $f(x)=-2x^{2}+5x-5$
+
+$f(5)$
+        $= -30$
+
+  \item $f(x)=x^{2}-3x+4$
+
+$f(2)$
+        $= 2$
+
+  \item $f(x)=-2x^{2}+5x+3$
+
+$f(3)$
+        $= 0$
+
+  \item $f(x)=x^{2}-3x-1$
+
+$f(4)$
+        $= 3$
+
+  \item $f(x)=2x^{2}-2x-4$
+
+$f(1)$
+        $= -4$
+
+  \item $f(x)=-2x^{2}+4x+3$
+
+$f(1)$
+        $= 5$
+
+  \item $f(x)=3x^{2}-4x-3$
+
+$f(-1)$
+        $= 4$
+
+\columnbreak % 855
+
+\resetques
+
+  \item $f(x)=5x^{2}-4x+4$
+
+$f(1)$
+        $= 5$
+
+  \item $f(x)=-4x^{2}+3x+5$
+
+$f(-4)$
+        $= -71$
+
+  \item $f(x)=2x^{2}-4x+4$
+
+$f(3)$
+        $= 10$
+
+  \item $f(x)=-4x^{2}-3x-5$
+
+$f(-3)$
+        $= -32$
+
+  \item $f(x)=-x^{2}+3x-4$
+
+$f(-3)$
+        $= -22$
+
+  \item $f(x)=5x^{2}+4x-3$
+
+$f(5)$
+        $= 142$
+
+  \item $f(x)=5x^{2}+4x+5$
+
+$f(-2)$
+        $= 17$
+
+  \item $f(x)=5x^{2}-5x+2$
+
+$f(-5)$
+        $= 152$
+
+  \item $f(x)=4x^{2}+x+1$
+
+$f(1)$
+        $= 6$
+
+  \item $f(x)=-5x^{2}+4x-5$
+
+$f(-3)$
+        $= -62$
+
+  \item $f(x)=-5x^{2}-4x+4$
+
+$f(2)$
+        $= -24$
+
+  \item $f(x)=-5x^{2}+5x-3$
+
+$f(-2)$
+        $= -33$
+
+  \item $f(x)=-2x^{2}+3x-1$
+
+$f(-2)$
+        $= -15$
+
+  \item $f(x)=3x^{2}+5x+5$
+
+$f(5)$
+        $= 105$
+
+  \item $f(x)=2x^{2}-2x-2$
+
+$f(3)$
+        $= 10$
+
+\columnbreak % 870
+
+  \item $f(x)=-4x^{2}+3x-4$
+
+$f(-1)$
+        $= -11$
+
+  \item $f(x)=2x^{2}-4x-2$
+
+$f(-4)$
+        $= 46$
+
+  \item $f(x)=4x^{2}+5x-1$
+
+$f(5)$
+        $= 124$
+
+  \item $f(x)=-2x^{2}+3x+2$
+
+$f(4)$
+        $= -18$
+
+  \item $f(x)=-x^{2}+2x+5$
+
+$f(-2)$
+        $= -3$
+
+  \item $f(x)=-2x^{2}-4x+1$
+
+$f(-1)$
+        $= 3$
+
+  \item $f(x)=-5x^{2}+x-4$
+
+$f(-4)$
+        $= -88$
+
+  \item $f(x)=2x^{2}+3x+2$
+
+$f(1)$
+        $= 7$
+
+  \item $f(x)=x^{2}+2x-1$
+
+$f(-5)$
+        $= 14$
+
+  \item $f(x)=3x^{2}+3x-5$
+
+$f(-3)$
+        $= 13$
+
+  \item $f(x)=-3x^{2}-2x+2$
+
+$f(4)$
+        $= -54$
+
+  \item $f(x)=-x^{2}-5x+4$
+
+$f(-5)$
+        $= 4$
+
+  \item $f(x)=-3x^{2}-x-5$
+
+$f(4)$
+        $= -57$
+
+  \item $f(x)=4x^{2}-2x-5$
+
+$f(2)$
+        $= 7$
+
+  \item $f(x)=-x^{2}-x-1$
+
+$f(2)$
+        $= -7$
+
+\columnbreak % 885
+
+  \item $f(x)=x^{2}+5x-1$
+
+$f(2)$
+        $= 13$
+
+  \item $f(x)=2x^{2}+5x-1$
+
+$f(-1)$
+        $= -4$
+
+  \item $f(x)=2x^{2}+3x+1$
+
+$f(-5)$
+        $= 36$
+
+  \item $f(x)=3x^{2}+5x+4$
+
+$f(-2)$
+        $= 6$
+
+  \item $f(x)=-2x^{2}-x+1$
+
+$f(-5)$
+        $= -44$
+
+  \item $f(x)=-5x^{2}-2x-4$
+
+$f(1)$
+        $= -11$
+
+  \item $f(x)=-2x^{2}+2x-5$
+
+$f(-5)$
+        $= -65$
+
+  \item $f(x)=-2x^{2}-3x+2$
+
+$f(4)$
+        $= -42$
+
+  \item $f(x)=-4x^{2}-5x-4$
+
+$f(5)$
+        $= -129$
+
+  \item $f(x)=3x^{2}-2x+1$
+
+$f(3)$
+        $= 22$
+
+  \item $f(x)=4x^{2}-2x-1$
+
+$f(-3)$
+        $= 41$
+
+  \item $f(x)=-5x^{2}-5x+3$
+
+$f(3)$
+        $= -57$
+
+  \item $f(x)=2x^{2}+5x-4$
+
+$f(2)$
+        $= 14$
+
+  \item $f(x)=2x^{2}+3x-3$
+
+$f(-3)$
+        $= 6$
+
+  \item $f(x)=-4x^{2}+x-5$
+
+$f(-1)$
+        $= -10$
+
+\end{enumerate}
+\end{multicols}

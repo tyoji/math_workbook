@@ -1,0 +1,1852 @@
+
+
+%%% perl code : polynomial_division.pl
+
+\setcounter{quesnum}{10}
+
+\begin{multicols}{2}
+\begin{enumerate}
+  \itemsep=95pt
+  \item $(14x^{3}-53x^{2}-11x+72) \div (2x^{2}-5x-8)$
+
+        \phantom{$商 : 7x-9, \quad 剰余 : 4x-2$}
+
+  \item $(-36x^{3}-99x^{2}-144x-81) \div (4x^{2}+7x+9)$
+
+        \phantom{$商 : -9x-9, \quad 剰余 : 6x+7$}
+
+  \item $(45x^{3}+86x^{2}-63x-8) \div (5x^{2}+9x-8)$
+
+        \phantom{$商 : 9x+1, \quad 剰余 : 9x-2$}
+
+  \item $(16x^{3}+58x^{2}+78x+30) \div (2x^{2}+6x+6)$
+
+        \phantom{$商 : 8x+5, \quad 剰余 : -3x-5$}
+
+  \item $(6x^{3}+47x^{2}-62x+9) \div (6x^{2}-7x+1)$
+
+        \phantom{$商 : x+9, \quad 剰余 : 4x-9$}
+
+\columnbreak % 5
+
+  \item $(-56x^{3}+3x^{2}+28x-5) \div (7x^{2}+4x-1)$
+
+        \phantom{$商 : -8x+5, \quad 剰余 : 9x+1$}
+
+  \item $(7x^{3}+6x^{2}+7x+6) \div (x^{2}+1)$
+
+        \phantom{$商 : 7x+6, \quad 剰余 : 9x-6$}
+
+  \item $(-15x^{3}+x^{2}-3x+6) \div (5x^{2}+3x+3)$
+
+        \phantom{$商 : -3x+2, \quad 剰余 : 6x-3$}
+
+  \item $(48x^{3}+48x^{2}-44x+4) \div (6x^{2}+9x-1)$
+
+        \phantom{$商 : 8x-4, \quad 剰余 : -x+1$}
+
+  \item $(-6x^{3}+35x^{2}+55x-42) \div (6x^{2}+7x-6)$
+
+        \phantom{$商 : -x+7, \quad 剰余 : 3x+1$}
+
+\columnbreak % 10
+
+\resetques
+
+  \item $(-20x^{3}+28x^{2}+4x) \div (5x^{2}-7x-1)$
+
+        \phantom{$商 : -4x, \quad 剰余 : 3x+6$}
+
+  \item $(-x^{3}+7x^{2}-5x-28) \div (x^{2}-3x-7)$
+
+        \phantom{$商 : -x+4, \quad 剰余 : -3x+8$}
+
+  \item $(36x^{3}+59x^{2}+56x+24) \div (9x^{2}+8x+8)$
+
+        \phantom{$商 : 4x+3, \quad 剰余 : 2x+5$}
+
+  \item $(24x^{3}+67x^{2}+24x+2) \div (3x^{2}+8x+2)$
+
+        \phantom{$商 : 8x+1, \quad 剰余 : -x+4$}
+
+  \item $(-28x^{3}-36x^{2}-8x) \div (7x^{2}+2x)$
+
+        \phantom{$商 : -4x-4, \quad 剰余 : 7x-6$}
+
+\columnbreak % 15
+
+  \item $(-24x^{3}+52x^{2}-50x+7) \div (4x^{2}-8x+7)$
+
+        \phantom{$商 : -6x+1, \quad 剰余 : -8x-9$}
+
+  \item $(35x^{3}-56x^{2}+49x-28) \div (5x^{2}-3x+4)$
+
+        \phantom{$商 : 7x-7, \quad 剰余 : 4x-1$}
+
+  \item $(63x^{3}-91x^{2}+91x-63) \div (9x^{2}-4x+9)$
+
+        \phantom{$商 : 7x-7, \quad 剰余 : -5x-9$}
+
+  \item $(54x^{3}-9x^{2}-45x+18) \div (6x^{2}-7x+2)$
+
+        \phantom{$商 : 9x+9, \quad 剰余 : 9x-8$}
+
+  \item $(15x^{3}-26x^{2}+16x-3) \div (5x^{2}-7x+3)$
+
+        \phantom{$商 : 3x-1, \quad 剰余 : 9x+2$}
+
+\columnbreak % 20
+
+\resetques
+
+  \item $(12x^{3}-50x^{2}+6x+42) \div (2x^{2}-6x-6)$
+
+        \phantom{$商 : 6x-7, \quad 剰余 : -3x-7$}
+
+  \item $(18x^{3}-54x^{2}+63x) \div (2x^{2}-6x+7)$
+
+        \phantom{$商 : 9x, \quad 剰余 : -9x+7$}
+
+  \item $(-6x^{3}+48x^{2}-54x+12) \div (x^{2}-7x+2)$
+
+        \phantom{$商 : -6x+6, \quad 剰余 : -9x-2$}
+
+  \item $(14x^{3}-4x^{2}+38x-72) \div (2x^{2}+2x+8)$
+
+        \phantom{$商 : 7x-9, \quad 剰余 : x+4$}
+
+  \item $(-54x^{3}+27x^{2}+51x-9) \div (9x^{2}-3x-9)$
+
+        \phantom{$商 : -6x+1, \quad 剰余 : 4x-9$}
+
+\columnbreak % 25
+
+  \item $(32x^{3}-28x^{2}-80x+16) \div (8x^{2}+9x-2)$
+
+        \phantom{$商 : 4x-8, \quad 剰余 : -x+5$}
+
+  \item $(40x^{3}-62x^{2}-63x+81) \div (8x^{2}+2x-9)$
+
+        \phantom{$商 : 5x-9, \quad 剰余 : 8x+2$}
+
+  \item $(-3x^{3}+23x^{2}+15x-56) \div (3x^{2}+x-7)$
+
+        \phantom{$商 : -x+8, \quad 剰余 : 5x+9$}
+
+  \item $(-3x^{3}+54x+81) \div (x^{2}-3x-9)$
+
+        \phantom{$商 : -3x-9, \quad 剰余 : 3x+5$}
+
+  \item $(48x^{3}+8x^{2}-32x+8) \div (6x^{2}+4x-2)$
+
+        \phantom{$商 : 8x-4, \quad 剰余 : -2x-7$}
+
+\columnbreak % 30
+
+\resetques
+
+  \item $(42x^{3}+9x^{2}-55x+14) \div (6x^{2}+3x-7)$
+
+        \phantom{$商 : 7x-2, \quad 剰余 : 5x-5$}
+
+  \item $(-45x^{3}+14x^{2}+8x+48) \div (9x^{2}+8x+8)$
+
+        \phantom{$商 : -5x+6, \quad 剰余 : -4x+4$}
+
+  \item $(-3x^{3}-12x^{2}+56x-49) \div (3x^{2}-9x+7)$
+
+        \phantom{$商 : -x-7, \quad 剰余 : 2x+3$}
+
+  \item $(-15x^{3}-3x^{2}+32x-16) \div (3x^{2}+3x-4)$
+
+        \phantom{$商 : -5x+4, \quad 剰余 : -5x-5$}
+
+  \item $(-36x^{3}+61x^{2}-27x-40) \div (4x^{2}-9x+8)$
+
+        \phantom{$商 : -9x-5, \quad 剰余 : -4x-6$}
+
+\columnbreak % 35
+
+  \item $(3x^{3}+16x^{2}+9x-14) \div (x^{2}+6x+7)$
+
+        \phantom{$商 : 3x-2, \quad 剰余 : -x+5$}
+
+  \item $(36x^{3}-51x^{2}-66x-15) \div (4x^{2}-7x-5)$
+
+        \phantom{$商 : 9x+3, \quad 剰余 : -8x-6$}
+
+  \item $(35x^{3}-61x^{2}+15x-1) \div (5x^{2}-8x+1)$
+
+        \phantom{$商 : 7x-1, \quad 剰余 : 7x+9$}
+
+  \item $(36x^{3}+83x^{2}+39x+7) \div (9x^{2}+5x+1)$
+
+        \phantom{$商 : 4x+7, \quad 剰余 : 8x+5$}
+
+  \item $(-9x^{3}+21x^{2}+17x-45) \div (3x^{2}-2x-9)$
+
+        \phantom{$商 : -3x+5, \quad 剰余 : -6x+2$}
+
+\columnbreak % 40
+
+\resetques
+
+  \item $(24x^{3}-3x^{2}-6x+21) \div (8x^{2}-9x+7)$
+
+        \phantom{$商 : 3x+3, \quad 剰余 : -2x-3$}
+
+  \item $(6x^{3}+8x^{2}-85x+56) \div (2x^{2}+8x-7)$
+
+        \phantom{$商 : 3x-8, \quad 剰余 : 6x+5$}
+
+  \item $(-20x^{3}-22x^{2}-34x-14) \div (5x^{2}+3x+7)$
+
+        \phantom{$商 : -4x-2, \quad 剰余 : -5x-4$}
+
+  \item $(-9x^{3}+28x^{2}-13x-40) \div (x^{2}-4x+5)$
+
+        \phantom{$商 : -9x-8, \quad 剰余 : -7x-2$}
+
+  \item $(35x^{3}+56x^{2}+49x) \div (5x^{2}+8x+7)$
+
+        \phantom{$商 : 7x, \quad 剰余 : -9x-9$}
+
+\columnbreak % 45
+
+  \item $(-15x^{3}+25x^{2}-55x+45) \div (3x^{2}-2x+9)$
+
+        \phantom{$商 : -5x+5, \quad 剰余 : -4x+2$}
+
+  \item $(-20x^{3}-81x^{2}-91x-18) \div (4x^{2}+9x+2)$
+
+        \phantom{$商 : -5x-9, \quad 剰余 : -3x+6$}
+
+  \item $(-40x^{3}-86x^{2}-50x-6) \div (5x^{2}+7x+1)$
+
+        \phantom{$商 : -8x-6, \quad 剰余 : -6x+9$}
+
+  \item $(-10x^{3}-13x^{2}-5x+7) \div (5x^{2}+9x+7)$
+
+        \phantom{$商 : -2x+1, \quad 剰余 : -4x+3$}
+
+  \item $(35x^{3}+34x^{2}-66x-63) \div (7x^{2}-3x-9)$
+
+        \phantom{$商 : 5x+7, \quad 剰余 : -2x+3$}
+
+\columnbreak % 50
+
+\resetques
+
+  \item $(-5x^{3}-52x^{2}-108x-63) \div (x^{2}+9x+9)$
+
+        \phantom{$商 : -5x-7, \quad 剰余 : -3x+7$}
+
+  \item $(42x^{3}-50x^{2}+30x-6) \div (7x^{2}-6x+3)$
+
+        \phantom{$商 : 6x-2, \quad 剰余 : -2x+9$}
+
+  \item $(54x^{3}+39x^{2}-2x-1) \div (9x^{2}+8x+1)$
+
+        \phantom{$商 : 6x-1, \quad 剰余 : 3x+3$}
+
+  \item $(9x^{3}-3x^{2}-32x+56) \div (3x^{2}-8x+8)$
+
+        \phantom{$商 : 3x+7, \quad 剰余 : 9x+6$}
+
+  \item $(-81x^{3}+18x^{2}+89x-42) \div (9x^{2}+5x-6)$
+
+        \phantom{$商 : -9x+7, \quad 剰余 : -4x+6$}
+
+\columnbreak % 55
+
+  \item $(-40x^{3}+60x^{2}+4x-12) \div (5x^{2}-5x-3)$
+
+        \phantom{$商 : -8x+4, \quad 剰余 : -9$}
+
+  \item $(-54x^{3}-30x^{2}-24x) \div (9x^{2}+5x+4)$
+
+        \phantom{$商 : -6x, \quad 剰余 : -6x-2$}
+
+  \item $(56x^{3}-27x^{2}-10x+3) \div (7x^{2}-6x+1)$
+
+        \phantom{$商 : 8x+3, \quad 剰余 : -x-9$}
+
+  \item $(-72x^{3}+39x^{2}-18x-3) \div (9x^{2}-6x+3)$
+
+        \phantom{$商 : -8x-1, \quad 剰余 : 6x+3$}
+
+  \item $(-6x^{3}+16x^{2}-32x+16) \div (x^{2}-2x+4)$
+
+        \phantom{$商 : -6x+4, \quad 剰余 : 3x+8$}
+
+\columnbreak % 60
+
+\resetques
+
+  \item $(24x^{3}+22x^{2}-37x-35) \div (4x^{2}-x-5)$
+
+        \phantom{$商 : 6x+7, \quad 剰余 : -x-2$}
+
+  \item $(12x^{3}+2x^{2}+2x+4) \div (4x^{2}-2x+2)$
+
+        \phantom{$商 : 3x+2, \quad 剰余 : 1$}
+
+  \item $(-28x^{3}-11x^{2}+10x-25) \div (7x^{2}-6x+5)$
+
+        \phantom{$商 : -4x-5, \quad 剰余 : -5x+6$}
+
+  \item $(40x^{3}+17x^{2}-36x+9) \div (5x^{2}+4x-3)$
+
+        \phantom{$商 : 8x-3, \quad 剰余 : -x+9$}
+
+  \item $(4x^{3}-33x^{2}+4x+1) \div (x^{2}-8x-1)$
+
+        \phantom{$商 : 4x-1, \quad 剰余 : -3x+3$}
+
+\columnbreak % 65
+
+  \item $(-18x^{3}+66x^{2}-57x+63) \div (6x^{2}-4x+7)$
+
+        \phantom{$商 : -3x+9, \quad 剰余 : -7x+8$}
+
+  \item $(-5x^{3}+19x^{2}-13x-9) \div (x^{2}-2x-1)$
+
+        \phantom{$商 : -5x+9, \quad 剰余 : 7x-4$}
+
+  \item $(16x^{3}-24x^{2}+20x) \div (4x^{2}-6x+5)$
+
+        \phantom{$商 : 4x, \quad 剰余 : -9x+8$}
+
+  \item $(-21x^{3}-27x^{2}+36x+12) \div (3x^{2}+3x-6)$
+
+        \phantom{$商 : -7x-2, \quad 剰余 : 8x$}
+
+  \item $(12x^{3}-8x^{2}-17x+20) \div (4x^{2}-8x+5)$
+
+        \phantom{$商 : 3x+4, \quad 剰余 : -x+8$}
+
+\columnbreak % 70
+
+\resetques
+
+  \item $(-2x^{3}-16x^{2}-42x-36) \div (x^{2}+5x+6)$
+
+        \phantom{$商 : -2x-6, \quad 剰余 : 5x+8$}
+
+  \item $(63x^{3}-100x^{2}+113x-36) \div (7x^{2}-8x+9)$
+
+        \phantom{$商 : 9x-4, \quad 剰余 : 8x-7$}
+
+  \item $(45x^{3}+27x^{2}+2x-8) \div (9x^{2}+9x+4)$
+
+        \phantom{$商 : 5x-2, \quad 剰余 : -2x-5$}
+
+  \item $(-25x^{3}+60x^{2}-35x) \div (5x^{2}-7x)$
+
+        \phantom{$商 : -5x+5, \quad 剰余 : -7x-7$}
+
+  \item $(-14x^{3}+74x^{2}-128x+72) \div (2x^{2}-8x+8)$
+
+        \phantom{$商 : -7x+9, \quad 剰余 : 3x+7$}
+
+\columnbreak % 75
+
+  \item $(7x^{3}+12x^{2}+9x+4) \div (7x^{2}+5x+4)$
+
+        \phantom{$商 : x+1, \quad 剰余 : -x-5$}
+
+  \item $(-16x^{3}-80x^{2}-100x-32) \div (2x^{2}+9x+8)$
+
+        \phantom{$商 : -8x-4, \quad 剰余 : -5x-6$}
+
+  \item $(56x^{3}+11x^{2}+37x+28) \div (8x^{2}-3x+7)$
+
+        \phantom{$商 : 7x+4, \quad 剰余 : 7x+5$}
+
+  \item $(-3x^{3}-25x^{2}-23x-5) \div (x^{2}+8x+5)$
+
+        \phantom{$商 : -3x-1, \quad 剰余 : 6x-8$}
+
+  \item $(-45x^{3}+38x^{2}+40x-7) \div (9x^{2}+5x-1)$
+
+        \phantom{$商 : -5x+7, \quad 剰余 : -3x-7$}
+
+\columnbreak % 80
+
+\resetques
+
+  \item $(-28x^{3}+7x^{2}+5x-12) \div (7x^{2}-7x+4)$
+
+        \phantom{$商 : -4x-3, \quad 剰余 : -7x+7$}
+
+  \item $(6x^{3}+26x^{2}-25x-25) \div (6x^{2}-4x-5)$
+
+        \phantom{$商 : x+5, \quad 剰余 : x-1$}
+
+  \item $(32x^{3}-68x^{2}+15x-54) \div (8x^{2}+x+6)$
+
+        \phantom{$商 : 4x-9, \quad 剰余 : 3x+2$}
+
+  \item $(-4x^{3}-x^{2}-x) \div (4x^{2}+x+1)$
+
+        \phantom{$商 : -x, \quad 剰余 : -3x-2$}
+
+  \item $(35x^{3}-12x^{2}-22x+12) \div (5x^{2}-6x+2)$
+
+        \phantom{$商 : 7x+6, \quad 剰余 : 9x+2$}
+
+\columnbreak % 85
+
+  \item $(-6x^{3}+49x^{2}-51x+14) \div (6x^{2}-7x+2)$
+
+        \phantom{$商 : -x+7, \quad 剰余 : -8x+5$}
+
+  \item $(16x^{3}+48x+64) \div (2x^{2}-2x+8)$
+
+        \phantom{$商 : 8x+8, \quad 剰余 : -x+1$}
+
+  \item $(12x^{3}-38x^{2}-40x) \div (2x^{2}-8x)$
+
+        \phantom{$商 : 6x+5, \quad 剰余 : -8x+3$}
+
+  \item $(-32x^{3}+84x^{2}-40x) \div (8x^{2}-5x)$
+
+        \phantom{$商 : -4x+8, \quad 剰余 : -x+8$}
+
+  \item $(9x^{3}-16x^{2}+12x-5) \div (9x^{2}-7x+5)$
+
+        \phantom{$商 : x-1, \quad 剰余 : x+3$}
+
+\columnbreak % 90
+
+\resetques
+
+  \item $(-36x^{3}-18x^{2}+38x-10) \div (9x^{2}+9x-5)$
+
+        \phantom{$商 : -4x+2, \quad 剰余 : 5x-9$}
+
+  \item $(56x^{3}+103x^{2}+87x+30) \div (8x^{2}+9x+6)$
+
+        \phantom{$商 : 7x+5, \quad 剰余 : -3x+9$}
+
+  \item $(72x^{3}-104x^{2}+113x-36) \div (8x^{2}-8x+9)$
+
+        \phantom{$商 : 9x-4, \quad 剰余 : 9x+7$}
+
+  \item $(-8x^{3}+12x^{2}+12x-16) \div (2x^{2}-x-4)$
+
+        \phantom{$商 : -4x+4, \quad 剰余 : 9x+1$}
+
+  \item $(16x^{3}-8x^{2}+5x+15) \div (4x^{2}-5x+5)$
+
+        \phantom{$商 : 4x+3, \quad 剰余 : -6x-6$}
+
+\columnbreak % 95
+
+  \item $(-8x^{3}+22x^{2}+10x+1) \div (2x^{2}-6x-1)$
+
+        \phantom{$商 : -4x-1, \quad 剰余 : -7x+6$}
+
+  \item $(-15x^{3}+46x^{2}+11x-72) \div (5x^{2}-2x-9)$
+
+        \phantom{$商 : -3x+8, \quad 剰余 : 2x-9$}
+
+  \item $(-18x^{3}-72x^{2}-54x) \div (2x^{2}+8x+6)$
+
+        \phantom{$商 : -9x, \quad 剰余 : 4x-7$}
+
+  \item $(-x^{3}-8x^{2}-24x-27) \div (x^{2}+5x+9)$
+
+        \phantom{$商 : -x-3, \quad 剰余 : -3x+4$}
+
+  \item $(42x^{3}+90x^{2}+62x+16) \div (6x^{2}+6x+2)$
+
+        \phantom{$商 : 7x+8, \quad 剰余 : -3x-1$}
+
+\columnbreak % 100
+
+\resetques
+
+  \item $(7x^{3}+65x^{2}+44x-36) \div (x^{2}+8x-4)$
+
+        \phantom{$商 : 7x+9, \quad 剰余 : 2x+1$}
+
+  \item $(8x^{3}-37x^{2}+19x+4) \div (8x^{2}-5x-1)$
+
+        \phantom{$商 : x-4, \quad 剰余 : -8x-4$}
+
+  \item $(-12x^{3}-42x^{2}-48x-18) \div (2x^{2}+5x+3)$
+
+        \phantom{$商 : -6x-6, \quad 剰余 : -2x-3$}
+
+  \item $(-2x^{3}-7x^{2}+9) \div (x^{2}+2x-3)$
+
+        \phantom{$商 : -2x-3, \quad 剰余 : -9x-1$}
+
+  \item $(6x^{3}-5x^{2}-21x-10) \div (2x^{2}-3x-5)$
+
+        \phantom{$商 : 3x+2, \quad 剰余 : -9x-3$}
+
+\columnbreak % 105
+
+  \item $(12x^{3}-7x^{2}-33x+20) \div (4x^{2}-9x+4)$
+
+        \phantom{$商 : 3x+5, \quad 剰余 : 3x+9$}
+
+  \item $(-9x^{3}-25x^{2}-41x-21) \div (x^{2}+2x+3)$
+
+        \phantom{$商 : -9x-7, \quad 剰余 : -8x+5$}
+
+  \item $(36x^{3}+6x^{2}+52x+18) \div (6x^{2}-x+9)$
+
+        \phantom{$商 : 6x+2, \quad 剰余 : 5x+2$}
+
+  \item $(-12x^{3}+26x^{2}+36x+5) \div (2x^{2}-6x-1)$
+
+        \phantom{$商 : -6x-5, \quad 剰余 : 3x+1$}
+
+  \item $(40x^{3}+9x^{2}-44x-21) \div (8x^{2}-3x-7)$
+
+        \phantom{$商 : 5x+3, \quad 剰余 : -x-1$}
+
+\columnbreak % 110
+
+\resetques
+
+  \item $(56x^{3}-100x^{2}+12x+12) \div (7x^{2}-9x-3)$
+
+        \phantom{$商 : 8x-4, \quad 剰余 : 7x-8$}
+
+  \item $(-63x^{3}+41x^{2}-6x) \div (9x^{2}-2x)$
+
+        \phantom{$商 : -7x+3, \quad 剰余 : -9x-5$}
+
+  \item $(-64x^{3}-40x^{2}+72x) \div (8x^{2}+5x-9)$
+
+        \phantom{$商 : -8x, \quad 剰余 : 5x-2$}
+
+  \item $(18x^{3}-65x^{2}-76x+18) \div (9x^{2}+8x-2)$
+
+        \phantom{$商 : 2x-9, \quad 剰余 : -9x+6$}
+
+  \item $(45x^{3}-16x^{2}-30x-5) \div (9x^{2}-5x-5)$
+
+        \phantom{$商 : 5x+1, \quad 剰余 : 6x-2$}
+
+\columnbreak % 115
+
+  \item $(-64x^{3}+40x^{2}+50x-14) \div (8x^{2}-3x-7)$
+
+        \phantom{$商 : -8x+2, \quad 剰余 : -x+5$}
+
+  \item $(-2x^{3}+5x^{2}+24x-63) \div (x^{2}-6x+9)$
+
+        \phantom{$商 : -2x-7, \quad 剰余 : 3x$}
+
+  \item $(12x^{3}-24x^{2}+36x-24) \div (4x^{2}-4x+8)$
+
+        \phantom{$商 : 3x-3, \quad 剰余 : -4x+7$}
+
+  \item $(32x^{3}+68x^{2}+48x+12) \div (8x^{2}+9x+3)$
+
+        \phantom{$商 : 4x+4, \quad 剰余 : -4x-6$}
+
+  \item $(12x^{3}+54x^{2}-24x-24) \div (2x^{2}+8x-8)$
+
+        \phantom{$商 : 6x+3, \quad 剰余 : 9x-7$}
+
+\columnbreak % 120
+
+\resetques
+
+  \item $(-56x^{3}-6x^{2}+50x+12) \div (8x^{2}-6x-2)$
+
+        \phantom{$商 : -7x-6, \quad 剰余 : -8x$}
+
+  \item $(18x^{3}-15x^{2}-99x-54) \div (2x^{2}-3x-9)$
+
+        \phantom{$商 : 9x+6, \quad 剰余 : -5x+4$}
+
+  \item $(-10x^{3}-33x^{2}+8x+63) \div (2x^{2}+3x-7)$
+
+        \phantom{$商 : -5x-9, \quad 剰余 : 7x+2$}
+
+  \item $(8x^{3}+46x^{2}-3x+54) \div (8x^{2}-2x+9)$
+
+        \phantom{$商 : x+6, \quad 剰余 : 4x$}
+
+  \item $(12x^{3}-44x^{2}+49x-7) \div (2x^{2}-7x+7)$
+
+        \phantom{$商 : 6x-1, \quad 剰余 : 4x$}
+
+\columnbreak % 125
+
+  \item $(45x^{3}+x^{2}-55x+21) \div (5x^{2}+4x-3)$
+
+        \phantom{$商 : 9x-7, \quad 剰余 : -5x+2$}
+
+  \item $(-15x^{3}+2x^{2}+4x-24) \div (3x^{2}-4x+4)$
+
+        \phantom{$商 : -5x-6, \quad 剰余 : -9x-6$}
+
+  \item $(15x^{3}-46x^{2}+41x-10) \div (3x^{2}-8x+5)$
+
+        \phantom{$商 : 5x-2, \quad 剰余 : -8x+6$}
+
+  \item $(-40x^{3}+18x^{2}-36x-54) \div (5x^{2}-6x+9)$
+
+        \phantom{$商 : -8x-6, \quad 剰余 : 9x+8$}
+
+  \item $(30x^{3}+39x^{2}-27x-27) \div (5x^{2}-x-3)$
+
+        \phantom{$商 : 6x+9, \quad 剰余 : -5x+4$}
+
+\columnbreak % 130
+
+\resetques
+
+  \item $(-56x^{3}+34x^{2}-2x+12) \div (8x^{2}+2x+2)$
+
+        \phantom{$商 : -7x+6, \quad 剰余 : -8x+2$}
+
+  \item $(7x^{3}-x^{2}+50x+48) \div (x^{2}-x+8)$
+
+        \phantom{$商 : 7x+6, \quad 剰余 : 5x-3$}
+
+  \item $(3x^{3}+9x^{2}-36x+12) \div (x^{2}+5x-2)$
+
+        \phantom{$商 : 3x-6, \quad 剰余 : -7x+9$}
+
+  \item $(-8x^{3}-18x^{2}-40x-9) \div (2x^{2}+4x+9)$
+
+        \phantom{$商 : -4x-1, \quad 剰余 : -3$}
+
+  \item $(7x^{3}-14x^{2}-14x+7) \div (x^{2}-3x+1)$
+
+        \phantom{$商 : 7x+7, \quad 剰余 : -7x-1$}
+
+\columnbreak % 135
+
+  \item $(-8x^{3}-29x^{2}+5x-28) \div (8x^{2}-3x+7)$
+
+        \phantom{$商 : -x-4, \quad 剰余 : 6x-6$}
+
+  \item $(-36x^{3}-72x^{2}-50x-24) \div (6x^{2}+4x+3)$
+
+        \phantom{$商 : -6x-8, \quad 剰余 : 8x+4$}
+
+  \item $(-3x^{3}-2x^{2}+14x+4) \div (3x^{2}+8x+2)$
+
+        \phantom{$商 : -x+2, \quad 剰余 : x-3$}
+
+  \item $(-25x^{3}+85x^{2}-77x+9) \div (5x^{2}-8x+1)$
+
+        \phantom{$商 : -5x+9, \quad 剰余 : 4x+1$}
+
+  \item $(6x^{3}+16x^{2}+10x) \div (3x^{2}+5x)$
+
+        \phantom{$商 : 2x+2, \quad 剰余 : -4$}
+
+\columnbreak % 140
+
+\resetques
+
+  \item $(32x^{3}+88x^{2}-28x-32) \div (4x^{2}+9x-8)$
+
+        \phantom{$商 : 8x+4, \quad 剰余 : x-6$}
+
+  \item $(-45x^{3}-11x^{2}-31x+7) \div (9x^{2}+4x+7)$
+
+        \phantom{$商 : -5x+1, \quad 剰余 : -x+8$}
+
+  \item $(-8x^{3}-22x^{2}+9x+9) \div (4x^{2}+9x-9)$
+
+        \phantom{$商 : -2x-1, \quad 剰余 : -6x+4$}
+
+  \item $(-12x^{3}-16x^{2}+29x+7) \div (2x^{2}+5x+1)$
+
+        \phantom{$商 : -6x+7, \quad 剰余 : -2$}
+
+  \item $(-56x^{3}-79x^{2}-49x-5) \div (7x^{2}+9x+5)$
+
+        \phantom{$商 : -8x-1, \quad 剰余 : 2x+2$}
+
+\columnbreak % 145
+
+  \item $(-16x^{3}-74x^{2}-13x-18) \div (8x^{2}+x+2)$
+
+        \phantom{$商 : -2x-9, \quad 剰余 : -6x$}
+
+  \item $(12x^{3}-30x^{2}-84x-18) \div (2x^{2}-8x-2)$
+
+        \phantom{$商 : 6x+9, \quad 剰余 : -x-3$}
+
+  \item $(-10x^{3}+14x^{2}+46x+6) \div (5x^{2}+8x+1)$
+
+        \phantom{$商 : -2x+6, \quad 剰余 : 5x+2$}
+
+  \item $(-8x^{3}-31x^{2}-14x+21) \div (8x^{2}+7x-7)$
+
+        \phantom{$商 : -x-3, \quad 剰余 : -7x-9$}
+
+  \item $(24x^{3}-48x^{2}+42x) \div (4x^{2}-8x+7)$
+
+        \phantom{$商 : 6x, \quad 剰余 : 5x-3$}
+
+\columnbreak % 150
+
+\resetques
+
+  \item $(5x^{3}-19x^{2}-8x+16) \div (5x^{2}+x-4)$
+
+        \phantom{$商 : x-4, \quad 剰余 : -9x-7$}
+
+  \item $(9x^{3}-13x^{2}+76x-32) \div (x^{2}-x+8)$
+
+        \phantom{$商 : 9x-4, \quad 剰余 : 3x+8$}
+
+  \item $(-12x^{3}-10x^{2}+14x+8) \div (6x^{2}+2x-8)$
+
+        \phantom{$商 : -2x-1, \quad 剰余 : 2x-8$}
+
+  \item $(16x^{3}-52x^{2}+76x-72) \div (4x^{2}-5x+9)$
+
+        \phantom{$商 : 4x-8, \quad 剰余 : 2x+7$}
+
+  \item $(12x^{3}+28x^{2}+8x) \div (3x^{2}+x)$
+
+        \phantom{$商 : 4x+8, \quad 剰余 : -6x-3$}
+
+\columnbreak % 155
+
+  \item $(-2x^{3}+14x^{2}+37x-9) \div (2x^{2}+4x-1)$
+
+        \phantom{$商 : -x+9, \quad 剰余 : 1$}
+
+  \item $(25x^{3}+15x^{2}-69x+18) \div (5x^{2}+9x-3)$
+
+        \phantom{$商 : 5x-6, \quad 剰余 : -3x+3$}
+
+  \item $(-14x^{3}-3x^{2}+51x-14) \div (2x^{2}+x-7)$
+
+        \phantom{$商 : -7x+2, \quad 剰余 : -6x-1$}
+
+  \item $(8x^{3}-49x^{2}+70x-8) \div (x^{2}-6x+8)$
+
+        \phantom{$商 : 8x-1, \quad 剰余 : 2x-6$}
+
+  \item $(-12x^{3}-14x^{2}-36x-42) \div (2x^{2}+6)$
+
+        \phantom{$商 : -6x-7, \quad 剰余 : -8x-9$}
+
+\columnbreak % 160
+
+\resetques
+
+  \item $(-6x^{3}-50x^{2}-6x+28) \div (x^{2}+9x+7)$
+
+        \phantom{$商 : -6x+4, \quad 剰余 : -9x-5$}
+
+  \item $(-8x^{3}-16x^{2}+18x-18) \div (4x^{2}-4x+3)$
+
+        \phantom{$商 : -2x-6, \quad 剰余 : 7x+2$}
+
+  \item $(56x^{3}+107x^{2}+61x+10) \div (7x^{2}+9x+2)$
+
+        \phantom{$商 : 8x+5, \quad 剰余 : 2x-1$}
+
+  \item $(64x^{3}+72x^{2}-48x-56) \div (8x^{2}+x-7)$
+
+        \phantom{$商 : 8x+8, \quad 剰余 : -x-3$}
+
+  \item $(-48x^{3}+36x^{2}-24x+36) \div (8x^{2}+2x+6)$
+
+        \phantom{$商 : -6x+6, \quad 剰余 : -9$}
+
+\columnbreak % 165
+
+  \item $(20x^{3}-19x^{2}+8x-63) \div (5x^{2}+4x+9)$
+
+        \phantom{$商 : 4x-7, \quad 剰余 : 8$}
+
+  \item $(-36x^{3}-85x^{2}-27x-2) \div (4x^{2}+9x+2)$
+
+        \phantom{$商 : -9x-1, \quad 剰余 : 7x+4$}
+
+  \item $(-14x^{3}-61x^{2}-32x+35) \div (7x^{2}+6x-5)$
+
+        \phantom{$商 : -2x-7, \quad 剰余 : 3x-8$}
+
+  \item $(16x^{3}-48x^{2}+36x-40) \div (8x^{2}-4x+8)$
+
+        \phantom{$商 : 2x-5, \quad 剰余 : 8x-2$}
+
+  \item $(20x^{3}-10x^{2}+36x-18) \div (5x^{2}+9)$
+
+        \phantom{$商 : 4x-2, \quad 剰余 : 5x+6$}
+
+\columnbreak % 170
+
+\resetques
+
+  \item $(64x^{3}+8x^{2}-52x-20) \div (8x^{2}-4x-4)$
+
+        \phantom{$商 : 8x+5, \quad 剰余 : -4x-8$}
+
+  \item $(-4x^{3}+7x^{2}+14x+3) \div (4x^{2}+5x+1)$
+
+        \phantom{$商 : -x+3, \quad 剰余 : 7x$}
+
+  \item $(6x^{3}+36x^{2}+56x+32) \div (3x^{2}+6x+4)$
+
+        \phantom{$商 : 2x+8, \quad 剰余 : -6x+2$}
+
+  \item $(16x^{3}+42x^{2}+41x+21) \div (8x^{2}+9x+7)$
+
+        \phantom{$商 : 2x+3, \quad 剰余 : -3x-2$}
+
+  \item $(21x^{3}-66x^{2}+30x+36) \div (7x^{2}-8x-6)$
+
+        \phantom{$商 : 3x-6, \quad 剰余 : -3x-3$}
+
+\columnbreak % 175
+
+  \item $(-56x^{3}-10x^{2}+54x-12) \div (7x^{2}+3x-6)$
+
+        \phantom{$商 : -8x+2, \quad 剰余 : 9x-5$}
+
+  \item $(-x^{3}+8x-3) \div (x^{2}-3x+1)$
+
+        \phantom{$商 : -x-3, \quad 剰余 : -2x+1$}
+
+  \item $(-27x^{3}+54x^{2}+9x+28) \div (9x^{2}+3x+4)$
+
+        \phantom{$商 : -3x+7, \quad 剰余 : -8x-3$}
+
+  \item $(40x^{3}-101x^{2}+15x+54) \div (5x^{2}-7x-6)$
+
+        \phantom{$商 : 8x-9, \quad 剰余 : -9x-7$}
+
+  \item $(28x^{3}+17x^{2}-20x+63) \div (7x^{2}-8x+9)$
+
+        \phantom{$商 : 4x+7, \quad 剰余 : -4x$}
+
+\columnbreak % 180
+
+\resetques
+
+  \item $(16x^{3}-84x-40) \div (4x^{2}-8x-5)$
+
+        \phantom{$商 : 4x+8, \quad 剰余 : 7x+2$}
+
+  \item $(-64x^{3}+24x^{2}+54x) \div (8x^{2}+6x)$
+
+        \phantom{$商 : -8x+9, \quad 剰余 : -9x-6$}
+
+  \item $(81x^{3}+9x^{2}+3x-30) \div (9x^{2}+7x+5)$
+
+        \phantom{$商 : 9x-6, \quad 剰余 : -3x-1$}
+
+  \item $(-54x^{3}+84x^{2}-43x+6) \div (6x^{2}-8x+3)$
+
+        \phantom{$商 : -9x+2, \quad 剰余 : 7x+5$}
+
+  \item $(-36x^{3}-17x^{2}+18x+5) \div (9x^{2}+2x-5)$
+
+        \phantom{$商 : -4x-1, \quad 剰余 : 2x$}
+
+\columnbreak % 185
+
+  \item $(6x^{3}-43x^{2}+90x-48) \div (2x^{2}-9x+6)$
+
+        \phantom{$商 : 3x-8, \quad 剰余 : -4x+6$}
+
+  \item $(54x^{3}+18x^{2}-30x-10) \div (9x^{2}-5)$
+
+        \phantom{$商 : 6x+2, \quad 剰余 : 7x-6$}
+
+  \item $(18x^{3}+33x^{2}-42x+63) \div (6x^{2}-7x+7)$
+
+        \phantom{$商 : 3x+9, \quad 剰余 : 2x+9$}
+
+  \item $(63x^{3}-23x^{2}-65x-7) \div (7x^{2}-8x-1)$
+
+        \phantom{$商 : 9x+7, \quad 剰余 : 7x-2$}
+
+  \item $(64x^{3}+40x^{2}+50x-16) \div (8x^{2}+7x+8)$
+
+        \phantom{$商 : 8x-2, \quad 剰余 : 4x-6$}
+
+\columnbreak % 190
+
+\resetques
+
+  \item $(40x^{3}+54x^{2}-48x+8) \div (5x^{2}+8x-4)$
+
+        \phantom{$商 : 8x-2, \quad 剰余 : -2$}
+
+  \item $(32x^{3}+44x^{2}+x-5) \div (8x^{2}+x-1)$
+
+        \phantom{$商 : 4x+5, \quad 剰余 : -8$}
+
+  \item $(28x^{3}+20x^{2}-86x+18) \div (4x^{2}+8x-2)$
+
+        \phantom{$商 : 7x-9, \quad 剰余 : x+4$}
+
+  \item $(-14x^{3}-55x^{2}-35x-6) \div (2x^{2}+7x+2)$
+
+        \phantom{$商 : -7x-3, \quad 剰余 : -2x-6$}
+
+  \item $(-42x^{3}-34x^{2}+37x+24) \div (6x^{2}-2x-3)$
+
+        \phantom{$商 : -7x-8, \quad 剰余 : 3x+5$}
+
+\columnbreak % 195
+
+  \item $(6x^{3}-39x-30) \div (2x^{2}-4x-5)$
+
+        \phantom{$商 : 3x+6, \quad 剰余 : $}
+
+  \item $(-4x^{3}-16x^{2}-8x+12) \div (2x^{2}+2x-2)$
+
+        \phantom{$商 : -2x-6, \quad 剰余 : 6x-2$}
+
+  \item $(-30x^{3}+34x^{2}-40x+64) \div (5x^{2}+x+8)$
+
+        \phantom{$商 : -6x+8, \quad 剰余 : x-9$}
+
+  \item $(-24x^{3}+16x^{2}-32x) \div (3x^{2}-2x+4)$
+
+        \phantom{$商 : -8x, \quad 剰余 : 4x-5$}
+
+  \item $(24x^{3}+60x^{2}-16x-20) \div (3x^{2}+6x-5)$
+
+        \phantom{$商 : 8x+4, \quad 剰余 : 9x+3$}
+
+\end{enumerate}
+\end{multicols}
+
+\newpage
+\resetdrill
+
+\begin{multicols}{2}
+\begin{enumerate}
+  \itemsep=95pt
+  \item $(14x^{3}-53x^{2}-11x+72) \div (2x^{2}-5x-8)$
+
+        $商 : 7x-9, \quad 剰余 : 4x-2$
+
+  \item $(-36x^{3}-99x^{2}-144x-81) \div (4x^{2}+7x+9)$
+
+        $商 : -9x-9, \quad 剰余 : 6x+7$
+
+  \item $(45x^{3}+86x^{2}-63x-8) \div (5x^{2}+9x-8)$
+
+        $商 : 9x+1, \quad 剰余 : 9x-2$
+
+  \item $(16x^{3}+58x^{2}+78x+30) \div (2x^{2}+6x+6)$
+
+        $商 : 8x+5, \quad 剰余 : -3x-5$
+
+  \item $(6x^{3}+47x^{2}-62x+9) \div (6x^{2}-7x+1)$
+
+        $商 : x+9, \quad 剰余 : 4x-9$
+
+\columnbreak % 5
+
+  \item $(-56x^{3}+3x^{2}+28x-5) \div (7x^{2}+4x-1)$
+
+        $商 : -8x+5, \quad 剰余 : 9x+1$
+
+  \item $(7x^{3}+6x^{2}+7x+6) \div (x^{2}+1)$
+
+        $商 : 7x+6, \quad 剰余 : 9x-6$
+
+  \item $(-15x^{3}+x^{2}-3x+6) \div (5x^{2}+3x+3)$
+
+        $商 : -3x+2, \quad 剰余 : 6x-3$
+
+  \item $(48x^{3}+48x^{2}-44x+4) \div (6x^{2}+9x-1)$
+
+        $商 : 8x-4, \quad 剰余 : -x+1$
+
+  \item $(-6x^{3}+35x^{2}+55x-42) \div (6x^{2}+7x-6)$
+
+        $商 : -x+7, \quad 剰余 : 3x+1$
+
+\columnbreak % 10
+
+\resetques
+
+  \item $(-20x^{3}+28x^{2}+4x) \div (5x^{2}-7x-1)$
+
+        $商 : -4x, \quad 剰余 : 3x+6$
+
+  \item $(-x^{3}+7x^{2}-5x-28) \div (x^{2}-3x-7)$
+
+        $商 : -x+4, \quad 剰余 : -3x+8$
+
+  \item $(36x^{3}+59x^{2}+56x+24) \div (9x^{2}+8x+8)$
+
+        $商 : 4x+3, \quad 剰余 : 2x+5$
+
+  \item $(24x^{3}+67x^{2}+24x+2) \div (3x^{2}+8x+2)$
+
+        $商 : 8x+1, \quad 剰余 : -x+4$
+
+  \item $(-28x^{3}-36x^{2}-8x) \div (7x^{2}+2x)$
+
+        $商 : -4x-4, \quad 剰余 : 7x-6$
+
+\columnbreak % 15
+
+  \item $(-24x^{3}+52x^{2}-50x+7) \div (4x^{2}-8x+7)$
+
+        $商 : -6x+1, \quad 剰余 : -8x-9$
+
+  \item $(35x^{3}-56x^{2}+49x-28) \div (5x^{2}-3x+4)$
+
+        $商 : 7x-7, \quad 剰余 : 4x-1$
+
+  \item $(63x^{3}-91x^{2}+91x-63) \div (9x^{2}-4x+9)$
+
+        $商 : 7x-7, \quad 剰余 : -5x-9$
+
+  \item $(54x^{3}-9x^{2}-45x+18) \div (6x^{2}-7x+2)$
+
+        $商 : 9x+9, \quad 剰余 : 9x-8$
+
+  \item $(15x^{3}-26x^{2}+16x-3) \div (5x^{2}-7x+3)$
+
+        $商 : 3x-1, \quad 剰余 : 9x+2$
+
+\columnbreak % 20
+
+\resetques
+
+  \item $(12x^{3}-50x^{2}+6x+42) \div (2x^{2}-6x-6)$
+
+        $商 : 6x-7, \quad 剰余 : -3x-7$
+
+  \item $(18x^{3}-54x^{2}+63x) \div (2x^{2}-6x+7)$
+
+        $商 : 9x, \quad 剰余 : -9x+7$
+
+  \item $(-6x^{3}+48x^{2}-54x+12) \div (x^{2}-7x+2)$
+
+        $商 : -6x+6, \quad 剰余 : -9x-2$
+
+  \item $(14x^{3}-4x^{2}+38x-72) \div (2x^{2}+2x+8)$
+
+        $商 : 7x-9, \quad 剰余 : x+4$
+
+  \item $(-54x^{3}+27x^{2}+51x-9) \div (9x^{2}-3x-9)$
+
+        $商 : -6x+1, \quad 剰余 : 4x-9$
+
+\columnbreak % 25
+
+  \item $(32x^{3}-28x^{2}-80x+16) \div (8x^{2}+9x-2)$
+
+        $商 : 4x-8, \quad 剰余 : -x+5$
+
+  \item $(40x^{3}-62x^{2}-63x+81) \div (8x^{2}+2x-9)$
+
+        $商 : 5x-9, \quad 剰余 : 8x+2$
+
+  \item $(-3x^{3}+23x^{2}+15x-56) \div (3x^{2}+x-7)$
+
+        $商 : -x+8, \quad 剰余 : 5x+9$
+
+  \item $(-3x^{3}+54x+81) \div (x^{2}-3x-9)$
+
+        $商 : -3x-9, \quad 剰余 : 3x+5$
+
+  \item $(48x^{3}+8x^{2}-32x+8) \div (6x^{2}+4x-2)$
+
+        $商 : 8x-4, \quad 剰余 : -2x-7$
+
+\columnbreak % 30
+
+\resetques
+
+  \item $(42x^{3}+9x^{2}-55x+14) \div (6x^{2}+3x-7)$
+
+        $商 : 7x-2, \quad 剰余 : 5x-5$
+
+  \item $(-45x^{3}+14x^{2}+8x+48) \div (9x^{2}+8x+8)$
+
+        $商 : -5x+6, \quad 剰余 : -4x+4$
+
+  \item $(-3x^{3}-12x^{2}+56x-49) \div (3x^{2}-9x+7)$
+
+        $商 : -x-7, \quad 剰余 : 2x+3$
+
+  \item $(-15x^{3}-3x^{2}+32x-16) \div (3x^{2}+3x-4)$
+
+        $商 : -5x+4, \quad 剰余 : -5x-5$
+
+  \item $(-36x^{3}+61x^{2}-27x-40) \div (4x^{2}-9x+8)$
+
+        $商 : -9x-5, \quad 剰余 : -4x-6$
+
+\columnbreak % 35
+
+  \item $(3x^{3}+16x^{2}+9x-14) \div (x^{2}+6x+7)$
+
+        $商 : 3x-2, \quad 剰余 : -x+5$
+
+  \item $(36x^{3}-51x^{2}-66x-15) \div (4x^{2}-7x-5)$
+
+        $商 : 9x+3, \quad 剰余 : -8x-6$
+
+  \item $(35x^{3}-61x^{2}+15x-1) \div (5x^{2}-8x+1)$
+
+        $商 : 7x-1, \quad 剰余 : 7x+9$
+
+  \item $(36x^{3}+83x^{2}+39x+7) \div (9x^{2}+5x+1)$
+
+        $商 : 4x+7, \quad 剰余 : 8x+5$
+
+  \item $(-9x^{3}+21x^{2}+17x-45) \div (3x^{2}-2x-9)$
+
+        $商 : -3x+5, \quad 剰余 : -6x+2$
+
+\columnbreak % 40
+
+\resetques
+
+  \item $(24x^{3}-3x^{2}-6x+21) \div (8x^{2}-9x+7)$
+
+        $商 : 3x+3, \quad 剰余 : -2x-3$
+
+  \item $(6x^{3}+8x^{2}-85x+56) \div (2x^{2}+8x-7)$
+
+        $商 : 3x-8, \quad 剰余 : 6x+5$
+
+  \item $(-20x^{3}-22x^{2}-34x-14) \div (5x^{2}+3x+7)$
+
+        $商 : -4x-2, \quad 剰余 : -5x-4$
+
+  \item $(-9x^{3}+28x^{2}-13x-40) \div (x^{2}-4x+5)$
+
+        $商 : -9x-8, \quad 剰余 : -7x-2$
+
+  \item $(35x^{3}+56x^{2}+49x) \div (5x^{2}+8x+7)$
+
+        $商 : 7x, \quad 剰余 : -9x-9$
+
+\columnbreak % 45
+
+  \item $(-15x^{3}+25x^{2}-55x+45) \div (3x^{2}-2x+9)$
+
+        $商 : -5x+5, \quad 剰余 : -4x+2$
+
+  \item $(-20x^{3}-81x^{2}-91x-18) \div (4x^{2}+9x+2)$
+
+        $商 : -5x-9, \quad 剰余 : -3x+6$
+
+  \item $(-40x^{3}-86x^{2}-50x-6) \div (5x^{2}+7x+1)$
+
+        $商 : -8x-6, \quad 剰余 : -6x+9$
+
+  \item $(-10x^{3}-13x^{2}-5x+7) \div (5x^{2}+9x+7)$
+
+        $商 : -2x+1, \quad 剰余 : -4x+3$
+
+  \item $(35x^{3}+34x^{2}-66x-63) \div (7x^{2}-3x-9)$
+
+        $商 : 5x+7, \quad 剰余 : -2x+3$
+
+\columnbreak % 50
+
+\resetques
+
+  \item $(-5x^{3}-52x^{2}-108x-63) \div (x^{2}+9x+9)$
+
+        $商 : -5x-7, \quad 剰余 : -3x+7$
+
+  \item $(42x^{3}-50x^{2}+30x-6) \div (7x^{2}-6x+3)$
+
+        $商 : 6x-2, \quad 剰余 : -2x+9$
+
+  \item $(54x^{3}+39x^{2}-2x-1) \div (9x^{2}+8x+1)$
+
+        $商 : 6x-1, \quad 剰余 : 3x+3$
+
+  \item $(9x^{3}-3x^{2}-32x+56) \div (3x^{2}-8x+8)$
+
+        $商 : 3x+7, \quad 剰余 : 9x+6$
+
+  \item $(-81x^{3}+18x^{2}+89x-42) \div (9x^{2}+5x-6)$
+
+        $商 : -9x+7, \quad 剰余 : -4x+6$
+
+\columnbreak % 55
+
+  \item $(-40x^{3}+60x^{2}+4x-12) \div (5x^{2}-5x-3)$
+
+        $商 : -8x+4, \quad 剰余 : -9$
+
+  \item $(-54x^{3}-30x^{2}-24x) \div (9x^{2}+5x+4)$
+
+        $商 : -6x, \quad 剰余 : -6x-2$
+
+  \item $(56x^{3}-27x^{2}-10x+3) \div (7x^{2}-6x+1)$
+
+        $商 : 8x+3, \quad 剰余 : -x-9$
+
+  \item $(-72x^{3}+39x^{2}-18x-3) \div (9x^{2}-6x+3)$
+
+        $商 : -8x-1, \quad 剰余 : 6x+3$
+
+  \item $(-6x^{3}+16x^{2}-32x+16) \div (x^{2}-2x+4)$
+
+        $商 : -6x+4, \quad 剰余 : 3x+8$
+
+\columnbreak % 60
+
+\resetques
+
+  \item $(24x^{3}+22x^{2}-37x-35) \div (4x^{2}-x-5)$
+
+        $商 : 6x+7, \quad 剰余 : -x-2$
+
+  \item $(12x^{3}+2x^{2}+2x+4) \div (4x^{2}-2x+2)$
+
+        $商 : 3x+2, \quad 剰余 : 1$
+
+  \item $(-28x^{3}-11x^{2}+10x-25) \div (7x^{2}-6x+5)$
+
+        $商 : -4x-5, \quad 剰余 : -5x+6$
+
+  \item $(40x^{3}+17x^{2}-36x+9) \div (5x^{2}+4x-3)$
+
+        $商 : 8x-3, \quad 剰余 : -x+9$
+
+  \item $(4x^{3}-33x^{2}+4x+1) \div (x^{2}-8x-1)$
+
+        $商 : 4x-1, \quad 剰余 : -3x+3$
+
+\columnbreak % 65
+
+  \item $(-18x^{3}+66x^{2}-57x+63) \div (6x^{2}-4x+7)$
+
+        $商 : -3x+9, \quad 剰余 : -7x+8$
+
+  \item $(-5x^{3}+19x^{2}-13x-9) \div (x^{2}-2x-1)$
+
+        $商 : -5x+9, \quad 剰余 : 7x-4$
+
+  \item $(16x^{3}-24x^{2}+20x) \div (4x^{2}-6x+5)$
+
+        $商 : 4x, \quad 剰余 : -9x+8$
+
+  \item $(-21x^{3}-27x^{2}+36x+12) \div (3x^{2}+3x-6)$
+
+        $商 : -7x-2, \quad 剰余 : 8x$
+
+  \item $(12x^{3}-8x^{2}-17x+20) \div (4x^{2}-8x+5)$
+
+        $商 : 3x+4, \quad 剰余 : -x+8$
+
+\columnbreak % 70
+
+\resetques
+
+  \item $(-2x^{3}-16x^{2}-42x-36) \div (x^{2}+5x+6)$
+
+        $商 : -2x-6, \quad 剰余 : 5x+8$
+
+  \item $(63x^{3}-100x^{2}+113x-36) \div (7x^{2}-8x+9)$
+
+        $商 : 9x-4, \quad 剰余 : 8x-7$
+
+  \item $(45x^{3}+27x^{2}+2x-8) \div (9x^{2}+9x+4)$
+
+        $商 : 5x-2, \quad 剰余 : -2x-5$
+
+  \item $(-25x^{3}+60x^{2}-35x) \div (5x^{2}-7x)$
+
+        $商 : -5x+5, \quad 剰余 : -7x-7$
+
+  \item $(-14x^{3}+74x^{2}-128x+72) \div (2x^{2}-8x+8)$
+
+        $商 : -7x+9, \quad 剰余 : 3x+7$
+
+\columnbreak % 75
+
+  \item $(7x^{3}+12x^{2}+9x+4) \div (7x^{2}+5x+4)$
+
+        $商 : x+1, \quad 剰余 : -x-5$
+
+  \item $(-16x^{3}-80x^{2}-100x-32) \div (2x^{2}+9x+8)$
+
+        $商 : -8x-4, \quad 剰余 : -5x-6$
+
+  \item $(56x^{3}+11x^{2}+37x+28) \div (8x^{2}-3x+7)$
+
+        $商 : 7x+4, \quad 剰余 : 7x+5$
+
+  \item $(-3x^{3}-25x^{2}-23x-5) \div (x^{2}+8x+5)$
+
+        $商 : -3x-1, \quad 剰余 : 6x-8$
+
+  \item $(-45x^{3}+38x^{2}+40x-7) \div (9x^{2}+5x-1)$
+
+        $商 : -5x+7, \quad 剰余 : -3x-7$
+
+\columnbreak % 80
+
+\resetques
+
+  \item $(-28x^{3}+7x^{2}+5x-12) \div (7x^{2}-7x+4)$
+
+        $商 : -4x-3, \quad 剰余 : -7x+7$
+
+  \item $(6x^{3}+26x^{2}-25x-25) \div (6x^{2}-4x-5)$
+
+        $商 : x+5, \quad 剰余 : x-1$
+
+  \item $(32x^{3}-68x^{2}+15x-54) \div (8x^{2}+x+6)$
+
+        $商 : 4x-9, \quad 剰余 : 3x+2$
+
+  \item $(-4x^{3}-x^{2}-x) \div (4x^{2}+x+1)$
+
+        $商 : -x, \quad 剰余 : -3x-2$
+
+  \item $(35x^{3}-12x^{2}-22x+12) \div (5x^{2}-6x+2)$
+
+        $商 : 7x+6, \quad 剰余 : 9x+2$
+
+\columnbreak % 85
+
+  \item $(-6x^{3}+49x^{2}-51x+14) \div (6x^{2}-7x+2)$
+
+        $商 : -x+7, \quad 剰余 : -8x+5$
+
+  \item $(16x^{3}+48x+64) \div (2x^{2}-2x+8)$
+
+        $商 : 8x+8, \quad 剰余 : -x+1$
+
+  \item $(12x^{3}-38x^{2}-40x) \div (2x^{2}-8x)$
+
+        $商 : 6x+5, \quad 剰余 : -8x+3$
+
+  \item $(-32x^{3}+84x^{2}-40x) \div (8x^{2}-5x)$
+
+        $商 : -4x+8, \quad 剰余 : -x+8$
+
+  \item $(9x^{3}-16x^{2}+12x-5) \div (9x^{2}-7x+5)$
+
+        $商 : x-1, \quad 剰余 : x+3$
+
+\columnbreak % 90
+
+\resetques
+
+  \item $(-36x^{3}-18x^{2}+38x-10) \div (9x^{2}+9x-5)$
+
+        $商 : -4x+2, \quad 剰余 : 5x-9$
+
+  \item $(56x^{3}+103x^{2}+87x+30) \div (8x^{2}+9x+6)$
+
+        $商 : 7x+5, \quad 剰余 : -3x+9$
+
+  \item $(72x^{3}-104x^{2}+113x-36) \div (8x^{2}-8x+9)$
+
+        $商 : 9x-4, \quad 剰余 : 9x+7$
+
+  \item $(-8x^{3}+12x^{2}+12x-16) \div (2x^{2}-x-4)$
+
+        $商 : -4x+4, \quad 剰余 : 9x+1$
+
+  \item $(16x^{3}-8x^{2}+5x+15) \div (4x^{2}-5x+5)$
+
+        $商 : 4x+3, \quad 剰余 : -6x-6$
+
+\columnbreak % 95
+
+  \item $(-8x^{3}+22x^{2}+10x+1) \div (2x^{2}-6x-1)$
+
+        $商 : -4x-1, \quad 剰余 : -7x+6$
+
+  \item $(-15x^{3}+46x^{2}+11x-72) \div (5x^{2}-2x-9)$
+
+        $商 : -3x+8, \quad 剰余 : 2x-9$
+
+  \item $(-18x^{3}-72x^{2}-54x) \div (2x^{2}+8x+6)$
+
+        $商 : -9x, \quad 剰余 : 4x-7$
+
+  \item $(-x^{3}-8x^{2}-24x-27) \div (x^{2}+5x+9)$
+
+        $商 : -x-3, \quad 剰余 : -3x+4$
+
+  \item $(42x^{3}+90x^{2}+62x+16) \div (6x^{2}+6x+2)$
+
+        $商 : 7x+8, \quad 剰余 : -3x-1$
+
+\columnbreak % 100
+
+\resetques
+
+  \item $(7x^{3}+65x^{2}+44x-36) \div (x^{2}+8x-4)$
+
+        $商 : 7x+9, \quad 剰余 : 2x+1$
+
+  \item $(8x^{3}-37x^{2}+19x+4) \div (8x^{2}-5x-1)$
+
+        $商 : x-4, \quad 剰余 : -8x-4$
+
+  \item $(-12x^{3}-42x^{2}-48x-18) \div (2x^{2}+5x+3)$
+
+        $商 : -6x-6, \quad 剰余 : -2x-3$
+
+  \item $(-2x^{3}-7x^{2}+9) \div (x^{2}+2x-3)$
+
+        $商 : -2x-3, \quad 剰余 : -9x-1$
+
+  \item $(6x^{3}-5x^{2}-21x-10) \div (2x^{2}-3x-5)$
+
+        $商 : 3x+2, \quad 剰余 : -9x-3$
+
+\columnbreak % 105
+
+  \item $(12x^{3}-7x^{2}-33x+20) \div (4x^{2}-9x+4)$
+
+        $商 : 3x+5, \quad 剰余 : 3x+9$
+
+  \item $(-9x^{3}-25x^{2}-41x-21) \div (x^{2}+2x+3)$
+
+        $商 : -9x-7, \quad 剰余 : -8x+5$
+
+  \item $(36x^{3}+6x^{2}+52x+18) \div (6x^{2}-x+9)$
+
+        $商 : 6x+2, \quad 剰余 : 5x+2$
+
+  \item $(-12x^{3}+26x^{2}+36x+5) \div (2x^{2}-6x-1)$
+
+        $商 : -6x-5, \quad 剰余 : 3x+1$
+
+  \item $(40x^{3}+9x^{2}-44x-21) \div (8x^{2}-3x-7)$
+
+        $商 : 5x+3, \quad 剰余 : -x-1$
+
+\columnbreak % 110
+
+\resetques
+
+  \item $(56x^{3}-100x^{2}+12x+12) \div (7x^{2}-9x-3)$
+
+        $商 : 8x-4, \quad 剰余 : 7x-8$
+
+  \item $(-63x^{3}+41x^{2}-6x) \div (9x^{2}-2x)$
+
+        $商 : -7x+3, \quad 剰余 : -9x-5$
+
+  \item $(-64x^{3}-40x^{2}+72x) \div (8x^{2}+5x-9)$
+
+        $商 : -8x, \quad 剰余 : 5x-2$
+
+  \item $(18x^{3}-65x^{2}-76x+18) \div (9x^{2}+8x-2)$
+
+        $商 : 2x-9, \quad 剰余 : -9x+6$
+
+  \item $(45x^{3}-16x^{2}-30x-5) \div (9x^{2}-5x-5)$
+
+        $商 : 5x+1, \quad 剰余 : 6x-2$
+
+\columnbreak % 115
+
+  \item $(-64x^{3}+40x^{2}+50x-14) \div (8x^{2}-3x-7)$
+
+        $商 : -8x+2, \quad 剰余 : -x+5$
+
+  \item $(-2x^{3}+5x^{2}+24x-63) \div (x^{2}-6x+9)$
+
+        $商 : -2x-7, \quad 剰余 : 3x$
+
+  \item $(12x^{3}-24x^{2}+36x-24) \div (4x^{2}-4x+8)$
+
+        $商 : 3x-3, \quad 剰余 : -4x+7$
+
+  \item $(32x^{3}+68x^{2}+48x+12) \div (8x^{2}+9x+3)$
+
+        $商 : 4x+4, \quad 剰余 : -4x-6$
+
+  \item $(12x^{3}+54x^{2}-24x-24) \div (2x^{2}+8x-8)$
+
+        $商 : 6x+3, \quad 剰余 : 9x-7$
+
+\columnbreak % 120
+
+\resetques
+
+  \item $(-56x^{3}-6x^{2}+50x+12) \div (8x^{2}-6x-2)$
+
+        $商 : -7x-6, \quad 剰余 : -8x$
+
+  \item $(18x^{3}-15x^{2}-99x-54) \div (2x^{2}-3x-9)$
+
+        $商 : 9x+6, \quad 剰余 : -5x+4$
+
+  \item $(-10x^{3}-33x^{2}+8x+63) \div (2x^{2}+3x-7)$
+
+        $商 : -5x-9, \quad 剰余 : 7x+2$
+
+  \item $(8x^{3}+46x^{2}-3x+54) \div (8x^{2}-2x+9)$
+
+        $商 : x+6, \quad 剰余 : 4x$
+
+  \item $(12x^{3}-44x^{2}+49x-7) \div (2x^{2}-7x+7)$
+
+        $商 : 6x-1, \quad 剰余 : 4x$
+
+\columnbreak % 125
+
+  \item $(45x^{3}+x^{2}-55x+21) \div (5x^{2}+4x-3)$
+
+        $商 : 9x-7, \quad 剰余 : -5x+2$
+
+  \item $(-15x^{3}+2x^{2}+4x-24) \div (3x^{2}-4x+4)$
+
+        $商 : -5x-6, \quad 剰余 : -9x-6$
+
+  \item $(15x^{3}-46x^{2}+41x-10) \div (3x^{2}-8x+5)$
+
+        $商 : 5x-2, \quad 剰余 : -8x+6$
+
+  \item $(-40x^{3}+18x^{2}-36x-54) \div (5x^{2}-6x+9)$
+
+        $商 : -8x-6, \quad 剰余 : 9x+8$
+
+  \item $(30x^{3}+39x^{2}-27x-27) \div (5x^{2}-x-3)$
+
+        $商 : 6x+9, \quad 剰余 : -5x+4$
+
+\columnbreak % 130
+
+\resetques
+
+  \item $(-56x^{3}+34x^{2}-2x+12) \div (8x^{2}+2x+2)$
+
+        $商 : -7x+6, \quad 剰余 : -8x+2$
+
+  \item $(7x^{3}-x^{2}+50x+48) \div (x^{2}-x+8)$
+
+        $商 : 7x+6, \quad 剰余 : 5x-3$
+
+  \item $(3x^{3}+9x^{2}-36x+12) \div (x^{2}+5x-2)$
+
+        $商 : 3x-6, \quad 剰余 : -7x+9$
+
+  \item $(-8x^{3}-18x^{2}-40x-9) \div (2x^{2}+4x+9)$
+
+        $商 : -4x-1, \quad 剰余 : -3$
+
+  \item $(7x^{3}-14x^{2}-14x+7) \div (x^{2}-3x+1)$
+
+        $商 : 7x+7, \quad 剰余 : -7x-1$
+
+\columnbreak % 135
+
+  \item $(-8x^{3}-29x^{2}+5x-28) \div (8x^{2}-3x+7)$
+
+        $商 : -x-4, \quad 剰余 : 6x-6$
+
+  \item $(-36x^{3}-72x^{2}-50x-24) \div (6x^{2}+4x+3)$
+
+        $商 : -6x-8, \quad 剰余 : 8x+4$
+
+  \item $(-3x^{3}-2x^{2}+14x+4) \div (3x^{2}+8x+2)$
+
+        $商 : -x+2, \quad 剰余 : x-3$
+
+  \item $(-25x^{3}+85x^{2}-77x+9) \div (5x^{2}-8x+1)$
+
+        $商 : -5x+9, \quad 剰余 : 4x+1$
+
+  \item $(6x^{3}+16x^{2}+10x) \div (3x^{2}+5x)$
+
+        $商 : 2x+2, \quad 剰余 : -4$
+
+\columnbreak % 140
+
+\resetques
+
+  \item $(32x^{3}+88x^{2}-28x-32) \div (4x^{2}+9x-8)$
+
+        $商 : 8x+4, \quad 剰余 : x-6$
+
+  \item $(-45x^{3}-11x^{2}-31x+7) \div (9x^{2}+4x+7)$
+
+        $商 : -5x+1, \quad 剰余 : -x+8$
+
+  \item $(-8x^{3}-22x^{2}+9x+9) \div (4x^{2}+9x-9)$
+
+        $商 : -2x-1, \quad 剰余 : -6x+4$
+
+  \item $(-12x^{3}-16x^{2}+29x+7) \div (2x^{2}+5x+1)$
+
+        $商 : -6x+7, \quad 剰余 : -2$
+
+  \item $(-56x^{3}-79x^{2}-49x-5) \div (7x^{2}+9x+5)$
+
+        $商 : -8x-1, \quad 剰余 : 2x+2$
+
+\columnbreak % 145
+
+  \item $(-16x^{3}-74x^{2}-13x-18) \div (8x^{2}+x+2)$
+
+        $商 : -2x-9, \quad 剰余 : -6x$
+
+  \item $(12x^{3}-30x^{2}-84x-18) \div (2x^{2}-8x-2)$
+
+        $商 : 6x+9, \quad 剰余 : -x-3$
+
+  \item $(-10x^{3}+14x^{2}+46x+6) \div (5x^{2}+8x+1)$
+
+        $商 : -2x+6, \quad 剰余 : 5x+2$
+
+  \item $(-8x^{3}-31x^{2}-14x+21) \div (8x^{2}+7x-7)$
+
+        $商 : -x-3, \quad 剰余 : -7x-9$
+
+  \item $(24x^{3}-48x^{2}+42x) \div (4x^{2}-8x+7)$
+
+        $商 : 6x, \quad 剰余 : 5x-3$
+
+\columnbreak % 150
+
+\resetques
+
+  \item $(5x^{3}-19x^{2}-8x+16) \div (5x^{2}+x-4)$
+
+        $商 : x-4, \quad 剰余 : -9x-7$
+
+  \item $(9x^{3}-13x^{2}+76x-32) \div (x^{2}-x+8)$
+
+        $商 : 9x-4, \quad 剰余 : 3x+8$
+
+  \item $(-12x^{3}-10x^{2}+14x+8) \div (6x^{2}+2x-8)$
+
+        $商 : -2x-1, \quad 剰余 : 2x-8$
+
+  \item $(16x^{3}-52x^{2}+76x-72) \div (4x^{2}-5x+9)$
+
+        $商 : 4x-8, \quad 剰余 : 2x+7$
+
+  \item $(12x^{3}+28x^{2}+8x) \div (3x^{2}+x)$
+
+        $商 : 4x+8, \quad 剰余 : -6x-3$
+
+\columnbreak % 155
+
+  \item $(-2x^{3}+14x^{2}+37x-9) \div (2x^{2}+4x-1)$
+
+        $商 : -x+9, \quad 剰余 : 1$
+
+  \item $(25x^{3}+15x^{2}-69x+18) \div (5x^{2}+9x-3)$
+
+        $商 : 5x-6, \quad 剰余 : -3x+3$
+
+  \item $(-14x^{3}-3x^{2}+51x-14) \div (2x^{2}+x-7)$
+
+        $商 : -7x+2, \quad 剰余 : -6x-1$
+
+  \item $(8x^{3}-49x^{2}+70x-8) \div (x^{2}-6x+8)$
+
+        $商 : 8x-1, \quad 剰余 : 2x-6$
+
+  \item $(-12x^{3}-14x^{2}-36x-42) \div (2x^{2}+6)$
+
+        $商 : -6x-7, \quad 剰余 : -8x-9$
+
+\columnbreak % 160
+
+\resetques
+
+  \item $(-6x^{3}-50x^{2}-6x+28) \div (x^{2}+9x+7)$
+
+        $商 : -6x+4, \quad 剰余 : -9x-5$
+
+  \item $(-8x^{3}-16x^{2}+18x-18) \div (4x^{2}-4x+3)$
+
+        $商 : -2x-6, \quad 剰余 : 7x+2$
+
+  \item $(56x^{3}+107x^{2}+61x+10) \div (7x^{2}+9x+2)$
+
+        $商 : 8x+5, \quad 剰余 : 2x-1$
+
+  \item $(64x^{3}+72x^{2}-48x-56) \div (8x^{2}+x-7)$
+
+        $商 : 8x+8, \quad 剰余 : -x-3$
+
+  \item $(-48x^{3}+36x^{2}-24x+36) \div (8x^{2}+2x+6)$
+
+        $商 : -6x+6, \quad 剰余 : -9$
+
+\columnbreak % 165
+
+  \item $(20x^{3}-19x^{2}+8x-63) \div (5x^{2}+4x+9)$
+
+        $商 : 4x-7, \quad 剰余 : 8$
+
+  \item $(-36x^{3}-85x^{2}-27x-2) \div (4x^{2}+9x+2)$
+
+        $商 : -9x-1, \quad 剰余 : 7x+4$
+
+  \item $(-14x^{3}-61x^{2}-32x+35) \div (7x^{2}+6x-5)$
+
+        $商 : -2x-7, \quad 剰余 : 3x-8$
+
+  \item $(16x^{3}-48x^{2}+36x-40) \div (8x^{2}-4x+8)$
+
+        $商 : 2x-5, \quad 剰余 : 8x-2$
+
+  \item $(20x^{3}-10x^{2}+36x-18) \div (5x^{2}+9)$
+
+        $商 : 4x-2, \quad 剰余 : 5x+6$
+
+\columnbreak % 170
+
+\resetques
+
+  \item $(64x^{3}+8x^{2}-52x-20) \div (8x^{2}-4x-4)$
+
+        $商 : 8x+5, \quad 剰余 : -4x-8$
+
+  \item $(-4x^{3}+7x^{2}+14x+3) \div (4x^{2}+5x+1)$
+
+        $商 : -x+3, \quad 剰余 : 7x$
+
+  \item $(6x^{3}+36x^{2}+56x+32) \div (3x^{2}+6x+4)$
+
+        $商 : 2x+8, \quad 剰余 : -6x+2$
+
+  \item $(16x^{3}+42x^{2}+41x+21) \div (8x^{2}+9x+7)$
+
+        $商 : 2x+3, \quad 剰余 : -3x-2$
+
+  \item $(21x^{3}-66x^{2}+30x+36) \div (7x^{2}-8x-6)$
+
+        $商 : 3x-6, \quad 剰余 : -3x-3$
+
+\columnbreak % 175
+
+  \item $(-56x^{3}-10x^{2}+54x-12) \div (7x^{2}+3x-6)$
+
+        $商 : -8x+2, \quad 剰余 : 9x-5$
+
+  \item $(-x^{3}+8x-3) \div (x^{2}-3x+1)$
+
+        $商 : -x-3, \quad 剰余 : -2x+1$
+
+  \item $(-27x^{3}+54x^{2}+9x+28) \div (9x^{2}+3x+4)$
+
+        $商 : -3x+7, \quad 剰余 : -8x-3$
+
+  \item $(40x^{3}-101x^{2}+15x+54) \div (5x^{2}-7x-6)$
+
+        $商 : 8x-9, \quad 剰余 : -9x-7$
+
+  \item $(28x^{3}+17x^{2}-20x+63) \div (7x^{2}-8x+9)$
+
+        $商 : 4x+7, \quad 剰余 : -4x$
+
+\columnbreak % 180
+
+\resetques
+
+  \item $(16x^{3}-84x-40) \div (4x^{2}-8x-5)$
+
+        $商 : 4x+8, \quad 剰余 : 7x+2$
+
+  \item $(-64x^{3}+24x^{2}+54x) \div (8x^{2}+6x)$
+
+        $商 : -8x+9, \quad 剰余 : -9x-6$
+
+  \item $(81x^{3}+9x^{2}+3x-30) \div (9x^{2}+7x+5)$
+
+        $商 : 9x-6, \quad 剰余 : -3x-1$
+
+  \item $(-54x^{3}+84x^{2}-43x+6) \div (6x^{2}-8x+3)$
+
+        $商 : -9x+2, \quad 剰余 : 7x+5$
+
+  \item $(-36x^{3}-17x^{2}+18x+5) \div (9x^{2}+2x-5)$
+
+        $商 : -4x-1, \quad 剰余 : 2x$
+
+\columnbreak % 185
+
+  \item $(6x^{3}-43x^{2}+90x-48) \div (2x^{2}-9x+6)$
+
+        $商 : 3x-8, \quad 剰余 : -4x+6$
+
+  \item $(54x^{3}+18x^{2}-30x-10) \div (9x^{2}-5)$
+
+        $商 : 6x+2, \quad 剰余 : 7x-6$
+
+  \item $(18x^{3}+33x^{2}-42x+63) \div (6x^{2}-7x+7)$
+
+        $商 : 3x+9, \quad 剰余 : 2x+9$
+
+  \item $(63x^{3}-23x^{2}-65x-7) \div (7x^{2}-8x-1)$
+
+        $商 : 9x+7, \quad 剰余 : 7x-2$
+
+  \item $(64x^{3}+40x^{2}+50x-16) \div (8x^{2}+7x+8)$
+
+        $商 : 8x-2, \quad 剰余 : 4x-6$
+
+\columnbreak % 190
+
+\resetques
+
+  \item $(40x^{3}+54x^{2}-48x+8) \div (5x^{2}+8x-4)$
+
+        $商 : 8x-2, \quad 剰余 : -2$
+
+  \item $(32x^{3}+44x^{2}+x-5) \div (8x^{2}+x-1)$
+
+        $商 : 4x+5, \quad 剰余 : -8$
+
+  \item $(28x^{3}+20x^{2}-86x+18) \div (4x^{2}+8x-2)$
+
+        $商 : 7x-9, \quad 剰余 : x+4$
+
+  \item $(-14x^{3}-55x^{2}-35x-6) \div (2x^{2}+7x+2)$
+
+        $商 : -7x-3, \quad 剰余 : -2x-6$
+
+  \item $(-42x^{3}-34x^{2}+37x+24) \div (6x^{2}-2x-3)$
+
+        $商 : -7x-8, \quad 剰余 : 3x+5$
+
+\columnbreak % 195
+
+  \item $(6x^{3}-39x-30) \div (2x^{2}-4x-5)$
+
+        $商 : 3x+6, \quad 剰余 : $
+
+  \item $(-4x^{3}-16x^{2}-8x+12) \div (2x^{2}+2x-2)$
+
+        $商 : -2x-6, \quad 剰余 : 6x-2$
+
+  \item $(-30x^{3}+34x^{2}-40x+64) \div (5x^{2}+x+8)$
+
+        $商 : -6x+8, \quad 剰余 : x-9$
+
+  \item $(-24x^{3}+16x^{2}-32x) \div (3x^{2}-2x+4)$
+
+        $商 : -8x, \quad 剰余 : 4x-5$
+
+  \item $(24x^{3}+60x^{2}-16x-20) \div (3x^{2}+6x-5)$
+
+        $商 : 8x+4, \quad 剰余 : 9x+3$
+
+\end{enumerate}
+\end{multicols}

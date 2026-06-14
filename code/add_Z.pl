@@ -9,13 +9,13 @@ use Encode;
 require "./latex_code.pl";
 
 # 加法減法 整数
-my $num_eq = 1200; # 問題数
+my $num_eq = 1520; # 問題数
 my $num_rng = 100; # 数値幅
 
 # レイアウト
 my $layout_colmuns = 4; # 段組み数
-my $layout_breaks = 15; # 改行問題数
-my $hight_items = 10; # 改行間隔幅(pt)
+my $layout_breaks = 19; # 改行問題数
+my $hight_items = 1; # 改行間隔幅(pt)
 
 
 my @ques; # 問題用配列
@@ -64,7 +64,7 @@ for (1..$num_eq) {
     $ans = "=" . $ans;
 
     # 数式モード付与
-    $eq = '$' . $eq . '$';
+    $eq = '$' . $eq . '$' . "\n";
     $ans = '$' . $ans . '$';
 
     push @ques, $eq;

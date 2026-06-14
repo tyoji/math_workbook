@@ -9,11 +9,11 @@ use Encode;
 require "./latex_code.pl";
 
 
-# 乗法 複素数
+# 多項式 乗法
 
 # 問題生成 変数
 my $num_eq = 900; # 問題数
-my $num_rng = 10; # 数値幅
+my $num_rng = 9; # 数値幅
 
 # レイアウト 変数
 my $layout_colmuns = 3; # 段組み数
@@ -32,28 +32,23 @@ for (1..$num_eq) {
 
 
     # 問題の式 及び 解答
-    my ($int1,$int2,$int3,$int4) = gen_num(4, $num_rng, 0); # 数字生成
+    my @coeff = gen_num(4, $num_rng, 0); # 数字生成
 
-    $eq = "(" . trans_cplx($int1, $int2) . ")";
-
-    # 計算
-    my $flag = 1; # 0:加減, 1:乗
-
-    if ($flag == 0) {
-        if (rand(2) <1) {
-            $eq .= ' + ';
-            $ans = trans_cplx($int1 + $int3, $int2 + $int4);
-        } else {
-            $eq .= ' - ';
-            $ans = trans_cplx($int1 - $int3, $int2 - $int4);
-        }
+    if ($coeff[0] <0) { $coeff[0] *= -1; $coeff[2] *= -1; }
+    if ($coeff[1] <0) { $coeff[1] *= -1; $coeff[3] *= -1; }
+    if ( $coeff[0]==$coeff[1] && $coeff[2]==$coeff[3] ) {
+        $eq = "(" . trans_poly($coeff[0],$coeff[2]) . ')^{2}';
     } else {
-        $eq .= '';
-        $ans = trans_cplx($int1 * $int3 - $int2 * $int4, $int1 * $int4 + $int2 * $int3);
+        $eq = "(" . trans_poly($coeff[0],$coeff[2])
+            . ")(" . trans_poly($coeff[1],$coeff[3]) . ")";
     }
+    # 解答
+    $ans = trans_poly(
+        $coeff[0]*$coeff[1],
+        $coeff[0]*$coeff[3]+$coeff[1]*$coeff[2],
+        $coeff[2]*$coeff[3]
+        );
 
-
-    $eq .= "(" . trans_cplx($int3, $int4) . ")";
 
 
 
@@ -61,8 +56,8 @@ for (1..$num_eq) {
     $ans = "=" . $ans;
 
     # 数式モード付与
-    $eq = '$\displaystyle ' . $eq . '$' . "\n";
-    $ans = '$\displaystyle ' . $ans . '$';
+    $eq = '$' . $eq . '$' . "\n";
+    $ans = '$' . $ans . '$';
 
     push @ques, $eq;
     push @ans, $ans;

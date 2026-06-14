@@ -1,0 +1,5132 @@
+
+
+%%% perl code : polynomial_completing_the_square_alpha.pl
+
+\setcounter{quesnum}{30}
+
+\begin{multicols}{3}
+\begin{enumerate}
+  \itemsep=30pt
+  \item $3x^{2}-6x+8$
+
+        \phantom{$=3\left( x-1\right)^{2}+5$}
+
+  \item $2x^{2}-20x+52$
+
+        \phantom{$=2\left( x-5\right)^{2}+2$}
+
+  \item $-4x^{2}-32x-60$
+
+        \phantom{$=-4\left( x+4\right)^{2}+4$}
+
+  \item $-2x^{2}-4x$
+
+        \phantom{$=-2\left( x+1\right)^{2}+2$}
+
+  \item $-4x^{2}+8x-5$
+
+        \phantom{$=-4\left( x-1\right)^{2}-1$}
+
+  \item $-5x^{2}+50x-124$
+
+        \phantom{$=-5\left( x-5\right)^{2}+1$}
+
+  \item $-2x^{2}+8x-6$
+
+        \phantom{$=-2\left( x-2\right)^{2}+2$}
+
+  \item $-2x^{2}+4x-2$
+
+        \phantom{$=-2\left( x-1\right)^{2}$}
+
+  \item $-5x^{2}-20x-22$
+
+        \phantom{$=-5\left( x+2\right)^{2}-2$}
+
+  \item $-3x^{2}-18x-22$
+
+        \phantom{$=-3\left( x+3\right)^{2}+5$}
+
+\columnbreak % 10
+
+  \item $4x^{2}-40x+95$
+
+        \phantom{$=4\left( x-5\right)^{2}-5$}
+
+  \item $-4x^{2}+16x-17$
+
+        \phantom{$=-4\left( x-2\right)^{2}-1$}
+
+  \item $-x^{2}-10x-25$
+
+        \phantom{$=-\left( x+5\right)^{2}$}
+
+  \item $-2x^{2}-12x-21$
+
+        \phantom{$=-2\left( x+3\right)^{2}-3$}
+
+  \item $-3x^{2}+30x-80$
+
+        \phantom{$=-3\left( x-5\right)^{2}-5$}
+
+  \item $4x^{2}+8x+8$
+
+        \phantom{$=4\left( x+1\right)^{2}+4$}
+
+  \item $-3x^{2}-18x-30$
+
+        \phantom{$=-3\left( x+3\right)^{2}-3$}
+
+  \item $-4x^{2}+40x-101$
+
+        \phantom{$=-4\left( x-5\right)^{2}-1$}
+
+  \item $5x^{2}-50x+126$
+
+        \phantom{$=5\left( x-5\right)^{2}+1$}
+
+  \item $4x^{2}-32x+67$
+
+        \phantom{$=4\left( x-4\right)^{2}+3$}
+
+\columnbreak % 20
+
+  \item $x^{2}-10x+24$
+
+        \phantom{$=\left( x-5\right)^{2}-1$}
+
+  \item $4x^{2}-16x+14$
+
+        \phantom{$=4\left( x-2\right)^{2}-2$}
+
+  \item $3x^{2}+12x+8$
+
+        \phantom{$=3\left( x+2\right)^{2}-4$}
+
+  \item $-2x^{2}+20x-51$
+
+        \phantom{$=-2\left( x-5\right)^{2}-1$}
+
+  \item $-4x^{2}+8x-4$
+
+        \phantom{$=-4\left( x-1\right)^{2}$}
+
+  \item $-2x^{2}+8x-7$
+
+        \phantom{$=-2\left( x-2\right)^{2}+1$}
+
+  \item $5x^{2}+40x+83$
+
+        \phantom{$=5\left( x+4\right)^{2}+3$}
+
+  \item $-3x^{2}+24x-46$
+
+        \phantom{$=-3\left( x-4\right)^{2}+2$}
+
+  \item $x^{2}-10x+24$
+
+        \phantom{$=\left( x-5\right)^{2}-1$}
+
+  \item $2x^{2}-4x+5$
+
+        \phantom{$=2\left( x-1\right)^{2}+3$}
+
+\columnbreak % 30
+
+\resetques
+
+  \item $x^{2}-8x+14$
+
+        \phantom{$=\left( x-4\right)^{2}-2$}
+
+  \item $2x^{2}+16x+27$
+
+        \phantom{$=2\left( x+4\right)^{2}-5$}
+
+  \item $-5x^{2}+10x$
+
+        \phantom{$=-5\left( x-1\right)^{2}+5$}
+
+  \item $-2x^{2}-16x-37$
+
+        \phantom{$=-2\left( x+4\right)^{2}-5$}
+
+  \item $2x^{2}+4x+3$
+
+        \phantom{$=2\left( x+1\right)^{2}+1$}
+
+  \item $2x^{2}+4x+6$
+
+        \phantom{$=2\left( x+1\right)^{2}+4$}
+
+  \item $4x^{2}+32x+64$
+
+        \phantom{$=4\left( x+4\right)^{2}$}
+
+  \item $-3x^{2}+30x-72$
+
+        \phantom{$=-3\left( x-5\right)^{2}+3$}
+
+  \item $x^{2}-10x+23$
+
+        \phantom{$=\left( x-5\right)^{2}-2$}
+
+  \item $-2x^{2}-20x-45$
+
+        \phantom{$=-2\left( x+5\right)^{2}+5$}
+
+\columnbreak % 40
+
+  \item $3x^{2}+24x+46$
+
+        \phantom{$=3\left( x+4\right)^{2}-2$}
+
+  \item $5x^{2}+10x+7$
+
+        \phantom{$=5\left( x+1\right)^{2}+2$}
+
+  \item $5x^{2}-40x+83$
+
+        \phantom{$=5\left( x-4\right)^{2}+3$}
+
+  \item $3x^{2}+30x+74$
+
+        \phantom{$=3\left( x+5\right)^{2}-1$}
+
+  \item $x^{2}+8x+18$
+
+        \phantom{$=\left( x+4\right)^{2}+2$}
+
+  \item $-4x^{2}-40x-99$
+
+        \phantom{$=-4\left( x+5\right)^{2}+1$}
+
+  \item $5x^{2}-50x+127$
+
+        \phantom{$=5\left( x-5\right)^{2}+2$}
+
+  \item $-4x^{2}-16x-21$
+
+        \phantom{$=-4\left( x+2\right)^{2}-5$}
+
+  \item $-3x^{2}-24x-50$
+
+        \phantom{$=-3\left( x+4\right)^{2}-2$}
+
+  \item $-x^{2}+8x-12$
+
+        \phantom{$=-\left( x-4\right)^{2}+4$}
+
+\columnbreak % 50
+
+  \item $-x^{2}-6x-4$
+
+        \phantom{$=-\left( x+3\right)^{2}+5$}
+
+  \item $-5x^{2}-40x-75$
+
+        \phantom{$=-5\left( x+4\right)^{2}+5$}
+
+  \item $4x^{2}+40x+98$
+
+        \phantom{$=4\left( x+5\right)^{2}-2$}
+
+  \item $5x^{2}-50x+129$
+
+        \phantom{$=5\left( x-5\right)^{2}+4$}
+
+  \item $2x^{2}-16x+37$
+
+        \phantom{$=2\left( x-4\right)^{2}+5$}
+
+  \item $-3x^{2}-18x-23$
+
+        \phantom{$=-3\left( x+3\right)^{2}+4$}
+
+  \item $-2x^{2}+16x-32$
+
+        \phantom{$=-2\left( x-4\right)^{2}$}
+
+  \item $-3x^{2}+24x-44$
+
+        \phantom{$=-3\left( x-4\right)^{2}+4$}
+
+  \item $4x^{2}-8x+7$
+
+        \phantom{$=4\left( x-1\right)^{2}+3$}
+
+  \item $2x^{2}-4x-3$
+
+        \phantom{$=2\left( x-1\right)^{2}-5$}
+
+\columnbreak % 60
+
+\resetques
+
+  \item $x^{2}-4x$
+
+        \phantom{$=\left( x-2\right)^{2}-4$}
+
+  \item $-2x^{2}-12x-19$
+
+        \phantom{$=-2\left( x+3\right)^{2}-1$}
+
+  \item $3x^{2}+24x+50$
+
+        \phantom{$=3\left( x+4\right)^{2}+2$}
+
+  \item $x^{2}-2x-1$
+
+        \phantom{$=\left( x-1\right)^{2}-2$}
+
+  \item $-x^{2}+2x-4$
+
+        \phantom{$=-\left( x-1\right)^{2}-3$}
+
+  \item $2x^{2}+8x+12$
+
+        \phantom{$=2\left( x+2\right)^{2}+4$}
+
+  \item $-x^{2}+6x-7$
+
+        \phantom{$=-\left( x-3\right)^{2}+2$}
+
+  \item $3x^{2}-30x+78$
+
+        \phantom{$=3\left( x-5\right)^{2}+3$}
+
+  \item $3x^{2}-18x+25$
+
+        \phantom{$=3\left( x-3\right)^{2}-2$}
+
+  \item $3x^{2}-24x+50$
+
+        \phantom{$=3\left( x-4\right)^{2}+2$}
+
+\columnbreak % 70
+
+  \item $2x^{2}-12x+19$
+
+        \phantom{$=2\left( x-3\right)^{2}+1$}
+
+  \item $-5x^{2}+30x-40$
+
+        \phantom{$=-5\left( x-3\right)^{2}+5$}
+
+  \item $-5x^{2}-10x-4$
+
+        \phantom{$=-5\left( x+1\right)^{2}+1$}
+
+  \item $3x^{2}-18x+26$
+
+        \phantom{$=3\left( x-3\right)^{2}-1$}
+
+  \item $3x^{2}+6x$
+
+        \phantom{$=3\left( x+1\right)^{2}-3$}
+
+  \item $-2x^{2}+8x-12$
+
+        \phantom{$=-2\left( x-2\right)^{2}-4$}
+
+  \item $-5x^{2}+30x-44$
+
+        \phantom{$=-5\left( x-3\right)^{2}+1$}
+
+  \item $2x^{2}+8x+5$
+
+        \phantom{$=2\left( x+2\right)^{2}-3$}
+
+  \item $-2x^{2}+12x-13$
+
+        \phantom{$=-2\left( x-3\right)^{2}+5$}
+
+  \item $2x^{2}+16x+31$
+
+        \phantom{$=2\left( x+4\right)^{2}-1$}
+
+\columnbreak % 80
+
+  \item $-x^{2}+4x-6$
+
+        \phantom{$=-\left( x-2\right)^{2}-2$}
+
+  \item $5x^{2}+50x+128$
+
+        \phantom{$=5\left( x+5\right)^{2}+3$}
+
+  \item $3x^{2}-18x+32$
+
+        \phantom{$=3\left( x-3\right)^{2}+5$}
+
+  \item $5x^{2}+50x+128$
+
+        \phantom{$=5\left( x+5\right)^{2}+3$}
+
+  \item $-x^{2}-4x+1$
+
+        \phantom{$=-\left( x+2\right)^{2}+5$}
+
+  \item $-x^{2}-6x-5$
+
+        \phantom{$=-\left( x+3\right)^{2}+4$}
+
+  \item $-4x^{2}-32x-63$
+
+        \phantom{$=-4\left( x+4\right)^{2}+1$}
+
+  \item $3x^{2}-12x+14$
+
+        \phantom{$=3\left( x-2\right)^{2}+2$}
+
+  \item $-3x^{2}-24x-44$
+
+        \phantom{$=-3\left( x+4\right)^{2}+4$}
+
+  \item $4x^{2}-40x+96$
+
+        \phantom{$=4\left( x-5\right)^{2}-4$}
+
+\columnbreak % 90
+
+\resetques
+
+  \item $-4x^{2}+40x-97$
+
+        \phantom{$=-4\left( x-5\right)^{2}+3$}
+
+  \item $4x^{2}-24x+31$
+
+        \phantom{$=4\left( x-3\right)^{2}-5$}
+
+  \item $-5x^{2}-30x-42$
+
+        \phantom{$=-5\left( x+3\right)^{2}+3$}
+
+  \item $-2x^{2}-4x-6$
+
+        \phantom{$=-2\left( x+1\right)^{2}-4$}
+
+  \item $5x^{2}-50x+128$
+
+        \phantom{$=5\left( x-5\right)^{2}+3$}
+
+  \item $x^{2}+2x-2$
+
+        \phantom{$=\left( x+1\right)^{2}-3$}
+
+  \item $-3x^{2}-24x-43$
+
+        \phantom{$=-3\left( x+4\right)^{2}+5$}
+
+  \item $-3x^{2}-24x-53$
+
+        \phantom{$=-3\left( x+4\right)^{2}-5$}
+
+  \item $x^{2}-4x+5$
+
+        \phantom{$=\left( x-2\right)^{2}+1$}
+
+  \item $5x^{2}+10x+7$
+
+        \phantom{$=5\left( x+1\right)^{2}+2$}
+
+\columnbreak % 100
+
+  \item $-5x^{2}-40x-80$
+
+        \phantom{$=-5\left( x+4\right)^{2}$}
+
+  \item $4x^{2}-8x+2$
+
+        \phantom{$=4\left( x-1\right)^{2}-2$}
+
+  \item $-5x^{2}+30x-43$
+
+        \phantom{$=-5\left( x-3\right)^{2}+2$}
+
+  \item $4x^{2}-16x+11$
+
+        \phantom{$=4\left( x-2\right)^{2}-5$}
+
+  \item $x^{2}+10x+26$
+
+        \phantom{$=\left( x+5\right)^{2}+1$}
+
+  \item $-2x^{2}+12x-19$
+
+        \phantom{$=-2\left( x-3\right)^{2}-1$}
+
+  \item $5x^{2}-40x+81$
+
+        \phantom{$=5\left( x-4\right)^{2}+1$}
+
+  \item $2x^{2}+16x+36$
+
+        \phantom{$=2\left( x+4\right)^{2}+4$}
+
+  \item $-4x^{2}+40x-96$
+
+        \phantom{$=-4\left( x-5\right)^{2}+4$}
+
+  \item $x^{2}-4x+9$
+
+        \phantom{$=\left( x-2\right)^{2}+5$}
+
+\columnbreak % 110
+
+  \item $x^{2}-8x+21$
+
+        \phantom{$=\left( x-4\right)^{2}+5$}
+
+  \item $-4x^{2}-8x+1$
+
+        \phantom{$=-4\left( x+1\right)^{2}+5$}
+
+  \item $-2x^{2}-20x-46$
+
+        \phantom{$=-2\left( x+5\right)^{2}+4$}
+
+  \item $-2x^{2}+8x-13$
+
+        \phantom{$=-2\left( x-2\right)^{2}-5$}
+
+  \item $5x^{2}-50x+127$
+
+        \phantom{$=5\left( x-5\right)^{2}+2$}
+
+  \item $3x^{2}-30x+76$
+
+        \phantom{$=3\left( x-5\right)^{2}+1$}
+
+  \item $2x^{2}-4x-3$
+
+        \phantom{$=2\left( x-1\right)^{2}-5$}
+
+  \item $3x^{2}+18x+26$
+
+        \phantom{$=3\left( x+3\right)^{2}-1$}
+
+  \item $4x^{2}-32x+63$
+
+        \phantom{$=4\left( x-4\right)^{2}-1$}
+
+  \item $2x^{2}-8x+3$
+
+        \phantom{$=2\left( x-2\right)^{2}-5$}
+
+\columnbreak % 120
+
+\resetques
+
+  \item $-4x^{2}+16x-13$
+
+        \phantom{$=-4\left( x-2\right)^{2}+3$}
+
+  \item $2x^{2}-20x+46$
+
+        \phantom{$=2\left( x-5\right)^{2}-4$}
+
+  \item $-x^{2}+6x-8$
+
+        \phantom{$=-\left( x-3\right)^{2}+1$}
+
+  \item $2x^{2}+12x+22$
+
+        \phantom{$=2\left( x+3\right)^{2}+4$}
+
+  \item $-3x^{2}+30x-76$
+
+        \phantom{$=-3\left( x-5\right)^{2}-1$}
+
+  \item $-2x^{2}-12x-22$
+
+        \phantom{$=-2\left( x+3\right)^{2}-4$}
+
+  \item $3x^{2}-24x+44$
+
+        \phantom{$=3\left( x-4\right)^{2}-4$}
+
+  \item $x^{2}-10x+22$
+
+        \phantom{$=\left( x-5\right)^{2}-3$}
+
+  \item $-2x^{2}-20x-52$
+
+        \phantom{$=-2\left( x+5\right)^{2}-2$}
+
+  \item $x^{2}+4x+1$
+
+        \phantom{$=\left( x+2\right)^{2}-3$}
+
+\columnbreak % 130
+
+  \item $-x^{2}+4x-2$
+
+        \phantom{$=-\left( x-2\right)^{2}+2$}
+
+  \item $2x^{2}-4x-2$
+
+        \phantom{$=2\left( x-1\right)^{2}-4$}
+
+  \item $-x^{2}-6x-8$
+
+        \phantom{$=-\left( x+3\right)^{2}+1$}
+
+  \item $-x^{2}+6x-5$
+
+        \phantom{$=-\left( x-3\right)^{2}+4$}
+
+  \item $-3x^{2}+12x-15$
+
+        \phantom{$=-3\left( x-2\right)^{2}-3$}
+
+  \item $-x^{2}-10x-22$
+
+        \phantom{$=-\left( x+5\right)^{2}+3$}
+
+  \item $-3x^{2}+6x-8$
+
+        \phantom{$=-3\left( x-1\right)^{2}-5$}
+
+  \item $-3x^{2}+24x-43$
+
+        \phantom{$=-3\left( x-4\right)^{2}+5$}
+
+  \item $-x^{2}+2x-6$
+
+        \phantom{$=-\left( x-1\right)^{2}-5$}
+
+  \item $-3x^{2}-30x-73$
+
+        \phantom{$=-3\left( x+5\right)^{2}+2$}
+
+\columnbreak % 140
+
+  \item $-4x^{2}-40x-97$
+
+        \phantom{$=-4\left( x+5\right)^{2}+3$}
+
+  \item $-x^{2}-4x-4$
+
+        \phantom{$=-\left( x+2\right)^{2}$}
+
+  \item $-2x^{2}+12x-23$
+
+        \phantom{$=-2\left( x-3\right)^{2}-5$}
+
+  \item $-3x^{2}-12x-16$
+
+        \phantom{$=-3\left( x+2\right)^{2}-4$}
+
+  \item $-2x^{2}+8x-13$
+
+        \phantom{$=-2\left( x-2\right)^{2}-5$}
+
+  \item $x^{2}+4x+7$
+
+        \phantom{$=\left( x+2\right)^{2}+3$}
+
+  \item $-4x^{2}-40x-104$
+
+        \phantom{$=-4\left( x+5\right)^{2}-4$}
+
+  \item $5x^{2}+40x+79$
+
+        \phantom{$=5\left( x+4\right)^{2}-1$}
+
+  \item $3x^{2}+6x+3$
+
+        \phantom{$=3\left( x+1\right)^{2}$}
+
+  \item $-3x^{2}+30x-75$
+
+        \phantom{$=-3\left( x-5\right)^{2}$}
+
+\columnbreak % 150
+
+\resetques
+
+  \item $-3x^{2}+18x-28$
+
+        \phantom{$=-3\left( x-3\right)^{2}-1$}
+
+  \item $-2x^{2}+4x-1$
+
+        \phantom{$=-2\left( x-1\right)^{2}+1$}
+
+  \item $-x^{2}-4x+1$
+
+        \phantom{$=-\left( x+2\right)^{2}+5$}
+
+  \item $2x^{2}+16x+33$
+
+        \phantom{$=2\left( x+4\right)^{2}+1$}
+
+  \item $4x^{2}+32x+63$
+
+        \phantom{$=4\left( x+4\right)^{2}-1$}
+
+  \item $-x^{2}-6x-6$
+
+        \phantom{$=-\left( x+3\right)^{2}+3$}
+
+  \item $4x^{2}-24x+37$
+
+        \phantom{$=4\left( x-3\right)^{2}+1$}
+
+  \item $5x^{2}+50x+128$
+
+        \phantom{$=5\left( x+5\right)^{2}+3$}
+
+  \item $4x^{2}+24x+33$
+
+        \phantom{$=4\left( x+3\right)^{2}-3$}
+
+  \item $4x^{2}-8x-1$
+
+        \phantom{$=4\left( x-1\right)^{2}-5$}
+
+\columnbreak % 160
+
+  \item $-2x^{2}+12x-20$
+
+        \phantom{$=-2\left( x-3\right)^{2}-2$}
+
+  \item $x^{2}+2x+5$
+
+        \phantom{$=\left( x+1\right)^{2}+4$}
+
+  \item $-4x^{2}-8x-2$
+
+        \phantom{$=-4\left( x+1\right)^{2}+2$}
+
+  \item $3x^{2}-18x+23$
+
+        \phantom{$=3\left( x-3\right)^{2}-4$}
+
+  \item $2x^{2}-12x+18$
+
+        \phantom{$=2\left( x-3\right)^{2}$}
+
+  \item $-2x^{2}+16x-36$
+
+        \phantom{$=-2\left( x-4\right)^{2}-4$}
+
+  \item $2x^{2}-12x+17$
+
+        \phantom{$=2\left( x-3\right)^{2}-1$}
+
+  \item $-4x^{2}-24x-38$
+
+        \phantom{$=-4\left( x+3\right)^{2}-2$}
+
+  \item $2x^{2}+16x+37$
+
+        \phantom{$=2\left( x+4\right)^{2}+5$}
+
+  \item $5x^{2}-40x+83$
+
+        \phantom{$=5\left( x-4\right)^{2}+3$}
+
+\columnbreak % 170
+
+  \item $5x^{2}+10x+3$
+
+        \phantom{$=5\left( x+1\right)^{2}-2$}
+
+  \item $-2x^{2}+20x-53$
+
+        \phantom{$=-2\left( x-5\right)^{2}-3$}
+
+  \item $-x^{2}-6x-9$
+
+        \phantom{$=-\left( x+3\right)^{2}$}
+
+  \item $2x^{2}-12x+23$
+
+        \phantom{$=2\left( x-3\right)^{2}+5$}
+
+  \item $-x^{2}-10x-21$
+
+        \phantom{$=-\left( x+5\right)^{2}+4$}
+
+  \item $5x^{2}+20x+24$
+
+        \phantom{$=5\left( x+2\right)^{2}+4$}
+
+  \item $2x^{2}+12x+20$
+
+        \phantom{$=2\left( x+3\right)^{2}+2$}
+
+  \item $-5x^{2}+20x-21$
+
+        \phantom{$=-5\left( x-2\right)^{2}-1$}
+
+  \item $-x^{2}+10x-25$
+
+        \phantom{$=-\left( x-5\right)^{2}$}
+
+  \item $-x^{2}+10x-22$
+
+        \phantom{$=-\left( x-5\right)^{2}+3$}
+
+\columnbreak % 180
+
+\resetques
+
+  \item $-5x^{2}+20x-18$
+
+        \phantom{$=-5\left( x-2\right)^{2}+2$}
+
+  \item $-3x^{2}-30x-75$
+
+        \phantom{$=-3\left( x+5\right)^{2}$}
+
+  \item $x^{2}+6x+10$
+
+        \phantom{$=\left( x+3\right)^{2}+1$}
+
+  \item $3x^{2}+6x+5$
+
+        \phantom{$=3\left( x+1\right)^{2}+2$}
+
+  \item $-2x^{2}+12x-15$
+
+        \phantom{$=-2\left( x-3\right)^{2}+3$}
+
+  \item $-x^{2}-4x-1$
+
+        \phantom{$=-\left( x+2\right)^{2}+3$}
+
+  \item $-x^{2}+6x-6$
+
+        \phantom{$=-\left( x-3\right)^{2}+3$}
+
+  \item $-3x^{2}+18x-30$
+
+        \phantom{$=-3\left( x-3\right)^{2}-3$}
+
+  \item $-x^{2}-8x-21$
+
+        \phantom{$=-\left( x+4\right)^{2}-5$}
+
+  \item $-3x^{2}+12x-7$
+
+        \phantom{$=-3\left( x-2\right)^{2}+5$}
+
+\columnbreak % 190
+
+  \item $2x^{2}-16x+32$
+
+        \phantom{$=2\left( x-4\right)^{2}$}
+
+  \item $-2x^{2}+4x-6$
+
+        \phantom{$=-2\left( x-1\right)^{2}-4$}
+
+  \item $x^{2}-10x+30$
+
+        \phantom{$=\left( x-5\right)^{2}+5$}
+
+  \item $2x^{2}-4x$
+
+        \phantom{$=2\left( x-1\right)^{2}-2$}
+
+  \item $3x^{2}+12x+12$
+
+        \phantom{$=3\left( x+2\right)^{2}$}
+
+  \item $x^{2}+6x+14$
+
+        \phantom{$=\left( x+3\right)^{2}+5$}
+
+  \item $4x^{2}-32x+59$
+
+        \phantom{$=4\left( x-4\right)^{2}-5$}
+
+  \item $5x^{2}-50x+125$
+
+        \phantom{$=5\left( x-5\right)^{2}$}
+
+  \item $4x^{2}+16x+11$
+
+        \phantom{$=4\left( x+2\right)^{2}-5$}
+
+  \item $4x^{2}+40x+97$
+
+        \phantom{$=4\left( x+5\right)^{2}-3$}
+
+\columnbreak % 200
+
+  \item $3x^{2}-6x+5$
+
+        \phantom{$=3\left( x-1\right)^{2}+2$}
+
+  \item $5x^{2}-30x+50$
+
+        \phantom{$=5\left( x-3\right)^{2}+5$}
+
+  \item $5x^{2}-40x+81$
+
+        \phantom{$=5\left( x-4\right)^{2}+1$}
+
+  \item $-5x^{2}-10x-2$
+
+        \phantom{$=-5\left( x+1\right)^{2}+3$}
+
+  \item $-5x^{2}-20x-17$
+
+        \phantom{$=-5\left( x+2\right)^{2}+3$}
+
+  \item $-4x^{2}-32x-68$
+
+        \phantom{$=-4\left( x+4\right)^{2}-4$}
+
+  \item $-2x^{2}-16x-34$
+
+        \phantom{$=-2\left( x+4\right)^{2}-2$}
+
+  \item $-3x^{2}-6x+1$
+
+        \phantom{$=-3\left( x+1\right)^{2}+4$}
+
+  \item $5x^{2}-10x$
+
+        \phantom{$=5\left( x-1\right)^{2}-5$}
+
+  \item $3x^{2}+6x+8$
+
+        \phantom{$=3\left( x+1\right)^{2}+5$}
+
+\columnbreak % 210
+
+\resetques
+
+  \item $-5x^{2}+40x-78$
+
+        \phantom{$=-5\left( x-4\right)^{2}+2$}
+
+  \item $-2x^{2}+20x-51$
+
+        \phantom{$=-2\left( x-5\right)^{2}-1$}
+
+  \item $2x^{2}-4x+6$
+
+        \phantom{$=2\left( x-1\right)^{2}+4$}
+
+  \item $-5x^{2}-50x-128$
+
+        \phantom{$=-5\left( x+5\right)^{2}-3$}
+
+  \item $-5x^{2}-50x-120$
+
+        \phantom{$=-5\left( x+5\right)^{2}+5$}
+
+  \item $5x^{2}+10x+7$
+
+        \phantom{$=5\left( x+1\right)^{2}+2$}
+
+  \item $-3x^{2}-30x-72$
+
+        \phantom{$=-3\left( x+5\right)^{2}+3$}
+
+  \item $5x^{2}+30x+50$
+
+        \phantom{$=5\left( x+3\right)^{2}+5$}
+
+  \item $-x^{2}-2x-5$
+
+        \phantom{$=-\left( x+1\right)^{2}-4$}
+
+  \item $-2x^{2}-16x-35$
+
+        \phantom{$=-2\left( x+4\right)^{2}-3$}
+
+\columnbreak % 220
+
+  \item $-2x^{2}-16x-33$
+
+        \phantom{$=-2\left( x+4\right)^{2}-1$}
+
+  \item $-2x^{2}+8x-4$
+
+        \phantom{$=-2\left( x-2\right)^{2}+4$}
+
+  \item $-3x^{2}-12x-9$
+
+        \phantom{$=-3\left( x+2\right)^{2}+3$}
+
+  \item $3x^{2}-6x-2$
+
+        \phantom{$=3\left( x-1\right)^{2}-5$}
+
+  \item $3x^{2}+6x+5$
+
+        \phantom{$=3\left( x+1\right)^{2}+2$}
+
+  \item $-x^{2}+4x-4$
+
+        \phantom{$=-\left( x-2\right)^{2}$}
+
+  \item $x^{2}+2x+5$
+
+        \phantom{$=\left( x+1\right)^{2}+4$}
+
+  \item $3x^{2}+30x+78$
+
+        \phantom{$=3\left( x+5\right)^{2}+3$}
+
+  \item $-x^{2}-8x-21$
+
+        \phantom{$=-\left( x+4\right)^{2}-5$}
+
+  \item $-5x^{2}+50x-125$
+
+        \phantom{$=-5\left( x-5\right)^{2}$}
+
+\columnbreak % 230
+
+  \item $-3x^{2}+24x-45$
+
+        \phantom{$=-3\left( x-4\right)^{2}+3$}
+
+  \item $x^{2}+4x+7$
+
+        \phantom{$=\left( x+2\right)^{2}+3$}
+
+  \item $-x^{2}-8x-19$
+
+        \phantom{$=-\left( x+4\right)^{2}-3$}
+
+  \item $x^{2}+2x+3$
+
+        \phantom{$=\left( x+1\right)^{2}+2$}
+
+  \item $-5x^{2}-40x-75$
+
+        \phantom{$=-5\left( x+4\right)^{2}+5$}
+
+  \item $5x^{2}-50x+128$
+
+        \phantom{$=5\left( x-5\right)^{2}+3$}
+
+  \item $-x^{2}+10x-27$
+
+        \phantom{$=-\left( x-5\right)^{2}-2$}
+
+  \item $4x^{2}-40x+105$
+
+        \phantom{$=4\left( x-5\right)^{2}+5$}
+
+  \item $x^{2}+8x+19$
+
+        \phantom{$=\left( x+4\right)^{2}+3$}
+
+  \item $x^{2}+6x+9$
+
+        \phantom{$=\left( x+3\right)^{2}$}
+
+\columnbreak % 240
+
+\resetques
+
+  \item $-5x^{2}+50x-121$
+
+        \phantom{$=-5\left( x-5\right)^{2}+4$}
+
+  \item $-5x^{2}+10x-3$
+
+        \phantom{$=-5\left( x-1\right)^{2}+2$}
+
+  \item $3x^{2}-30x+71$
+
+        \phantom{$=3\left( x-5\right)^{2}-4$}
+
+  \item $-2x^{2}+4x$
+
+        \phantom{$=-2\left( x-1\right)^{2}+2$}
+
+  \item $-4x^{2}-40x-100$
+
+        \phantom{$=-4\left( x+5\right)^{2}$}
+
+  \item $-2x^{2}+4x+3$
+
+        \phantom{$=-2\left( x-1\right)^{2}+5$}
+
+  \item $4x^{2}+16x+13$
+
+        \phantom{$=4\left( x+2\right)^{2}-3$}
+
+  \item $4x^{2}-8x+4$
+
+        \phantom{$=4\left( x-1\right)^{2}$}
+
+  \item $4x^{2}+8x+6$
+
+        \phantom{$=4\left( x+1\right)^{2}+2$}
+
+  \item $-5x^{2}+10x-7$
+
+        \phantom{$=-5\left( x-1\right)^{2}-2$}
+
+\columnbreak % 250
+
+  \item $-x^{2}+2x$
+
+        \phantom{$=-\left( x-1\right)^{2}+1$}
+
+  \item $4x^{2}+32x+61$
+
+        \phantom{$=4\left( x+4\right)^{2}-3$}
+
+  \item $x^{2}+10x+28$
+
+        \phantom{$=\left( x+5\right)^{2}+3$}
+
+  \item $5x^{2}+40x+80$
+
+        \phantom{$=5\left( x+4\right)^{2}$}
+
+  \item $-x^{2}-2x+3$
+
+        \phantom{$=-\left( x+1\right)^{2}+4$}
+
+  \item $x^{2}+8x+18$
+
+        \phantom{$=\left( x+4\right)^{2}+2$}
+
+  \item $3x^{2}+12x+14$
+
+        \phantom{$=3\left( x+2\right)^{2}+2$}
+
+  \item $x^{2}+8x+20$
+
+        \phantom{$=\left( x+4\right)^{2}+4$}
+
+  \item $x^{2}-10x+27$
+
+        \phantom{$=\left( x-5\right)^{2}+2$}
+
+  \item $-4x^{2}-24x-33$
+
+        \phantom{$=-4\left( x+3\right)^{2}+3$}
+
+\columnbreak % 260
+
+  \item $4x^{2}+16x+11$
+
+        \phantom{$=4\left( x+2\right)^{2}-5$}
+
+  \item $-4x^{2}-32x-68$
+
+        \phantom{$=-4\left( x+4\right)^{2}-4$}
+
+  \item $-4x^{2}-32x-69$
+
+        \phantom{$=-4\left( x+4\right)^{2}-5$}
+
+  \item $4x^{2}-24x+41$
+
+        \phantom{$=4\left( x-3\right)^{2}+5$}
+
+  \item $-5x^{2}+10x-7$
+
+        \phantom{$=-5\left( x-1\right)^{2}-2$}
+
+  \item $-3x^{2}+12x-16$
+
+        \phantom{$=-3\left( x-2\right)^{2}-4$}
+
+  \item $3x^{2}-6x+5$
+
+        \phantom{$=3\left( x-1\right)^{2}+2$}
+
+  \item $5x^{2}-40x+80$
+
+        \phantom{$=5\left( x-4\right)^{2}$}
+
+  \item $-2x^{2}-20x-48$
+
+        \phantom{$=-2\left( x+5\right)^{2}+2$}
+
+  \item $-4x^{2}-40x-98$
+
+        \phantom{$=-4\left( x+5\right)^{2}+2$}
+
+\columnbreak % 270
+
+\resetques
+
+  \item $-x^{2}-8x-16$
+
+        \phantom{$=-\left( x+4\right)^{2}$}
+
+  \item $3x^{2}+18x+30$
+
+        \phantom{$=3\left( x+3\right)^{2}+3$}
+
+  \item $3x^{2}+12x+14$
+
+        \phantom{$=3\left( x+2\right)^{2}+2$}
+
+  \item $-2x^{2}-12x-22$
+
+        \phantom{$=-2\left( x+3\right)^{2}-4$}
+
+  \item $-x^{2}+8x-17$
+
+        \phantom{$=-\left( x-4\right)^{2}-1$}
+
+  \item $-5x^{2}+30x-43$
+
+        \phantom{$=-5\left( x-3\right)^{2}+2$}
+
+  \item $-x^{2}+6x-9$
+
+        \phantom{$=-\left( x-3\right)^{2}$}
+
+  \item $2x^{2}-20x+45$
+
+        \phantom{$=2\left( x-5\right)^{2}-5$}
+
+  \item $-5x^{2}-30x-47$
+
+        \phantom{$=-5\left( x+3\right)^{2}-2$}
+
+  \item $-2x^{2}-20x-50$
+
+        \phantom{$=-2\left( x+5\right)^{2}$}
+
+\columnbreak % 280
+
+  \item $-5x^{2}-20x-20$
+
+        \phantom{$=-5\left( x+2\right)^{2}$}
+
+  \item $-3x^{2}-18x-32$
+
+        \phantom{$=-3\left( x+3\right)^{2}-5$}
+
+  \item $3x^{2}-6x-2$
+
+        \phantom{$=3\left( x-1\right)^{2}-5$}
+
+  \item $x^{2}+4x+9$
+
+        \phantom{$=\left( x+2\right)^{2}+5$}
+
+  \item $-3x^{2}+24x-52$
+
+        \phantom{$=-3\left( x-4\right)^{2}-4$}
+
+  \item $x^{2}+6x+6$
+
+        \phantom{$=\left( x+3\right)^{2}-3$}
+
+  \item $-5x^{2}+40x-75$
+
+        \phantom{$=-5\left( x-4\right)^{2}+5$}
+
+  \item $-x^{2}-10x-28$
+
+        \phantom{$=-\left( x+5\right)^{2}-3$}
+
+  \item $x^{2}+2x-4$
+
+        \phantom{$=\left( x+1\right)^{2}-5$}
+
+  \item $-2x^{2}+8x-4$
+
+        \phantom{$=-2\left( x-2\right)^{2}+4$}
+
+\columnbreak % 290
+
+  \item $-4x^{2}+24x-36$
+
+        \phantom{$=-4\left( x-3\right)^{2}$}
+
+  \item $5x^{2}-30x+43$
+
+        \phantom{$=5\left( x-3\right)^{2}-2$}
+
+  \item $-4x^{2}-24x-34$
+
+        \phantom{$=-4\left( x+3\right)^{2}+2$}
+
+  \item $-x^{2}-4x-1$
+
+        \phantom{$=-\left( x+2\right)^{2}+3$}
+
+  \item $5x^{2}-10x+4$
+
+        \phantom{$=5\left( x-1\right)^{2}-1$}
+
+  \item $5x^{2}-10x+7$
+
+        \phantom{$=5\left( x-1\right)^{2}+2$}
+
+  \item $-2x^{2}-12x-20$
+
+        \phantom{$=-2\left( x+3\right)^{2}-2$}
+
+  \item $5x^{2}+10x$
+
+        \phantom{$=5\left( x+1\right)^{2}-5$}
+
+  \item $5x^{2}-30x+43$
+
+        \phantom{$=5\left( x-3\right)^{2}-2$}
+
+  \item $x^{2}-8x+15$
+
+        \phantom{$=\left( x-4\right)^{2}-1$}
+
+\columnbreak % 300
+
+\resetques
+
+  \item $5x^{2}+50x+120$
+
+        \phantom{$=5\left( x+5\right)^{2}-5$}
+
+  \item $-2x^{2}+16x-35$
+
+        \phantom{$=-2\left( x-4\right)^{2}-3$}
+
+  \item $-3x^{2}+6x+2$
+
+        \phantom{$=-3\left( x-1\right)^{2}+5$}
+
+  \item $-2x^{2}-12x-17$
+
+        \phantom{$=-2\left( x+3\right)^{2}+1$}
+
+  \item $3x^{2}+6x-1$
+
+        \phantom{$=3\left( x+1\right)^{2}-4$}
+
+  \item $-5x^{2}-10x-4$
+
+        \phantom{$=-5\left( x+1\right)^{2}+1$}
+
+  \item $4x^{2}-40x+104$
+
+        \phantom{$=4\left( x-5\right)^{2}+4$}
+
+  \item $-4x^{2}-8x-5$
+
+        \phantom{$=-4\left( x+1\right)^{2}-1$}
+
+  \item $-x^{2}-2x-4$
+
+        \phantom{$=-\left( x+1\right)^{2}-3$}
+
+  \item $x^{2}-8x+15$
+
+        \phantom{$=\left( x-4\right)^{2}-1$}
+
+\columnbreak % 310
+
+  \item $-5x^{2}+20x-24$
+
+        \phantom{$=-5\left( x-2\right)^{2}-4$}
+
+  \item $3x^{2}-18x+25$
+
+        \phantom{$=3\left( x-3\right)^{2}-2$}
+
+  \item $3x^{2}+30x+80$
+
+        \phantom{$=3\left( x+5\right)^{2}+5$}
+
+  \item $4x^{2}-40x+100$
+
+        \phantom{$=4\left( x-5\right)^{2}$}
+
+  \item $5x^{2}-40x+79$
+
+        \phantom{$=5\left( x-4\right)^{2}-1$}
+
+  \item $2x^{2}+12x+22$
+
+        \phantom{$=2\left( x+3\right)^{2}+4$}
+
+  \item $2x^{2}-16x+29$
+
+        \phantom{$=2\left( x-4\right)^{2}-3$}
+
+  \item $-4x^{2}-32x-62$
+
+        \phantom{$=-4\left( x+4\right)^{2}+2$}
+
+  \item $3x^{2}+24x+50$
+
+        \phantom{$=3\left( x+4\right)^{2}+2$}
+
+  \item $5x^{2}-50x+123$
+
+        \phantom{$=5\left( x-5\right)^{2}-2$}
+
+\columnbreak % 320
+
+  \item $-x^{2}+10x-25$
+
+        \phantom{$=-\left( x-5\right)^{2}$}
+
+  \item $5x^{2}-30x+41$
+
+        \phantom{$=5\left( x-3\right)^{2}-4$}
+
+  \item $x^{2}-6x+8$
+
+        \phantom{$=\left( x-3\right)^{2}-1$}
+
+  \item $-3x^{2}+12x-17$
+
+        \phantom{$=-3\left( x-2\right)^{2}-5$}
+
+  \item $-4x^{2}+40x-105$
+
+        \phantom{$=-4\left( x-5\right)^{2}-5$}
+
+  \item $-4x^{2}+40x-95$
+
+        \phantom{$=-4\left( x-5\right)^{2}+5$}
+
+  \item $-2x^{2}-16x-30$
+
+        \phantom{$=-2\left( x+4\right)^{2}+2$}
+
+  \item $-2x^{2}-20x-48$
+
+        \phantom{$=-2\left( x+5\right)^{2}+2$}
+
+  \item $-3x^{2}-12x-14$
+
+        \phantom{$=-3\left( x+2\right)^{2}-2$}
+
+  \item $-3x^{2}+24x-44$
+
+        \phantom{$=-3\left( x-4\right)^{2}+4$}
+
+\columnbreak % 330
+
+\resetques
+
+  \item $x^{2}-6x+11$
+
+        \phantom{$=\left( x-3\right)^{2}+2$}
+
+  \item $-3x^{2}+6x-4$
+
+        \phantom{$=-3\left( x-1\right)^{2}-1$}
+
+  \item $2x^{2}-12x+18$
+
+        \phantom{$=2\left( x-3\right)^{2}$}
+
+  \item $-5x^{2}+40x-79$
+
+        \phantom{$=-5\left( x-4\right)^{2}+1$}
+
+  \item $-3x^{2}+24x-43$
+
+        \phantom{$=-3\left( x-4\right)^{2}+5$}
+
+  \item $-3x^{2}+18x-28$
+
+        \phantom{$=-3\left( x-3\right)^{2}-1$}
+
+  \item $2x^{2}-4x+4$
+
+        \phantom{$=2\left( x-1\right)^{2}+2$}
+
+  \item $-5x^{2}+40x-80$
+
+        \phantom{$=-5\left( x-4\right)^{2}$}
+
+  \item $-3x^{2}+12x-8$
+
+        \phantom{$=-3\left( x-2\right)^{2}+4$}
+
+  \item $5x^{2}+10x+9$
+
+        \phantom{$=5\left( x+1\right)^{2}+4$}
+
+\columnbreak % 340
+
+  \item $x^{2}+2x-1$
+
+        \phantom{$=\left( x+1\right)^{2}-2$}
+
+  \item $-4x^{2}-24x-35$
+
+        \phantom{$=-4\left( x+3\right)^{2}+1$}
+
+  \item $5x^{2}+10x+9$
+
+        \phantom{$=5\left( x+1\right)^{2}+4$}
+
+  \item $-3x^{2}+6x$
+
+        \phantom{$=-3\left( x-1\right)^{2}+3$}
+
+  \item $x^{2}-10x+21$
+
+        \phantom{$=\left( x-5\right)^{2}-4$}
+
+  \item $4x^{2}-40x+101$
+
+        \phantom{$=4\left( x-5\right)^{2}+1$}
+
+  \item $-5x^{2}-10x-8$
+
+        \phantom{$=-5\left( x+1\right)^{2}-3$}
+
+  \item $5x^{2}-50x+122$
+
+        \phantom{$=5\left( x-5\right)^{2}-3$}
+
+  \item $-2x^{2}+8x-5$
+
+        \phantom{$=-2\left( x-2\right)^{2}+3$}
+
+  \item $2x^{2}-8x+11$
+
+        \phantom{$=2\left( x-2\right)^{2}+3$}
+
+\columnbreak % 350
+
+  \item $-2x^{2}+12x-17$
+
+        \phantom{$=-2\left( x-3\right)^{2}+1$}
+
+  \item $5x^{2}+50x+130$
+
+        \phantom{$=5\left( x+5\right)^{2}+5$}
+
+  \item $2x^{2}+16x+33$
+
+        \phantom{$=2\left( x+4\right)^{2}+1$}
+
+  \item $-x^{2}+6x-12$
+
+        \phantom{$=-\left( x-3\right)^{2}-3$}
+
+  \item $3x^{2}+24x+49$
+
+        \phantom{$=3\left( x+4\right)^{2}+1$}
+
+  \item $-2x^{2}+4x+3$
+
+        \phantom{$=-2\left( x-1\right)^{2}+5$}
+
+  \item $2x^{2}-4x+6$
+
+        \phantom{$=2\left( x-1\right)^{2}+4$}
+
+  \item $2x^{2}-8x+10$
+
+        \phantom{$=2\left( x-2\right)^{2}+2$}
+
+  \item $x^{2}-8x+19$
+
+        \phantom{$=\left( x-4\right)^{2}+3$}
+
+  \item $3x^{2}+6x+8$
+
+        \phantom{$=3\left( x+1\right)^{2}+5$}
+
+\columnbreak % 360
+
+\resetques
+
+  \item $-4x^{2}-16x-14$
+
+        \phantom{$=-4\left( x+2\right)^{2}+2$}
+
+  \item $-2x^{2}-20x-52$
+
+        \phantom{$=-2\left( x+5\right)^{2}-2$}
+
+  \item $4x^{2}-32x+67$
+
+        \phantom{$=4\left( x-4\right)^{2}+3$}
+
+  \item $5x^{2}-30x+40$
+
+        \phantom{$=5\left( x-3\right)^{2}-5$}
+
+  \item $-3x^{2}+24x-52$
+
+        \phantom{$=-3\left( x-4\right)^{2}-4$}
+
+  \item $x^{2}+6x+14$
+
+        \phantom{$=\left( x+3\right)^{2}+5$}
+
+  \item $3x^{2}-24x+45$
+
+        \phantom{$=3\left( x-4\right)^{2}-3$}
+
+  \item $5x^{2}+40x+84$
+
+        \phantom{$=5\left( x+4\right)^{2}+4$}
+
+  \item $-3x^{2}+6x$
+
+        \phantom{$=-3\left( x-1\right)^{2}+3$}
+
+  \item $-3x^{2}+30x-77$
+
+        \phantom{$=-3\left( x-5\right)^{2}-2$}
+
+\columnbreak % 370
+
+  \item $-4x^{2}+32x-63$
+
+        \phantom{$=-4\left( x-4\right)^{2}+1$}
+
+  \item $4x^{2}+32x+67$
+
+        \phantom{$=4\left( x+4\right)^{2}+3$}
+
+  \item $-2x^{2}-16x-33$
+
+        \phantom{$=-2\left( x+4\right)^{2}-1$}
+
+  \item $3x^{2}+12x+15$
+
+        \phantom{$=3\left( x+2\right)^{2}+3$}
+
+  \item $3x^{2}+18x+28$
+
+        \phantom{$=3\left( x+3\right)^{2}+1$}
+
+  \item $2x^{2}+16x+27$
+
+        \phantom{$=2\left( x+4\right)^{2}-5$}
+
+  \item $-5x^{2}+20x-18$
+
+        \phantom{$=-5\left( x-2\right)^{2}+2$}
+
+  \item $-5x^{2}-20x-19$
+
+        \phantom{$=-5\left( x+2\right)^{2}+1$}
+
+  \item $-5x^{2}+50x-129$
+
+        \phantom{$=-5\left( x-5\right)^{2}-4$}
+
+  \item $-3x^{2}-6x+2$
+
+        \phantom{$=-3\left( x+1\right)^{2}+5$}
+
+\columnbreak % 380
+
+  \item $x^{2}+4x+2$
+
+        \phantom{$=\left( x+2\right)^{2}-2$}
+
+  \item $4x^{2}-8x+3$
+
+        \phantom{$=4\left( x-1\right)^{2}-1$}
+
+  \item $-5x^{2}+50x-128$
+
+        \phantom{$=-5\left( x-5\right)^{2}-3$}
+
+  \item $3x^{2}-30x+78$
+
+        \phantom{$=3\left( x-5\right)^{2}+3$}
+
+  \item $3x^{2}-18x+25$
+
+        \phantom{$=3\left( x-3\right)^{2}-2$}
+
+  \item $x^{2}-10x+24$
+
+        \phantom{$=\left( x-5\right)^{2}-1$}
+
+  \item $5x^{2}+50x+122$
+
+        \phantom{$=5\left( x+5\right)^{2}-3$}
+
+  \item $2x^{2}+8x+3$
+
+        \phantom{$=2\left( x+2\right)^{2}-5$}
+
+  \item $5x^{2}+30x+45$
+
+        \phantom{$=5\left( x+3\right)^{2}$}
+
+  \item $-x^{2}-4x-7$
+
+        \phantom{$=-\left( x+2\right)^{2}-3$}
+
+\columnbreak % 390
+
+\resetques
+
+  \item $x^{2}-10x+26$
+
+        \phantom{$=\left( x-5\right)^{2}+1$}
+
+  \item $-2x^{2}-8x-11$
+
+        \phantom{$=-2\left( x+2\right)^{2}-3$}
+
+  \item $2x^{2}-12x+18$
+
+        \phantom{$=2\left( x-3\right)^{2}$}
+
+  \item $4x^{2}+40x+100$
+
+        \phantom{$=4\left( x+5\right)^{2}$}
+
+  \item $5x^{2}+10x+2$
+
+        \phantom{$=5\left( x+1\right)^{2}-3$}
+
+  \item $-5x^{2}+40x-82$
+
+        \phantom{$=-5\left( x-4\right)^{2}-2$}
+
+  \item $-x^{2}+4x+1$
+
+        \phantom{$=-\left( x-2\right)^{2}+5$}
+
+  \item $4x^{2}+16x+18$
+
+        \phantom{$=4\left( x+2\right)^{2}+2$}
+
+  \item $-5x^{2}-20x-23$
+
+        \phantom{$=-5\left( x+2\right)^{2}-3$}
+
+  \item $-2x^{2}+12x-17$
+
+        \phantom{$=-2\left( x-3\right)^{2}+1$}
+
+\columnbreak % 400
+
+  \item $x^{2}+2x-3$
+
+        \phantom{$=\left( x+1\right)^{2}-4$}
+
+  \item $2x^{2}+16x+32$
+
+        \phantom{$=2\left( x+4\right)^{2}$}
+
+  \item $-2x^{2}+12x-22$
+
+        \phantom{$=-2\left( x-3\right)^{2}-4$}
+
+  \item $4x^{2}-32x+61$
+
+        \phantom{$=4\left( x-4\right)^{2}-3$}
+
+  \item $-x^{2}-6x-5$
+
+        \phantom{$=-\left( x+3\right)^{2}+4$}
+
+  \item $-3x^{2}-18x-32$
+
+        \phantom{$=-3\left( x+3\right)^{2}-5$}
+
+  \item $5x^{2}+50x+123$
+
+        \phantom{$=5\left( x+5\right)^{2}-2$}
+
+  \item $3x^{2}-6x+4$
+
+        \phantom{$=3\left( x-1\right)^{2}+1$}
+
+  \item $-5x^{2}+40x-80$
+
+        \phantom{$=-5\left( x-4\right)^{2}$}
+
+  \item $-5x^{2}-20x-15$
+
+        \phantom{$=-5\left( x+2\right)^{2}+5$}
+
+\columnbreak % 410
+
+  \item $x^{2}-2x+5$
+
+        \phantom{$=\left( x-1\right)^{2}+4$}
+
+  \item $5x^{2}+20x+20$
+
+        \phantom{$=5\left( x+2\right)^{2}$}
+
+  \item $-4x^{2}-8x-1$
+
+        \phantom{$=-4\left( x+1\right)^{2}+3$}
+
+  \item $-5x^{2}-10x-4$
+
+        \phantom{$=-5\left( x+1\right)^{2}+1$}
+
+  \item $-3x^{2}+6x+1$
+
+        \phantom{$=-3\left( x-1\right)^{2}+4$}
+
+  \item $-5x^{2}-40x-83$
+
+        \phantom{$=-5\left( x+4\right)^{2}-3$}
+
+  \item $-x^{2}+2x$
+
+        \phantom{$=-\left( x-1\right)^{2}+1$}
+
+  \item $2x^{2}+8x+12$
+
+        \phantom{$=2\left( x+2\right)^{2}+4$}
+
+  \item $4x^{2}+8x+6$
+
+        \phantom{$=4\left( x+1\right)^{2}+2$}
+
+  \item $2x^{2}-20x+47$
+
+        \phantom{$=2\left( x-5\right)^{2}-3$}
+
+\columnbreak % 420
+
+\resetques
+
+  \item $3x^{2}+12x+16$
+
+        \phantom{$=3\left( x+2\right)^{2}+4$}
+
+  \item $-x^{2}-8x-15$
+
+        \phantom{$=-\left( x+4\right)^{2}+1$}
+
+  \item $5x^{2}+40x+75$
+
+        \phantom{$=5\left( x+4\right)^{2}-5$}
+
+  \item $3x^{2}+18x+29$
+
+        \phantom{$=3\left( x+3\right)^{2}+2$}
+
+  \item $-3x^{2}+24x-46$
+
+        \phantom{$=-3\left( x-4\right)^{2}+2$}
+
+  \item $-5x^{2}+30x-48$
+
+        \phantom{$=-5\left( x-3\right)^{2}-3$}
+
+  \item $-5x^{2}-20x-21$
+
+        \phantom{$=-5\left( x+2\right)^{2}-1$}
+
+  \item $x^{2}-10x+27$
+
+        \phantom{$=\left( x-5\right)^{2}+2$}
+
+  \item $2x^{2}+12x+22$
+
+        \phantom{$=2\left( x+3\right)^{2}+4$}
+
+  \item $x^{2}+8x+20$
+
+        \phantom{$=\left( x+4\right)^{2}+4$}
+
+\columnbreak % 430
+
+  \item $2x^{2}+12x+13$
+
+        \phantom{$=2\left( x+3\right)^{2}-5$}
+
+  \item $-4x^{2}+24x-34$
+
+        \phantom{$=-4\left( x-3\right)^{2}+2$}
+
+  \item $x^{2}+4x-1$
+
+        \phantom{$=\left( x+2\right)^{2}-5$}
+
+  \item $2x^{2}+16x+35$
+
+        \phantom{$=2\left( x+4\right)^{2}+3$}
+
+  \item $4x^{2}+40x+101$
+
+        \phantom{$=4\left( x+5\right)^{2}+1$}
+
+  \item $4x^{2}+8x+7$
+
+        \phantom{$=4\left( x+1\right)^{2}+3$}
+
+  \item $5x^{2}-50x+124$
+
+        \phantom{$=5\left( x-5\right)^{2}-1$}
+
+  \item $-5x^{2}+40x-75$
+
+        \phantom{$=-5\left( x-4\right)^{2}+5$}
+
+  \item $x^{2}-6x+10$
+
+        \phantom{$=\left( x-3\right)^{2}+1$}
+
+  \item $-5x^{2}-10x-1$
+
+        \phantom{$=-5\left( x+1\right)^{2}+4$}
+
+\columnbreak % 440
+
+  \item $x^{2}+2x+3$
+
+        \phantom{$=\left( x+1\right)^{2}+2$}
+
+  \item $4x^{2}+32x+59$
+
+        \phantom{$=4\left( x+4\right)^{2}-5$}
+
+  \item $2x^{2}-4x-1$
+
+        \phantom{$=2\left( x-1\right)^{2}-3$}
+
+  \item $2x^{2}-4x+1$
+
+        \phantom{$=2\left( x-1\right)^{2}-1$}
+
+  \item $x^{2}+10x+26$
+
+        \phantom{$=\left( x+5\right)^{2}+1$}
+
+  \item $-5x^{2}-10x-5$
+
+        \phantom{$=-5\left( x+1\right)^{2}$}
+
+  \item $4x^{2}-32x+61$
+
+        \phantom{$=4\left( x-4\right)^{2}-3$}
+
+  \item $x^{2}-10x+30$
+
+        \phantom{$=\left( x-5\right)^{2}+5$}
+
+  \item $3x^{2}+18x+29$
+
+        \phantom{$=3\left( x+3\right)^{2}+2$}
+
+  \item $3x^{2}-24x+48$
+
+        \phantom{$=3\left( x-4\right)^{2}$}
+
+\columnbreak % 450
+
+\resetques
+
+  \item $4x^{2}-40x+97$
+
+        \phantom{$=4\left( x-5\right)^{2}-3$}
+
+  \item $-x^{2}+10x-22$
+
+        \phantom{$=-\left( x-5\right)^{2}+3$}
+
+  \item $-5x^{2}-30x-45$
+
+        \phantom{$=-5\left( x+3\right)^{2}$}
+
+  \item $x^{2}+4x+9$
+
+        \phantom{$=\left( x+2\right)^{2}+5$}
+
+  \item $4x^{2}+32x+65$
+
+        \phantom{$=4\left( x+4\right)^{2}+1$}
+
+  \item $5x^{2}+30x+46$
+
+        \phantom{$=5\left( x+3\right)^{2}+1$}
+
+  \item $-5x^{2}+50x-122$
+
+        \phantom{$=-5\left( x-5\right)^{2}+3$}
+
+  \item $-2x^{2}-8x-9$
+
+        \phantom{$=-2\left( x+2\right)^{2}-1$}
+
+  \item $x^{2}+8x+18$
+
+        \phantom{$=\left( x+4\right)^{2}+2$}
+
+  \item $-x^{2}-4x-3$
+
+        \phantom{$=-\left( x+2\right)^{2}+1$}
+
+\columnbreak % 460
+
+  \item $4x^{2}+40x+103$
+
+        \phantom{$=4\left( x+5\right)^{2}+3$}
+
+  \item $-2x^{2}+12x-18$
+
+        \phantom{$=-2\left( x-3\right)^{2}$}
+
+  \item $-4x^{2}+16x-18$
+
+        \phantom{$=-4\left( x-2\right)^{2}-2$}
+
+  \item $3x^{2}+24x+46$
+
+        \phantom{$=3\left( x+4\right)^{2}-2$}
+
+  \item $5x^{2}+10x+3$
+
+        \phantom{$=5\left( x+1\right)^{2}-2$}
+
+  \item $x^{2}-4x+2$
+
+        \phantom{$=\left( x-2\right)^{2}-2$}
+
+  \item $-5x^{2}-40x-84$
+
+        \phantom{$=-5\left( x+4\right)^{2}-4$}
+
+  \item $x^{2}-6x+4$
+
+        \phantom{$=\left( x-3\right)^{2}-5$}
+
+  \item $4x^{2}-32x+68$
+
+        \phantom{$=4\left( x-4\right)^{2}+4$}
+
+  \item $-2x^{2}+12x-21$
+
+        \phantom{$=-2\left( x-3\right)^{2}-3$}
+
+\columnbreak % 470
+
+  \item $5x^{2}-10x+10$
+
+        \phantom{$=5\left( x-1\right)^{2}+5$}
+
+  \item $-2x^{2}+4x-2$
+
+        \phantom{$=-2\left( x-1\right)^{2}$}
+
+  \item $-2x^{2}-20x-46$
+
+        \phantom{$=-2\left( x+5\right)^{2}+4$}
+
+  \item $x^{2}+2x+6$
+
+        \phantom{$=\left( x+1\right)^{2}+5$}
+
+  \item $x^{2}-4x+8$
+
+        \phantom{$=\left( x-2\right)^{2}+4$}
+
+  \item $5x^{2}-10x$
+
+        \phantom{$=5\left( x-1\right)^{2}-5$}
+
+  \item $-5x^{2}+10x-5$
+
+        \phantom{$=-5\left( x-1\right)^{2}$}
+
+  \item $-5x^{2}-40x-75$
+
+        \phantom{$=-5\left( x+4\right)^{2}+5$}
+
+  \item $-x^{2}+2x-1$
+
+        \phantom{$=-\left( x-1\right)^{2}$}
+
+  \item $x^{2}-2x-1$
+
+        \phantom{$=\left( x-1\right)^{2}-2$}
+
+\columnbreak % 480
+
+\resetques
+
+  \item $-3x^{2}-18x-24$
+
+        \phantom{$=-3\left( x+3\right)^{2}+3$}
+
+  \item $-5x^{2}+50x-129$
+
+        \phantom{$=-5\left( x-5\right)^{2}-4$}
+
+  \item $-4x^{2}+32x-60$
+
+        \phantom{$=-4\left( x-4\right)^{2}+4$}
+
+  \item $-5x^{2}+50x-126$
+
+        \phantom{$=-5\left( x-5\right)^{2}-1$}
+
+  \item $3x^{2}+18x+22$
+
+        \phantom{$=3\left( x+3\right)^{2}-5$}
+
+  \item $-2x^{2}-8x-6$
+
+        \phantom{$=-2\left( x+2\right)^{2}+2$}
+
+  \item $x^{2}+4x+6$
+
+        \phantom{$=\left( x+2\right)^{2}+2$}
+
+  \item $-2x^{2}+4x-3$
+
+        \phantom{$=-2\left( x-1\right)^{2}-1$}
+
+  \item $-4x^{2}+16x-19$
+
+        \phantom{$=-4\left( x-2\right)^{2}-3$}
+
+  \item $3x^{2}+6x-2$
+
+        \phantom{$=3\left( x+1\right)^{2}-5$}
+
+\columnbreak % 490
+
+  \item $-4x^{2}+24x-40$
+
+        \phantom{$=-4\left( x-3\right)^{2}-4$}
+
+  \item $-4x^{2}+32x-61$
+
+        \phantom{$=-4\left( x-4\right)^{2}+3$}
+
+  \item $-4x^{2}+8x-2$
+
+        \phantom{$=-4\left( x-1\right)^{2}+2$}
+
+  \item $3x^{2}-12x+9$
+
+        \phantom{$=3\left( x-2\right)^{2}-3$}
+
+  \item $x^{2}-2x+1$
+
+        \phantom{$=\left( x-1\right)^{2}$}
+
+  \item $-4x^{2}-8x$
+
+        \phantom{$=-4\left( x+1\right)^{2}+4$}
+
+  \item $-4x^{2}+24x-35$
+
+        \phantom{$=-4\left( x-3\right)^{2}+1$}
+
+  \item $-2x^{2}+8x-4$
+
+        \phantom{$=-2\left( x-2\right)^{2}+4$}
+
+  \item $2x^{2}-20x+55$
+
+        \phantom{$=2\left( x-5\right)^{2}+5$}
+
+  \item $-4x^{2}-16x-16$
+
+        \phantom{$=-4\left( x+2\right)^{2}$}
+
+\columnbreak % 500
+
+  \item $4x^{2}+24x+36$
+
+        \phantom{$=4\left( x+3\right)^{2}$}
+
+  \item $2x^{2}+16x+34$
+
+        \phantom{$=2\left( x+4\right)^{2}+2$}
+
+  \item $5x^{2}-50x+129$
+
+        \phantom{$=5\left( x-5\right)^{2}+4$}
+
+  \item $3x^{2}-24x+53$
+
+        \phantom{$=3\left( x-4\right)^{2}+5$}
+
+  \item $-2x^{2}+20x-53$
+
+        \phantom{$=-2\left( x-5\right)^{2}-3$}
+
+  \item $-5x^{2}+20x-15$
+
+        \phantom{$=-5\left( x-2\right)^{2}+5$}
+
+  \item $-x^{2}-2x$
+
+        \phantom{$=-\left( x+1\right)^{2}+1$}
+
+  \item $-x^{2}-6x-12$
+
+        \phantom{$=-\left( x+3\right)^{2}-3$}
+
+  \item $-3x^{2}+30x-70$
+
+        \phantom{$=-3\left( x-5\right)^{2}+5$}
+
+  \item $4x^{2}-40x+103$
+
+        \phantom{$=4\left( x-5\right)^{2}+3$}
+
+\columnbreak % 510
+
+\resetques
+
+  \item $x^{2}-6x+5$
+
+        \phantom{$=\left( x-3\right)^{2}-4$}
+
+  \item $-2x^{2}-12x-23$
+
+        \phantom{$=-2\left( x+3\right)^{2}-5$}
+
+  \item $2x^{2}-12x+23$
+
+        \phantom{$=2\left( x-3\right)^{2}+5$}
+
+  \item $-4x^{2}+24x-35$
+
+        \phantom{$=-4\left( x-3\right)^{2}+1$}
+
+  \item $5x^{2}+50x+122$
+
+        \phantom{$=5\left( x+5\right)^{2}-3$}
+
+  \item $-4x^{2}-40x-101$
+
+        \phantom{$=-4\left( x+5\right)^{2}-1$}
+
+  \item $-4x^{2}-24x-35$
+
+        \phantom{$=-4\left( x+3\right)^{2}+1$}
+
+  \item $-x^{2}-8x-21$
+
+        \phantom{$=-\left( x+4\right)^{2}-5$}
+
+  \item $5x^{2}-20x+19$
+
+        \phantom{$=5\left( x-2\right)^{2}-1$}
+
+  \item $-3x^{2}-30x-78$
+
+        \phantom{$=-3\left( x+5\right)^{2}-3$}
+
+\columnbreak % 520
+
+  \item $5x^{2}-10x+2$
+
+        \phantom{$=5\left( x-1\right)^{2}-3$}
+
+  \item $4x^{2}+24x+41$
+
+        \phantom{$=4\left( x+3\right)^{2}+5$}
+
+  \item $-x^{2}-4x+1$
+
+        \phantom{$=-\left( x+2\right)^{2}+5$}
+
+  \item $-x^{2}-8x-15$
+
+        \phantom{$=-\left( x+4\right)^{2}+1$}
+
+  \item $-x^{2}+2x+4$
+
+        \phantom{$=-\left( x-1\right)^{2}+5$}
+
+  \item $x^{2}+8x+20$
+
+        \phantom{$=\left( x+4\right)^{2}+4$}
+
+  \item $-2x^{2}+16x-34$
+
+        \phantom{$=-2\left( x-4\right)^{2}-2$}
+
+  \item $-3x^{2}-30x-75$
+
+        \phantom{$=-3\left( x+5\right)^{2}$}
+
+  \item $5x^{2}-20x+19$
+
+        \phantom{$=5\left( x-2\right)^{2}-1$}
+
+  \item $2x^{2}+20x+51$
+
+        \phantom{$=2\left( x+5\right)^{2}+1$}
+
+\columnbreak % 530
+
+  \item $x^{2}+2x-2$
+
+        \phantom{$=\left( x+1\right)^{2}-3$}
+
+  \item $-3x^{2}+24x-43$
+
+        \phantom{$=-3\left( x-4\right)^{2}+5$}
+
+  \item $x^{2}-8x+17$
+
+        \phantom{$=\left( x-4\right)^{2}+1$}
+
+  \item $-5x^{2}-10x-9$
+
+        \phantom{$=-5\left( x+1\right)^{2}-4$}
+
+  \item $5x^{2}-30x+40$
+
+        \phantom{$=5\left( x-3\right)^{2}-5$}
+
+  \item $x^{2}+10x+30$
+
+        \phantom{$=\left( x+5\right)^{2}+5$}
+
+  \item $-x^{2}+8x-21$
+
+        \phantom{$=-\left( x-4\right)^{2}-5$}
+
+  \item $-5x^{2}+20x-17$
+
+        \phantom{$=-5\left( x-2\right)^{2}+3$}
+
+  \item $-5x^{2}-50x-122$
+
+        \phantom{$=-5\left( x+5\right)^{2}+3$}
+
+  \item $5x^{2}-10x+7$
+
+        \phantom{$=5\left( x-1\right)^{2}+2$}
+
+\columnbreak % 540
+
+\resetques
+
+  \item $-4x^{2}+24x-38$
+
+        \phantom{$=-4\left( x-3\right)^{2}-2$}
+
+  \item $-5x^{2}+30x-49$
+
+        \phantom{$=-5\left( x-3\right)^{2}-4$}
+
+  \item $4x^{2}-32x+67$
+
+        \phantom{$=4\left( x-4\right)^{2}+3$}
+
+  \item $4x^{2}-8x+1$
+
+        \phantom{$=4\left( x-1\right)^{2}-3$}
+
+  \item $4x^{2}-16x+13$
+
+        \phantom{$=4\left( x-2\right)^{2}-3$}
+
+  \item $x^{2}+4x+6$
+
+        \phantom{$=\left( x+2\right)^{2}+2$}
+
+  \item $-3x^{2}-24x-43$
+
+        \phantom{$=-3\left( x+4\right)^{2}+5$}
+
+  \item $-3x^{2}-24x-46$
+
+        \phantom{$=-3\left( x+4\right)^{2}+2$}
+
+  \item $5x^{2}-50x+124$
+
+        \phantom{$=5\left( x-5\right)^{2}-1$}
+
+  \item $4x^{2}-40x+102$
+
+        \phantom{$=4\left( x-5\right)^{2}+2$}
+
+\columnbreak % 550
+
+  \item $3x^{2}+12x+14$
+
+        \phantom{$=3\left( x+2\right)^{2}+2$}
+
+  \item $-4x^{2}+32x-63$
+
+        \phantom{$=-4\left( x-4\right)^{2}+1$}
+
+  \item $-5x^{2}-40x-85$
+
+        \phantom{$=-5\left( x+4\right)^{2}-5$}
+
+  \item $x^{2}-6x+5$
+
+        \phantom{$=\left( x-3\right)^{2}-4$}
+
+  \item $4x^{2}-24x+40$
+
+        \phantom{$=4\left( x-3\right)^{2}+4$}
+
+  \item $-2x^{2}-4x-5$
+
+        \phantom{$=-2\left( x+1\right)^{2}-3$}
+
+  \item $5x^{2}-50x+125$
+
+        \phantom{$=5\left( x-5\right)^{2}$}
+
+  \item $-x^{2}-4x-4$
+
+        \phantom{$=-\left( x+2\right)^{2}$}
+
+  \item $3x^{2}-24x+47$
+
+        \phantom{$=3\left( x-4\right)^{2}-1$}
+
+  \item $2x^{2}-8x+3$
+
+        \phantom{$=2\left( x-2\right)^{2}-5$}
+
+\columnbreak % 560
+
+  \item $4x^{2}-8x+7$
+
+        \phantom{$=4\left( x-1\right)^{2}+3$}
+
+  \item $-4x^{2}-40x-96$
+
+        \phantom{$=-4\left( x+5\right)^{2}+4$}
+
+  \item $4x^{2}+40x+105$
+
+        \phantom{$=4\left( x+5\right)^{2}+5$}
+
+  \item $2x^{2}-12x+19$
+
+        \phantom{$=2\left( x-3\right)^{2}+1$}
+
+  \item $3x^{2}-12x+11$
+
+        \phantom{$=3\left( x-2\right)^{2}-1$}
+
+  \item $5x^{2}+20x+22$
+
+        \phantom{$=5\left( x+2\right)^{2}+2$}
+
+  \item $3x^{2}-6x+8$
+
+        \phantom{$=3\left( x-1\right)^{2}+5$}
+
+  \item $x^{2}+10x+29$
+
+        \phantom{$=\left( x+5\right)^{2}+4$}
+
+  \item $3x^{2}-18x+23$
+
+        \phantom{$=3\left( x-3\right)^{2}-4$}
+
+  \item $-2x^{2}+20x-47$
+
+        \phantom{$=-2\left( x-5\right)^{2}+3$}
+
+\columnbreak % 570
+
+\resetques
+
+  \item $-4x^{2}-8x-8$
+
+        \phantom{$=-4\left( x+1\right)^{2}-4$}
+
+  \item $x^{2}-8x+16$
+
+        \phantom{$=\left( x-4\right)^{2}$}
+
+  \item $x^{2}-8x+12$
+
+        \phantom{$=\left( x-4\right)^{2}-4$}
+
+  \item $-5x^{2}+50x-128$
+
+        \phantom{$=-5\left( x-5\right)^{2}-3$}
+
+  \item $2x^{2}-4x-1$
+
+        \phantom{$=2\left( x-1\right)^{2}-3$}
+
+  \item $3x^{2}-24x+49$
+
+        \phantom{$=3\left( x-4\right)^{2}+1$}
+
+  \item $-2x^{2}-4x-2$
+
+        \phantom{$=-2\left( x+1\right)^{2}$}
+
+  \item $2x^{2}+8x+7$
+
+        \phantom{$=2\left( x+2\right)^{2}-1$}
+
+  \item $-x^{2}-2x-4$
+
+        \phantom{$=-\left( x+1\right)^{2}-3$}
+
+  \item $3x^{2}-6x+5$
+
+        \phantom{$=3\left( x-1\right)^{2}+2$}
+
+\columnbreak % 580
+
+  \item $5x^{2}-20x+16$
+
+        \phantom{$=5\left( x-2\right)^{2}-4$}
+
+  \item $2x^{2}+12x+17$
+
+        \phantom{$=2\left( x+3\right)^{2}-1$}
+
+  \item $-3x^{2}+6x-1$
+
+        \phantom{$=-3\left( x-1\right)^{2}+2$}
+
+  \item $-5x^{2}-50x-125$
+
+        \phantom{$=-5\left( x+5\right)^{2}$}
+
+  \item $2x^{2}-20x+45$
+
+        \phantom{$=2\left( x-5\right)^{2}-5$}
+
+  \item $3x^{2}+12x+14$
+
+        \phantom{$=3\left( x+2\right)^{2}+2$}
+
+  \item $4x^{2}-32x+63$
+
+        \phantom{$=4\left( x-4\right)^{2}-1$}
+
+  \item $-5x^{2}-40x-83$
+
+        \phantom{$=-5\left( x+4\right)^{2}-3$}
+
+  \item $-3x^{2}+24x-47$
+
+        \phantom{$=-3\left( x-4\right)^{2}+1$}
+
+  \item $5x^{2}-50x+130$
+
+        \phantom{$=5\left( x-5\right)^{2}+5$}
+
+\columnbreak % 590
+
+  \item $-3x^{2}+6x-7$
+
+        \phantom{$=-3\left( x-1\right)^{2}-4$}
+
+  \item $x^{2}+10x+28$
+
+        \phantom{$=\left( x+5\right)^{2}+3$}
+
+  \item $5x^{2}+40x+78$
+
+        \phantom{$=5\left( x+4\right)^{2}-2$}
+
+  \item $-3x^{2}-12x-9$
+
+        \phantom{$=-3\left( x+2\right)^{2}+3$}
+
+  \item $3x^{2}+30x+78$
+
+        \phantom{$=3\left( x+5\right)^{2}+3$}
+
+  \item $-2x^{2}-12x-15$
+
+        \phantom{$=-2\left( x+3\right)^{2}+3$}
+
+  \item $-2x^{2}+20x-54$
+
+        \phantom{$=-2\left( x-5\right)^{2}-4$}
+
+  \item $4x^{2}+24x+36$
+
+        \phantom{$=4\left( x+3\right)^{2}$}
+
+  \item $-5x^{2}+40x-82$
+
+        \phantom{$=-5\left( x-4\right)^{2}-2$}
+
+  \item $-2x^{2}+16x-31$
+
+        \phantom{$=-2\left( x-4\right)^{2}+1$}
+
+\end{enumerate}
+\end{multicols}
+
+\newpage
+\resetdrill
+
+\begin{multicols}{3}
+\begin{enumerate}
+  \itemsep=30pt
+  \item $3x^{2}-6x+8$
+
+        $=3\left( x-1\right)^{2}+5$
+
+  \item $2x^{2}-20x+52$
+
+        $=2\left( x-5\right)^{2}+2$
+
+  \item $-4x^{2}-32x-60$
+
+        $=-4\left( x+4\right)^{2}+4$
+
+  \item $-2x^{2}-4x$
+
+        $=-2\left( x+1\right)^{2}+2$
+
+  \item $-4x^{2}+8x-5$
+
+        $=-4\left( x-1\right)^{2}-1$
+
+  \item $-5x^{2}+50x-124$
+
+        $=-5\left( x-5\right)^{2}+1$
+
+  \item $-2x^{2}+8x-6$
+
+        $=-2\left( x-2\right)^{2}+2$
+
+  \item $-2x^{2}+4x-2$
+
+        $=-2\left( x-1\right)^{2}$
+
+  \item $-5x^{2}-20x-22$
+
+        $=-5\left( x+2\right)^{2}-2$
+
+  \item $-3x^{2}-18x-22$
+
+        $=-3\left( x+3\right)^{2}+5$
+
+\columnbreak % 10
+
+  \item $4x^{2}-40x+95$
+
+        $=4\left( x-5\right)^{2}-5$
+
+  \item $-4x^{2}+16x-17$
+
+        $=-4\left( x-2\right)^{2}-1$
+
+  \item $-x^{2}-10x-25$
+
+        $=-\left( x+5\right)^{2}$
+
+  \item $-2x^{2}-12x-21$
+
+        $=-2\left( x+3\right)^{2}-3$
+
+  \item $-3x^{2}+30x-80$
+
+        $=-3\left( x-5\right)^{2}-5$
+
+  \item $4x^{2}+8x+8$
+
+        $=4\left( x+1\right)^{2}+4$
+
+  \item $-3x^{2}-18x-30$
+
+        $=-3\left( x+3\right)^{2}-3$
+
+  \item $-4x^{2}+40x-101$
+
+        $=-4\left( x-5\right)^{2}-1$
+
+  \item $5x^{2}-50x+126$
+
+        $=5\left( x-5\right)^{2}+1$
+
+  \item $4x^{2}-32x+67$
+
+        $=4\left( x-4\right)^{2}+3$
+
+\columnbreak % 20
+
+  \item $x^{2}-10x+24$
+
+        $=\left( x-5\right)^{2}-1$
+
+  \item $4x^{2}-16x+14$
+
+        $=4\left( x-2\right)^{2}-2$
+
+  \item $3x^{2}+12x+8$
+
+        $=3\left( x+2\right)^{2}-4$
+
+  \item $-2x^{2}+20x-51$
+
+        $=-2\left( x-5\right)^{2}-1$
+
+  \item $-4x^{2}+8x-4$
+
+        $=-4\left( x-1\right)^{2}$
+
+  \item $-2x^{2}+8x-7$
+
+        $=-2\left( x-2\right)^{2}+1$
+
+  \item $5x^{2}+40x+83$
+
+        $=5\left( x+4\right)^{2}+3$
+
+  \item $-3x^{2}+24x-46$
+
+        $=-3\left( x-4\right)^{2}+2$
+
+  \item $x^{2}-10x+24$
+
+        $=\left( x-5\right)^{2}-1$
+
+  \item $2x^{2}-4x+5$
+
+        $=2\left( x-1\right)^{2}+3$
+
+\columnbreak % 30
+
+\resetques
+
+  \item $x^{2}-8x+14$
+
+        $=\left( x-4\right)^{2}-2$
+
+  \item $2x^{2}+16x+27$
+
+        $=2\left( x+4\right)^{2}-5$
+
+  \item $-5x^{2}+10x$
+
+        $=-5\left( x-1\right)^{2}+5$
+
+  \item $-2x^{2}-16x-37$
+
+        $=-2\left( x+4\right)^{2}-5$
+
+  \item $2x^{2}+4x+3$
+
+        $=2\left( x+1\right)^{2}+1$
+
+  \item $2x^{2}+4x+6$
+
+        $=2\left( x+1\right)^{2}+4$
+
+  \item $4x^{2}+32x+64$
+
+        $=4\left( x+4\right)^{2}$
+
+  \item $-3x^{2}+30x-72$
+
+        $=-3\left( x-5\right)^{2}+3$
+
+  \item $x^{2}-10x+23$
+
+        $=\left( x-5\right)^{2}-2$
+
+  \item $-2x^{2}-20x-45$
+
+        $=-2\left( x+5\right)^{2}+5$
+
+\columnbreak % 40
+
+  \item $3x^{2}+24x+46$
+
+        $=3\left( x+4\right)^{2}-2$
+
+  \item $5x^{2}+10x+7$
+
+        $=5\left( x+1\right)^{2}+2$
+
+  \item $5x^{2}-40x+83$
+
+        $=5\left( x-4\right)^{2}+3$
+
+  \item $3x^{2}+30x+74$
+
+        $=3\left( x+5\right)^{2}-1$
+
+  \item $x^{2}+8x+18$
+
+        $=\left( x+4\right)^{2}+2$
+
+  \item $-4x^{2}-40x-99$
+
+        $=-4\left( x+5\right)^{2}+1$
+
+  \item $5x^{2}-50x+127$
+
+        $=5\left( x-5\right)^{2}+2$
+
+  \item $-4x^{2}-16x-21$
+
+        $=-4\left( x+2\right)^{2}-5$
+
+  \item $-3x^{2}-24x-50$
+
+        $=-3\left( x+4\right)^{2}-2$
+
+  \item $-x^{2}+8x-12$
+
+        $=-\left( x-4\right)^{2}+4$
+
+\columnbreak % 50
+
+  \item $-x^{2}-6x-4$
+
+        $=-\left( x+3\right)^{2}+5$
+
+  \item $-5x^{2}-40x-75$
+
+        $=-5\left( x+4\right)^{2}+5$
+
+  \item $4x^{2}+40x+98$
+
+        $=4\left( x+5\right)^{2}-2$
+
+  \item $5x^{2}-50x+129$
+
+        $=5\left( x-5\right)^{2}+4$
+
+  \item $2x^{2}-16x+37$
+
+        $=2\left( x-4\right)^{2}+5$
+
+  \item $-3x^{2}-18x-23$
+
+        $=-3\left( x+3\right)^{2}+4$
+
+  \item $-2x^{2}+16x-32$
+
+        $=-2\left( x-4\right)^{2}$
+
+  \item $-3x^{2}+24x-44$
+
+        $=-3\left( x-4\right)^{2}+4$
+
+  \item $4x^{2}-8x+7$
+
+        $=4\left( x-1\right)^{2}+3$
+
+  \item $2x^{2}-4x-3$
+
+        $=2\left( x-1\right)^{2}-5$
+
+\columnbreak % 60
+
+\resetques
+
+  \item $x^{2}-4x$
+
+        $=\left( x-2\right)^{2}-4$
+
+  \item $-2x^{2}-12x-19$
+
+        $=-2\left( x+3\right)^{2}-1$
+
+  \item $3x^{2}+24x+50$
+
+        $=3\left( x+4\right)^{2}+2$
+
+  \item $x^{2}-2x-1$
+
+        $=\left( x-1\right)^{2}-2$
+
+  \item $-x^{2}+2x-4$
+
+        $=-\left( x-1\right)^{2}-3$
+
+  \item $2x^{2}+8x+12$
+
+        $=2\left( x+2\right)^{2}+4$
+
+  \item $-x^{2}+6x-7$
+
+        $=-\left( x-3\right)^{2}+2$
+
+  \item $3x^{2}-30x+78$
+
+        $=3\left( x-5\right)^{2}+3$
+
+  \item $3x^{2}-18x+25$
+
+        $=3\left( x-3\right)^{2}-2$
+
+  \item $3x^{2}-24x+50$
+
+        $=3\left( x-4\right)^{2}+2$
+
+\columnbreak % 70
+
+  \item $2x^{2}-12x+19$
+
+        $=2\left( x-3\right)^{2}+1$
+
+  \item $-5x^{2}+30x-40$
+
+        $=-5\left( x-3\right)^{2}+5$
+
+  \item $-5x^{2}-10x-4$
+
+        $=-5\left( x+1\right)^{2}+1$
+
+  \item $3x^{2}-18x+26$
+
+        $=3\left( x-3\right)^{2}-1$
+
+  \item $3x^{2}+6x$
+
+        $=3\left( x+1\right)^{2}-3$
+
+  \item $-2x^{2}+8x-12$
+
+        $=-2\left( x-2\right)^{2}-4$
+
+  \item $-5x^{2}+30x-44$
+
+        $=-5\left( x-3\right)^{2}+1$
+
+  \item $2x^{2}+8x+5$
+
+        $=2\left( x+2\right)^{2}-3$
+
+  \item $-2x^{2}+12x-13$
+
+        $=-2\left( x-3\right)^{2}+5$
+
+  \item $2x^{2}+16x+31$
+
+        $=2\left( x+4\right)^{2}-1$
+
+\columnbreak % 80
+
+  \item $-x^{2}+4x-6$
+
+        $=-\left( x-2\right)^{2}-2$
+
+  \item $5x^{2}+50x+128$
+
+        $=5\left( x+5\right)^{2}+3$
+
+  \item $3x^{2}-18x+32$
+
+        $=3\left( x-3\right)^{2}+5$
+
+  \item $5x^{2}+50x+128$
+
+        $=5\left( x+5\right)^{2}+3$
+
+  \item $-x^{2}-4x+1$
+
+        $=-\left( x+2\right)^{2}+5$
+
+  \item $-x^{2}-6x-5$
+
+        $=-\left( x+3\right)^{2}+4$
+
+  \item $-4x^{2}-32x-63$
+
+        $=-4\left( x+4\right)^{2}+1$
+
+  \item $3x^{2}-12x+14$
+
+        $=3\left( x-2\right)^{2}+2$
+
+  \item $-3x^{2}-24x-44$
+
+        $=-3\left( x+4\right)^{2}+4$
+
+  \item $4x^{2}-40x+96$
+
+        $=4\left( x-5\right)^{2}-4$
+
+\columnbreak % 90
+
+\resetques
+
+  \item $-4x^{2}+40x-97$
+
+        $=-4\left( x-5\right)^{2}+3$
+
+  \item $4x^{2}-24x+31$
+
+        $=4\left( x-3\right)^{2}-5$
+
+  \item $-5x^{2}-30x-42$
+
+        $=-5\left( x+3\right)^{2}+3$
+
+  \item $-2x^{2}-4x-6$
+
+        $=-2\left( x+1\right)^{2}-4$
+
+  \item $5x^{2}-50x+128$
+
+        $=5\left( x-5\right)^{2}+3$
+
+  \item $x^{2}+2x-2$
+
+        $=\left( x+1\right)^{2}-3$
+
+  \item $-3x^{2}-24x-43$
+
+        $=-3\left( x+4\right)^{2}+5$
+
+  \item $-3x^{2}-24x-53$
+
+        $=-3\left( x+4\right)^{2}-5$
+
+  \item $x^{2}-4x+5$
+
+        $=\left( x-2\right)^{2}+1$
+
+  \item $5x^{2}+10x+7$
+
+        $=5\left( x+1\right)^{2}+2$
+
+\columnbreak % 100
+
+  \item $-5x^{2}-40x-80$
+
+        $=-5\left( x+4\right)^{2}$
+
+  \item $4x^{2}-8x+2$
+
+        $=4\left( x-1\right)^{2}-2$
+
+  \item $-5x^{2}+30x-43$
+
+        $=-5\left( x-3\right)^{2}+2$
+
+  \item $4x^{2}-16x+11$
+
+        $=4\left( x-2\right)^{2}-5$
+
+  \item $x^{2}+10x+26$
+
+        $=\left( x+5\right)^{2}+1$
+
+  \item $-2x^{2}+12x-19$
+
+        $=-2\left( x-3\right)^{2}-1$
+
+  \item $5x^{2}-40x+81$
+
+        $=5\left( x-4\right)^{2}+1$
+
+  \item $2x^{2}+16x+36$
+
+        $=2\left( x+4\right)^{2}+4$
+
+  \item $-4x^{2}+40x-96$
+
+        $=-4\left( x-5\right)^{2}+4$
+
+  \item $x^{2}-4x+9$
+
+        $=\left( x-2\right)^{2}+5$
+
+\columnbreak % 110
+
+  \item $x^{2}-8x+21$
+
+        $=\left( x-4\right)^{2}+5$
+
+  \item $-4x^{2}-8x+1$
+
+        $=-4\left( x+1\right)^{2}+5$
+
+  \item $-2x^{2}-20x-46$
+
+        $=-2\left( x+5\right)^{2}+4$
+
+  \item $-2x^{2}+8x-13$
+
+        $=-2\left( x-2\right)^{2}-5$
+
+  \item $5x^{2}-50x+127$
+
+        $=5\left( x-5\right)^{2}+2$
+
+  \item $3x^{2}-30x+76$
+
+        $=3\left( x-5\right)^{2}+1$
+
+  \item $2x^{2}-4x-3$
+
+        $=2\left( x-1\right)^{2}-5$
+
+  \item $3x^{2}+18x+26$
+
+        $=3\left( x+3\right)^{2}-1$
+
+  \item $4x^{2}-32x+63$
+
+        $=4\left( x-4\right)^{2}-1$
+
+  \item $2x^{2}-8x+3$
+
+        $=2\left( x-2\right)^{2}-5$
+
+\columnbreak % 120
+
+\resetques
+
+  \item $-4x^{2}+16x-13$
+
+        $=-4\left( x-2\right)^{2}+3$
+
+  \item $2x^{2}-20x+46$
+
+        $=2\left( x-5\right)^{2}-4$
+
+  \item $-x^{2}+6x-8$
+
+        $=-\left( x-3\right)^{2}+1$
+
+  \item $2x^{2}+12x+22$
+
+        $=2\left( x+3\right)^{2}+4$
+
+  \item $-3x^{2}+30x-76$
+
+        $=-3\left( x-5\right)^{2}-1$
+
+  \item $-2x^{2}-12x-22$
+
+        $=-2\left( x+3\right)^{2}-4$
+
+  \item $3x^{2}-24x+44$
+
+        $=3\left( x-4\right)^{2}-4$
+
+  \item $x^{2}-10x+22$
+
+        $=\left( x-5\right)^{2}-3$
+
+  \item $-2x^{2}-20x-52$
+
+        $=-2\left( x+5\right)^{2}-2$
+
+  \item $x^{2}+4x+1$
+
+        $=\left( x+2\right)^{2}-3$
+
+\columnbreak % 130
+
+  \item $-x^{2}+4x-2$
+
+        $=-\left( x-2\right)^{2}+2$
+
+  \item $2x^{2}-4x-2$
+
+        $=2\left( x-1\right)^{2}-4$
+
+  \item $-x^{2}-6x-8$
+
+        $=-\left( x+3\right)^{2}+1$
+
+  \item $-x^{2}+6x-5$
+
+        $=-\left( x-3\right)^{2}+4$
+
+  \item $-3x^{2}+12x-15$
+
+        $=-3\left( x-2\right)^{2}-3$
+
+  \item $-x^{2}-10x-22$
+
+        $=-\left( x+5\right)^{2}+3$
+
+  \item $-3x^{2}+6x-8$
+
+        $=-3\left( x-1\right)^{2}-5$
+
+  \item $-3x^{2}+24x-43$
+
+        $=-3\left( x-4\right)^{2}+5$
+
+  \item $-x^{2}+2x-6$
+
+        $=-\left( x-1\right)^{2}-5$
+
+  \item $-3x^{2}-30x-73$
+
+        $=-3\left( x+5\right)^{2}+2$
+
+\columnbreak % 140
+
+  \item $-4x^{2}-40x-97$
+
+        $=-4\left( x+5\right)^{2}+3$
+
+  \item $-x^{2}-4x-4$
+
+        $=-\left( x+2\right)^{2}$
+
+  \item $-2x^{2}+12x-23$
+
+        $=-2\left( x-3\right)^{2}-5$
+
+  \item $-3x^{2}-12x-16$
+
+        $=-3\left( x+2\right)^{2}-4$
+
+  \item $-2x^{2}+8x-13$
+
+        $=-2\left( x-2\right)^{2}-5$
+
+  \item $x^{2}+4x+7$
+
+        $=\left( x+2\right)^{2}+3$
+
+  \item $-4x^{2}-40x-104$
+
+        $=-4\left( x+5\right)^{2}-4$
+
+  \item $5x^{2}+40x+79$
+
+        $=5\left( x+4\right)^{2}-1$
+
+  \item $3x^{2}+6x+3$
+
+        $=3\left( x+1\right)^{2}$
+
+  \item $-3x^{2}+30x-75$
+
+        $=-3\left( x-5\right)^{2}$
+
+\columnbreak % 150
+
+\resetques
+
+  \item $-3x^{2}+18x-28$
+
+        $=-3\left( x-3\right)^{2}-1$
+
+  \item $-2x^{2}+4x-1$
+
+        $=-2\left( x-1\right)^{2}+1$
+
+  \item $-x^{2}-4x+1$
+
+        $=-\left( x+2\right)^{2}+5$
+
+  \item $2x^{2}+16x+33$
+
+        $=2\left( x+4\right)^{2}+1$
+
+  \item $4x^{2}+32x+63$
+
+        $=4\left( x+4\right)^{2}-1$
+
+  \item $-x^{2}-6x-6$
+
+        $=-\left( x+3\right)^{2}+3$
+
+  \item $4x^{2}-24x+37$
+
+        $=4\left( x-3\right)^{2}+1$
+
+  \item $5x^{2}+50x+128$
+
+        $=5\left( x+5\right)^{2}+3$
+
+  \item $4x^{2}+24x+33$
+
+        $=4\left( x+3\right)^{2}-3$
+
+  \item $4x^{2}-8x-1$
+
+        $=4\left( x-1\right)^{2}-5$
+
+\columnbreak % 160
+
+  \item $-2x^{2}+12x-20$
+
+        $=-2\left( x-3\right)^{2}-2$
+
+  \item $x^{2}+2x+5$
+
+        $=\left( x+1\right)^{2}+4$
+
+  \item $-4x^{2}-8x-2$
+
+        $=-4\left( x+1\right)^{2}+2$
+
+  \item $3x^{2}-18x+23$
+
+        $=3\left( x-3\right)^{2}-4$
+
+  \item $2x^{2}-12x+18$
+
+        $=2\left( x-3\right)^{2}$
+
+  \item $-2x^{2}+16x-36$
+
+        $=-2\left( x-4\right)^{2}-4$
+
+  \item $2x^{2}-12x+17$
+
+        $=2\left( x-3\right)^{2}-1$
+
+  \item $-4x^{2}-24x-38$
+
+        $=-4\left( x+3\right)^{2}-2$
+
+  \item $2x^{2}+16x+37$
+
+        $=2\left( x+4\right)^{2}+5$
+
+  \item $5x^{2}-40x+83$
+
+        $=5\left( x-4\right)^{2}+3$
+
+\columnbreak % 170
+
+  \item $5x^{2}+10x+3$
+
+        $=5\left( x+1\right)^{2}-2$
+
+  \item $-2x^{2}+20x-53$
+
+        $=-2\left( x-5\right)^{2}-3$
+
+  \item $-x^{2}-6x-9$
+
+        $=-\left( x+3\right)^{2}$
+
+  \item $2x^{2}-12x+23$
+
+        $=2\left( x-3\right)^{2}+5$
+
+  \item $-x^{2}-10x-21$
+
+        $=-\left( x+5\right)^{2}+4$
+
+  \item $5x^{2}+20x+24$
+
+        $=5\left( x+2\right)^{2}+4$
+
+  \item $2x^{2}+12x+20$
+
+        $=2\left( x+3\right)^{2}+2$
+
+  \item $-5x^{2}+20x-21$
+
+        $=-5\left( x-2\right)^{2}-1$
+
+  \item $-x^{2}+10x-25$
+
+        $=-\left( x-5\right)^{2}$
+
+  \item $-x^{2}+10x-22$
+
+        $=-\left( x-5\right)^{2}+3$
+
+\columnbreak % 180
+
+\resetques
+
+  \item $-5x^{2}+20x-18$
+
+        $=-5\left( x-2\right)^{2}+2$
+
+  \item $-3x^{2}-30x-75$
+
+        $=-3\left( x+5\right)^{2}$
+
+  \item $x^{2}+6x+10$
+
+        $=\left( x+3\right)^{2}+1$
+
+  \item $3x^{2}+6x+5$
+
+        $=3\left( x+1\right)^{2}+2$
+
+  \item $-2x^{2}+12x-15$
+
+        $=-2\left( x-3\right)^{2}+3$
+
+  \item $-x^{2}-4x-1$
+
+        $=-\left( x+2\right)^{2}+3$
+
+  \item $-x^{2}+6x-6$
+
+        $=-\left( x-3\right)^{2}+3$
+
+  \item $-3x^{2}+18x-30$
+
+        $=-3\left( x-3\right)^{2}-3$
+
+  \item $-x^{2}-8x-21$
+
+        $=-\left( x+4\right)^{2}-5$
+
+  \item $-3x^{2}+12x-7$
+
+        $=-3\left( x-2\right)^{2}+5$
+
+\columnbreak % 190
+
+  \item $2x^{2}-16x+32$
+
+        $=2\left( x-4\right)^{2}$
+
+  \item $-2x^{2}+4x-6$
+
+        $=-2\left( x-1\right)^{2}-4$
+
+  \item $x^{2}-10x+30$
+
+        $=\left( x-5\right)^{2}+5$
+
+  \item $2x^{2}-4x$
+
+        $=2\left( x-1\right)^{2}-2$
+
+  \item $3x^{2}+12x+12$
+
+        $=3\left( x+2\right)^{2}$
+
+  \item $x^{2}+6x+14$
+
+        $=\left( x+3\right)^{2}+5$
+
+  \item $4x^{2}-32x+59$
+
+        $=4\left( x-4\right)^{2}-5$
+
+  \item $5x^{2}-50x+125$
+
+        $=5\left( x-5\right)^{2}$
+
+  \item $4x^{2}+16x+11$
+
+        $=4\left( x+2\right)^{2}-5$
+
+  \item $4x^{2}+40x+97$
+
+        $=4\left( x+5\right)^{2}-3$
+
+\columnbreak % 200
+
+  \item $3x^{2}-6x+5$
+
+        $=3\left( x-1\right)^{2}+2$
+
+  \item $5x^{2}-30x+50$
+
+        $=5\left( x-3\right)^{2}+5$
+
+  \item $5x^{2}-40x+81$
+
+        $=5\left( x-4\right)^{2}+1$
+
+  \item $-5x^{2}-10x-2$
+
+        $=-5\left( x+1\right)^{2}+3$
+
+  \item $-5x^{2}-20x-17$
+
+        $=-5\left( x+2\right)^{2}+3$
+
+  \item $-4x^{2}-32x-68$
+
+        $=-4\left( x+4\right)^{2}-4$
+
+  \item $-2x^{2}-16x-34$
+
+        $=-2\left( x+4\right)^{2}-2$
+
+  \item $-3x^{2}-6x+1$
+
+        $=-3\left( x+1\right)^{2}+4$
+
+  \item $5x^{2}-10x$
+
+        $=5\left( x-1\right)^{2}-5$
+
+  \item $3x^{2}+6x+8$
+
+        $=3\left( x+1\right)^{2}+5$
+
+\columnbreak % 210
+
+\resetques
+
+  \item $-5x^{2}+40x-78$
+
+        $=-5\left( x-4\right)^{2}+2$
+
+  \item $-2x^{2}+20x-51$
+
+        $=-2\left( x-5\right)^{2}-1$
+
+  \item $2x^{2}-4x+6$
+
+        $=2\left( x-1\right)^{2}+4$
+
+  \item $-5x^{2}-50x-128$
+
+        $=-5\left( x+5\right)^{2}-3$
+
+  \item $-5x^{2}-50x-120$
+
+        $=-5\left( x+5\right)^{2}+5$
+
+  \item $5x^{2}+10x+7$
+
+        $=5\left( x+1\right)^{2}+2$
+
+  \item $-3x^{2}-30x-72$
+
+        $=-3\left( x+5\right)^{2}+3$
+
+  \item $5x^{2}+30x+50$
+
+        $=5\left( x+3\right)^{2}+5$
+
+  \item $-x^{2}-2x-5$
+
+        $=-\left( x+1\right)^{2}-4$
+
+  \item $-2x^{2}-16x-35$
+
+        $=-2\left( x+4\right)^{2}-3$
+
+\columnbreak % 220
+
+  \item $-2x^{2}-16x-33$
+
+        $=-2\left( x+4\right)^{2}-1$
+
+  \item $-2x^{2}+8x-4$
+
+        $=-2\left( x-2\right)^{2}+4$
+
+  \item $-3x^{2}-12x-9$
+
+        $=-3\left( x+2\right)^{2}+3$
+
+  \item $3x^{2}-6x-2$
+
+        $=3\left( x-1\right)^{2}-5$
+
+  \item $3x^{2}+6x+5$
+
+        $=3\left( x+1\right)^{2}+2$
+
+  \item $-x^{2}+4x-4$
+
+        $=-\left( x-2\right)^{2}$
+
+  \item $x^{2}+2x+5$
+
+        $=\left( x+1\right)^{2}+4$
+
+  \item $3x^{2}+30x+78$
+
+        $=3\left( x+5\right)^{2}+3$
+
+  \item $-x^{2}-8x-21$
+
+        $=-\left( x+4\right)^{2}-5$
+
+  \item $-5x^{2}+50x-125$
+
+        $=-5\left( x-5\right)^{2}$
+
+\columnbreak % 230
+
+  \item $-3x^{2}+24x-45$
+
+        $=-3\left( x-4\right)^{2}+3$
+
+  \item $x^{2}+4x+7$
+
+        $=\left( x+2\right)^{2}+3$
+
+  \item $-x^{2}-8x-19$
+
+        $=-\left( x+4\right)^{2}-3$
+
+  \item $x^{2}+2x+3$
+
+        $=\left( x+1\right)^{2}+2$
+
+  \item $-5x^{2}-40x-75$
+
+        $=-5\left( x+4\right)^{2}+5$
+
+  \item $5x^{2}-50x+128$
+
+        $=5\left( x-5\right)^{2}+3$
+
+  \item $-x^{2}+10x-27$
+
+        $=-\left( x-5\right)^{2}-2$
+
+  \item $4x^{2}-40x+105$
+
+        $=4\left( x-5\right)^{2}+5$
+
+  \item $x^{2}+8x+19$
+
+        $=\left( x+4\right)^{2}+3$
+
+  \item $x^{2}+6x+9$
+
+        $=\left( x+3\right)^{2}$
+
+\columnbreak % 240
+
+\resetques
+
+  \item $-5x^{2}+50x-121$
+
+        $=-5\left( x-5\right)^{2}+4$
+
+  \item $-5x^{2}+10x-3$
+
+        $=-5\left( x-1\right)^{2}+2$
+
+  \item $3x^{2}-30x+71$
+
+        $=3\left( x-5\right)^{2}-4$
+
+  \item $-2x^{2}+4x$
+
+        $=-2\left( x-1\right)^{2}+2$
+
+  \item $-4x^{2}-40x-100$
+
+        $=-4\left( x+5\right)^{2}$
+
+  \item $-2x^{2}+4x+3$
+
+        $=-2\left( x-1\right)^{2}+5$
+
+  \item $4x^{2}+16x+13$
+
+        $=4\left( x+2\right)^{2}-3$
+
+  \item $4x^{2}-8x+4$
+
+        $=4\left( x-1\right)^{2}$
+
+  \item $4x^{2}+8x+6$
+
+        $=4\left( x+1\right)^{2}+2$
+
+  \item $-5x^{2}+10x-7$
+
+        $=-5\left( x-1\right)^{2}-2$
+
+\columnbreak % 250
+
+  \item $-x^{2}+2x$
+
+        $=-\left( x-1\right)^{2}+1$
+
+  \item $4x^{2}+32x+61$
+
+        $=4\left( x+4\right)^{2}-3$
+
+  \item $x^{2}+10x+28$
+
+        $=\left( x+5\right)^{2}+3$
+
+  \item $5x^{2}+40x+80$
+
+        $=5\left( x+4\right)^{2}$
+
+  \item $-x^{2}-2x+3$
+
+        $=-\left( x+1\right)^{2}+4$
+
+  \item $x^{2}+8x+18$
+
+        $=\left( x+4\right)^{2}+2$
+
+  \item $3x^{2}+12x+14$
+
+        $=3\left( x+2\right)^{2}+2$
+
+  \item $x^{2}+8x+20$
+
+        $=\left( x+4\right)^{2}+4$
+
+  \item $x^{2}-10x+27$
+
+        $=\left( x-5\right)^{2}+2$
+
+  \item $-4x^{2}-24x-33$
+
+        $=-4\left( x+3\right)^{2}+3$
+
+\columnbreak % 260
+
+  \item $4x^{2}+16x+11$
+
+        $=4\left( x+2\right)^{2}-5$
+
+  \item $-4x^{2}-32x-68$
+
+        $=-4\left( x+4\right)^{2}-4$
+
+  \item $-4x^{2}-32x-69$
+
+        $=-4\left( x+4\right)^{2}-5$
+
+  \item $4x^{2}-24x+41$
+
+        $=4\left( x-3\right)^{2}+5$
+
+  \item $-5x^{2}+10x-7$
+
+        $=-5\left( x-1\right)^{2}-2$
+
+  \item $-3x^{2}+12x-16$
+
+        $=-3\left( x-2\right)^{2}-4$
+
+  \item $3x^{2}-6x+5$
+
+        $=3\left( x-1\right)^{2}+2$
+
+  \item $5x^{2}-40x+80$
+
+        $=5\left( x-4\right)^{2}$
+
+  \item $-2x^{2}-20x-48$
+
+        $=-2\left( x+5\right)^{2}+2$
+
+  \item $-4x^{2}-40x-98$
+
+        $=-4\left( x+5\right)^{2}+2$
+
+\columnbreak % 270
+
+\resetques
+
+  \item $-x^{2}-8x-16$
+
+        $=-\left( x+4\right)^{2}$
+
+  \item $3x^{2}+18x+30$
+
+        $=3\left( x+3\right)^{2}+3$
+
+  \item $3x^{2}+12x+14$
+
+        $=3\left( x+2\right)^{2}+2$
+
+  \item $-2x^{2}-12x-22$
+
+        $=-2\left( x+3\right)^{2}-4$
+
+  \item $-x^{2}+8x-17$
+
+        $=-\left( x-4\right)^{2}-1$
+
+  \item $-5x^{2}+30x-43$
+
+        $=-5\left( x-3\right)^{2}+2$
+
+  \item $-x^{2}+6x-9$
+
+        $=-\left( x-3\right)^{2}$
+
+  \item $2x^{2}-20x+45$
+
+        $=2\left( x-5\right)^{2}-5$
+
+  \item $-5x^{2}-30x-47$
+
+        $=-5\left( x+3\right)^{2}-2$
+
+  \item $-2x^{2}-20x-50$
+
+        $=-2\left( x+5\right)^{2}$
+
+\columnbreak % 280
+
+  \item $-5x^{2}-20x-20$
+
+        $=-5\left( x+2\right)^{2}$
+
+  \item $-3x^{2}-18x-32$
+
+        $=-3\left( x+3\right)^{2}-5$
+
+  \item $3x^{2}-6x-2$
+
+        $=3\left( x-1\right)^{2}-5$
+
+  \item $x^{2}+4x+9$
+
+        $=\left( x+2\right)^{2}+5$
+
+  \item $-3x^{2}+24x-52$
+
+        $=-3\left( x-4\right)^{2}-4$
+
+  \item $x^{2}+6x+6$
+
+        $=\left( x+3\right)^{2}-3$
+
+  \item $-5x^{2}+40x-75$
+
+        $=-5\left( x-4\right)^{2}+5$
+
+  \item $-x^{2}-10x-28$
+
+        $=-\left( x+5\right)^{2}-3$
+
+  \item $x^{2}+2x-4$
+
+        $=\left( x+1\right)^{2}-5$
+
+  \item $-2x^{2}+8x-4$
+
+        $=-2\left( x-2\right)^{2}+4$
+
+\columnbreak % 290
+
+  \item $-4x^{2}+24x-36$
+
+        $=-4\left( x-3\right)^{2}$
+
+  \item $5x^{2}-30x+43$
+
+        $=5\left( x-3\right)^{2}-2$
+
+  \item $-4x^{2}-24x-34$
+
+        $=-4\left( x+3\right)^{2}+2$
+
+  \item $-x^{2}-4x-1$
+
+        $=-\left( x+2\right)^{2}+3$
+
+  \item $5x^{2}-10x+4$
+
+        $=5\left( x-1\right)^{2}-1$
+
+  \item $5x^{2}-10x+7$
+
+        $=5\left( x-1\right)^{2}+2$
+
+  \item $-2x^{2}-12x-20$
+
+        $=-2\left( x+3\right)^{2}-2$
+
+  \item $5x^{2}+10x$
+
+        $=5\left( x+1\right)^{2}-5$
+
+  \item $5x^{2}-30x+43$
+
+        $=5\left( x-3\right)^{2}-2$
+
+  \item $x^{2}-8x+15$
+
+        $=\left( x-4\right)^{2}-1$
+
+\columnbreak % 300
+
+\resetques
+
+  \item $5x^{2}+50x+120$
+
+        $=5\left( x+5\right)^{2}-5$
+
+  \item $-2x^{2}+16x-35$
+
+        $=-2\left( x-4\right)^{2}-3$
+
+  \item $-3x^{2}+6x+2$
+
+        $=-3\left( x-1\right)^{2}+5$
+
+  \item $-2x^{2}-12x-17$
+
+        $=-2\left( x+3\right)^{2}+1$
+
+  \item $3x^{2}+6x-1$
+
+        $=3\left( x+1\right)^{2}-4$
+
+  \item $-5x^{2}-10x-4$
+
+        $=-5\left( x+1\right)^{2}+1$
+
+  \item $4x^{2}-40x+104$
+
+        $=4\left( x-5\right)^{2}+4$
+
+  \item $-4x^{2}-8x-5$
+
+        $=-4\left( x+1\right)^{2}-1$
+
+  \item $-x^{2}-2x-4$
+
+        $=-\left( x+1\right)^{2}-3$
+
+  \item $x^{2}-8x+15$
+
+        $=\left( x-4\right)^{2}-1$
+
+\columnbreak % 310
+
+  \item $-5x^{2}+20x-24$
+
+        $=-5\left( x-2\right)^{2}-4$
+
+  \item $3x^{2}-18x+25$
+
+        $=3\left( x-3\right)^{2}-2$
+
+  \item $3x^{2}+30x+80$
+
+        $=3\left( x+5\right)^{2}+5$
+
+  \item $4x^{2}-40x+100$
+
+        $=4\left( x-5\right)^{2}$
+
+  \item $5x^{2}-40x+79$
+
+        $=5\left( x-4\right)^{2}-1$
+
+  \item $2x^{2}+12x+22$
+
+        $=2\left( x+3\right)^{2}+4$
+
+  \item $2x^{2}-16x+29$
+
+        $=2\left( x-4\right)^{2}-3$
+
+  \item $-4x^{2}-32x-62$
+
+        $=-4\left( x+4\right)^{2}+2$
+
+  \item $3x^{2}+24x+50$
+
+        $=3\left( x+4\right)^{2}+2$
+
+  \item $5x^{2}-50x+123$
+
+        $=5\left( x-5\right)^{2}-2$
+
+\columnbreak % 320
+
+  \item $-x^{2}+10x-25$
+
+        $=-\left( x-5\right)^{2}$
+
+  \item $5x^{2}-30x+41$
+
+        $=5\left( x-3\right)^{2}-4$
+
+  \item $x^{2}-6x+8$
+
+        $=\left( x-3\right)^{2}-1$
+
+  \item $-3x^{2}+12x-17$
+
+        $=-3\left( x-2\right)^{2}-5$
+
+  \item $-4x^{2}+40x-105$
+
+        $=-4\left( x-5\right)^{2}-5$
+
+  \item $-4x^{2}+40x-95$
+
+        $=-4\left( x-5\right)^{2}+5$
+
+  \item $-2x^{2}-16x-30$
+
+        $=-2\left( x+4\right)^{2}+2$
+
+  \item $-2x^{2}-20x-48$
+
+        $=-2\left( x+5\right)^{2}+2$
+
+  \item $-3x^{2}-12x-14$
+
+        $=-3\left( x+2\right)^{2}-2$
+
+  \item $-3x^{2}+24x-44$
+
+        $=-3\left( x-4\right)^{2}+4$
+
+\columnbreak % 330
+
+\resetques
+
+  \item $x^{2}-6x+11$
+
+        $=\left( x-3\right)^{2}+2$
+
+  \item $-3x^{2}+6x-4$
+
+        $=-3\left( x-1\right)^{2}-1$
+
+  \item $2x^{2}-12x+18$
+
+        $=2\left( x-3\right)^{2}$
+
+  \item $-5x^{2}+40x-79$
+
+        $=-5\left( x-4\right)^{2}+1$
+
+  \item $-3x^{2}+24x-43$
+
+        $=-3\left( x-4\right)^{2}+5$
+
+  \item $-3x^{2}+18x-28$
+
+        $=-3\left( x-3\right)^{2}-1$
+
+  \item $2x^{2}-4x+4$
+
+        $=2\left( x-1\right)^{2}+2$
+
+  \item $-5x^{2}+40x-80$
+
+        $=-5\left( x-4\right)^{2}$
+
+  \item $-3x^{2}+12x-8$
+
+        $=-3\left( x-2\right)^{2}+4$
+
+  \item $5x^{2}+10x+9$
+
+        $=5\left( x+1\right)^{2}+4$
+
+\columnbreak % 340
+
+  \item $x^{2}+2x-1$
+
+        $=\left( x+1\right)^{2}-2$
+
+  \item $-4x^{2}-24x-35$
+
+        $=-4\left( x+3\right)^{2}+1$
+
+  \item $5x^{2}+10x+9$
+
+        $=5\left( x+1\right)^{2}+4$
+
+  \item $-3x^{2}+6x$
+
+        $=-3\left( x-1\right)^{2}+3$
+
+  \item $x^{2}-10x+21$
+
+        $=\left( x-5\right)^{2}-4$
+
+  \item $4x^{2}-40x+101$
+
+        $=4\left( x-5\right)^{2}+1$
+
+  \item $-5x^{2}-10x-8$
+
+        $=-5\left( x+1\right)^{2}-3$
+
+  \item $5x^{2}-50x+122$
+
+        $=5\left( x-5\right)^{2}-3$
+
+  \item $-2x^{2}+8x-5$
+
+        $=-2\left( x-2\right)^{2}+3$
+
+  \item $2x^{2}-8x+11$
+
+        $=2\left( x-2\right)^{2}+3$
+
+\columnbreak % 350
+
+  \item $-2x^{2}+12x-17$
+
+        $=-2\left( x-3\right)^{2}+1$
+
+  \item $5x^{2}+50x+130$
+
+        $=5\left( x+5\right)^{2}+5$
+
+  \item $2x^{2}+16x+33$
+
+        $=2\left( x+4\right)^{2}+1$
+
+  \item $-x^{2}+6x-12$
+
+        $=-\left( x-3\right)^{2}-3$
+
+  \item $3x^{2}+24x+49$
+
+        $=3\left( x+4\right)^{2}+1$
+
+  \item $-2x^{2}+4x+3$
+
+        $=-2\left( x-1\right)^{2}+5$
+
+  \item $2x^{2}-4x+6$
+
+        $=2\left( x-1\right)^{2}+4$
+
+  \item $2x^{2}-8x+10$
+
+        $=2\left( x-2\right)^{2}+2$
+
+  \item $x^{2}-8x+19$
+
+        $=\left( x-4\right)^{2}+3$
+
+  \item $3x^{2}+6x+8$
+
+        $=3\left( x+1\right)^{2}+5$
+
+\columnbreak % 360
+
+\resetques
+
+  \item $-4x^{2}-16x-14$
+
+        $=-4\left( x+2\right)^{2}+2$
+
+  \item $-2x^{2}-20x-52$
+
+        $=-2\left( x+5\right)^{2}-2$
+
+  \item $4x^{2}-32x+67$
+
+        $=4\left( x-4\right)^{2}+3$
+
+  \item $5x^{2}-30x+40$
+
+        $=5\left( x-3\right)^{2}-5$
+
+  \item $-3x^{2}+24x-52$
+
+        $=-3\left( x-4\right)^{2}-4$
+
+  \item $x^{2}+6x+14$
+
+        $=\left( x+3\right)^{2}+5$
+
+  \item $3x^{2}-24x+45$
+
+        $=3\left( x-4\right)^{2}-3$
+
+  \item $5x^{2}+40x+84$
+
+        $=5\left( x+4\right)^{2}+4$
+
+  \item $-3x^{2}+6x$
+
+        $=-3\left( x-1\right)^{2}+3$
+
+  \item $-3x^{2}+30x-77$
+
+        $=-3\left( x-5\right)^{2}-2$
+
+\columnbreak % 370
+
+  \item $-4x^{2}+32x-63$
+
+        $=-4\left( x-4\right)^{2}+1$
+
+  \item $4x^{2}+32x+67$
+
+        $=4\left( x+4\right)^{2}+3$
+
+  \item $-2x^{2}-16x-33$
+
+        $=-2\left( x+4\right)^{2}-1$
+
+  \item $3x^{2}+12x+15$
+
+        $=3\left( x+2\right)^{2}+3$
+
+  \item $3x^{2}+18x+28$
+
+        $=3\left( x+3\right)^{2}+1$
+
+  \item $2x^{2}+16x+27$
+
+        $=2\left( x+4\right)^{2}-5$
+
+  \item $-5x^{2}+20x-18$
+
+        $=-5\left( x-2\right)^{2}+2$
+
+  \item $-5x^{2}-20x-19$
+
+        $=-5\left( x+2\right)^{2}+1$
+
+  \item $-5x^{2}+50x-129$
+
+        $=-5\left( x-5\right)^{2}-4$
+
+  \item $-3x^{2}-6x+2$
+
+        $=-3\left( x+1\right)^{2}+5$
+
+\columnbreak % 380
+
+  \item $x^{2}+4x+2$
+
+        $=\left( x+2\right)^{2}-2$
+
+  \item $4x^{2}-8x+3$
+
+        $=4\left( x-1\right)^{2}-1$
+
+  \item $-5x^{2}+50x-128$
+
+        $=-5\left( x-5\right)^{2}-3$
+
+  \item $3x^{2}-30x+78$
+
+        $=3\left( x-5\right)^{2}+3$
+
+  \item $3x^{2}-18x+25$
+
+        $=3\left( x-3\right)^{2}-2$
+
+  \item $x^{2}-10x+24$
+
+        $=\left( x-5\right)^{2}-1$
+
+  \item $5x^{2}+50x+122$
+
+        $=5\left( x+5\right)^{2}-3$
+
+  \item $2x^{2}+8x+3$
+
+        $=2\left( x+2\right)^{2}-5$
+
+  \item $5x^{2}+30x+45$
+
+        $=5\left( x+3\right)^{2}$
+
+  \item $-x^{2}-4x-7$
+
+        $=-\left( x+2\right)^{2}-3$
+
+\columnbreak % 390
+
+\resetques
+
+  \item $x^{2}-10x+26$
+
+        $=\left( x-5\right)^{2}+1$
+
+  \item $-2x^{2}-8x-11$
+
+        $=-2\left( x+2\right)^{2}-3$
+
+  \item $2x^{2}-12x+18$
+
+        $=2\left( x-3\right)^{2}$
+
+  \item $4x^{2}+40x+100$
+
+        $=4\left( x+5\right)^{2}$
+
+  \item $5x^{2}+10x+2$
+
+        $=5\left( x+1\right)^{2}-3$
+
+  \item $-5x^{2}+40x-82$
+
+        $=-5\left( x-4\right)^{2}-2$
+
+  \item $-x^{2}+4x+1$
+
+        $=-\left( x-2\right)^{2}+5$
+
+  \item $4x^{2}+16x+18$
+
+        $=4\left( x+2\right)^{2}+2$
+
+  \item $-5x^{2}-20x-23$
+
+        $=-5\left( x+2\right)^{2}-3$
+
+  \item $-2x^{2}+12x-17$
+
+        $=-2\left( x-3\right)^{2}+1$
+
+\columnbreak % 400
+
+  \item $x^{2}+2x-3$
+
+        $=\left( x+1\right)^{2}-4$
+
+  \item $2x^{2}+16x+32$
+
+        $=2\left( x+4\right)^{2}$
+
+  \item $-2x^{2}+12x-22$
+
+        $=-2\left( x-3\right)^{2}-4$
+
+  \item $4x^{2}-32x+61$
+
+        $=4\left( x-4\right)^{2}-3$
+
+  \item $-x^{2}-6x-5$
+
+        $=-\left( x+3\right)^{2}+4$
+
+  \item $-3x^{2}-18x-32$
+
+        $=-3\left( x+3\right)^{2}-5$
+
+  \item $5x^{2}+50x+123$
+
+        $=5\left( x+5\right)^{2}-2$
+
+  \item $3x^{2}-6x+4$
+
+        $=3\left( x-1\right)^{2}+1$
+
+  \item $-5x^{2}+40x-80$
+
+        $=-5\left( x-4\right)^{2}$
+
+  \item $-5x^{2}-20x-15$
+
+        $=-5\left( x+2\right)^{2}+5$
+
+\columnbreak % 410
+
+  \item $x^{2}-2x+5$
+
+        $=\left( x-1\right)^{2}+4$
+
+  \item $5x^{2}+20x+20$
+
+        $=5\left( x+2\right)^{2}$
+
+  \item $-4x^{2}-8x-1$
+
+        $=-4\left( x+1\right)^{2}+3$
+
+  \item $-5x^{2}-10x-4$
+
+        $=-5\left( x+1\right)^{2}+1$
+
+  \item $-3x^{2}+6x+1$
+
+        $=-3\left( x-1\right)^{2}+4$
+
+  \item $-5x^{2}-40x-83$
+
+        $=-5\left( x+4\right)^{2}-3$
+
+  \item $-x^{2}+2x$
+
+        $=-\left( x-1\right)^{2}+1$
+
+  \item $2x^{2}+8x+12$
+
+        $=2\left( x+2\right)^{2}+4$
+
+  \item $4x^{2}+8x+6$
+
+        $=4\left( x+1\right)^{2}+2$
+
+  \item $2x^{2}-20x+47$
+
+        $=2\left( x-5\right)^{2}-3$
+
+\columnbreak % 420
+
+\resetques
+
+  \item $3x^{2}+12x+16$
+
+        $=3\left( x+2\right)^{2}+4$
+
+  \item $-x^{2}-8x-15$
+
+        $=-\left( x+4\right)^{2}+1$
+
+  \item $5x^{2}+40x+75$
+
+        $=5\left( x+4\right)^{2}-5$
+
+  \item $3x^{2}+18x+29$
+
+        $=3\left( x+3\right)^{2}+2$
+
+  \item $-3x^{2}+24x-46$
+
+        $=-3\left( x-4\right)^{2}+2$
+
+  \item $-5x^{2}+30x-48$
+
+        $=-5\left( x-3\right)^{2}-3$
+
+  \item $-5x^{2}-20x-21$
+
+        $=-5\left( x+2\right)^{2}-1$
+
+  \item $x^{2}-10x+27$
+
+        $=\left( x-5\right)^{2}+2$
+
+  \item $2x^{2}+12x+22$
+
+        $=2\left( x+3\right)^{2}+4$
+
+  \item $x^{2}+8x+20$
+
+        $=\left( x+4\right)^{2}+4$
+
+\columnbreak % 430
+
+  \item $2x^{2}+12x+13$
+
+        $=2\left( x+3\right)^{2}-5$
+
+  \item $-4x^{2}+24x-34$
+
+        $=-4\left( x-3\right)^{2}+2$
+
+  \item $x^{2}+4x-1$
+
+        $=\left( x+2\right)^{2}-5$
+
+  \item $2x^{2}+16x+35$
+
+        $=2\left( x+4\right)^{2}+3$
+
+  \item $4x^{2}+40x+101$
+
+        $=4\left( x+5\right)^{2}+1$
+
+  \item $4x^{2}+8x+7$
+
+        $=4\left( x+1\right)^{2}+3$
+
+  \item $5x^{2}-50x+124$
+
+        $=5\left( x-5\right)^{2}-1$
+
+  \item $-5x^{2}+40x-75$
+
+        $=-5\left( x-4\right)^{2}+5$
+
+  \item $x^{2}-6x+10$
+
+        $=\left( x-3\right)^{2}+1$
+
+  \item $-5x^{2}-10x-1$
+
+        $=-5\left( x+1\right)^{2}+4$
+
+\columnbreak % 440
+
+  \item $x^{2}+2x+3$
+
+        $=\left( x+1\right)^{2}+2$
+
+  \item $4x^{2}+32x+59$
+
+        $=4\left( x+4\right)^{2}-5$
+
+  \item $2x^{2}-4x-1$
+
+        $=2\left( x-1\right)^{2}-3$
+
+  \item $2x^{2}-4x+1$
+
+        $=2\left( x-1\right)^{2}-1$
+
+  \item $x^{2}+10x+26$
+
+        $=\left( x+5\right)^{2}+1$
+
+  \item $-5x^{2}-10x-5$
+
+        $=-5\left( x+1\right)^{2}$
+
+  \item $4x^{2}-32x+61$
+
+        $=4\left( x-4\right)^{2}-3$
+
+  \item $x^{2}-10x+30$
+
+        $=\left( x-5\right)^{2}+5$
+
+  \item $3x^{2}+18x+29$
+
+        $=3\left( x+3\right)^{2}+2$
+
+  \item $3x^{2}-24x+48$
+
+        $=3\left( x-4\right)^{2}$
+
+\columnbreak % 450
+
+\resetques
+
+  \item $4x^{2}-40x+97$
+
+        $=4\left( x-5\right)^{2}-3$
+
+  \item $-x^{2}+10x-22$
+
+        $=-\left( x-5\right)^{2}+3$
+
+  \item $-5x^{2}-30x-45$
+
+        $=-5\left( x+3\right)^{2}$
+
+  \item $x^{2}+4x+9$
+
+        $=\left( x+2\right)^{2}+5$
+
+  \item $4x^{2}+32x+65$
+
+        $=4\left( x+4\right)^{2}+1$
+
+  \item $5x^{2}+30x+46$
+
+        $=5\left( x+3\right)^{2}+1$
+
+  \item $-5x^{2}+50x-122$
+
+        $=-5\left( x-5\right)^{2}+3$
+
+  \item $-2x^{2}-8x-9$
+
+        $=-2\left( x+2\right)^{2}-1$
+
+  \item $x^{2}+8x+18$
+
+        $=\left( x+4\right)^{2}+2$
+
+  \item $-x^{2}-4x-3$
+
+        $=-\left( x+2\right)^{2}+1$
+
+\columnbreak % 460
+
+  \item $4x^{2}+40x+103$
+
+        $=4\left( x+5\right)^{2}+3$
+
+  \item $-2x^{2}+12x-18$
+
+        $=-2\left( x-3\right)^{2}$
+
+  \item $-4x^{2}+16x-18$
+
+        $=-4\left( x-2\right)^{2}-2$
+
+  \item $3x^{2}+24x+46$
+
+        $=3\left( x+4\right)^{2}-2$
+
+  \item $5x^{2}+10x+3$
+
+        $=5\left( x+1\right)^{2}-2$
+
+  \item $x^{2}-4x+2$
+
+        $=\left( x-2\right)^{2}-2$
+
+  \item $-5x^{2}-40x-84$
+
+        $=-5\left( x+4\right)^{2}-4$
+
+  \item $x^{2}-6x+4$
+
+        $=\left( x-3\right)^{2}-5$
+
+  \item $4x^{2}-32x+68$
+
+        $=4\left( x-4\right)^{2}+4$
+
+  \item $-2x^{2}+12x-21$
+
+        $=-2\left( x-3\right)^{2}-3$
+
+\columnbreak % 470
+
+  \item $5x^{2}-10x+10$
+
+        $=5\left( x-1\right)^{2}+5$
+
+  \item $-2x^{2}+4x-2$
+
+        $=-2\left( x-1\right)^{2}$
+
+  \item $-2x^{2}-20x-46$
+
+        $=-2\left( x+5\right)^{2}+4$
+
+  \item $x^{2}+2x+6$
+
+        $=\left( x+1\right)^{2}+5$
+
+  \item $x^{2}-4x+8$
+
+        $=\left( x-2\right)^{2}+4$
+
+  \item $5x^{2}-10x$
+
+        $=5\left( x-1\right)^{2}-5$
+
+  \item $-5x^{2}+10x-5$
+
+        $=-5\left( x-1\right)^{2}$
+
+  \item $-5x^{2}-40x-75$
+
+        $=-5\left( x+4\right)^{2}+5$
+
+  \item $-x^{2}+2x-1$
+
+        $=-\left( x-1\right)^{2}$
+
+  \item $x^{2}-2x-1$
+
+        $=\left( x-1\right)^{2}-2$
+
+\columnbreak % 480
+
+\resetques
+
+  \item $-3x^{2}-18x-24$
+
+        $=-3\left( x+3\right)^{2}+3$
+
+  \item $-5x^{2}+50x-129$
+
+        $=-5\left( x-5\right)^{2}-4$
+
+  \item $-4x^{2}+32x-60$
+
+        $=-4\left( x-4\right)^{2}+4$
+
+  \item $-5x^{2}+50x-126$
+
+        $=-5\left( x-5\right)^{2}-1$
+
+  \item $3x^{2}+18x+22$
+
+        $=3\left( x+3\right)^{2}-5$
+
+  \item $-2x^{2}-8x-6$
+
+        $=-2\left( x+2\right)^{2}+2$
+
+  \item $x^{2}+4x+6$
+
+        $=\left( x+2\right)^{2}+2$
+
+  \item $-2x^{2}+4x-3$
+
+        $=-2\left( x-1\right)^{2}-1$
+
+  \item $-4x^{2}+16x-19$
+
+        $=-4\left( x-2\right)^{2}-3$
+
+  \item $3x^{2}+6x-2$
+
+        $=3\left( x+1\right)^{2}-5$
+
+\columnbreak % 490
+
+  \item $-4x^{2}+24x-40$
+
+        $=-4\left( x-3\right)^{2}-4$
+
+  \item $-4x^{2}+32x-61$
+
+        $=-4\left( x-4\right)^{2}+3$
+
+  \item $-4x^{2}+8x-2$
+
+        $=-4\left( x-1\right)^{2}+2$
+
+  \item $3x^{2}-12x+9$
+
+        $=3\left( x-2\right)^{2}-3$
+
+  \item $x^{2}-2x+1$
+
+        $=\left( x-1\right)^{2}$
+
+  \item $-4x^{2}-8x$
+
+        $=-4\left( x+1\right)^{2}+4$
+
+  \item $-4x^{2}+24x-35$
+
+        $=-4\left( x-3\right)^{2}+1$
+
+  \item $-2x^{2}+8x-4$
+
+        $=-2\left( x-2\right)^{2}+4$
+
+  \item $2x^{2}-20x+55$
+
+        $=2\left( x-5\right)^{2}+5$
+
+  \item $-4x^{2}-16x-16$
+
+        $=-4\left( x+2\right)^{2}$
+
+\columnbreak % 500
+
+  \item $4x^{2}+24x+36$
+
+        $=4\left( x+3\right)^{2}$
+
+  \item $2x^{2}+16x+34$
+
+        $=2\left( x+4\right)^{2}+2$
+
+  \item $5x^{2}-50x+129$
+
+        $=5\left( x-5\right)^{2}+4$
+
+  \item $3x^{2}-24x+53$
+
+        $=3\left( x-4\right)^{2}+5$
+
+  \item $-2x^{2}+20x-53$
+
+        $=-2\left( x-5\right)^{2}-3$
+
+  \item $-5x^{2}+20x-15$
+
+        $=-5\left( x-2\right)^{2}+5$
+
+  \item $-x^{2}-2x$
+
+        $=-\left( x+1\right)^{2}+1$
+
+  \item $-x^{2}-6x-12$
+
+        $=-\left( x+3\right)^{2}-3$
+
+  \item $-3x^{2}+30x-70$
+
+        $=-3\left( x-5\right)^{2}+5$
+
+  \item $4x^{2}-40x+103$
+
+        $=4\left( x-5\right)^{2}+3$
+
+\columnbreak % 510
+
+\resetques
+
+  \item $x^{2}-6x+5$
+
+        $=\left( x-3\right)^{2}-4$
+
+  \item $-2x^{2}-12x-23$
+
+        $=-2\left( x+3\right)^{2}-5$
+
+  \item $2x^{2}-12x+23$
+
+        $=2\left( x-3\right)^{2}+5$
+
+  \item $-4x^{2}+24x-35$
+
+        $=-4\left( x-3\right)^{2}+1$
+
+  \item $5x^{2}+50x+122$
+
+        $=5\left( x+5\right)^{2}-3$
+
+  \item $-4x^{2}-40x-101$
+
+        $=-4\left( x+5\right)^{2}-1$
+
+  \item $-4x^{2}-24x-35$
+
+        $=-4\left( x+3\right)^{2}+1$
+
+  \item $-x^{2}-8x-21$
+
+        $=-\left( x+4\right)^{2}-5$
+
+  \item $5x^{2}-20x+19$
+
+        $=5\left( x-2\right)^{2}-1$
+
+  \item $-3x^{2}-30x-78$
+
+        $=-3\left( x+5\right)^{2}-3$
+
+\columnbreak % 520
+
+  \item $5x^{2}-10x+2$
+
+        $=5\left( x-1\right)^{2}-3$
+
+  \item $4x^{2}+24x+41$
+
+        $=4\left( x+3\right)^{2}+5$
+
+  \item $-x^{2}-4x+1$
+
+        $=-\left( x+2\right)^{2}+5$
+
+  \item $-x^{2}-8x-15$
+
+        $=-\left( x+4\right)^{2}+1$
+
+  \item $-x^{2}+2x+4$
+
+        $=-\left( x-1\right)^{2}+5$
+
+  \item $x^{2}+8x+20$
+
+        $=\left( x+4\right)^{2}+4$
+
+  \item $-2x^{2}+16x-34$
+
+        $=-2\left( x-4\right)^{2}-2$
+
+  \item $-3x^{2}-30x-75$
+
+        $=-3\left( x+5\right)^{2}$
+
+  \item $5x^{2}-20x+19$
+
+        $=5\left( x-2\right)^{2}-1$
+
+  \item $2x^{2}+20x+51$
+
+        $=2\left( x+5\right)^{2}+1$
+
+\columnbreak % 530
+
+  \item $x^{2}+2x-2$
+
+        $=\left( x+1\right)^{2}-3$
+
+  \item $-3x^{2}+24x-43$
+
+        $=-3\left( x-4\right)^{2}+5$
+
+  \item $x^{2}-8x+17$
+
+        $=\left( x-4\right)^{2}+1$
+
+  \item $-5x^{2}-10x-9$
+
+        $=-5\left( x+1\right)^{2}-4$
+
+  \item $5x^{2}-30x+40$
+
+        $=5\left( x-3\right)^{2}-5$
+
+  \item $x^{2}+10x+30$
+
+        $=\left( x+5\right)^{2}+5$
+
+  \item $-x^{2}+8x-21$
+
+        $=-\left( x-4\right)^{2}-5$
+
+  \item $-5x^{2}+20x-17$
+
+        $=-5\left( x-2\right)^{2}+3$
+
+  \item $-5x^{2}-50x-122$
+
+        $=-5\left( x+5\right)^{2}+3$
+
+  \item $5x^{2}-10x+7$
+
+        $=5\left( x-1\right)^{2}+2$
+
+\columnbreak % 540
+
+\resetques
+
+  \item $-4x^{2}+24x-38$
+
+        $=-4\left( x-3\right)^{2}-2$
+
+  \item $-5x^{2}+30x-49$
+
+        $=-5\left( x-3\right)^{2}-4$
+
+  \item $4x^{2}-32x+67$
+
+        $=4\left( x-4\right)^{2}+3$
+
+  \item $4x^{2}-8x+1$
+
+        $=4\left( x-1\right)^{2}-3$
+
+  \item $4x^{2}-16x+13$
+
+        $=4\left( x-2\right)^{2}-3$
+
+  \item $x^{2}+4x+6$
+
+        $=\left( x+2\right)^{2}+2$
+
+  \item $-3x^{2}-24x-43$
+
+        $=-3\left( x+4\right)^{2}+5$
+
+  \item $-3x^{2}-24x-46$
+
+        $=-3\left( x+4\right)^{2}+2$
+
+  \item $5x^{2}-50x+124$
+
+        $=5\left( x-5\right)^{2}-1$
+
+  \item $4x^{2}-40x+102$
+
+        $=4\left( x-5\right)^{2}+2$
+
+\columnbreak % 550
+
+  \item $3x^{2}+12x+14$
+
+        $=3\left( x+2\right)^{2}+2$
+
+  \item $-4x^{2}+32x-63$
+
+        $=-4\left( x-4\right)^{2}+1$
+
+  \item $-5x^{2}-40x-85$
+
+        $=-5\left( x+4\right)^{2}-5$
+
+  \item $x^{2}-6x+5$
+
+        $=\left( x-3\right)^{2}-4$
+
+  \item $4x^{2}-24x+40$
+
+        $=4\left( x-3\right)^{2}+4$
+
+  \item $-2x^{2}-4x-5$
+
+        $=-2\left( x+1\right)^{2}-3$
+
+  \item $5x^{2}-50x+125$
+
+        $=5\left( x-5\right)^{2}$
+
+  \item $-x^{2}-4x-4$
+
+        $=-\left( x+2\right)^{2}$
+
+  \item $3x^{2}-24x+47$
+
+        $=3\left( x-4\right)^{2}-1$
+
+  \item $2x^{2}-8x+3$
+
+        $=2\left( x-2\right)^{2}-5$
+
+\columnbreak % 560
+
+  \item $4x^{2}-8x+7$
+
+        $=4\left( x-1\right)^{2}+3$
+
+  \item $-4x^{2}-40x-96$
+
+        $=-4\left( x+5\right)^{2}+4$
+
+  \item $4x^{2}+40x+105$
+
+        $=4\left( x+5\right)^{2}+5$
+
+  \item $2x^{2}-12x+19$
+
+        $=2\left( x-3\right)^{2}+1$
+
+  \item $3x^{2}-12x+11$
+
+        $=3\left( x-2\right)^{2}-1$
+
+  \item $5x^{2}+20x+22$
+
+        $=5\left( x+2\right)^{2}+2$
+
+  \item $3x^{2}-6x+8$
+
+        $=3\left( x-1\right)^{2}+5$
+
+  \item $x^{2}+10x+29$
+
+        $=\left( x+5\right)^{2}+4$
+
+  \item $3x^{2}-18x+23$
+
+        $=3\left( x-3\right)^{2}-4$
+
+  \item $-2x^{2}+20x-47$
+
+        $=-2\left( x-5\right)^{2}+3$
+
+\columnbreak % 570
+
+\resetques
+
+  \item $-4x^{2}-8x-8$
+
+        $=-4\left( x+1\right)^{2}-4$
+
+  \item $x^{2}-8x+16$
+
+        $=\left( x-4\right)^{2}$
+
+  \item $x^{2}-8x+12$
+
+        $=\left( x-4\right)^{2}-4$
+
+  \item $-5x^{2}+50x-128$
+
+        $=-5\left( x-5\right)^{2}-3$
+
+  \item $2x^{2}-4x-1$
+
+        $=2\left( x-1\right)^{2}-3$
+
+  \item $3x^{2}-24x+49$
+
+        $=3\left( x-4\right)^{2}+1$
+
+  \item $-2x^{2}-4x-2$
+
+        $=-2\left( x+1\right)^{2}$
+
+  \item $2x^{2}+8x+7$
+
+        $=2\left( x+2\right)^{2}-1$
+
+  \item $-x^{2}-2x-4$
+
+        $=-\left( x+1\right)^{2}-3$
+
+  \item $3x^{2}-6x+5$
+
+        $=3\left( x-1\right)^{2}+2$
+
+\columnbreak % 580
+
+  \item $5x^{2}-20x+16$
+
+        $=5\left( x-2\right)^{2}-4$
+
+  \item $2x^{2}+12x+17$
+
+        $=2\left( x+3\right)^{2}-1$
+
+  \item $-3x^{2}+6x-1$
+
+        $=-3\left( x-1\right)^{2}+2$
+
+  \item $-5x^{2}-50x-125$
+
+        $=-5\left( x+5\right)^{2}$
+
+  \item $2x^{2}-20x+45$
+
+        $=2\left( x-5\right)^{2}-5$
+
+  \item $3x^{2}+12x+14$
+
+        $=3\left( x+2\right)^{2}+2$
+
+  \item $4x^{2}-32x+63$
+
+        $=4\left( x-4\right)^{2}-1$
+
+  \item $-5x^{2}-40x-83$
+
+        $=-5\left( x+4\right)^{2}-3$
+
+  \item $-3x^{2}+24x-47$
+
+        $=-3\left( x-4\right)^{2}+1$
+
+  \item $5x^{2}-50x+130$
+
+        $=5\left( x-5\right)^{2}+5$
+
+\columnbreak % 590
+
+  \item $-3x^{2}+6x-7$
+
+        $=-3\left( x-1\right)^{2}-4$
+
+  \item $x^{2}+10x+28$
+
+        $=\left( x+5\right)^{2}+3$
+
+  \item $5x^{2}+40x+78$
+
+        $=5\left( x+4\right)^{2}-2$
+
+  \item $-3x^{2}-12x-9$
+
+        $=-3\left( x+2\right)^{2}+3$
+
+  \item $3x^{2}+30x+78$
+
+        $=3\left( x+5\right)^{2}+3$
+
+  \item $-2x^{2}-12x-15$
+
+        $=-2\left( x+3\right)^{2}+3$
+
+  \item $-2x^{2}+20x-54$
+
+        $=-2\left( x-5\right)^{2}-4$
+
+  \item $4x^{2}+24x+36$
+
+        $=4\left( x+3\right)^{2}$
+
+  \item $-5x^{2}+40x-82$
+
+        $=-5\left( x-4\right)^{2}-2$
+
+  \item $-2x^{2}+16x-31$
+
+        $=-2\left( x-4\right)^{2}+1$
+
+\end{enumerate}
+\end{multicols}
