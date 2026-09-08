@@ -9,7 +9,7 @@ use Encode;
 require "./latex_code.pl";
 
 
-# 一次方程式
+# 一次不等式
 
 # 問題生成 変数
 my $num_eq = 900; # 問題数
@@ -36,18 +36,29 @@ for (1..$num_eq) {
     while ($coeff[0]==$coeff[2]){
         @coeff = gen_num(4, $num_rng, 0); # 数字再生成
     }
-
+    my $flag_sign = int rand(4);
+    my @sign = ('<', '>', '\leqq ', '\geqq ');
 
     # 問題
-    $eq = trans_poly($coeff[0], $coeff[1]) . "=" .
+    $eq = trans_poly($coeff[0], $coeff[1])
+        . $sign[$flag_sign] .
         trans_poly($coeff[2], $coeff[3]);
 
     # 解答
-    $ans = trans_frac( $coeff[3]-$coeff[1], $coeff[0]-$coeff[2] );
+    # 分子分母
+    my ($numer, $denomi) = ($coeff[3]-$coeff[1], $coeff[0]-$coeff[2]);
 
+    $ans = "x";
+    if ($denomi < 0) {
+        if ($flag_sign == 0 or $flag_sign == 2) {
+            $flag_sign++;
+        } else {
+            $flag_sign--;
+        }
+    }
+    $ans .= $sign[$flag_sign];
+    $ans .= trans_frac($numer, $denomi);
 
-    # 最終加工
-    $ans = "x=" . $ans;
 
     # 数式モード付与
     $eq = '$' . $eq . '$' . "\n";
