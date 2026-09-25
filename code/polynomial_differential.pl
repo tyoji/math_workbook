@@ -32,16 +32,16 @@ for (1..$num_eq) {
     # 問題の式 及び 解答
     my @coeff = (gen_num(1, $num_rng, 0), gen_num(3, $num_rng, 1)); # 数字生成
 
-    $coeff[0] = abs $coeff[0];
+    #$coeff[0] = abs $coeff[0];
 
     # 問題
-    $eq = "f(x)=" . trans_poly( $coeff[0], $coeff[1], $coeff[2], $coeff[3] );
+    $eq = "y=" . trans_poly( $coeff[0], $coeff[1], $coeff[2], $coeff[3] );
 
     # 解答
     $ans = trans_poly( 3*$coeff[0], 2*$coeff[1], $coeff[2] );
 
     # 最終加工
-    $ans = 'f^{\prime}(x)=' . $ans;
+    $ans = 'y^{\prime}=' . $ans;
 
     # 数式モード付与
     $eq = '$' . $eq . '$' . "\n";
