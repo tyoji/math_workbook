@@ -1,0 +1,1064 @@
+\documentclass[b5paper,10pt]{ltjsarticle}
+%\documentclass[landscape,a4paper,10pt]{ltjsarticle}
+
+\usepackage[top=15truemm,bottom=10truemm,left=10truemm,right=10truemm]{geometry}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{%\fbox{練習問題} \:
+2次関数のグラフ %\qquad {\tiny 生成日:\today}
+}
+\fancyhead[R]{クラス\hspace{30pt}番号\hspace{30pt}名前\hspace{100pt} \qquad
+/120}\fancyfoot{}
+
+\usepackage{tikz}
+
+\newcommand{\genbasegraph}[6]{
+\begin{tikzpicture}[scale=#6,samples=150]
+
+ % 数値表記 数式環境内LaTeXコマンド
+ \def\grph{#1}; % グラフのパラメータ
+ \def\xvertex{#2}; % 座標 頂点のx座標 整数小数分数
+ \def\yvertex{#3}; % 座標 頂点のy座標 整数小数分数
+
+ \def\ysep{\grph*\xvertex*\xvertex+\yvertex}; % 座標 y軸との交点 整数小数分数
+ \def\func{\grph*(\x-\xvertex)^2+\yvertex}; % グラフの式
+  %\ifnum \valconst=2 -(\x+1)^2+1 \else (\x+1)^2+1 \fi
+
+ %軸に振る座標の値
+ \def\valconst{#4};
+ \def\valxver{\xvertex};
+ \def\valyver{\yvertex};
+
+ %座標空間の大きさ
+ \def\xleft{-#5};
+ \def\xright{#5};
+ \def\ybottom{-#5};
+ \def\ytop{#5};
+
+ %%%%%
+ % xy座標
+ \draw[->] (\xleft,0) |- (\xright,0) node[below left] at (\xright,0) {$x$};
+ \draw[->] (0,\ybottom) |- (0,\ytop) node[above left] at (0,\ytop) {$y$};
+
+ \ifnum \xvertex > 0
+   \ifnum \yvertex > 0
+     \node[below left] at (0,0) {$O$};
+   \else
+     \node[above left] at (0,0) {$O$};
+   \fi
+ \else
+   \ifnum \yvertex > 0
+     \node[below right] at (0,0) {$O$};
+   \else
+     \node[above right] at (0,0) {$O$};
+   \fi
+ \fi
+ %%%%%
+
+ \begin{scope}
+  \clip (\xleft,\ybottom) rectangle (\xright,\ytop);
+
+  \draw[domain=-10:10] plot (\x,{\func}); % グラフ描画
+ \end{scope}
+
+% \draw (\xvertex,0) -- (\xvertex,\yvertex) -- (0,\yvertex);
+ \draw[dashed] (\xvertex,0) |- (0,\yvertex);
+ \ifnum \yvertex > 0
+   \node[below] at (\xvertex,0) {$\valxver$} % 頂点のx座標を軸の下に表示
+ \else
+   \node[above] at (\xvertex,0) {$\valxver$} % 頂点のx座標を軸の上に表示
+ \fi;
+ \ifnum \xvertex > 0
+   \node[left] at (0,\yvertex) {$\valyver$} % 頂点のy座標を軸の左に表示
+ \else
+   \node[right] at (0,\yvertex) {$\valyver$} % 頂点のx座標を軸の右に表示
+ \fi;
+ \ifnum \xvertex > 0
+   \node[left] at (0,\ysep) {$\valconst$};
+ \else
+   \node[right] at (0,\ysep) {$\valconst$};
+ \fi;
+\end{tikzpicture}
+}
+
+
+\renewcommand{\labelenumi}{(\theenumi)}
+%\renewcommand{\baselinestretch}{8}
+
+\usepackage{multicol}
+
+\begin{document}
+\small
+\begin{multicols}{ 2 }
+\begin{enumerate}
+\setlength{\itemsep}{40 pt}
+\item $\displaystyle{} y= -\left( x-1\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x+3\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x-3\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+1\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x+2\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x+1\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x+2\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x+3\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-1\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x+1\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-3\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+3\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-1\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x-2\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x-2\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x+3\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x-1\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+3\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x+1\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x+2\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x+3\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-2\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x+2\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x-1\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x+2\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+1\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+3\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x-2\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x+3\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x-1\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x+3\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x+3\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x-3\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+2\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x+3\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x-3\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x-3\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x-2\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x-3\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x+3\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x-2\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x+3\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+1\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x-3\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x+3\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x-1\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x+1\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x+3\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-3\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x+2\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x+1\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x-1\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x+1\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x+2\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x-1\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x-3\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x+2\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+2\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x+2\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x-3\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x+1\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x+1\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x+2\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x+2\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x-3\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x+2\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x+1\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x+1\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x+1\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x+2\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+1\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x+1\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+3\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x+2\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x-3\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x-3\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-1\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+3\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x+1\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x-1\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x-1\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-3\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x-3\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x-1\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-1\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-1\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x+2\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+3\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-1\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+1\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+1\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x+3\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-3\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x-3\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+1\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-3\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x+1\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x+3\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x+2\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x+1\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x-1\right)^{2}-3$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x-3\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x-1\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x-1\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x+1\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-2\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x+3\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x+1\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= -3\left( x+1\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-2\right)^{2}+2$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x+3\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x-2\right)^{2}-1$
+
+\vspace{170pt}\item $\displaystyle{} y= 3\left( x-1\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x+3\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= \left( x-3\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x+3\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= -\left( x+1\right)^{2}+3$
+
+\vspace{170pt}\item $\displaystyle{} y= 2\left( x-3\right)^{2}+1$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x+3\right)^{2}-2$
+
+\vspace{170pt}\item $\displaystyle{} y= -2\left( x-2\right)^{2}+2$
+
+\vspace{170pt}\end{enumerate}
+\end{multicols}
+\newpage
+\begin{multicols}{ 2 }
+\begin{enumerate}
+\setlength{\itemsep}{40 pt}
+\item $\displaystyle{} y= -\left( x-1\right)^{2}-1$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , -1) $
+
+\genbasegraph{-1}{1}{-1}{-2}{5}{0.5}
+
+\item $\displaystyle{} y= \left( x+3\right)^{2}+2$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 2) $
+
+\genbasegraph{1}{-3}{2}{11}{13.2}{0.189393939393939}
+
+\item $\displaystyle{} y= -\left( x-3\right)^{2}+3$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , 3) $
+
+\genbasegraph{-1}{3}{3}{-6}{7.2}{0.347222222222222}
+
+\item $\displaystyle{} y= -2\left( x+1\right)^{2}+1$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 1) $
+
+\genbasegraph{-2}{-1}{1}{-1}{5}{0.5}
+
+\item $\displaystyle{} y= \left( x+2\right)^{2}+1$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , 1) $
+
+\genbasegraph{1}{-2}{1}{5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= 3\left( x+1\right)^{2}-3$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -3) $
+
+\genbasegraph{3}{-1}{-3}{}{5}{0.5}
+
+\item $\displaystyle{} y= 2\left( x+2\right)^{2}-1$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , -1) $
+
+\genbasegraph{2}{-2}{-1}{7}{8.4}{0.297619047619048}
+
+\item $\displaystyle{} y= 2\left( x+3\right)^{2}+3$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 3) $
+
+\genbasegraph{2}{-3}{3}{21}{25.2}{0.0992063492063492}
+
+\item $\displaystyle{} y= 3\left( x-1\right)^{2}-1$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , -1) $
+
+\genbasegraph{3}{1}{-1}{2}{5}{0.5}
+
+\item $\displaystyle{} y= -3\left( x+1\right)^{2}-1$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -1) $
+
+\genbasegraph{-3}{-1}{-1}{-4}{5}{0.5}
+
+\item $\displaystyle{} y= 3\left( x-3\right)^{2}+3$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , 3) $
+
+\genbasegraph{3}{3}{3}{30}{36}{0.0694444444444444}
+
+\item $\displaystyle{} y= -2\left( x+3\right)^{2}-2$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , -2) $
+
+\genbasegraph{-2}{-3}{-2}{-20}{24}{0.104166666666667}
+
+\item $\displaystyle{} y= 3\left( x-1\right)^{2}-3$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , -3) $
+
+\genbasegraph{3}{1}{-3}{}{5}{0.5}
+
+\item $\displaystyle{} y= 2\left( x-2\right)^{2}+2$
+
+軸:$ x=2 $ , \quad 頂点:$ ( 2 , 2) $
+
+\genbasegraph{2}{2}{2}{10}{12}{0.208333333333333}
+
+\item $\displaystyle{} y= \left( x-2\right)^{2}-1$
+
+軸:$ x=2 $ , \quad 頂点:$ ( 2 , -1) $
+
+\genbasegraph{1}{2}{-1}{3}{5}{0.5}
+
+\item $\displaystyle{} y= -3\left( x+3\right)^{2}-2$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , -2) $
+
+\genbasegraph{-3}{-3}{-2}{-29}{34.8}{0.0718390804597701}
+
+\item $\displaystyle{} y= -3\left( x-1\right)^{2}+1$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , 1) $
+
+\genbasegraph{-3}{1}{1}{-2}{5}{0.5}
+
+\item $\displaystyle{} y= -2\left( x+3\right)^{2}-2$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , -2) $
+
+\genbasegraph{-2}{-3}{-2}{-20}{24}{0.104166666666667}
+
+\item $\displaystyle{} y= 3\left( x+1\right)^{2}-3$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -3) $
+
+\genbasegraph{3}{-1}{-3}{}{5}{0.5}
+
+\item $\displaystyle{} y= -\left( x+2\right)^{2}+2$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , 2) $
+
+\genbasegraph{-1}{-2}{2}{-2}{5}{0.5}
+
+\item $\displaystyle{} y= 2\left( x+3\right)^{2}+1$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 1) $
+
+\genbasegraph{2}{-3}{1}{19}{22.8}{0.109649122807018}
+
+\item $\displaystyle{} y= 3\left( x-2\right)^{2}-2$
+
+軸:$ x=2 $ , \quad 頂点:$ ( 2 , -2) $
+
+\genbasegraph{3}{2}{-2}{10}{12}{0.208333333333333}
+
+\item $\displaystyle{} y= \left( x+2\right)^{2}+1$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , 1) $
+
+\genbasegraph{1}{-2}{1}{5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= 2\left( x-1\right)^{2}-3$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , -3) $
+
+\genbasegraph{2}{1}{-3}{-1}{5}{0.5}
+
+\item $\displaystyle{} y= -\left( x+2\right)^{2}+1$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , 1) $
+
+\genbasegraph{-1}{-2}{1}{-3}{5}{0.5}
+
+\item $\displaystyle{} y= -2\left( x+1\right)^{2}-3$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -3) $
+
+\genbasegraph{-2}{-1}{-3}{-5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= -2\left( x+3\right)^{2}+3$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 3) $
+
+\genbasegraph{-2}{-3}{3}{-15}{18}{0.138888888888889}
+
+\item $\displaystyle{} y= -3\left( x-2\right)^{2}-2$
+
+軸:$ x=2 $ , \quad 頂点:$ ( 2 , -2) $
+
+\genbasegraph{-3}{2}{-2}{-14}{16.8}{0.148809523809524}
+
+\item $\displaystyle{} y= -\left( x+3\right)^{2}+1$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 1) $
+
+\genbasegraph{-1}{-3}{1}{-8}{9.6}{0.260416666666667}
+
+\item $\displaystyle{} y= 2\left( x-1\right)^{2}+3$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , 3) $
+
+\genbasegraph{2}{1}{3}{5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= 3\left( x+3\right)^{2}-3$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , -3) $
+
+\genbasegraph{3}{-3}{-3}{24}{28.8}{0.0868055555555556}
+
+\item $\displaystyle{} y= 3\left( x+3\right)^{2}-3$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , -3) $
+
+\genbasegraph{3}{-3}{-3}{24}{28.8}{0.0868055555555556}
+
+\item $\displaystyle{} y= 2\left( x-3\right)^{2}-1$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , -1) $
+
+\genbasegraph{2}{3}{-1}{17}{20.4}{0.122549019607843}
+
+\item $\displaystyle{} y= -2\left( x+2\right)^{2}-3$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , -3) $
+
+\genbasegraph{-2}{-2}{-3}{-11}{13.2}{0.189393939393939}
+
+\item $\displaystyle{} y= -3\left( x+3\right)^{2}+2$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 2) $
+
+\genbasegraph{-3}{-3}{2}{-25}{30}{0.0833333333333333}
+
+\item $\displaystyle{} y= -\left( x-3\right)^{2}+3$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , 3) $
+
+\genbasegraph{-1}{3}{3}{-6}{7.2}{0.347222222222222}
+
+\item $\displaystyle{} y= \left( x-3\right)^{2}-1$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , -1) $
+
+\genbasegraph{1}{3}{-1}{8}{9.6}{0.260416666666667}
+
+\item $\displaystyle{} y= -2\left( x-2\right)^{2}-1$
+
+軸:$ x=2 $ , \quad 頂点:$ ( 2 , -1) $
+
+\genbasegraph{-2}{2}{-1}{-9}{10.8}{0.231481481481482}
+
+\item $\displaystyle{} y= -3\left( x-3\right)^{2}-2$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , -2) $
+
+\genbasegraph{-3}{3}{-2}{-29}{34.8}{0.0718390804597701}
+
+\item $\displaystyle{} y= 2\left( x+3\right)^{2}-2$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , -2) $
+
+\genbasegraph{2}{-3}{-2}{16}{19.2}{0.130208333333333}
+
+\item $\displaystyle{} y= -2\left( x-2\right)^{2}-1$
+
+軸:$ x=2 $ , \quad 頂点:$ ( 2 , -1) $
+
+\genbasegraph{-2}{2}{-1}{-9}{10.8}{0.231481481481482}
+
+\item $\displaystyle{} y= -3\left( x+3\right)^{2}+2$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 2) $
+
+\genbasegraph{-3}{-3}{2}{-25}{30}{0.0833333333333333}
+
+\item $\displaystyle{} y= -2\left( x+1\right)^{2}+3$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 3) $
+
+\genbasegraph{-2}{-1}{3}{1}{5}{0.5}
+
+\item $\displaystyle{} y= -2\left( x-3\right)^{2}-2$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , -2) $
+
+\genbasegraph{-2}{3}{-2}{-20}{24}{0.104166666666667}
+
+\item $\displaystyle{} y= 3\left( x+3\right)^{2}+2$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 2) $
+
+\genbasegraph{3}{-3}{2}{29}{34.8}{0.0718390804597701}
+
+\item $\displaystyle{} y= \left( x-1\right)^{2}+1$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , 1) $
+
+\genbasegraph{1}{1}{1}{2}{5}{0.5}
+
+\item $\displaystyle{} y= \left( x+1\right)^{2}+2$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 2) $
+
+\genbasegraph{1}{-1}{2}{3}{5}{0.5}
+
+\item $\displaystyle{} y= 3\left( x+3\right)^{2}+3$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 3) $
+
+\genbasegraph{3}{-3}{3}{30}{36}{0.0694444444444444}
+
+\item $\displaystyle{} y= 3\left( x-3\right)^{2}+2$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , 2) $
+
+\genbasegraph{3}{3}{2}{29}{34.8}{0.0718390804597701}
+
+\item $\displaystyle{} y= -\left( x+2\right)^{2}+1$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , 1) $
+
+\genbasegraph{-1}{-2}{1}{-3}{5}{0.5}
+
+\item $\displaystyle{} y= -\left( x+1\right)^{2}+2$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 2) $
+
+\genbasegraph{-1}{-1}{2}{1}{5}{0.5}
+
+\item $\displaystyle{} y= \left( x-1\right)^{2}-2$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , -2) $
+
+\genbasegraph{1}{1}{-2}{-1}{5}{0.5}
+
+\item $\displaystyle{} y= -\left( x+1\right)^{2}-1$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -1) $
+
+\genbasegraph{-1}{-1}{-1}{-2}{5}{0.5}
+
+\item $\displaystyle{} y= \left( x+2\right)^{2}+1$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , 1) $
+
+\genbasegraph{1}{-2}{1}{5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= \left( x-1\right)^{2}-3$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , -3) $
+
+\genbasegraph{1}{1}{-3}{-2}{5}{0.5}
+
+\item $\displaystyle{} y= -3\left( x-3\right)^{2}+3$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , 3) $
+
+\genbasegraph{-3}{3}{3}{-24}{28.8}{0.0868055555555556}
+
+\item $\displaystyle{} y= -3\left( x+2\right)^{2}+1$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , 1) $
+
+\genbasegraph{-3}{-2}{1}{-11}{13.2}{0.189393939393939}
+
+\item $\displaystyle{} y= -2\left( x+2\right)^{2}+3$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , 3) $
+
+\genbasegraph{-2}{-2}{3}{-5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= -3\left( x+2\right)^{2}-3$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , -3) $
+
+\genbasegraph{-3}{-2}{-3}{-15}{18}{0.138888888888889}
+
+\item $\displaystyle{} y= 2\left( x-3\right)^{2}-2$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , -2) $
+
+\genbasegraph{2}{3}{-2}{16}{19.2}{0.130208333333333}
+
+\item $\displaystyle{} y= -\left( x+1\right)^{2}-2$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -2) $
+
+\genbasegraph{-1}{-1}{-2}{-3}{5}{0.5}
+
+\item $\displaystyle{} y= \left( x+1\right)^{2}+2$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 2) $
+
+\genbasegraph{1}{-1}{2}{3}{5}{0.5}
+
+\item $\displaystyle{} y= \left( x+2\right)^{2}-2$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , -2) $
+
+\genbasegraph{1}{-2}{-2}{2}{5}{0.5}
+
+\item $\displaystyle{} y= \left( x+2\right)^{2}+3$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , 3) $
+
+\genbasegraph{1}{-2}{3}{7}{8.4}{0.297619047619048}
+
+\item $\displaystyle{} y= 2\left( x-3\right)^{2}-3$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , -3) $
+
+\genbasegraph{2}{3}{-3}{15}{18}{0.138888888888889}
+
+\item $\displaystyle{} y= \left( x+2\right)^{2}+2$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , 2) $
+
+\genbasegraph{1}{-2}{2}{6}{7.2}{0.347222222222222}
+
+\item $\displaystyle{} y= 2\left( x+1\right)^{2}-3$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -3) $
+
+\genbasegraph{2}{-1}{-3}{-1}{5}{0.5}
+
+\item $\displaystyle{} y= -\left( x+1\right)^{2}-3$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -3) $
+
+\genbasegraph{-1}{-1}{-3}{-4}{5}{0.5}
+
+\item $\displaystyle{} y= -3\left( x+1\right)^{2}-2$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -2) $
+
+\genbasegraph{-3}{-1}{-2}{-5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= 3\left( x+2\right)^{2}-2$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , -2) $
+
+\genbasegraph{3}{-2}{-2}{10}{12}{0.208333333333333}
+
+\item $\displaystyle{} y= -2\left( x+1\right)^{2}-3$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -3) $
+
+\genbasegraph{-2}{-1}{-3}{-5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= \left( x+1\right)^{2}-2$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -2) $
+
+\genbasegraph{1}{-1}{-2}{-1}{5}{0.5}
+
+\item $\displaystyle{} y= -2\left( x+3\right)^{2}-2$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , -2) $
+
+\genbasegraph{-2}{-3}{-2}{-20}{24}{0.104166666666667}
+
+\item $\displaystyle{} y= 3\left( x+2\right)^{2}-2$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , -2) $
+
+\genbasegraph{3}{-2}{-2}{10}{12}{0.208333333333333}
+
+\item $\displaystyle{} y= \left( x-3\right)^{2}+3$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , 3) $
+
+\genbasegraph{1}{3}{3}{12}{14.4}{0.173611111111111}
+
+\item $\displaystyle{} y= \left( x-3\right)^{2}-3$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , -3) $
+
+\genbasegraph{1}{3}{-3}{6}{7.2}{0.347222222222222}
+
+\item $\displaystyle{} y= 3\left( x-1\right)^{2}-1$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , -1) $
+
+\genbasegraph{3}{1}{-1}{2}{5}{0.5}
+
+\item $\displaystyle{} y= -2\left( x+3\right)^{2}-1$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , -1) $
+
+\genbasegraph{-2}{-3}{-1}{-19}{22.8}{0.109649122807018}
+
+\item $\displaystyle{} y= 3\left( x+1\right)^{2}-3$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -3) $
+
+\genbasegraph{3}{-1}{-3}{}{5}{0.5}
+
+\item $\displaystyle{} y= 2\left( x-1\right)^{2}+3$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , 3) $
+
+\genbasegraph{2}{1}{3}{5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= -\left( x-1\right)^{2}+1$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , 1) $
+
+\genbasegraph{-1}{1}{1}{}{5}{0.5}
+
+\item $\displaystyle{} y= 3\left( x-3\right)^{2}-1$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , -1) $
+
+\genbasegraph{3}{3}{-1}{26}{31.2}{0.0801282051282051}
+
+\item $\displaystyle{} y= 2\left( x-3\right)^{2}+2$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , 2) $
+
+\genbasegraph{2}{3}{2}{20}{24}{0.104166666666667}
+
+\item $\displaystyle{} y= \left( x-1\right)^{2}+1$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , 1) $
+
+\genbasegraph{1}{1}{1}{2}{5}{0.5}
+
+\item $\displaystyle{} y= 3\left( x-1\right)^{2}+2$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , 2) $
+
+\genbasegraph{3}{1}{2}{5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= 3\left( x-1\right)^{2}+1$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , 1) $
+
+\genbasegraph{3}{1}{1}{4}{5}{0.5}
+
+\item $\displaystyle{} y= 2\left( x+2\right)^{2}-2$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , -2) $
+
+\genbasegraph{2}{-2}{-2}{6}{7.2}{0.347222222222222}
+
+\item $\displaystyle{} y= -2\left( x+3\right)^{2}+2$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 2) $
+
+\genbasegraph{-2}{-3}{2}{-16}{19.2}{0.130208333333333}
+
+\item $\displaystyle{} y= 3\left( x-1\right)^{2}+2$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , 2) $
+
+\genbasegraph{3}{1}{2}{5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= -2\left( x+1\right)^{2}-2$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , -2) $
+
+\genbasegraph{-2}{-1}{-2}{-4}{5}{0.5}
+
+\item $\displaystyle{} y= -2\left( x+1\right)^{2}+1$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 1) $
+
+\genbasegraph{-2}{-1}{1}{-1}{5}{0.5}
+
+\item $\displaystyle{} y= 2\left( x+3\right)^{2}+2$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 2) $
+
+\genbasegraph{2}{-3}{2}{20}{24}{0.104166666666667}
+
+\item $\displaystyle{} y= 3\left( x-3\right)^{2}-3$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , -3) $
+
+\genbasegraph{3}{3}{-3}{24}{28.8}{0.0868055555555556}
+
+\item $\displaystyle{} y= -3\left( x-3\right)^{2}+1$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , 1) $
+
+\genbasegraph{-3}{3}{1}{-26}{31.2}{0.0801282051282051}
+
+\item $\displaystyle{} y= -2\left( x+1\right)^{2}+3$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 3) $
+
+\genbasegraph{-2}{-1}{3}{1}{5}{0.5}
+
+\item $\displaystyle{} y= 3\left( x-3\right)^{2}+2$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , 2) $
+
+\genbasegraph{3}{3}{2}{29}{34.8}{0.0718390804597701}
+
+\item $\displaystyle{} y= -\left( x+1\right)^{2}+2$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 2) $
+
+\genbasegraph{-1}{-1}{2}{1}{5}{0.5}
+
+\item $\displaystyle{} y= 2\left( x+3\right)^{2}+3$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 3) $
+
+\genbasegraph{2}{-3}{3}{21}{25.2}{0.0992063492063492}
+
+\item $\displaystyle{} y= 2\left( x+2\right)^{2}+1$
+
+軸:$ x=-2 $ , \quad 頂点:$ ( -2 , 1) $
+
+\genbasegraph{2}{-2}{1}{9}{10.8}{0.231481481481482}
+
+\item $\displaystyle{} y= -\left( x+1\right)^{2}+2$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 2) $
+
+\genbasegraph{-1}{-1}{2}{1}{5}{0.5}
+
+\item $\displaystyle{} y= \left( x-1\right)^{2}-3$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , -3) $
+
+\genbasegraph{1}{1}{-3}{-2}{5}{0.5}
+
+\item $\displaystyle{} y= -2\left( x-3\right)^{2}-2$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , -2) $
+
+\genbasegraph{-2}{3}{-2}{-20}{24}{0.104166666666667}
+
+\item $\displaystyle{} y= -3\left( x-1\right)^{2}+2$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , 2) $
+
+\genbasegraph{-3}{1}{2}{-1}{5}{0.5}
+
+\item $\displaystyle{} y= -2\left( x-1\right)^{2}-2$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , -2) $
+
+\genbasegraph{-2}{1}{-2}{-4}{5}{0.5}
+
+\item $\displaystyle{} y= 2\left( x+1\right)^{2}+3$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 3) $
+
+\genbasegraph{2}{-1}{3}{5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= 3\left( x-2\right)^{2}+2$
+
+軸:$ x=2 $ , \quad 頂点:$ ( 2 , 2) $
+
+\genbasegraph{3}{2}{2}{14}{16.8}{0.148809523809524}
+
+\item $\displaystyle{} y= 2\left( x+3\right)^{2}+1$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 1) $
+
+\genbasegraph{2}{-3}{1}{19}{22.8}{0.109649122807018}
+
+\item $\displaystyle{} y= 3\left( x+1\right)^{2}+1$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 1) $
+
+\genbasegraph{3}{-1}{1}{4}{5}{0.5}
+
+\item $\displaystyle{} y= -3\left( x+1\right)^{2}+1$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 1) $
+
+\genbasegraph{-3}{-1}{1}{-2}{5}{0.5}
+
+\item $\displaystyle{} y= 3\left( x-2\right)^{2}+2$
+
+軸:$ x=2 $ , \quad 頂点:$ ( 2 , 2) $
+
+\genbasegraph{3}{2}{2}{14}{16.8}{0.148809523809524}
+
+\item $\displaystyle{} y= 3\left( x+3\right)^{2}+3$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 3) $
+
+\genbasegraph{3}{-3}{3}{30}{36}{0.0694444444444444}
+
+\item $\displaystyle{} y= -\left( x-2\right)^{2}-1$
+
+軸:$ x=2 $ , \quad 頂点:$ ( 2 , -1) $
+
+\genbasegraph{-1}{2}{-1}{-5}{6}{0.416666666666667}
+
+\item $\displaystyle{} y= 3\left( x-1\right)^{2}+1$
+
+軸:$ x=1 $ , \quad 頂点:$ ( 1 , 1) $
+
+\genbasegraph{3}{1}{1}{4}{5}{0.5}
+
+\item $\displaystyle{} y= 2\left( x+3\right)^{2}+3$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 3) $
+
+\genbasegraph{2}{-3}{3}{21}{25.2}{0.0992063492063492}
+
+\item $\displaystyle{} y= \left( x-3\right)^{2}+1$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , 1) $
+
+\genbasegraph{1}{3}{1}{10}{12}{0.208333333333333}
+
+\item $\displaystyle{} y= -\left( x+3\right)^{2}+1$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , 1) $
+
+\genbasegraph{-1}{-3}{1}{-8}{9.6}{0.260416666666667}
+
+\item $\displaystyle{} y= -\left( x+1\right)^{2}+3$
+
+軸:$ x=-1 $ , \quad 頂点:$ ( -1 , 3) $
+
+\genbasegraph{-1}{-1}{3}{2}{5}{0.5}
+
+\item $\displaystyle{} y= 2\left( x-3\right)^{2}+1$
+
+軸:$ x=3 $ , \quad 頂点:$ ( 3 , 1) $
+
+\genbasegraph{2}{3}{1}{19}{22.8}{0.109649122807018}
+
+\item $\displaystyle{} y= -2\left( x+3\right)^{2}-2$
+
+軸:$ x=-3 $ , \quad 頂点:$ ( -3 , -2) $
+
+\genbasegraph{-2}{-3}{-2}{-20}{24}{0.104166666666667}
+
+\item $\displaystyle{} y= -2\left( x-2\right)^{2}+2$
+
+軸:$ x=2 $ , \quad 頂点:$ ( 2 , 2) $
+
+\genbasegraph{-2}{2}{2}{-6}{7.2}{0.347222222222222}
+
+\end{enumerate}
+\end{multicols}
+\end{document}
