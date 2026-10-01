@@ -1,0 +1,2732 @@
+
+
+%%% perl code : polynomial_integral.pl
+
+\setcounter{quesnum}{15}
+
+\begin{multicols}{3}
+\begin{enumerate}
+  \itemsep=80pt
+  \item $\displaystyle \int_{-5}^{-2}\left( 4x^{2}+5x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =105$}
+
+  \item $\displaystyle \int_{-1}^{3}\left( -3x^{2}+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{80}{3}$}
+
+  \item $\displaystyle \int_{-5}^{0}\left( -3x^{2}-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{255}{2}$}
+
+  \item $\displaystyle \int_{-1}^{5}\left( 2x^{2}+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =85$}
+
+  \item $\displaystyle \int_{-4}^{2}\left( 4x^{2}-3x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =114$}
+
+\columnbreak % 5
+
+  \item $\displaystyle \int_{-1}^{4}\left( 5x^{2}+3x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{255}{2}$}
+
+  \item $\displaystyle \int_{0}^{5}\left( -2x^{2}+4x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{175}{6}$}
+
+  \item $\displaystyle \int_{-4}^{-2}\left( 2x^{2}-2x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{146}{3}$}
+
+  \item $\displaystyle \int_{-2}^{-1}\left( -x^{2}+x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{9}{2}$}
+
+  \item $\displaystyle \int_{1}^{3}\left( -3x^{2}+2x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-19$}
+
+\columnbreak % 10
+
+  \item $\displaystyle \int_{-4}^{-1}\left( 2x^{2}-5x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{159}{2}$}
+
+  \item $\displaystyle \int_{-2}^{1}\left( -3x^{2}+2x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-14$}
+
+  \item $\displaystyle \int_{-5}^{4}\left( 2x^{2}+5x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =105$}
+
+  \item $\displaystyle \int_{-4}^{2}\left( x^{2}-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =19$}
+
+  \item $\displaystyle \int_{-2}^{3}\left( -x^{2}-x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{95}{6}$}
+
+\columnbreak % 15
+
+\resetques
+
+  \item $\displaystyle \int_{-3}^{-2}\left( x^{2}+5x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{19}{3}$}
+
+  \item $\displaystyle \int_{-4}^{-3}\left( x^{2}+3x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{3}{2}$}
+
+  \item $\displaystyle \int_{-3}^{-2}\left( -5x^{2}+3x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{239}{6}$}
+
+  \item $\displaystyle \int_{-3}^{-2}\left( -3x^{2}-5x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{41}{6}$}
+
+  \item $\displaystyle \int_{-4}^{-2}\left( x^{2}-x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{71}{3}$}
+
+\columnbreak % 20
+
+  \item $\displaystyle \int_{-2}^{1}\left( -4x^{2}-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-14$}
+
+  \item $\displaystyle \int_{-1}^{3}\left( x^{2}+3x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{58}{3}$}
+
+  \item $\displaystyle \int_{1}^{5}\left( -5x^{2}-x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-216$}
+
+  \item $\displaystyle \int_{-4}^{-2}\left( x^{2}-5x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{142}{3}$}
+
+  \item $\displaystyle \int_{-3}^{-2}\left( 3x^{2}+x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{47}{3}$}
+
+\columnbreak % 25
+
+  \item $\displaystyle \int_{0}^{4}\left( -3x^{2}-x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{206}{3}$}
+
+  \item $\displaystyle \int_{-4}^{-1}\left( -4x^{2}+x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{185}{2}$}
+
+  \item $\displaystyle \int_{-1}^{0}\left( 2x^{2}-5x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{10}{3}$}
+
+  \item $\displaystyle \int_{-1}^{3}\left( -2x^{2}+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-18$}
+
+  \item $\displaystyle \int_{-4}^{0}\left( 3x^{2}+3x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{110}{3}$}
+
+\columnbreak % 30
+
+\resetques
+
+  \item $\displaystyle \int_{0}^{1}\left( -2x^{2}-5x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{23}{6}$}
+
+  \item $\displaystyle \int_{-2}^{1}\left( -x^{2}+2x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{11}{2}$}
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -5x^{2}+5x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{235}{3}$}
+
+  \item $\displaystyle \int_{-3}^{3}\left( -x^{2}-4x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-14$}
+
+  \item $\displaystyle \int_{-2}^{1}\left( -3x^{2}-3x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-6$}
+
+\columnbreak % 35
+
+  \item $\displaystyle \int_{-1}^{1}\left( -4x^{2}-5x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-3$}
+
+  \item $\displaystyle \int_{-5}^{4}\left( -x^{2}-5x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-36$}
+
+  \item $\displaystyle \int_{-2}^{4}\left( x^{2}+x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =34$}
+
+  \item $\displaystyle \int_{-4}^{0}\left( -2x^{2}+3x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{208}{3}$}
+
+  \item $\displaystyle \int_{-5}^{-1}\left( 5x^{2}+x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =192$}
+
+\columnbreak % 40
+
+  \item $\displaystyle \int_{-5}^{3}\left( 3x^{2}+3x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{400}{3}$}
+
+  \item $\displaystyle \int_{-2}^{2}\left( -5x^{2}+4x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-26$}
+
+  \item $\displaystyle \int_{-5}^{5}\left( -2x^{2}+4x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{500}{3}$}
+
+  \item $\displaystyle \int_{-3}^{1}\left( -4x^{2}-2x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{88}{3}$}
+
+  \item $\displaystyle \int_{0}^{2}\left( -x^{2}+x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{1}{3}$}
+
+\columnbreak % 45
+
+\resetques
+
+  \item $\displaystyle \int_{-1}^{1}\left( -2x^{2}-5x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =0$}
+
+  \item $\displaystyle \int_{-5}^{-4}\left( 5x^{2}-x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{316}{3}$}
+
+  \item $\displaystyle \int_{0}^{3}\left( -2x^{2}-x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{45}{2}$}
+
+  \item $\displaystyle \int_{4}^{5}\left( 2x^{2}+5x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{383}{6}$}
+
+  \item $\displaystyle \int_{-5}^{1}\left( 3x^{2}-x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =136$}
+
+\columnbreak % 50
+
+  \item $\displaystyle \int_{3}^{4}\left( -x^{2}+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-12$}
+
+  \item $\displaystyle \int_{3}^{4}\left( -3x^{2}-5x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{109}{2}$}
+
+  \item $\displaystyle \int_{-1}^{0}\left( -3x^{2}+2x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{5}{3}$}
+
+  \item $\displaystyle \int_{-3}^{0}\left( -4x^{2}-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{77}{2}$}
+
+  \item $\displaystyle \int_{-3}^{5}\left( 3x^{2}+4x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{544}{3}$}
+
+\columnbreak % 55
+
+  \item $\displaystyle \int_{-5}^{3}\left( -2x^{2}+2x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{364}{3}$}
+
+  \item $\displaystyle \int_{-2}^{3}\left( -4x^{2}+2x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{275}{6}$}
+
+  \item $\displaystyle \int_{-5}^{3}\left( 2x^{2}+3x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{224}{3}$}
+
+  \item $\displaystyle \int_{0}^{1}\left( -5x^{2}+2x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{5}{6}$}
+
+  \item $\displaystyle \int_{-4}^{4}\left( -x^{2}-3x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{112}{3}$}
+
+\columnbreak % 60
+
+\resetques
+
+  \item $\displaystyle \int_{0}^{3}\left( -x^{2}+3x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{11}{2}$}
+
+  \item $\displaystyle \int_{0}^{2}\left( 3x^{2}+2x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{37}{3}$}
+
+  \item $\displaystyle \int_{-1}^{2}\left( -3x^{2}-4x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{31}{2}$}
+
+  \item $\displaystyle \int_{-5}^{-2}\left( -x^{2}+5x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{179}{2}$}
+
+  \item $\displaystyle \int_{2}^{4}\left( 2x^{2}-5x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =8$}
+
+\columnbreak % 65
+
+  \item $\displaystyle \int_{0}^{4}\left( 3x^{2}-4x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{92}{3}$}
+
+  \item $\displaystyle \int_{-4}^{5}\left( 4x^{2}+3x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =258$}
+
+  \item $\displaystyle \int_{-5}^{3}\left( -5x^{2}-2x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{704}{3}$}
+
+  \item $\displaystyle \int_{0}^{3}\left( 4x^{2}-x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{59}{2}$}
+
+  \item $\displaystyle \int_{-4}^{3}\left( 3x^{2}-2x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{623}{6}$}
+
+\columnbreak % 70
+
+  \item $\displaystyle \int_{-3}^{-2}\left( -4x^{2}-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{77}{3}$}
+
+  \item $\displaystyle \int_{-2}^{-1}\left( x^{2}-5x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{59}{6}$}
+
+  \item $\displaystyle \int_{-3}^{-2}\left( 2x^{2}-2x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{109}{6}$}
+
+  \item $\displaystyle \int_{-2}^{-1}\left( -4x^{2}-5x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{11}{6}$}
+
+  \item $\displaystyle \int_{-2}^{1}\left( -4x^{2}-5x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-5$}
+
+\columnbreak % 75
+
+\resetques
+
+  \item $\displaystyle \int_{1}^{4}\left( -x^{2}+2x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-8$}
+
+  \item $\displaystyle \int_{-5}^{-2}\left( 2x^{2}-3x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{215}{2}$}
+
+  \item $\displaystyle \int_{2}^{4}\left( x^{2}+x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{74}{3}$}
+
+  \item $\displaystyle \int_{-2}^{1}\left( -5x^{2}+3x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{37}{2}$}
+
+  \item $\displaystyle \int_{0}^{3}\left( 4x^{2}+2x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{89}{2}$}
+
+\columnbreak % 80
+
+  \item $\displaystyle \int_{2}^{3}\left( -5x^{2}-x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-34$}
+
+  \item $\displaystyle \int_{-5}^{5}\left( -3x^{2}-2x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-250$}
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -2x^{2}-4x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{59}{6}$}
+
+  \item $\displaystyle \int_{-5}^{-2}\left( -5x^{2}+5x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-249$}
+
+  \item $\displaystyle \int_{-5}^{-4}\left( 3x^{2}-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{182}{3}$}
+
+\columnbreak % 85
+
+  \item $\displaystyle \int_{-4}^{-2}\left( 5x^{2}+2x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =82$}
+
+  \item $\displaystyle \int_{-3}^{-1}\left( x^{2}-3x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{62}{3}$}
+
+  \item $\displaystyle \int_{-2}^{3}\left( 2x^{2}+3x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =35$}
+
+  \item $\displaystyle \int_{-4}^{0}\left( 3x^{2}-4x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{286}{3}$}
+
+  \item $\displaystyle \int_{-4}^{-2}\left( 5x^{2}-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =93$}
+
+\columnbreak % 90
+
+\resetques
+
+  \item $\displaystyle \int_{-3}^{4}\left( 2x^{2}-4x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{133}{3}$}
+
+  \item $\displaystyle \int_{0}^{2}\left( -3x^{2}-x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-10$}
+
+  \item $\displaystyle \int_{-2}^{-1}\left( 2x^{2}+x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =3$}
+
+  \item $\displaystyle \int_{-2}^{1}\left( -5x^{2}+x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{35}{2}$}
+
+  \item $\displaystyle \int_{-5}^{2}\left( 2x^{2}+x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{497}{6}$}
+
+\columnbreak % 95
+
+  \item $\displaystyle \int_{-4}^{-2}\left( 5x^{2}-3x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{331}{3}$}
+
+  \item $\displaystyle \int_{-5}^{0}\left( -4x^{2}+4x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{650}{3}$}
+
+  \item $\displaystyle \int_{-3}^{1}\left( 4x^{2}+4x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =22$}
+
+  \item $\displaystyle \int_{-2}^{3}\left( -2x^{2}+x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{50}{3}$}
+
+  \item $\displaystyle \int_{0}^{1}\left( -x^{2}+x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =0$}
+
+\columnbreak % 100
+
+  \item $\displaystyle \int_{-4}^{5}\left( 4x^{2}-5x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =228$}
+
+  \item $\displaystyle \int_{2}^{5}\left( 3x^{2}-3x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{171}{2}$}
+
+  \item $\displaystyle \int_{-2}^{5}\left( x^{2}+4x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{259}{3}$}
+
+  \item $\displaystyle \int_{2}^{4}\left( 2x^{2}-3x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{61}{3}$}
+
+  \item $\displaystyle \int_{4}^{5}\left( -4x^{2}+3x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{202}{3}$}
+
+\columnbreak % 105
+
+\resetques
+
+  \item $\displaystyle \int_{1}^{4}\left( 4x^{2}+3x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =106$}
+
+  \item $\displaystyle \int_{1}^{2}\left( 2x^{2}-x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{8}{3}$}
+
+  \item $\displaystyle \int_{-5}^{-4}\left( 2x^{2}+2x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{97}{3}$}
+
+  \item $\displaystyle \int_{3}^{4}\left( -2x^{2}-4x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{77}{2}$}
+
+  \item $\displaystyle \int_{-2}^{2}\left( 4x^{2}-3x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =18$}
+
+\columnbreak % 110
+
+  \item $\displaystyle \int_{-4}^{4}\left( -x^{2}-2x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-36$}
+
+  \item $\displaystyle \int_{-4}^{1}\left( -3x^{2}-5x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{145}{6}$}
+
+  \item $\displaystyle \int_{-4}^{-2}\left( -2x^{2}+x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{130}{3}$}
+
+  \item $\displaystyle \int_{3}^{5}\left( x^{2}-4x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{2}{3}$}
+
+  \item $\displaystyle \int_{-1}^{3}\left( 2x^{2}+3x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =34$}
+
+\columnbreak % 115
+
+  \item $\displaystyle \int_{0}^{1}\left( 4x^{2}-3x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{1}{6}$}
+
+  \item $\displaystyle \int_{2}^{4}\left( 4x^{2}-3x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{173}{3}$}
+
+  \item $\displaystyle \int_{-5}^{3}\left( 4x^{2}-5x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =236$}
+
+  \item $\displaystyle \int_{-4}^{1}\left( -5x^{2}-4x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{235}{3}$}
+
+  \item $\displaystyle \int_{-5}^{0}\left( -3x^{2}+4x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{1075}{6}$}
+
+\columnbreak % 120
+
+\resetques
+
+  \item $\displaystyle \int_{-4}^{5}\left( -5x^{2}+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-309$}
+
+  \item $\displaystyle \int_{-2}^{5}\left( 3x^{2}+4x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{518}{3}$}
+
+  \item $\displaystyle \int_{-5}^{5}\left( 2x^{2}+4x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =165$}
+
+  \item $\displaystyle \int_{-5}^{-4}\left( 5x^{2}+2x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{553}{6}$}
+
+  \item $\displaystyle \int_{3}^{5}\left( -x^{2}+5x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =8$}
+
+\columnbreak % 125
+
+  \item $\displaystyle \int_{-5}^{5}\left( -3x^{2}+x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{725}{3}$}
+
+  \item $\displaystyle \int_{-5}^{2}\left( -3x^{2}-x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{245}{2}$}
+
+  \item $\displaystyle \int_{-3}^{0}\left( -5x^{2}-3x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-32$}
+
+  \item $\displaystyle \int_{0}^{3}\left( -2x^{2}+2x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{15}{2}$}
+
+  \item $\displaystyle \int_{2}^{3}\left( -4x^{2}+5x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{38}{3}$}
+
+\columnbreak % 130
+
+  \item $\displaystyle \int_{-3}^{2}\left( 3x^{2}-x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{245}{6}$}
+
+  \item $\displaystyle \int_{-4}^{2}\left( 4x^{2}-3x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =117$}
+
+  \item $\displaystyle \int_{-4}^{3}\left( 2x^{2}-4x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{224}{3}$}
+
+  \item $\displaystyle \int_{-4}^{0}\left( -x^{2}+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-18$}
+
+  \item $\displaystyle \int_{-2}^{0}\left( 3x^{2}-x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =10$}
+
+\columnbreak % 135
+
+\resetques
+
+  \item $\displaystyle \int_{1}^{5}\left( 2x^{2}+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =84$}
+
+  \item $\displaystyle \int_{-5}^{-4}\left( -4x^{2}+3x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{286}{3}$}
+
+  \item $\displaystyle \int_{-3}^{-2}\left( 2x^{2}-4x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{47}{2}$}
+
+  \item $\displaystyle \int_{-5}^{4}\left( -3x^{2}+2x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{405}{2}$}
+
+  \item $\displaystyle \int_{-2}^{5}\left( -2x^{2}+2x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{196}{3}$}
+
+\columnbreak % 140
+
+  \item $\displaystyle \int_{-2}^{0}\left( 2x^{2}+2x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{4}{3}$}
+
+  \item $\displaystyle \int_{-2}^{2}\left( -3x^{2}+3x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{44}{3}$}
+
+  \item $\displaystyle \int_{-5}^{-4}\left( x^{2}+4x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{17}{6}$}
+
+  \item $\displaystyle \int_{2}^{5}\left( 5x^{2}-4x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =152$}
+
+  \item $\displaystyle \int_{-2}^{5}3x^{2} \mathrm{d}x$
+
+        \phantom{$\displaystyle =133$}
+
+\columnbreak % 145
+
+  \item $\displaystyle \int_{-3}^{1}\left( -3x^{2}-2x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{68}{3}$}
+
+  \item $\displaystyle \int_{-1}^{0}\left( x^{2}+3x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{4}{3}$}
+
+  \item $\displaystyle \int_{-4}^{-3}\left( 5x^{2}+x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{175}{3}$}
+
+  \item $\displaystyle \int_{4}^{5}\left( -4x^{2}-5x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{623}{6}$}
+
+  \item $\displaystyle \int_{4}^{5}\left( 5x^{2}+x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{211}{2}$}
+
+\columnbreak % 150
+
+\resetques
+
+  \item $\displaystyle \int_{-5}^{-2}\left( -5x^{2}+x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-205$}
+
+  \item $\displaystyle \int_{-2}^{0}\left( 3x^{2}+2x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =3$}
+
+  \item $\displaystyle \int_{-4}^{5}\left( 3x^{2}+2x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{393}{2}$}
+
+  \item $\displaystyle \int_{-3}^{3}\left( -5x^{2}+2x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-87$}
+
+  \item $\displaystyle \int_{-5}^{4}\left( 3x^{2}-2x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{411}{2}$}
+
+\columnbreak % 155
+
+  \item $\displaystyle \int_{2}^{5}\left( -5x^{2}-4x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{469}{2}$}
+
+  \item $\displaystyle \int_{0}^{4}\left( -5x^{2}+5x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-66$}
+
+  \item $\displaystyle \int_{-5}^{0}\left( x^{2}-2x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =70$}
+
+  \item $\displaystyle \int_{0}^{1}\left( 4x^{2}+x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{4}{3}$}
+
+  \item $\displaystyle \int_{-4}^{-3}\left( 4x^{2}-4x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =63$}
+
+\columnbreak % 160
+
+  \item $\displaystyle \int_{-5}^{2}\left( x^{2}+2x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =28$}
+
+  \item $\displaystyle \int_{-3}^{4}\left( -5x^{2}+4x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{273}{2}$}
+
+  \item $\displaystyle \int_{-2}^{1}\left( x^{2}-x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =3$}
+
+  \item $\displaystyle \int_{1}^{4}5x^{2} \mathrm{d}x$
+
+        \phantom{$\displaystyle =105$}
+
+  \item $\displaystyle \int_{-1}^{5}\left( -5x^{2}+3x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-179$}
+
+\columnbreak % 165
+
+\resetques
+
+  \item $\displaystyle \int_{-5}^{3}\left( -5x^{2}-5x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-216$}
+
+  \item $\displaystyle \int_{0}^{3}\left( 4x^{2}+x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{85}{2}$}
+
+  \item $\displaystyle \int_{-2}^{1}\left( 3x^{2}+2x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =5$}
+
+  \item $\displaystyle \int_{-2}^{2}\left( 2x^{2}-3x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{32}{3}$}
+
+  \item $\displaystyle \int_{-4}^{-1}\left( 5x^{2}+4x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =73$}
+
+\columnbreak % 170
+
+  \item $\displaystyle \int_{1}^{2}\left( x^{2}-x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =0$}
+
+  \item $\displaystyle \int_{-2}^{-1}\left( -4x^{2}+4x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-16$}
+
+  \item $\displaystyle \int_{-5}^{-4}\left( -2x^{2}-x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{71}{2}$}
+
+  \item $\displaystyle \int_{-2}^{3}\left( -4x^{2}-x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{140}{3}$}
+
+  \item $\displaystyle \int_{2}^{4}\left( -2x^{2}+2x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-27$}
+
+\columnbreak % 175
+
+  \item $\displaystyle \int_{-5}^{5}\left( 4x^{2}-2x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =335$}
+
+  \item $\displaystyle \int_{-1}^{5}\left( 2x^{2}-x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =74$}
+
+  \item $\displaystyle \int_{0}^{3}\left( -5x^{2}+5x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-24$}
+
+  \item $\displaystyle \int_{3}^{4}\left( 5x^{2}+x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =66$}
+
+  \item $\displaystyle \int_{-3}^{5}\left( -x^{2}-x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{196}{3}$}
+
+\columnbreak % 180
+
+\resetques
+
+  \item $\displaystyle \int_{-2}^{5}\left( -3x^{2}+4x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{287}{3}$}
+
+  \item $\displaystyle \int_{-3}^{-1}\left( -x^{2}-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{28}{3}$}
+
+  \item $\displaystyle \int_{-5}^{1}\left( 4x^{2}+4x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =124$}
+
+  \item $\displaystyle \int_{0}^{1}\left( -2x^{2}+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{1}{2}$}
+
+  \item $\displaystyle \int_{-3}^{4}\left( -2x^{2} \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{182}{3}$}
+
+\columnbreak % 185
+
+  \item $\displaystyle \int_{-2}^{4}\left( 5x^{2}+4x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =142$}
+
+  \item $\displaystyle \int_{-5}^{-2}\left( 2x^{2}+x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =68$}
+
+  \item $\displaystyle \int_{-3}^{2}\left( -5x^{2}-2x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{160}{3}$}
+
+  \item $\displaystyle \int_{-3}^{0}\left( -5x^{2}-4x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{55}{2}$}
+
+  \item $\displaystyle \int_{-1}^{2}\left( -x^{2}-5x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{19}{2}$}
+
+\columnbreak % 190
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -4x^{2}-2x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-42$}
+
+  \item $\displaystyle \int_{-5}^{-2}\left( -5x^{2}-5x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-143$}
+
+  \item $\displaystyle \int_{1}^{2}\left( -3x^{2}+5x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{1}{6}$}
+
+  \item $\displaystyle \int_{-3}^{5}\left( 3x^{2}-5x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{352}{3}$}
+
+  \item $\displaystyle \int_{-3}^{0}\left( x^{2}-4x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{57}{2}$}
+
+\columnbreak % 195
+
+\resetques
+
+  \item $\displaystyle \int_{-4}^{3}\left( -2x^{2}-5x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{259}{6}$}
+
+  \item $\displaystyle \int_{3}^{5}\left( 5x^{2}-4x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =132$}
+
+  \item $\displaystyle \int_{-1}^{0}\left( x^{2}-2x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{5}{6}$}
+
+  \item $\displaystyle \int_{-3}^{3}\left( x^{2}-4x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =19$}
+
+  \item $\displaystyle \int_{0}^{5}\left( 3x^{2}+x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{805}{6}$}
+
+\columnbreak % 200
+
+  \item $\displaystyle \int_{3}^{4}\left( -3x^{2}-2x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{89}{2}$}
+
+  \item $\displaystyle \int_{1}^{2}\left( -3x^{2}+3x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{11}{6}$}
+
+  \item $\displaystyle \int_{-2}^{5}\left( -4x^{2}-x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{574}{3}$}
+
+  \item $\displaystyle \int_{3}^{4}\left( -x^{2}-3x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{133}{6}$}
+
+  \item $\displaystyle \int_{2}^{4}\left( -4x^{2} \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{224}{3}$}
+
+\columnbreak % 205
+
+  \item $\displaystyle \int_{-5}^{3}\left( -5x^{2}-4x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{668}{3}$}
+
+  \item $\displaystyle \int_{-3}^{0}\left( 3x^{2}+3x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{27}{2}$}
+
+  \item $\displaystyle \int_{-1}^{3}\left( -x^{2}+x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{20}{3}$}
+
+  \item $\displaystyle \int_{3}^{5}\left( 2x^{2}-3x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{119}{3}$}
+
+  \item $\displaystyle \int_{-3}^{1}\left( 4x^{2}-x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =42$}
+
+\columnbreak % 210
+
+\resetques
+
+  \item $\displaystyle \int_{-5}^{1}\left( -3x^{2}-5x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-65$}
+
+  \item $\displaystyle \int_{-1}^{3}\left( 2x^{2}-2x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{40}{3}$}
+
+  \item $\displaystyle \int_{-1}^{1}\left( -3x^{2}-3x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{8}{3}$}
+
+  \item $\displaystyle \int_{-2}^{0}\left( -3x^{2}-2x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{11}{3}$}
+
+  \item $\displaystyle \int_{-4}^{1}\left( 4x^{2}+5x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{275}{6}$}
+
+\columnbreak % 215
+
+  \item $\displaystyle \int_{-3}^{-2}\left( -5x^{2}+4x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{85}{2}$}
+
+  \item $\displaystyle \int_{-1}^{5}\left( -5x^{2}-3x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-249$}
+
+  \item $\displaystyle \int_{-5}^{2}\left( -4x^{2}+5x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{679}{3}$}
+
+  \item $\displaystyle \int_{0}^{3}\left( 2x^{2}+x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{45}{2}$}
+
+  \item $\displaystyle \int_{-1}^{2}\left( -4x^{2}-2x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{25}{2}$}
+
+\columnbreak % 220
+
+  \item $\displaystyle \int_{0}^{3}\left( 4x^{2}+4x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =52$}
+
+  \item $\displaystyle \int_{0}^{2}\left( 4x^{2}+4x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{59}{3}$}
+
+  \item $\displaystyle \int_{2}^{3}\left( 5x^{2}-2x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{82}{3}$}
+
+  \item $\displaystyle \int_{-5}^{3}\left( -x^{2}-5x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{44}{3}$}
+
+  \item $\displaystyle \int_{2}^{4}\left( 5x^{2}+4x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =116$}
+
+\columnbreak % 225
+
+\resetques
+
+  \item $\displaystyle \int_{0}^{4}\left( -3x^{2}-4x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-96$}
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -4x^{2}-3x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{77}{2}$}
+
+  \item $\displaystyle \int_{-5}^{5}\left( -3x^{2}+2x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-255$}
+
+  \item $\displaystyle \int_{-2}^{5}\left( -2x^{2}-2x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{231}{2}$}
+
+  \item $\displaystyle \int_{-1}^{4}\left( 4x^{2}+4x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{225}{2}$}
+
+\columnbreak % 230
+
+  \item $\displaystyle \int_{0}^{1}\left( 2x^{2}+x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{11}{6}$}
+
+  \item $\displaystyle \int_{-4}^{3}\left( 2x^{2}+x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{329}{6}$}
+
+  \item $\displaystyle \int_{-5}^{1}\left( -3x^{2}+2x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-154$}
+
+  \item $\displaystyle \int_{-4}^{3}\left( -4x^{2}-2x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{217}{2}$}
+
+  \item $\displaystyle \int_{-2}^{3}\left( x^{2}+3x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{35}{2}$}
+
+\columnbreak % 235
+
+  \item $\displaystyle \int_{-3}^{1}\left( x^{2}-2x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =14$}
+
+  \item $\displaystyle \int_{-4}^{0}\left( x^{2}-x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =32$}
+
+  \item $\displaystyle \int_{-4}^{4}\left( 3x^{2}+4x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{400}{3}$}
+
+  \item $\displaystyle \int_{0}^{4}\left( -4x^{2}+2x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{206}{3}$}
+
+  \item $\displaystyle \int_{-1}^{1}\left( -2x^{2}+5x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{1}{3}$}
+
+\columnbreak % 240
+
+\resetques
+
+  \item $\displaystyle \int_{-3}^{-2}\left( -2x^{2}+5x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{49}{2}$}
+
+  \item $\displaystyle \int_{4}^{5}\left( 2x^{2}-2x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{63}{2}$}
+
+  \item $\displaystyle \int_{4}^{5}\left( -5x^{2}-5x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{370}{3}$}
+
+  \item $\displaystyle \int_{0}^{3}\left( 4x^{2}+x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{79}{2}$}
+
+  \item $\displaystyle \int_{2}^{3}\left( 2x^{2}-5x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{2}{3}$}
+
+\columnbreak % 245
+
+  \item $\displaystyle \int_{0}^{1}\left( 5x^{2}-x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{5}{6}$}
+
+  \item $\displaystyle \int_{-4}^{-1}\left( -x^{2}-2x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-8$}
+
+  \item $\displaystyle \int_{-4}^{4}\left( 3x^{2}+3x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =128$}
+
+  \item $\displaystyle \int_{-4}^{-3}\left( 2x^{2}+2x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{37}{2}$}
+
+  \item $\displaystyle \int_{2}^{5}\left( x^{2}-2x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{31}{2}$}
+
+\columnbreak % 250
+
+  \item $\displaystyle \int_{1}^{2}\left( 2x^{2}-3x-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{2}{3}$}
+
+  \item $\displaystyle \int_{-3}^{-2}\left( -2x^{2}+5x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{74}{3}$}
+
+  \item $\displaystyle \int_{3}^{4}\left( x^{2}+4x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{163}{6}$}
+
+  \item $\displaystyle \int_{-5}^{1}\left( -5x^{2}+3x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-244$}
+
+  \item $\displaystyle \int_{-5}^{2}\left( -3x^{2}-3x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-105$}
+
+\columnbreak % 255
+
+\resetques
+
+  \item $\displaystyle \int_{-3}^{3}\left( 5x^{2}-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =89$}
+
+  \item $\displaystyle \int_{1}^{2}\left( 2x^{2}-3x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{1}{3}$}
+
+  \item $\displaystyle \int_{-1}^{0}\left( 2x^{2}-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{1}{2}$}
+
+  \item $\displaystyle \int_{0}^{4}\left( -5x^{2}-4x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-136$}
+
+  \item $\displaystyle \int_{-1}^{1}\left( -4x^{2}+3x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{11}{3}$}
+
+\columnbreak % 260
+
+  \item $\displaystyle \int_{-5}^{2}\left( x^{2}-4x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =91$}
+
+  \item $\displaystyle \int_{-5}^{3}\left( -x^{2}-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-56$}
+
+  \item $\displaystyle \int_{1}^{4}\left( -4x^{2}+5x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-46$}
+
+  \item $\displaystyle \int_{-5}^{2}\left( 2x^{2}+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{189}{2}$}
+
+  \item $\displaystyle \int_{-2}^{2}\left( -x^{2}-2x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-6$}
+
+\columnbreak % 265
+
+  \item $\displaystyle \int_{2}^{5}\left( 2x^{2}+x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{175}{2}$}
+
+  \item $\displaystyle \int_{1}^{2}\left( 2x^{2}+4x-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =10$}
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -x^{2}-3x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{7}{3}$}
+
+  \item $\displaystyle \int_{-4}^{-1}\left( -4x^{2}+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-82$}
+
+  \item $\displaystyle \int_{1}^{2}\left( 5x^{2}-4x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{31}{6}$}
+
+\columnbreak % 270
+
+\resetques
+
+  \item $\displaystyle \int_{-1}^{5}\left( 3x^{2}+5x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =190$}
+
+  \item $\displaystyle \int_{-4}^{2}\left( 2x^{2}-4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =44$}
+
+  \item $\displaystyle \int_{-4}^{3}\left( x^{2}-3x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{119}{3}$}
+
+  \item $\displaystyle \int_{-2}^{-1}\left( 3x^{2}-x+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{26}{3}$}
+
+  \item $\displaystyle \int_{-4}^{2}\left( 4x^{2}-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =95$}
+
+\columnbreak % 275
+
+  \item $\displaystyle \int_{-2}^{-1}\left( x^{2}+3x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{5}{3}$}
+
+  \item $\displaystyle \int_{-5}^{1}\left( -x^{2}-4x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =6$}
+
+  \item $\displaystyle \int_{-4}^{4}\left( -4x^{2}+5x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-164$}
+
+  \item $\displaystyle \int_{0}^{2}\left( -x^{2}-4x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-9$}
+
+  \item $\displaystyle \int_{2}^{3}\left( x^{2}+4x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =16$}
+
+\columnbreak % 280
+
+  \item $\displaystyle \int_{2}^{3}\left( 5x^{2}+3x-3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{116}{3}$}
+
+  \item $\displaystyle \int_{-5}^{-4}\left( -3x^{2}+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{121}{2}$}
+
+  \item $\displaystyle \int_{-1}^{5}\left( 5x^{2}-4x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =165$}
+
+  \item $\displaystyle \int_{0}^{3}\left( x^{2}+3x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{49}{2}$}
+
+  \item $\displaystyle \int_{-1}^{1}\left( 5x^{2}+x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =5$}
+
+\columnbreak % 285
+
+\resetques
+
+  \item $\displaystyle \int_{-2}^{4}\left( 2x^{2}-4x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =29$}
+
+  \item $\displaystyle \int_{1}^{3}\left( -2x^{2}-x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-22$}
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -3x^{2}-5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{227}{6}$}
+
+  \item $\displaystyle \int_{-4}^{3}\left( -2x^{2}-3x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{287}{6}$}
+
+  \item $\displaystyle \int_{0}^{4}\left( x^{2}+5x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{182}{3}$}
+
+\columnbreak % 290
+
+  \item $\displaystyle \int_{-4}^{0}\left( -5x^{2}-3x+4 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-80$}
+
+  \item $\displaystyle \int_{4}^{5}\left( -5x^{2}-2x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{665}{6}$}
+
+  \item $\displaystyle \int_{-3}^{1}\left( -3x^{2}-4x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{38}{3}$}
+
+  \item $\displaystyle \int_{-5}^{4}\left( 4x^{2}-2x \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =261$}
+
+  \item $\displaystyle \int_{-3}^{3}\left( 3x^{2}+x+3 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =57$}
+
+\columnbreak % 295
+
+  \item $\displaystyle \int_{0}^{5}\left( -3x^{2}-3x+2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{965}{6}$}
+
+  \item $\displaystyle \int_{-3}^{0}\left( -x^{2}+5x-1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-32$}
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -5x^{2}+1 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =-\frac{123}{2}$}
+
+  \item $\displaystyle \int_{-1}^{4}\left( 4x^{2}+4x+5 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{725}{6}$}
+
+  \item $\displaystyle \int_{-4}^{3}\left( 5x^{2}-4x-2 \right) \mathrm{d}x$
+
+        \phantom{$\displaystyle =\frac{490}{3}$}
+
+\end{enumerate}
+\end{multicols}
+
+\newpage
+\resetdrill
+
+\begin{multicols}{3}
+\begin{enumerate}
+  \itemsep=80pt
+  \item $\displaystyle \int_{-5}^{-2}\left( 4x^{2}+5x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =105$
+
+  \item $\displaystyle \int_{-1}^{3}\left( -3x^{2}+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{80}{3}$
+
+  \item $\displaystyle \int_{-5}^{0}\left( -3x^{2}-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{255}{2}$
+
+  \item $\displaystyle \int_{-1}^{5}\left( 2x^{2}+1 \right) \mathrm{d}x$
+
+        $\displaystyle =85$
+
+  \item $\displaystyle \int_{-4}^{2}\left( 4x^{2}-3x \right) \mathrm{d}x$
+
+        $\displaystyle =114$
+
+\columnbreak % 5
+
+  \item $\displaystyle \int_{-1}^{4}\left( 5x^{2}+3x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{255}{2}$
+
+  \item $\displaystyle \int_{0}^{5}\left( -2x^{2}+4x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{175}{6}$
+
+  \item $\displaystyle \int_{-4}^{-2}\left( 2x^{2}-2x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{146}{3}$
+
+  \item $\displaystyle \int_{-2}^{-1}\left( -x^{2}+x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{9}{2}$
+
+  \item $\displaystyle \int_{1}^{3}\left( -3x^{2}+2x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-19$
+
+\columnbreak % 10
+
+  \item $\displaystyle \int_{-4}^{-1}\left( 2x^{2}-5x \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{159}{2}$
+
+  \item $\displaystyle \int_{-2}^{1}\left( -3x^{2}+2x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-14$
+
+  \item $\displaystyle \int_{-5}^{4}\left( 2x^{2}+5x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =105$
+
+  \item $\displaystyle \int_{-4}^{2}\left( x^{2}-5 \right) \mathrm{d}x$
+
+        $\displaystyle =19$
+
+  \item $\displaystyle \int_{-2}^{3}\left( -x^{2}-x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{95}{6}$
+
+\columnbreak % 15
+
+\resetques
+
+  \item $\displaystyle \int_{-3}^{-2}\left( x^{2}+5x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{19}{3}$
+
+  \item $\displaystyle \int_{-4}^{-3}\left( x^{2}+3x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{3}{2}$
+
+  \item $\displaystyle \int_{-3}^{-2}\left( -5x^{2}+3x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{239}{6}$
+
+  \item $\displaystyle \int_{-3}^{-2}\left( -3x^{2}-5x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{41}{6}$
+
+  \item $\displaystyle \int_{-4}^{-2}\left( x^{2}-x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{71}{3}$
+
+\columnbreak % 20
+
+  \item $\displaystyle \int_{-2}^{1}\left( -4x^{2}-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-14$
+
+  \item $\displaystyle \int_{-1}^{3}\left( x^{2}+3x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{58}{3}$
+
+  \item $\displaystyle \int_{1}^{5}\left( -5x^{2}-x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-216$
+
+  \item $\displaystyle \int_{-4}^{-2}\left( x^{2}-5x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{142}{3}$
+
+  \item $\displaystyle \int_{-3}^{-2}\left( 3x^{2}+x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{47}{3}$
+
+\columnbreak % 25
+
+  \item $\displaystyle \int_{0}^{4}\left( -3x^{2}-x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{206}{3}$
+
+  \item $\displaystyle \int_{-4}^{-1}\left( -4x^{2}+x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{185}{2}$
+
+  \item $\displaystyle \int_{-1}^{0}\left( 2x^{2}-5x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{10}{3}$
+
+  \item $\displaystyle \int_{-1}^{3}\left( -2x^{2}+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-18$
+
+  \item $\displaystyle \int_{-4}^{0}\left( 3x^{2}+3x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{110}{3}$
+
+\columnbreak % 30
+
+\resetques
+
+  \item $\displaystyle \int_{0}^{1}\left( -2x^{2}-5x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{23}{6}$
+
+  \item $\displaystyle \int_{-2}^{1}\left( -x^{2}+2x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{11}{2}$
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -5x^{2}+5x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{235}{3}$
+
+  \item $\displaystyle \int_{-3}^{3}\left( -x^{2}-4x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-14$
+
+  \item $\displaystyle \int_{-2}^{1}\left( -3x^{2}-3x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-6$
+
+\columnbreak % 35
+
+  \item $\displaystyle \int_{-1}^{1}\left( -4x^{2}-5x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-3$
+
+  \item $\displaystyle \int_{-5}^{4}\left( -x^{2}-5x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =-36$
+
+  \item $\displaystyle \int_{-2}^{4}\left( x^{2}+x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =34$
+
+  \item $\displaystyle \int_{-4}^{0}\left( -2x^{2}+3x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{208}{3}$
+
+  \item $\displaystyle \int_{-5}^{-1}\left( 5x^{2}+x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =192$
+
+\columnbreak % 40
+
+  \item $\displaystyle \int_{-5}^{3}\left( 3x^{2}+3x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{400}{3}$
+
+  \item $\displaystyle \int_{-2}^{2}\left( -5x^{2}+4x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-26$
+
+  \item $\displaystyle \int_{-5}^{5}\left( -2x^{2}+4x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{500}{3}$
+
+  \item $\displaystyle \int_{-3}^{1}\left( -4x^{2}-2x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{88}{3}$
+
+  \item $\displaystyle \int_{0}^{2}\left( -x^{2}+x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{1}{3}$
+
+\columnbreak % 45
+
+\resetques
+
+  \item $\displaystyle \int_{-1}^{1}\left( -2x^{2}-5x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =0$
+
+  \item $\displaystyle \int_{-5}^{-4}\left( 5x^{2}-x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{316}{3}$
+
+  \item $\displaystyle \int_{0}^{3}\left( -2x^{2}-x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{45}{2}$
+
+  \item $\displaystyle \int_{4}^{5}\left( 2x^{2}+5x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{383}{6}$
+
+  \item $\displaystyle \int_{-5}^{1}\left( 3x^{2}-x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =136$
+
+\columnbreak % 50
+
+  \item $\displaystyle \int_{3}^{4}\left( -x^{2}+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-12$
+
+  \item $\displaystyle \int_{3}^{4}\left( -3x^{2}-5x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{109}{2}$
+
+  \item $\displaystyle \int_{-1}^{0}\left( -3x^{2}+2x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{5}{3}$
+
+  \item $\displaystyle \int_{-3}^{0}\left( -4x^{2}-5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{77}{2}$
+
+  \item $\displaystyle \int_{-3}^{5}\left( 3x^{2}+4x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{544}{3}$
+
+\columnbreak % 55
+
+  \item $\displaystyle \int_{-5}^{3}\left( -2x^{2}+2x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{364}{3}$
+
+  \item $\displaystyle \int_{-2}^{3}\left( -4x^{2}+2x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{275}{6}$
+
+  \item $\displaystyle \int_{-5}^{3}\left( 2x^{2}+3x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{224}{3}$
+
+  \item $\displaystyle \int_{0}^{1}\left( -5x^{2}+2x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{5}{6}$
+
+  \item $\displaystyle \int_{-4}^{4}\left( -x^{2}-3x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{112}{3}$
+
+\columnbreak % 60
+
+\resetques
+
+  \item $\displaystyle \int_{0}^{3}\left( -x^{2}+3x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{11}{2}$
+
+  \item $\displaystyle \int_{0}^{2}\left( 3x^{2}+2x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{37}{3}$
+
+  \item $\displaystyle \int_{-1}^{2}\left( -3x^{2}-4x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{31}{2}$
+
+  \item $\displaystyle \int_{-5}^{-2}\left( -x^{2}+5x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{179}{2}$
+
+  \item $\displaystyle \int_{2}^{4}\left( 2x^{2}-5x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =8$
+
+\columnbreak % 65
+
+  \item $\displaystyle \int_{0}^{4}\left( 3x^{2}-4x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{92}{3}$
+
+  \item $\displaystyle \int_{-4}^{5}\left( 4x^{2}+3x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =258$
+
+  \item $\displaystyle \int_{-5}^{3}\left( -5x^{2}-2x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{704}{3}$
+
+  \item $\displaystyle \int_{0}^{3}\left( 4x^{2}-x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{59}{2}$
+
+  \item $\displaystyle \int_{-4}^{3}\left( 3x^{2}-2x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{623}{6}$
+
+\columnbreak % 70
+
+  \item $\displaystyle \int_{-3}^{-2}\left( -4x^{2}-2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{77}{3}$
+
+  \item $\displaystyle \int_{-2}^{-1}\left( x^{2}-5x \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{59}{6}$
+
+  \item $\displaystyle \int_{-3}^{-2}\left( 2x^{2}-2x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{109}{6}$
+
+  \item $\displaystyle \int_{-2}^{-1}\left( -4x^{2}-5x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{11}{6}$
+
+  \item $\displaystyle \int_{-2}^{1}\left( -4x^{2}-5x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-5$
+
+\columnbreak % 75
+
+\resetques
+
+  \item $\displaystyle \int_{1}^{4}\left( -x^{2}+2x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-8$
+
+  \item $\displaystyle \int_{-5}^{-2}\left( 2x^{2}-3x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{215}{2}$
+
+  \item $\displaystyle \int_{2}^{4}\left( x^{2}+x \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{74}{3}$
+
+  \item $\displaystyle \int_{-2}^{1}\left( -5x^{2}+3x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{37}{2}$
+
+  \item $\displaystyle \int_{0}^{3}\left( 4x^{2}+2x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{89}{2}$
+
+\columnbreak % 80
+
+  \item $\displaystyle \int_{2}^{3}\left( -5x^{2}-x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-34$
+
+  \item $\displaystyle \int_{-5}^{5}\left( -3x^{2}-2x \right) \mathrm{d}x$
+
+        $\displaystyle =-250$
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -2x^{2}-4x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{59}{6}$
+
+  \item $\displaystyle \int_{-5}^{-2}\left( -5x^{2}+5x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-249$
+
+  \item $\displaystyle \int_{-5}^{-4}\left( 3x^{2}-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{182}{3}$
+
+\columnbreak % 85
+
+  \item $\displaystyle \int_{-4}^{-2}\left( 5x^{2}+2x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =82$
+
+  \item $\displaystyle \int_{-3}^{-1}\left( x^{2}-3x \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{62}{3}$
+
+  \item $\displaystyle \int_{-2}^{3}\left( 2x^{2}+3x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =35$
+
+  \item $\displaystyle \int_{-4}^{0}\left( 3x^{2}-4x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{286}{3}$
+
+  \item $\displaystyle \int_{-4}^{-2}\left( 5x^{2}-1 \right) \mathrm{d}x$
+
+        $\displaystyle =93$
+
+\columnbreak % 90
+
+\resetques
+
+  \item $\displaystyle \int_{-3}^{4}\left( 2x^{2}-4x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{133}{3}$
+
+  \item $\displaystyle \int_{0}^{2}\left( -3x^{2}-x \right) \mathrm{d}x$
+
+        $\displaystyle =-10$
+
+  \item $\displaystyle \int_{-2}^{-1}\left( 2x^{2}+x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =3$
+
+  \item $\displaystyle \int_{-2}^{1}\left( -5x^{2}+x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{35}{2}$
+
+  \item $\displaystyle \int_{-5}^{2}\left( 2x^{2}+x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{497}{6}$
+
+\columnbreak % 95
+
+  \item $\displaystyle \int_{-4}^{-2}\left( 5x^{2}-3x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{331}{3}$
+
+  \item $\displaystyle \int_{-5}^{0}\left( -4x^{2}+4x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{650}{3}$
+
+  \item $\displaystyle \int_{-3}^{1}\left( 4x^{2}+4x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =22$
+
+  \item $\displaystyle \int_{-2}^{3}\left( -2x^{2}+x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{50}{3}$
+
+  \item $\displaystyle \int_{0}^{1}\left( -x^{2}+x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =0$
+
+\columnbreak % 100
+
+  \item $\displaystyle \int_{-4}^{5}\left( 4x^{2}-5x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =228$
+
+  \item $\displaystyle \int_{2}^{5}\left( 3x^{2}-3x \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{171}{2}$
+
+  \item $\displaystyle \int_{-2}^{5}\left( x^{2}+4x \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{259}{3}$
+
+  \item $\displaystyle \int_{2}^{4}\left( 2x^{2}-3x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{61}{3}$
+
+  \item $\displaystyle \int_{4}^{5}\left( -4x^{2}+3x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{202}{3}$
+
+\columnbreak % 105
+
+\resetques
+
+  \item $\displaystyle \int_{1}^{4}\left( 4x^{2}+3x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =106$
+
+  \item $\displaystyle \int_{1}^{2}\left( 2x^{2}-x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{8}{3}$
+
+  \item $\displaystyle \int_{-5}^{-4}\left( 2x^{2}+2x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{97}{3}$
+
+  \item $\displaystyle \int_{3}^{4}\left( -2x^{2}-4x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{77}{2}$
+
+  \item $\displaystyle \int_{-2}^{2}\left( 4x^{2}-3x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =18$
+
+\columnbreak % 110
+
+  \item $\displaystyle \int_{-4}^{4}\left( -x^{2}-2x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-36$
+
+  \item $\displaystyle \int_{-4}^{1}\left( -3x^{2}-5x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{145}{6}$
+
+  \item $\displaystyle \int_{-4}^{-2}\left( -2x^{2}+x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{130}{3}$
+
+  \item $\displaystyle \int_{3}^{5}\left( x^{2}-4x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{2}{3}$
+
+  \item $\displaystyle \int_{-1}^{3}\left( 2x^{2}+3x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =34$
+
+\columnbreak % 115
+
+  \item $\displaystyle \int_{0}^{1}\left( 4x^{2}-3x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{1}{6}$
+
+  \item $\displaystyle \int_{2}^{4}\left( 4x^{2}-3x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{173}{3}$
+
+  \item $\displaystyle \int_{-5}^{3}\left( 4x^{2}-5x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =236$
+
+  \item $\displaystyle \int_{-4}^{1}\left( -5x^{2}-4x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{235}{3}$
+
+  \item $\displaystyle \int_{-5}^{0}\left( -3x^{2}+4x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{1075}{6}$
+
+\columnbreak % 120
+
+\resetques
+
+  \item $\displaystyle \int_{-4}^{5}\left( -5x^{2}+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-309$
+
+  \item $\displaystyle \int_{-2}^{5}\left( 3x^{2}+4x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{518}{3}$
+
+  \item $\displaystyle \int_{-5}^{5}\left( 2x^{2}+4x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =165$
+
+  \item $\displaystyle \int_{-5}^{-4}\left( 5x^{2}+2x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{553}{6}$
+
+  \item $\displaystyle \int_{3}^{5}\left( -x^{2}+5x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =8$
+
+\columnbreak % 125
+
+  \item $\displaystyle \int_{-5}^{5}\left( -3x^{2}+x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{725}{3}$
+
+  \item $\displaystyle \int_{-5}^{2}\left( -3x^{2}-x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{245}{2}$
+
+  \item $\displaystyle \int_{-3}^{0}\left( -5x^{2}-3x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-32$
+
+  \item $\displaystyle \int_{0}^{3}\left( -2x^{2}+2x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{15}{2}$
+
+  \item $\displaystyle \int_{2}^{3}\left( -4x^{2}+5x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{38}{3}$
+
+\columnbreak % 130
+
+  \item $\displaystyle \int_{-3}^{2}\left( 3x^{2}-x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{245}{6}$
+
+  \item $\displaystyle \int_{-4}^{2}\left( 4x^{2}-3x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =117$
+
+  \item $\displaystyle \int_{-4}^{3}\left( 2x^{2}-4x \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{224}{3}$
+
+  \item $\displaystyle \int_{-4}^{0}\left( -x^{2}+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-18$
+
+  \item $\displaystyle \int_{-2}^{0}\left( 3x^{2}-x \right) \mathrm{d}x$
+
+        $\displaystyle =10$
+
+\columnbreak % 135
+
+\resetques
+
+  \item $\displaystyle \int_{1}^{5}\left( 2x^{2}+2 \right) \mathrm{d}x$
+
+        $\displaystyle =84$
+
+  \item $\displaystyle \int_{-5}^{-4}\left( -4x^{2}+3x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{286}{3}$
+
+  \item $\displaystyle \int_{-3}^{-2}\left( 2x^{2}-4x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{47}{2}$
+
+  \item $\displaystyle \int_{-5}^{4}\left( -3x^{2}+2x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{405}{2}$
+
+  \item $\displaystyle \int_{-2}^{5}\left( -2x^{2}+2x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{196}{3}$
+
+\columnbreak % 140
+
+  \item $\displaystyle \int_{-2}^{0}\left( 2x^{2}+2x \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{4}{3}$
+
+  \item $\displaystyle \int_{-2}^{2}\left( -3x^{2}+3x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{44}{3}$
+
+  \item $\displaystyle \int_{-5}^{-4}\left( x^{2}+4x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{17}{6}$
+
+  \item $\displaystyle \int_{2}^{5}\left( 5x^{2}-4x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =152$
+
+  \item $\displaystyle \int_{-2}^{5}3x^{2} \mathrm{d}x$
+
+        $\displaystyle =133$
+
+\columnbreak % 145
+
+  \item $\displaystyle \int_{-3}^{1}\left( -3x^{2}-2x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{68}{3}$
+
+  \item $\displaystyle \int_{-1}^{0}\left( x^{2}+3x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{4}{3}$
+
+  \item $\displaystyle \int_{-4}^{-3}\left( 5x^{2}+x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{175}{3}$
+
+  \item $\displaystyle \int_{4}^{5}\left( -4x^{2}-5x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{623}{6}$
+
+  \item $\displaystyle \int_{4}^{5}\left( 5x^{2}+x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{211}{2}$
+
+\columnbreak % 150
+
+\resetques
+
+  \item $\displaystyle \int_{-5}^{-2}\left( -5x^{2}+x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-205$
+
+  \item $\displaystyle \int_{-2}^{0}\left( 3x^{2}+2x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =3$
+
+  \item $\displaystyle \int_{-4}^{5}\left( 3x^{2}+2x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{393}{2}$
+
+  \item $\displaystyle \int_{-3}^{3}\left( -5x^{2}+2x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =-87$
+
+  \item $\displaystyle \int_{-5}^{4}\left( 3x^{2}-2x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{411}{2}$
+
+\columnbreak % 155
+
+  \item $\displaystyle \int_{2}^{5}\left( -5x^{2}-4x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{469}{2}$
+
+  \item $\displaystyle \int_{0}^{4}\left( -5x^{2}+5x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-66$
+
+  \item $\displaystyle \int_{-5}^{0}\left( x^{2}-2x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =70$
+
+  \item $\displaystyle \int_{0}^{1}\left( 4x^{2}+x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{4}{3}$
+
+  \item $\displaystyle \int_{-4}^{-3}\left( 4x^{2}-4x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =63$
+
+\columnbreak % 160
+
+  \item $\displaystyle \int_{-5}^{2}\left( x^{2}+2x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =28$
+
+  \item $\displaystyle \int_{-3}^{4}\left( -5x^{2}+4x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{273}{2}$
+
+  \item $\displaystyle \int_{-2}^{1}\left( x^{2}-x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =3$
+
+  \item $\displaystyle \int_{1}^{4}5x^{2} \mathrm{d}x$
+
+        $\displaystyle =105$
+
+  \item $\displaystyle \int_{-1}^{5}\left( -5x^{2}+3x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =-179$
+
+\columnbreak % 165
+
+\resetques
+
+  \item $\displaystyle \int_{-5}^{3}\left( -5x^{2}-5x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =-216$
+
+  \item $\displaystyle \int_{0}^{3}\left( 4x^{2}+x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{85}{2}$
+
+  \item $\displaystyle \int_{-2}^{1}\left( 3x^{2}+2x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =5$
+
+  \item $\displaystyle \int_{-2}^{2}\left( 2x^{2}-3x \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{32}{3}$
+
+  \item $\displaystyle \int_{-4}^{-1}\left( 5x^{2}+4x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =73$
+
+\columnbreak % 170
+
+  \item $\displaystyle \int_{1}^{2}\left( x^{2}-x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =0$
+
+  \item $\displaystyle \int_{-2}^{-1}\left( -4x^{2}+4x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-16$
+
+  \item $\displaystyle \int_{-5}^{-4}\left( -2x^{2}-x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{71}{2}$
+
+  \item $\displaystyle \int_{-2}^{3}\left( -4x^{2}-x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{140}{3}$
+
+  \item $\displaystyle \int_{2}^{4}\left( -2x^{2}+2x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =-27$
+
+\columnbreak % 175
+
+  \item $\displaystyle \int_{-5}^{5}\left( 4x^{2}-2x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =335$
+
+  \item $\displaystyle \int_{-1}^{5}\left( 2x^{2}-x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =74$
+
+  \item $\displaystyle \int_{0}^{3}\left( -5x^{2}+5x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-24$
+
+  \item $\displaystyle \int_{3}^{4}\left( 5x^{2}+x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =66$
+
+  \item $\displaystyle \int_{-3}^{5}\left( -x^{2}-x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{196}{3}$
+
+\columnbreak % 180
+
+\resetques
+
+  \item $\displaystyle \int_{-2}^{5}\left( -3x^{2}+4x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{287}{3}$
+
+  \item $\displaystyle \int_{-3}^{-1}\left( -x^{2}-2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{28}{3}$
+
+  \item $\displaystyle \int_{-5}^{1}\left( 4x^{2}+4x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =124$
+
+  \item $\displaystyle \int_{0}^{1}\left( -2x^{2}+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{1}{2}$
+
+  \item $\displaystyle \int_{-3}^{4}\left( -2x^{2} \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{182}{3}$
+
+\columnbreak % 185
+
+  \item $\displaystyle \int_{-2}^{4}\left( 5x^{2}+4x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =142$
+
+  \item $\displaystyle \int_{-5}^{-2}\left( 2x^{2}+x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =68$
+
+  \item $\displaystyle \int_{-3}^{2}\left( -5x^{2}-2x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{160}{3}$
+
+  \item $\displaystyle \int_{-3}^{0}\left( -5x^{2}-4x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{55}{2}$
+
+  \item $\displaystyle \int_{-1}^{2}\left( -x^{2}-5x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{19}{2}$
+
+\columnbreak % 190
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -4x^{2}-2x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-42$
+
+  \item $\displaystyle \int_{-5}^{-2}\left( -5x^{2}-5x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-143$
+
+  \item $\displaystyle \int_{1}^{2}\left( -3x^{2}+5x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{1}{6}$
+
+  \item $\displaystyle \int_{-3}^{5}\left( 3x^{2}-5x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{352}{3}$
+
+  \item $\displaystyle \int_{-3}^{0}\left( x^{2}-4x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{57}{2}$
+
+\columnbreak % 195
+
+\resetques
+
+  \item $\displaystyle \int_{-4}^{3}\left( -2x^{2}-5x \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{259}{6}$
+
+  \item $\displaystyle \int_{3}^{5}\left( 5x^{2}-4x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =132$
+
+  \item $\displaystyle \int_{-1}^{0}\left( x^{2}-2x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{5}{6}$
+
+  \item $\displaystyle \int_{-3}^{3}\left( x^{2}-4x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =19$
+
+  \item $\displaystyle \int_{0}^{5}\left( 3x^{2}+x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{805}{6}$
+
+\columnbreak % 200
+
+  \item $\displaystyle \int_{3}^{4}\left( -3x^{2}-2x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{89}{2}$
+
+  \item $\displaystyle \int_{1}^{2}\left( -3x^{2}+3x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{11}{6}$
+
+  \item $\displaystyle \int_{-2}^{5}\left( -4x^{2}-x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{574}{3}$
+
+  \item $\displaystyle \int_{3}^{4}\left( -x^{2}-3x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{133}{6}$
+
+  \item $\displaystyle \int_{2}^{4}\left( -4x^{2} \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{224}{3}$
+
+\columnbreak % 205
+
+  \item $\displaystyle \int_{-5}^{3}\left( -5x^{2}-4x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{668}{3}$
+
+  \item $\displaystyle \int_{-3}^{0}\left( 3x^{2}+3x \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{27}{2}$
+
+  \item $\displaystyle \int_{-1}^{3}\left( -x^{2}+x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{20}{3}$
+
+  \item $\displaystyle \int_{3}^{5}\left( 2x^{2}-3x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{119}{3}$
+
+  \item $\displaystyle \int_{-3}^{1}\left( 4x^{2}-x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =42$
+
+\columnbreak % 210
+
+\resetques
+
+  \item $\displaystyle \int_{-5}^{1}\left( -3x^{2}-5x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-65$
+
+  \item $\displaystyle \int_{-1}^{3}\left( 2x^{2}-2x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{40}{3}$
+
+  \item $\displaystyle \int_{-1}^{1}\left( -3x^{2}-3x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{8}{3}$
+
+  \item $\displaystyle \int_{-2}^{0}\left( -3x^{2}-2x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{11}{3}$
+
+  \item $\displaystyle \int_{-4}^{1}\left( 4x^{2}+5x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{275}{6}$
+
+\columnbreak % 215
+
+  \item $\displaystyle \int_{-3}^{-2}\left( -5x^{2}+4x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{85}{2}$
+
+  \item $\displaystyle \int_{-1}^{5}\left( -5x^{2}-3x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-249$
+
+  \item $\displaystyle \int_{-5}^{2}\left( -4x^{2}+5x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{679}{3}$
+
+  \item $\displaystyle \int_{0}^{3}\left( 2x^{2}+x \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{45}{2}$
+
+  \item $\displaystyle \int_{-1}^{2}\left( -4x^{2}-2x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{25}{2}$
+
+\columnbreak % 220
+
+  \item $\displaystyle \int_{0}^{3}\left( 4x^{2}+4x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =52$
+
+  \item $\displaystyle \int_{0}^{2}\left( 4x^{2}+4x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{59}{3}$
+
+  \item $\displaystyle \int_{2}^{3}\left( 5x^{2}-2x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{82}{3}$
+
+  \item $\displaystyle \int_{-5}^{3}\left( -x^{2}-5x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{44}{3}$
+
+  \item $\displaystyle \int_{2}^{4}\left( 5x^{2}+4x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =116$
+
+\columnbreak % 225
+
+\resetques
+
+  \item $\displaystyle \int_{0}^{4}\left( -3x^{2}-4x \right) \mathrm{d}x$
+
+        $\displaystyle =-96$
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -4x^{2}-3x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{77}{2}$
+
+  \item $\displaystyle \int_{-5}^{5}\left( -3x^{2}+2x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-255$
+
+  \item $\displaystyle \int_{-2}^{5}\left( -2x^{2}-2x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{231}{2}$
+
+  \item $\displaystyle \int_{-1}^{4}\left( 4x^{2}+4x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{225}{2}$
+
+\columnbreak % 230
+
+  \item $\displaystyle \int_{0}^{1}\left( 2x^{2}+x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{11}{6}$
+
+  \item $\displaystyle \int_{-4}^{3}\left( 2x^{2}+x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{329}{6}$
+
+  \item $\displaystyle \int_{-5}^{1}\left( -3x^{2}+2x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-154$
+
+  \item $\displaystyle \int_{-4}^{3}\left( -4x^{2}-2x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{217}{2}$
+
+  \item $\displaystyle \int_{-2}^{3}\left( x^{2}+3x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{35}{2}$
+
+\columnbreak % 235
+
+  \item $\displaystyle \int_{-3}^{1}\left( x^{2}-2x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =14$
+
+  \item $\displaystyle \int_{-4}^{0}\left( x^{2}-x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =32$
+
+  \item $\displaystyle \int_{-4}^{4}\left( 3x^{2}+4x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{400}{3}$
+
+  \item $\displaystyle \int_{0}^{4}\left( -4x^{2}+2x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{206}{3}$
+
+  \item $\displaystyle \int_{-1}^{1}\left( -2x^{2}+5x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{1}{3}$
+
+\columnbreak % 240
+
+\resetques
+
+  \item $\displaystyle \int_{-3}^{-2}\left( -2x^{2}+5x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{49}{2}$
+
+  \item $\displaystyle \int_{4}^{5}\left( 2x^{2}-2x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{63}{2}$
+
+  \item $\displaystyle \int_{4}^{5}\left( -5x^{2}-5x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{370}{3}$
+
+  \item $\displaystyle \int_{0}^{3}\left( 4x^{2}+x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{79}{2}$
+
+  \item $\displaystyle \int_{2}^{3}\left( 2x^{2}-5x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{2}{3}$
+
+\columnbreak % 245
+
+  \item $\displaystyle \int_{0}^{1}\left( 5x^{2}-x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{5}{6}$
+
+  \item $\displaystyle \int_{-4}^{-1}\left( -x^{2}-2x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-8$
+
+  \item $\displaystyle \int_{-4}^{4}\left( 3x^{2}+3x \right) \mathrm{d}x$
+
+        $\displaystyle =128$
+
+  \item $\displaystyle \int_{-4}^{-3}\left( 2x^{2}+2x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{37}{2}$
+
+  \item $\displaystyle \int_{2}^{5}\left( x^{2}-2x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{31}{2}$
+
+\columnbreak % 250
+
+  \item $\displaystyle \int_{1}^{2}\left( 2x^{2}-3x-5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{2}{3}$
+
+  \item $\displaystyle \int_{-3}^{-2}\left( -2x^{2}+5x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{74}{3}$
+
+  \item $\displaystyle \int_{3}^{4}\left( x^{2}+4x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{163}{6}$
+
+  \item $\displaystyle \int_{-5}^{1}\left( -5x^{2}+3x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-244$
+
+  \item $\displaystyle \int_{-5}^{2}\left( -3x^{2}-3x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-105$
+
+\columnbreak % 255
+
+\resetques
+
+  \item $\displaystyle \int_{-3}^{3}\left( 5x^{2}-1 \right) \mathrm{d}x$
+
+        $\displaystyle =89$
+
+  \item $\displaystyle \int_{1}^{2}\left( 2x^{2}-3x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{1}{3}$
+
+  \item $\displaystyle \int_{-1}^{0}\left( 2x^{2}-1 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{1}{2}$
+
+  \item $\displaystyle \int_{0}^{4}\left( -5x^{2}-4x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-136$
+
+  \item $\displaystyle \int_{-1}^{1}\left( -4x^{2}+3x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{11}{3}$
+
+\columnbreak % 260
+
+  \item $\displaystyle \int_{-5}^{2}\left( x^{2}-4x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =91$
+
+  \item $\displaystyle \int_{-5}^{3}\left( -x^{2}-4 \right) \mathrm{d}x$
+
+        $\displaystyle =-56$
+
+  \item $\displaystyle \int_{1}^{4}\left( -4x^{2}+5x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-46$
+
+  \item $\displaystyle \int_{-5}^{2}\left( 2x^{2}+5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{189}{2}$
+
+  \item $\displaystyle \int_{-2}^{2}\left( -x^{2}-2x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-6$
+
+\columnbreak % 265
+
+  \item $\displaystyle \int_{2}^{5}\left( 2x^{2}+x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{175}{2}$
+
+  \item $\displaystyle \int_{1}^{2}\left( 2x^{2}+4x-4 \right) \mathrm{d}x$
+
+        $\displaystyle =10$
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -x^{2}-3x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{7}{3}$
+
+  \item $\displaystyle \int_{-4}^{-1}\left( -4x^{2}+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-82$
+
+  \item $\displaystyle \int_{1}^{2}\left( 5x^{2}-4x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{31}{6}$
+
+\columnbreak % 270
+
+\resetques
+
+  \item $\displaystyle \int_{-1}^{5}\left( 3x^{2}+5x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =190$
+
+  \item $\displaystyle \int_{-4}^{2}\left( 2x^{2}-4 \right) \mathrm{d}x$
+
+        $\displaystyle =44$
+
+  \item $\displaystyle \int_{-4}^{3}\left( x^{2}-3x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{119}{3}$
+
+  \item $\displaystyle \int_{-2}^{-1}\left( 3x^{2}-x+1 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{26}{3}$
+
+  \item $\displaystyle \int_{-4}^{2}\left( 4x^{2}-1 \right) \mathrm{d}x$
+
+        $\displaystyle =95$
+
+\columnbreak % 275
+
+  \item $\displaystyle \int_{-2}^{-1}\left( x^{2}+3x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{5}{3}$
+
+  \item $\displaystyle \int_{-5}^{1}\left( -x^{2}-4x \right) \mathrm{d}x$
+
+        $\displaystyle =6$
+
+  \item $\displaystyle \int_{-4}^{4}\left( -4x^{2}+5x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-164$
+
+  \item $\displaystyle \int_{0}^{2}\left( -x^{2}-4x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =-9$
+
+  \item $\displaystyle \int_{2}^{3}\left( x^{2}+4x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =16$
+
+\columnbreak % 280
+
+  \item $\displaystyle \int_{2}^{3}\left( 5x^{2}+3x-3 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{116}{3}$
+
+  \item $\displaystyle \int_{-5}^{-4}\left( -3x^{2}+3 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{121}{2}$
+
+  \item $\displaystyle \int_{-1}^{5}\left( 5x^{2}-4x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =165$
+
+  \item $\displaystyle \int_{0}^{3}\left( x^{2}+3x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{49}{2}$
+
+  \item $\displaystyle \int_{-1}^{1}\left( 5x^{2}+x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =5$
+
+\columnbreak % 285
+
+\resetques
+
+  \item $\displaystyle \int_{-2}^{4}\left( 2x^{2}-4x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =29$
+
+  \item $\displaystyle \int_{1}^{3}\left( -2x^{2}-x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =-22$
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -3x^{2}-5 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{227}{6}$
+
+  \item $\displaystyle \int_{-4}^{3}\left( -2x^{2}-3x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{287}{6}$
+
+  \item $\displaystyle \int_{0}^{4}\left( x^{2}+5x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{182}{3}$
+
+\columnbreak % 290
+
+  \item $\displaystyle \int_{-4}^{0}\left( -5x^{2}-3x+4 \right) \mathrm{d}x$
+
+        $\displaystyle =-80$
+
+  \item $\displaystyle \int_{4}^{5}\left( -5x^{2}-2x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{665}{6}$
+
+  \item $\displaystyle \int_{-3}^{1}\left( -3x^{2}-4x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{38}{3}$
+
+  \item $\displaystyle \int_{-5}^{4}\left( 4x^{2}-2x \right) \mathrm{d}x$
+
+        $\displaystyle =261$
+
+  \item $\displaystyle \int_{-3}^{3}\left( 3x^{2}+x+3 \right) \mathrm{d}x$
+
+        $\displaystyle =57$
+
+\columnbreak % 295
+
+  \item $\displaystyle \int_{0}^{5}\left( -3x^{2}-3x+2 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{965}{6}$
+
+  \item $\displaystyle \int_{-3}^{0}\left( -x^{2}+5x-1 \right) \mathrm{d}x$
+
+        $\displaystyle =-32$
+
+  \item $\displaystyle \int_{-4}^{-3}\left( -5x^{2}+1 \right) \mathrm{d}x$
+
+        $\displaystyle =-\frac{123}{2}$
+
+  \item $\displaystyle \int_{-1}^{4}\left( 4x^{2}+4x+5 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{725}{6}$
+
+  \item $\displaystyle \int_{-4}^{3}\left( 5x^{2}-4x-2 \right) \mathrm{d}x$
+
+        $\displaystyle =\frac{490}{3}$
+
+\end{enumerate}
+\end{multicols}
