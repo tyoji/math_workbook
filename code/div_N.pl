@@ -18,6 +18,7 @@ my $num_rng = 100; # 数値幅
 my $layout_colmuns = 4; # 段組み数
 my $layout_breaks = 18; # 改行問題数
 my $hight_items = 3; # 改行間隔幅(pt)
+my $ans_sp = 0; # 解答用スペース
 
 
 
@@ -70,6 +71,6 @@ for (1..$num_eq) {
 
 
 print encode("UTF-8",
-  generate_latex_code(\@ques, \@ans, $layout_colmuns, $layout_breaks, $hight_items)
+  generate_latex_code(\@ques, \@ans, $layout_colmuns, $layout_breaks, $hight_items, $ans_sp)
 );
 

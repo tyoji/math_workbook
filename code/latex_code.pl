@@ -80,9 +80,12 @@ sub trans_num {
 # 戻り値 配列(根号外、根号内)
 sub simplify_sqrt {
     my ($outside, $inside, $div) = (1, shift, 2);
+    my $sign =1;
+    if ( $inside < 0) { $inside = abs $inside; $sign = -1; }
     while ($div * $div <= $inside) {
         $inside % ($div * $div) ? $div++ : ($outside *= $div, $inside /= $div * $div);
     }
+    if ($sign == -1)  { $inside *= -1;}
     return ($outside, $inside);
 }
 
@@ -130,7 +133,7 @@ sub trans_cplx {
             $cplx = trans_num($im, 1) . "i";
         }
     }
-    
+
     return $cplx;
 }
 
@@ -173,14 +176,21 @@ sub trans_poly {
 
 
 # 問題集出力
-# 引数は 問題配列、解答配列、段組数、1段あたりの問題数、行間(pt)
+# 引数は 次の通り
+# $ques_arr, $ans_arr, $cols, $brk, $sep, $ans_sp
+# 問題配列、解答配列、段組数、1段あたりの問題数、行間(pt)、 解答スペースの扱い
+#
+# $ans_sp は 0 を設定すると phantomコマンドを利用し解答スペースを作成
+# $ans_sp は 0以外 を設定すると vspace*コマンドを利用(pt)し解答スペースを作成
 sub generate_latex_code {
-    my ($ques_arr, $ans_arr, $cols, $brk, $sep) = @_;
+    my ($ques_arr, $ans_arr, $cols, $brk, $sep, $ans_sp) = @_;
 
     my $ques_num = scalar @$ques_arr;
 
-    # ガード句: 配列が空、または引数が不正な場合
-    return "Err" if ($ques_num == 0 || $cols <= 0 || $brk <= 0 || $sep <= 0);
+    # エラーチェック 配列が空、または引数が不正な場合
+    return "Generate Err : option" if (
+        $ques_num == 0 || $cols <= 0 || $brk <= 0 || $sep < 0
+        );
 
     my $latex_code = "\\setcounter{quesnum}{" . ($cols * $brk) . "}\n\n";
 
@@ -195,9 +205,20 @@ sub generate_latex_code {
             $latex_code .= "  \\item " . $ques_arr->[$i] . "\n";
 
             $latex_code .= " " x 8;
-            if ($count == 0) {$latex_code .= "\\phantom{"}
-            $latex_code .= $ans_arr->[$i];
-            if ($count == 0) {$latex_code .= "}"}
+            if ( $ans_sp ) {
+                if ( $count ==0 ) {
+                    $latex_code .= '\vspace*{' . $ans_sp . 'pt}';
+                } else {
+                    $latex_code .= $ans_arr->[$i];
+                }
+            } else {
+                if ($count == 0) {$latex_code .= "\\phantom{"}
+                $latex_code .= $ans_arr->[$i];
+                if ($count == 0) {$latex_code .= "}"}
+            }
+
+            # 問題間隔調整
+            #$latex_code .= "\n\n\\vfil\n\n";
             $latex_code .= "\n\n";
 
             # $brk 個ごと、かつ配列の最後でない場合に \columnbreak を挿入
