@@ -313,7 +313,8 @@ $10$進数を$16$進数に変換する問題。
 
 \chapter{多項式}
 
-\section{加減法}
+\section{四則演算}
+\subsection{加減法}
 
 2次多項式の和や差を求める問題。
 
@@ -321,7 +322,7 @@ $10$進数を$16$進数に変換する問題。
 
 
 
-\section{乗法}
+\subsection{乗法}
 
 1次多項式同士の積を求める問題。
 
@@ -329,7 +330,7 @@ $10$進数を$16$進数に変換する問題。
 
 
 
-\section{除法}
+\subsection{除法}
 
 3次多項式を2次多項式で割った商と剰余を求める問題。
 
@@ -337,8 +338,12 @@ $10$進数を$16$進数に変換する問題。
 
 
 
-\section{因数分解(2次式)}
 
+
+
+\section{因数分解}
+
+\subsection{2次式}
 2次多項式の因数分解をする問題。
 
 \includedrill{因数分解(2次式)}{code/polynomial_factorization_2}
@@ -346,7 +351,7 @@ $10$進数を$16$進数に変換する問題。
 
 
 
-\section{因数分解(3次式)}
+\subsection{3次式}
 
 3次多項式の因数分解をする問題。
 
@@ -357,14 +362,16 @@ $10$進数を$16$進数に変換する問題。
 
 
 
-\section{代入(易しい)}
+\section{代入計算}
+
+\subsection{代入(2次式)}
 
 2次多項式に整数を代入する問題。
 
 \includedrill{代入(A)}{code/polynomial_substitute_integer}
 
 
-\section{代入(難しい)}
+\subsection{代入(平方完成)}
 
 平方完成の式に整数を代入する問題。
 
@@ -372,31 +379,41 @@ $10$進数を$16$進数に変換する問題。
 
 
 
-\section{1次方程式}
+\section{方程式}
+
+\subsection{1次方程式}
 
 1次方程式の問題。
 
 \includedrill{1次方程式}{code/equation_deg_1}
 
 
-\section{2次方程式}
+\subsection{2次方程式}
 
-\subsection{ 因数分解利用}
+\subsubsection{因数分解利用}
 
 2次式の因数分解を利用した方程式の問題。
 
-\includedrill{2次方程式}{code/equation_deg_2}
+\includedrill{2次方程式(A)}{code/equation_deg_2}
 
 
-\subsection{解の公式利用}
+\subsubsection{解の公式利用}
 
 2次式の解の公式を利用した方程式の問題。
 
-\includedrill{2次方程式 k}{code/equation_deg_2_QForm}
+$ax^2+bx+c=0$の解の公式
+\begin{equation}
+  x=
+  \frac{-b\pm \sqrt{b^2-4ac}}{2a}
+\end{equation}
+
+\includedrill{2次方程式(B)}{code/equation_deg_2_QForm}
 
 
 
-\section{1次不等式}
+\section{不等式}
+
+\subsection{1次不等式}
 
 1次不等式の問題。
 
@@ -427,7 +444,9 @@ $10$進数を$16$進数に変換する問題。
 
 \section{2次関数}
 
-\subsection{平方完成(易しい)}
+\subsection{平方完成}
+
+\subsubsection{易しい}
 
 2次多項式を平方完成する問題。
 
@@ -437,7 +456,7 @@ $10$進数を$16$進数に変換する問題。
 
 
 
-\subsection{平方完成(難しい)}
+\subsubsection{難しい}
 
 2次多項式を平方完成する問題。
 
@@ -485,7 +504,9 @@ $10$進数を$16$進数に変換する問題。
 
 \section{三角関数}
 
-\subsection{三角比 $30^{\circ}, 45^{\circ}, 60^{\circ}$}
+\subsection{三角関数の値}
+
+\subsubsection{三角比 $30^{\circ}, 45^{\circ}, 60^{\circ}$}
 
 三角比
 $30^{\circ}, 45^{\circ}, 60^{\circ}$
@@ -515,7 +536,7 @@ $30^{\circ}, 45^{\circ}, 60^{\circ}$
 
 
 
-\subsection{三角比 $0^{\circ}\leq \theta \leq 180^{\circ}$}
+\subsubsection{三角比 $0^{\circ}\leq \theta \leq 180^{\circ}$}
 
 三角比
 $0^{\circ}\leq \theta \leq 180^{\circ}$
@@ -545,7 +566,7 @@ $0^{\circ}\leq \theta \leq 180^{\circ}$
 
 
 
-\subsection{三角関数 $0^{\circ}\leq \theta \leq 360^{\circ}$}
+\subsubsection{三角関数 $0^{\circ}\leq \theta \leq 360^{\circ}$}
 
 三角関数
 $0^{\circ}\leq \theta \leq 360^{\circ}$
