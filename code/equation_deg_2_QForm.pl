@@ -34,18 +34,17 @@ for (1..$num_eq) {
     # 数字生成
     my @coeff = ( gen_num(1, $num_rng, 0), gen_num(2, $num_rng, 1) );
 
-    # 係数調整
-    if ($coeff[0] <0) { $coeff[0] *= -1; $coeff[1] *= -1; $coeff[2] *= -1; }
-
     # 判別式
     my $discriminant = $coeff[1]*$coeff[1] - 4*$coeff[0]*$coeff[2];
 
     # 複素数を排除
     while ($discriminant<0) {
         @coeff = ( gen_num(1, $num_rng, 0), gen_num(2, $num_rng, 1) );
-        if ($coeff[0] <0) { $coeff[0] *= -1; $coeff[1] *= -1; $coeff[2] *= -1; }
         $discriminant = $coeff[1]*$coeff[1] - 4*$coeff[0]*$coeff[2];
     }
+
+    # 係数調整
+    if ($coeff[0] <0) { $coeff[0] *= -1; $coeff[1] *= -1; $coeff[2] *= -1; }
 
     # 原始多項式
     ($coeff[0], $coeff[1], $coeff[2])
@@ -59,37 +58,44 @@ for (1..$num_eq) {
     $eq .= "=0";
 
     # 解答
-    my ($out_root, $in_root) = simplify_sqrt($discriminant);
     my ($numerator_b, $denominator_a) = (-1*$coeff[1], 2*$coeff[0]);
-
-    if ($in_root==0) {
-        $ans = trans_frac($numerator_b, $denominator_a);
-    } elsif ($in_root==1) {
-        if ( $numerator_b==0 ) {
-            $ans = '\pm' . trans_frac($out_root, $denominator_a);
-        } else {
-            $ans = trans_frac( ($numerator_b+$out_root), $denominator_a )
-                . ', \; ' . trans_frac( ($numerator_b-$out_root), $denominator_a );
-        }
+    
+    if ($discriminant==0) { # 重解
+	$ans = trans_frac($numerator_b, $denominator_a);
     } else {
-        if ( $numerator_b==0 ) {
-            ($out_root, $denominator_a) = (
-                $out_root/gcd($out_root, $denominator_a),
-                $denominator_a/gcd($out_root, $denominator_a)
-                );
-            if ( $denominator_a == 1 ) {
-                $ans = '\pm ' . trans_num($out_root,1) . '\sqrt{' . $in_root . '}';
-            } else {
-                $ans = '\pm \frac{' . trans_num($out_root,1) . '\sqrt{' . $in_root . '}}{' . $denominator_a . '}';
-            }
-        } else {
-            ($numerator_b, $out_root, $denominator_a) = (
-                $numerator_b/gcd($numerator_b, gcd($out_root, $denominator_a)),
-                $out_root/gcd($numerator_b, gcd($out_root, $denominator_a)),
-                $denominator_a/gcd($numerator_b, gcd($out_root, $denominator_a)),
-                );
-            $ans = '\frac{' . $numerator_b . '\pm ' . trans_num($out_root,1) . '\sqrt{' . $in_root . '}}{' . $denominator_a . '}';
-        }
+	my ($out_root, $in_root) = simplify_sqrt($discriminant);
+	if ($in_root==1) {
+	    if ( $numerator_b==0 ) {
+		$ans = '\pm' . trans_frac($out_root, $denominator_a);
+	    } else {
+		$ans = trans_frac( ($numerator_b+$out_root), $denominator_a )
+		    . ', \; ' . trans_frac( ($numerator_b-$out_root), $denominator_a );
+	    }
+	} else {
+	    if ( $numerator_b==0 ) {
+		($out_root, $denominator_a) = (
+		    $out_root/gcd($out_root, $denominator_a),
+		    $denominator_a/gcd($out_root, $denominator_a)
+		    );
+		if ( $denominator_a == 1 ) {
+		    $ans = '\pm ' . trans_num($out_root,1) . '\sqrt{' . $in_root . '}';
+		} else {
+		    $ans = '\pm \frac{' . trans_num($out_root,1) . '\sqrt{' . $in_root . '}}{' . $denominator_a . '}';
+		}
+	    } else {
+		($numerator_b, $out_root, $denominator_a) = (
+		    $numerator_b/gcd($numerator_b, gcd($out_root, $denominator_a)),
+		    $out_root/gcd($numerator_b, gcd($out_root, $denominator_a)),
+		    $denominator_a/gcd($numerator_b, gcd($out_root, $denominator_a))
+		    );
+		if ($denominator_a==1) {
+		    $ans = $numerator_b . '\pm ' . trans_num($out_root,1) . '\sqrt{' . $in_root . '}';
+		} else {
+		    $ans = '\frac{' . $numerator_b . '\pm ' . trans_num($out_root,1)
+				      . '\sqrt{' . $in_root . '}}{' . $denominator_a . '}';
+		}
+	    }
+	}
     }
 
     # 最終加工
